@@ -1,0 +1,61 @@
+.juri {
+	padding-top: 30px;
+	padding-bottom: 60px;
+	text-align: center;
+
+	@include media-desktop {
+		padding-top: 100px;
+		padding-bottom: 100px;
+	}
+}
+
+.juri__title {
+margin-bottom: 20px;
+
+@include media-tablet {
+	margin-bottom: 46px;
+}
+}
+
+.juri__list {
+@include list-reset;
+display: flex;
+
+@include media-tablet {
+gap: 40px;
+}
+
+@include media-desktop {
+gap: 10px;
+}
+}
+
+.juri__card {
+	margin-left: 15px;
+	margin-right: 15px;
+	// width: 100%;
+	height: 300px;
+	background-color: gray;
+
+	&--tabl {
+	display: none;	
+
+	@include media-tablet {
+	display: block;
+	}
+}
+
+	&--desk {
+		display: none;	
+	
+		@include media-desktop {
+		display: block;
+		}
+	}
+}
+
+.juri__img {
+	display: block;
+	width: 260px;
+	height: 300px;
+	}

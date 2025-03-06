@@ -1,0 +1,30 @@
+.btn {
+	display: none;
+
+	@include media-tablet {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+}
+
+.btn__button {
+	display: block;
+	@include btn-reset;
+
+	width: 16px;
+	height: 32px;
+
+	background-color: aqua;
+
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: contain;
+
+	background-image: url(../../img/sprite/btn_l.svg);
+
+	&--r {
+		background-image: url(../../img/sprite/btn_r.svg);
+	}
+}
+

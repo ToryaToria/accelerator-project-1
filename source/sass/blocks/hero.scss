@@ -1,0 +1,132 @@
+.hero {
+	padding-bottom: 32px;
+	background-color: $color-bg-grad;
+	text-align: right;
+
+	@include media-tablet {
+		padding-bottom: 120px;
+	}
+}
+
+.hero__wrapp {
+	padding-top: 16px;
+	padding-bottom: 16px;
+	display: flex;
+	justify-content: space-between;
+
+	background-color: aqua;
+
+	@include media-tablet {
+	margin-bottom: 30px;
+	}
+}
+
+.hero__contein {
+	margin-top: 48px;
+
+	display: grid;
+
+	grid-template-areas:
+		'lst omsk img'
+		'lst hero img'
+		'btn btn img';
+
+	@include media-tablet {
+		grid-template-areas:
+			'lst omsk img'
+			'lst hero img'
+			'lst btn img';
+	}
+
+	@include media-desktop {
+	margin-left: 147px;
+	margin-right: 72px;
+	}
+}
+
+.hero__omsk {
+	grid-area: omsk;
+
+	@include media-tablet {
+		margin-top: 31px;
+	}
+
+	@include media-desktop {
+		margin-top: 52px;
+	}
+}
+
+.hero__title {
+	margin-top: 14px;
+	grid-area: hero;
+
+	@include media-tablet {
+		margin-top: 10px;
+		align-self: self-end;
+
+	}
+}
+
+.hero__button {
+	margin-top: 48px;
+	grid-area: btn;
+
+	@include media-tablet {
+		margin-top: 50px;
+		margin-bottom: 31px;
+	}
+
+	@include media-desktop {
+		margin-top: 40px;
+		margin-bottom: 52px;
+	}
+}
+
+.hero__list {
+	box-sizing: border-box;
+	@include list-reset;
+	grid-area: lst;
+	align-self: self-end;
+
+	margin-right: 21px;
+	width: 113px;
+
+	@include media-tablet {
+		align-self: center;
+
+	}
+}
+
+.hero__img {
+	display: none;
+
+	@include media-tablet {
+		display: block;
+		width: 324px;
+		height: 390px;
+		grid-area: img;
+		margin-left: 30px;
+	}
+
+	@include media-desktop {
+		width: 500px;
+		height: 524px;
+		margin-left: 56px;
+	}
+}
+
+.hero__logo {
+	display: block;
+	width: 100px;
+	height: 20px;
+
+	@include media-tablet {
+		width: 110px;
+		height: 22px;
+	}
+
+	@include media-desktop {
+		width: 130px;
+		height: 26px;
+	}
+}

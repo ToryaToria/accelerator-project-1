@@ -1,0 +1,16 @@
+.button {
+	box-sizing: border-box;
+	display: block;
+	padding: 22px 10px;
+	border: 2px solid $color-white;
+	background-color: transparent;
+
+	&--color-dark {
+		border: 2px solid $color-text-base;
+		width: 206px;
+	}
+
+	@include media-tablet {
+		padding: 27px 56px;
+	}
+}
