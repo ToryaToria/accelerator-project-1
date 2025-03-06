@@ -3,8 +3,8 @@
   font-family: "RobotoCondensed";
   font-style: normal;
   font-weight: 400;
-  src: url("../../fonts/RobotoCondensed-Regular.woff") format("woff"),
-    url("../../fonts/RobotoCondensed-Regular.woff2") format("woff2");
+  src: url("../fonts/RobotoCondensed-Regular.woff") format("woff"),
+    url("../fonts/RobotoCondensed-Regular.woff2") format("woff2");
 
   font-display: swap;
 }
@@ -41,7 +41,7 @@
 @font-face {
   font-family: "AlumniSans";
   font-style: normal;
-  font-weight: 700;
+  font-weight: 800;
   src: url("../../fonts/AlumniSans-ExtraBold.woff") format("woff2"),
     url("../../fonts/AlumniSans-ExtraBold.woff2") format("woff");
   font-display: swap;

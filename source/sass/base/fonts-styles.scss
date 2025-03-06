@@ -41,7 +41,7 @@
 	/* h1 */
 
 	@include font ($family: $font-secondary, $size: 62px, $line-height: 62px, $weight: 700);
-	letter-spacing: -0.01em;
+	letter-spacing: 0.01em;
 	text-transform: uppercase;
 
 	@include media-tablet {
@@ -60,7 +60,7 @@
 .title-super {
 	/* h2 для супергейм*/
 
-	@include font ($family: $font-secondary, $size: 48px, $line-height: 54px, $weight: 500);
+	@include font ($family: $font-secondary, $size: 48px, $line-height: 54px, $weight: 600);
 	text-transform: uppercase;
 
 	@include media-desktop {
@@ -72,7 +72,7 @@
 .title-section {
 	/* h3 */
 
-	@include font ($family: $font-secondary, $size: 32px, $line-height: 32px, $weight: 500);
+	@include font ($family: $font-secondary, $size: 32px, $line-height: 32px, $weight: 400);
 	;
 
 	@include media-tablet {
@@ -87,8 +87,7 @@
 }
 
 .subtitle {
-
-	@include font ($size: 18px, $line-height: 20px);
+	@include font ($size: 18px, $line-height: 20px, $weight: 500);
 
 	@include media-tablet {
 		font-size: 20px;
@@ -138,20 +137,20 @@
 .text-btn-L {
 	/*текст для ссылки */
 
-	@include font ($size: 14px, $line-height: 14px, $weight: 600);
+	@include font ($size: 14px, $line-height: 14px, $weight: 700);
 	text-transform: uppercase;
 	}
 
 .text-btn-M {
 	/*текст для кнопки */
 
-	@include font ($size: 12px, $line-height: 12px, $weight: 600);
+	@include font ($size: 12px, $line-height: 12px, $weight: 700);
 	text-transform: uppercase;
 	text-decoration: none;
 	text-align: center;
 }
 
-.text-btn-tab {
+.text-btn-N {
 	/*текст для табов в вопросах и ответах */
 
 	@include font ($size: 16px, $line-height: 100%);
@@ -173,7 +172,7 @@
 }
 
 .text-number-L {
-	@include font ($size: 64px, $line-height: 64px, $weight: 600, $color: $color-price);
+	@include font ($size: 64px, $line-height: 64px, $weight: 700, $color: $color-price);
 
 	@include media-desktop {
 		font-size: 70px;
@@ -182,11 +181,11 @@
 }
 
 .text-number-M {
-	@include font ($size: 60px, $line-height: 150px, $weight: 600, $color: $color-price);
+	@include font ($size: 48px, $line-height: 150%, $weight: 600, $color: $color-price);
 }
 
 .text-number-R {
-	@include font ($size: 24px, $line-height: 24px, $weight: 600);
+	@include font ($size: 24px, $line-height: 24px, $weight: 700);
 	
 	@include media-desktop {
 		font-size: 40px;
@@ -194,6 +193,13 @@
 	}
 }
 
+.ruble-symbol {
+	color: $color-text-base;
+}
+
+// .text-shadow {
+	
+// }
 
 //==========================
 .text-invert {

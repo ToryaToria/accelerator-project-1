@@ -1,0 +1,51 @@
+.card {
+  box-sizing: border-box;
+	padding: 50px 42px;
+	background-color: $color-white;
+	display: flex;
+	flex-direction: column;
+	gap: 18px;
+	align-items: center;
+
+	@include media-tablet {
+		padding: 65px;
+		gap: 22px;
+	}
+
+	@include media-desktop {
+		width: 360px;
+	}
+}
+
+.card__prise-shadow {
+  box-sizing: border-box;
+  padding-top: 60px;
+  width: 230px;
+  height: 150px;
+  position: relative;
+  z-index: 5;
+    // background-color: aqua;
+
+}
+
+.card__prise-shadow::after {
+ 
+  z-index: -1;
+  display: block;
+  width: 230px;
+  height: 150px;
+  
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  content: attr(data-tip);
+// text-align: center;
+
+  @include font ($size: 80px, $line-height: 150%, $weight: 600, $color: $color-shadow);
+
+	@include media-tablet {
+		font-size: 100px;
+	}
+
+}

@@ -13,7 +13,8 @@
 }
 
 .about__title {
-	margin-bottom: 20px;
+	text-align: left;
+	margin-bottom: 12px;
 
 	@include media-desktop {
 		margin-bottom: 25px;
@@ -21,10 +22,12 @@
 }
 
 .about__subtitle {
+	text-align: left;
 	margin-bottom: 36px;
 }
 
 .about__text {
+	text-align: left;
 	margin-bottom: 36px;
 
 	@include media-desktop {
@@ -50,6 +53,7 @@
 	height: 280px;
 	margin-left: -15px;
 	margin-right: -15px;
+	margin-bottom: 36px;
 
 
 	@include media-tablet {
@@ -63,4 +67,12 @@
 		height: 400px;
 		order: 1;
 	}
+}
+
+.about__video {
+	display: block;
+	width: 320px;
+	height: 170px;
+	margin-left: -15px;
+	margin-right: -15px;
 }

@@ -1,7 +1,9 @@
 .hero {
 	padding-bottom: 32px;
-	background-color: $color-bg-grad;
+	background-color: $color-bg-grad1;
 	text-align: right;
+
+	background: linear-gradient(to right, $color-bg-grad1, $color-bg-grad2 39%, $color-bg-grad3 76%, $color-bg-grad4);
 
 	@include media-tablet {
 		padding-bottom: 120px;
@@ -14,7 +16,7 @@
 	display: flex;
 	justify-content: space-between;
 
-	background-color: aqua;
+	// background-color: aqua;
 
 	@include media-tablet {
 	margin-bottom: 30px;
