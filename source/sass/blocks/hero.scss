@@ -6,7 +6,7 @@
 	background: $linear-gradient;
 
 	@include media-tablet {
-		padding-bottom: 120px;
+			padding-bottom: 100px;
 	}
 }
 
@@ -17,7 +17,8 @@
 	justify-content: space-between;
 
 	@include media-tablet {
-	margin-bottom: 30px;
+		padding-top: 31px;
+	padding-bottom: 29px;
 	}
 }
 
@@ -32,6 +33,10 @@
 		'btn btn img';
 
 	@include media-tablet {
+
+		grid-template-columns:auto 185px 354px;
+		margin-top: 0;
+
 		grid-template-areas:
 			'lst omsk img'
 			'lst hero img'
@@ -62,7 +67,8 @@
 
 	@include media-tablet {
 		margin-top: 10px;
-		align-self: self-end;
+		align-self: self-start;
+		margin-bottom: 50px;
 
 	}
 }
@@ -72,8 +78,10 @@
 	grid-area: btn;
 
 	@include media-tablet {
-		margin-top: 50px;
-		margin-bottom: 31px;
+		
+		margin-top: 0;
+		margin-bottom: 27px;
+		align-self: start;
 	}
 
 	@include media-desktop {
