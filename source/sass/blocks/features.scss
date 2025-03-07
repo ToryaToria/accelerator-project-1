@@ -1,6 +1,6 @@
 .features {
 	padding-top: 40px;
-	padding-bottom: 5px;
+	padding-bottom: 40px;
 	text-align: center;
 	background-color: $color-bg-primary;
 
@@ -41,7 +41,8 @@
 }
 
 .features__item {
-	padding-top: 30px;
+	padding-left: 30px;
+	padding-right: 30px;
 
 	@include media-tablet {
 		display: flex;
@@ -73,7 +74,7 @@
 }
 
 .features__item-dark {
-	padding: 35px;
+	padding: 30px 75px 40px;
 	color: $color-white;
 	background-color: $color-bg-secondary;
 
@@ -88,7 +89,7 @@
 	}
 }
 
-.features__dl {
+.features__digit {
 	margin-bottom: 12px;
 
 	@include media-tablet {
@@ -96,8 +97,15 @@
 	}
 }
 
-.features__dt {
+.features__name {
+	color: $color-desc;
+
 	display: block;
+
+	&--invert {
+		margin-top: 5px;
+		margin-bottom: 20px;
+	}
 }
 
 .features__subtitle {

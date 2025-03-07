@@ -67,7 +67,7 @@
 
 
 .offers__text {
-	margin-bottom: 9px;
+	margin-bottom: 8px;
 
 	@include media-tablet {
 		margin-top: 20px;
@@ -83,8 +83,18 @@
 }
 
 .offers__link {
-	display: block;
-	margin-top: 28px;
+	display: inline-block;
+	margin-top: 29px;
+	padding-bottom: 5px;
+	text-decoration: none;
+	border-bottom: 1px solid $color-white;
+	align-self: center;
+
+&--color {
+	margin-top: 0;
+	border-bottom: 1px solid $color-divider;
+
+}
 
 	@include media-tablet {
 		margin-top: auto;
@@ -107,12 +117,13 @@
 .offers__list {
 	box-sizing: border-box;
 	@include list-reset ($padd-left: 0);
-	margin-bottom: 40px;
+	// margin-bottom: 40px;
 	margin-top: 40px;
 
 	display: flex;
 	flex-direction: column;
 	gap: 30px;
+	
 
 	@include media-tablet {
 		flex-direction: row;

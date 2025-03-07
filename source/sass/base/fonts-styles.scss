@@ -72,8 +72,9 @@
 .title-section {
 	/* h3 */
 
-	@include font ($family: $font-secondary, $size: 32px, $line-height: 32px, $weight: 400);
-	;
+	@include font ($family: $font-secondary, $size: 32px, $line-height: 32px, $weight: 600);
+	letter-spacing: -0.005em;
+
 
 	@include media-tablet {
 		font-size: 42px;
@@ -114,6 +115,11 @@
 	}
 }
 
+.text-juri  {
+	@include font ( $size: 22px, $line-height: 22px);
+	color: $color-white;
+
+}
 
 .text-nav,
 .title-price,
@@ -193,13 +199,18 @@
 	}
 }
 
-.ruble-symbol {
-	color: $color-text-base;
+// .ruble-symbol {
+// 	color: $color-text-base;
+// }
+
+.text-name {
+	@include font ($size: 14px, $line-height: 20px);
 }
 
-// .text-shadow {
-	
-// }
+.text-form {
+	@include font ($size: 14px, $line-height: 22px, $weight: 300 );
+color: $color-white;
+}
 
 //==========================
 .text-invert {

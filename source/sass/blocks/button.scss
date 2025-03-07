@@ -5,7 +5,14 @@
 	border: 2px solid $color-white;
 	background-color: transparent;
 
+
+	&--card {
+		padding: 25px 10px;
+
+	}
 	&--color-dark {
+		padding: 25px 10px;
+
 		border: 2px solid $color-text-base;
 		width: 206px;
 	}

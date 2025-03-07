@@ -1,5 +1,5 @@
 .price {
-	padding-top: 60px; // А ДОЛЖЕН БЫТЬ 40!!!
+	padding-top: 39px; // А ДОЛЖЕН БЫТЬ 40!!!
 	padding-bottom: 40px;
 	text-align: center;
 	background-color: $color-bg-primary;
@@ -50,7 +50,7 @@
 
 .price__month-btn {
 	@include btn-reset;
-	padding-bottom: 10px;
+	padding-bottom: 5px;
 	opacity: 0.5;
 
 	&--active {

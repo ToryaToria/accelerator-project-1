@@ -17,10 +17,10 @@
 
 .faq__title {
 	margin-bottom: 35px;
+	text-align: center;
 
 	@include media-tablet {
 		margin-bottom: 45px;
-		text-align: center;
 	}
 
 	@include media-desktop {
@@ -54,7 +54,7 @@
 
 .faq__list-faq {
 	@include list-reset;
-	margin-top: 35px;
+	margin-top: 34px;
 	border-bottom: 1px solid $color-divider;
 
 	@include media-tablet {
@@ -69,6 +69,7 @@
 
 .faq__text {
 	padding-bottom: 20px;
+	margin-right: 52px;
 
 	@include media-tablet {
 		margin-bottom: 23px;
@@ -76,7 +77,8 @@
 }
 
 .faq__item-faq {
-	padding-top: 21px;
+	padding-top: 20px;
+	
 	border-top: 1px solid $color-divider;
 
 	@include media-tablet {
@@ -84,10 +86,46 @@
 	}
 }
 
-.faq__title-faq {
+.faq__wrapp-title {
+	display: flex;
+	align-items: center;
 	margin-bottom: 20px;
+
+}
+
+.faq__title-faq {
+	margin-bottom: 0px;
+	margin-right: 20px;
+
+	&--1 {
+ padding-right: 35px;
+
+	}
 
 	@include media-tablet {
 		margin-bottom: 10px;
+	}
+}
+
+.faq__btn {
+	flex-shrink: 0;
+	box-sizing: border-box;
+	border: 1px solid $color-bg-secondary;
+	border-radius: 50%;
+	display: block;
+	padding: 0;
+	width: 30px;
+	height: 30px;
+	background-color: transparent;
+
+	background-image: url('../../img/sprite/plus.svg');
+background-repeat: no-repeat;
+// background-size: auto;
+background-position: center;
+	&--active {
+		background-color: $color-bg-secondary;
+		background-image: url('../../img/sprite/minus.svg');
+
+
 	}
 }

@@ -46,14 +46,15 @@
 				<h2 class="about__title title-section">Тренажёрный зал</h2>
 				<p class="about__subtitle subtitle">Просторный зал площадью 900 кв/м</p>
 				<p class="about__text text-basic-M">
-					Supergym – самый большой фитнес центр за&nbsp;Уралом и идеальное место для укрепления тела и здоровья. Тренажёрный
-					зал оснащён всем необходимым современным оборудованием для всех спортсменов.
+					Supergym – самый большой фитнес центр за&nbsp;Уралом и идеальное место для укрепления тела и здоровья.
+					Тренажёрный
+					зал оснащён всем необходимым современным оборудованием для&nbsp;всех спортсменов.
 				</p>
 			</div>
 
 			<img class="about__img" src="./img/main-img_mob.jpg" alt="Тренажёрный зал" width="320" height="280">
-	
-			<video class="about__video" src="" width="320" height="170"  poster="./img/video_mob.jpg"></video>
+
+			<video class="about__video" src="" width="320" height="170" poster="./img/video_mob.jpg"></video>
 		</section>
 
 		<section class="container price" data-test="price">
@@ -79,21 +80,21 @@
 				<li class="price__card card">
 					<h3 class="title-price">С тренером</h3>
 					<p class="text-basic-M">12 занятий</p>
-					<p class="card__prise-shadow text-number-M" data-tip="5000">5000 <span class="ruble-symbol">₽</span></p>
+					<p class="card__prise-shadow text-number-M" data-tip="5000">5000 <span class="card__ruble-symbol"></span></p>
 					<a class="button button--color-dark text-btn-M" href="#">Купить абонемент</a>
 				</li>
 
 				<li class="price__card card">
 					<h3 class="title-price">Дневной</h3>
 					<p class="text-basic-M">с 8:00 до 17:00</p>
-					<p class="card__prise-shadow text-number-M" data-tip="1700">1700 <span class="ruble-symbol">₽</span></p>
+					<p class="card__prise-shadow text-number-M" data-tip="1700">1700 <span class="card__ruble-symbol"></span></p>
 					<a class="button button--color-dark  text-btn-M" href="#">Купить абонемент</a>
 				</li>
 
 				<li class="price__card card">
 					<h3 class="title-price">Полный день</h3>
 					<p class="text-basic-M">с 8:00 до 22:00</p>
-					<p class="card__prise-shadow text-number-M" data-tip="2700">2700 <span class="ruble-symbol">₽</span></p>
+					<p class="card__prise-shadow text-number-M" data-tip="2700">2700 <span class="card__ruble-symbol"></span></p>
 					<a class="button  button--color-dark text-btn-M" href="#">Купить абонемент</a>
 				</li>
 			</ul>
@@ -104,22 +105,28 @@
 				<div class="games__wrapp">
 					<h2 class="title-super text-invert ">Super games</h2>
 
-					<div>
-						<p class="text-basic-L text-invert">Дата</p>
-						<div class="games__wrapp">
+					<dl class="games__link">
+						<dt class="games__term">
+							<p class="text-basic-L text-invert">Дата</p>
+						</dt>
+
+						<dd class="games__definition">
 							<p class="text-number-R text-invert">7</p>
 							<p class="text-basic-S text-invert">
 								Марта
 								<span>2019</span>
 							</p>
-						</div>
+						</dd>
 
-						<p class="text-basic-L text-invert">Время</p>
-						<p class="text-number-R text-invert">12:00</p>
-					</div>
+						<dt class="games__term">
+							<p class="text-basic-L text-invert">Время</p>
+						</dt>
+						<dd class="games__definition">
+							<p class="text-number-R text-invert">12:00</p>
+						</dd>
+					</dl>
 				</div>
-
-				<p class="games__text text-basic-L text-invert">Ежегодные соревнования по CrossFit</p>
+				<p class="games__text text-basic-L text-invert">Ежегодные соревнования по&nbsp;CrossFit</p>
 
 				<a class="button text-btn-M text-invert" href="#">заполнить заявку</a>
 			</div>
@@ -133,22 +140,22 @@
 			<ul class="juri__list">
 				<li class="juri__card">
 					<img class="juri__img" src="./img/juri_1_mob.jpg" alt="Анна Павлова" width="260" height="300">
-					<p>Анна Павлова</p>
+					<p class="juri__name text-juri">Анна Павлова</p>
 				</li>
 
 				<li class="juri__card juri__card--tabl">
 					<img class="juri__img" src="./img/juri_2_mob.jpg" alt="Алексей Лавров" width="260" height="300">
-					<p>Алексей Лавров</p>
+					<p class="juri__name text-juri">Алексей Лавров</p>
 				</li>
 
 				<li class="juri__card juri__card--desk">
 					<img class="juri__img" src="./img/juri_3_mob.jpg" alt="Александр Пашков" width="260" height="300">
-					<p>Александр Пашков</p>
+					<p class="juri__name text-juri">Александр Пашков</p>
 				</li>
 
 				<li class="juri__card juri__card--desk">
 					<img class="juri__img" src="./img/juri_4_mob.jpg" alt="Мария Кетова" width="260" height="300">
-					<p>Мария Кетова</p>
+					<p class="juri__name text-juri">Мария Кетова</p>
 				</li>
 			</ul>
 
@@ -163,8 +170,8 @@
 
 			<ul class="features__list">
 				<li class="features__item">
-					<p class="features__dl text-number-L">900
-						<span class="features__dt text-basic-S">кв/м</span>
+					<p class="features__digit text-number-L">900
+						<span class="features__name text-name">кв/м</span>
 					</p>
 					<div>
 						<h3 class="features__subtitle subtitle">Площадь</h3>
@@ -173,8 +180,8 @@
 				</li>
 
 				<li class="features__item">
-					<p class="features__dl text-number-L">70
-						<span class="features__dt text-basic-S">машин </span>
+					<p class="features__digit text-number-L">70
+						<span class="features__name text-name">машин </span>
 					</p>
 
 					<div>
@@ -185,8 +192,8 @@
 
 				<li class="features__item-wrapp">
 					<div class="features__item-dark">
-						<p class="features__dl features__subtitle text-number-L text-invert">100
-							<span class="features__dt text-basic-S text-invert">Тренажёров </span>
+						<p class="features__digit  features__subtitle text-number-L text-invert">100
+							<span class="features__name features__name--invert text-offer text-invert">Тренажёров </span>
 						</p>
 
 						<p class="text-basic-M text-invert">Современные тренажёры на все группы мышц</p>
@@ -194,8 +201,8 @@
 				</li>
 
 				<li class="features__item">
-					<p class="features__dl text-number-L">350
-						<span class="features__dt text-basic-S">мест</span>
+					<p class="features__digit text-number-L">350
+						<span class="features__name text-name">мест</span>
 					</p>
 
 					<div>
@@ -205,8 +212,8 @@
 				</li>
 
 				<li class="features__item">
-					<p class="features__dl text-number-L">5+
-						<span class="features__dt text-basic-S">лет</span>
+					<p class="features__digit  text-number-L">5+
+						<span class="features__name text-name">лет</span>
 					</p>
 
 					<div>
@@ -226,7 +233,7 @@
 					<div class="offers__bid">
 						<p class="offers__text text-offer text-invert">Год</p>
 						<p class="offers__number text-number-L text-invert">4999</p>
-						<p class="text-basic-L text-invert">Безлимитный абонемент в тренажёрный зал</p>
+						<p class="text-basic-L text-invert">Безлимитный абонемент <br> в тренажёрный зал</p>
 						<a class="offers__link text-btn-L text-invert" href="#">подробнее</a>
 					</div>
 
@@ -237,13 +244,13 @@
 					<li class="offers__item">
 						<h3 class="text-offer">Месяц бесплатно</h3>
 						<p class="text-basic-M">Приведи друга, получи абонемент в подарок</p>
-						<a class="text-btn-L" href="#">подробнее</a>
+						<a class="offers__link offers__link--color  text-btn-L" href="#">подробнее</a>
 					</li>
 
 					<li class="offers__item">
 						<h3 class="text-offer">Скидка 20%</h3>
 						<p class="text-basic-M">Корпоративный фитнес с командой</p>
-						<a class="text-btn-L" href="#">подробнее</a>
+						<a class="offers__link offers__link--color  text-btn-L" href="#">подробнее</a>
 					</li>
 				</ul>
 			</div>
@@ -273,25 +280,42 @@
 
 				<ul class="faq__list-faq">
 					<li class="faq__item-faq">
-						<h3 class="faq__title-faq title-faq">Как стать членом фитнес-центра?</h3>
+						<div class="faq__wrapp-title">
+							<h3 class="faq__title-faq faq__title-faq--1 title-faq">Как стать членом фитнес-центра?</h3>
+							<button class="faq__btn faq__btn--active" type="button">
+								<span class="visually-hidden">Открыть-закрыть</span>
+							</button>
+						</div>
 						<p class="faq__text text-basic-L">При первом посещении и покупке абонемента, необходимо заполнить анкету и
 							подписать договор. При покупке
 							абонемента онлайн, анкета также заполняется онлайн и договор придёт вам на почту.</p>
 					</li>
 
 					<li class="faq__item-faq">
-						<h3 class="faq__title-faq title-faq">Где можно посмотреть расписание?</h3>
-						<p></p>
+						<div class="faq__wrapp-title">
+							<h3 class="faq__title-faq title-faq">Где можно посмотреть расписание?</h3>
+							<button class="faq__btn " type="button">
+								<span class="visually-hidden">Открыть-закрыть</span>
+							</button>
+						</div>
 					</li>
 
 					<li class="faq__item-faq">
-						<h3 class="faq__title-faq title-faq">Есть кулеры в центре? Предоставляются полотенца?</h3>
-						<p></p>
+						<div class="faq__wrapp-title">
+							<h3 class="faq__title-faq title-faq">Есть кулеры в центре? Предоставляются полотенца?</h3>
+							<button class="faq__btn " type="button">
+								<span class="visually-hidden">Открыть-закрыть</span>
+							</button>
+						</div>
 					</li>
 
 					<li class="faq__item-faq">
-						<h3 class="faq__title-faq title-faq">Сколько тренеров работает в клубе и какова их квалификация?</h3>
-						<p></p>
+						<div class="faq__wrapp-title">
+							<h3 class="faq__title-faq title-faq">Сколько тренеров работает в клубе и какова их квалификация?</h3>
+							<button class="faq__btn " type="button">
+								<span class="visually-hidden">Открыть-закрыть</span>
+							</button>
+						</div>
 					</li>
 				</ul>
 			</div>
@@ -325,11 +349,11 @@
 				<form class="form__form" action="https://echo.htmlacademy.ru/" method="post">
 					<div class="form__wrapp">
 						<label class="form__label" for="">
-							<input class="form__field text-invert" type="text" placeholder="Имя">
+							<input class="form__field text-form" type="text" placeholder="Имя">
 						</label>
 
 						<label class="form__label" for="">
-							<input class="form__field text-invert" type="text" placeholder="Телефон">
+							<input class="form__field text-form" type="text" placeholder="Телефон">
 						</label>
 					</div>
 					<button class="button text-btn-M text-invert" type="submit">отправить</button>
@@ -340,23 +364,23 @@
 				<h2 class="contacts__title title-section">Контакты</h2>
 				<ul class="contacts__list">
 					<li class="contacts__item contacts__item--1">
-						<h3 class="contacts__dl title-contacts">Адрес:</h3>
-						<p class="text-basic-S">г. Омск, ул. 60 лет Октября, 7</p>
+						<h3 class="contacts__name title-contacts">Адрес:</h3>
+						<p class="text-name">г. Омск, ул. 60 лет Октября, 7</p>
 					</li>
 
 					<li class="contacts__item contacts__item--2">
-						<h3 class="contacts__dl title-contacts">График работы:</h3>
-						<p class="text-basic-S">Пн-Вс: с 8:00 до 22:00</p>
+						<h3 class="contacts__name title-contacts">График работы:</h3>
+						<p class="text-name">Пн-Вс: с 8:00 до 22:00</p>
 					</li>
 
 					<li class="contacts__item contacts__item--3">
-						<h3 class="contacts__dl title-contacts">Телефон:</h3>
-						<p class="text-basic-S">8 800 555-55-55</p>
+						<h3 class="contacts__name title-contacts">Телефон:</h3>
+						<p class="text-name">8 800 555-55-55</p>
 					</li>
 
 					<li class="contacts__item   contacts__item--4">
-						<h3 class="contacts__dl title-contacts">Email:</h3>
-						<p class="text-basic-S">oмск@supergym.ru</p>
+						<h3 class="contacts__name title-contacts">Email:</h3>
+						<p class="text-name">oмск@supergym.ru</p>
 					</li>
 				</ul>
 			</section>
@@ -367,23 +391,23 @@
 		<img class="footer__logo" src="./img/sprite/logo_mob.svg" alt="logo" width="100" height="20">
 		<ul class="footer__list-user">
 			<li>
-				<a class="footer__link text-basic-S text-invert" href="#">Услуги</a>
+				<a class="footer__link text-name text-invert" href="#">Услуги</a>
 			</li>
 
 			<li>
-				<a class="footer__link text-basic-S text-invert" href="#">Абонементы </a>
+				<a class="footer__link text-name text-invert" href="#">Абонементы </a>
 			</li>
 
 			<li>
-				<a class="footer__link text-basic-S text-invert" href="#">Акции </a>
+				<a class="footer__link text-name text-invert" href="#">Акции </a>
 			</li>
 
 			<li>
-				<a class="footer__link text-basic-S text-invert" href="#">Тренеры </a>
+				<a class="footer__link text-name text-invert" href="#">Тренеры </a>
 			</li>
 
 			<li>
-				<a class="footer__link text-basic-S text-invert" href="#">Расписание</a>
+				<a class="footer__link text-name  text-invert" href="#">Расписание</a>
 			</li>
 		</ul>
 
@@ -397,8 +421,7 @@
 			</li>
 
 			<li>
-				<a class="footer__social-link footer__social-link--xz" href="#"><span
-						class="visually-hidden">xz</span></a>
+				<a class="footer__social-link footer__social-link--xz" href="#"><span class="visually-hidden">xz</span></a>
 			</li>
 		</ul>
 	</footer>

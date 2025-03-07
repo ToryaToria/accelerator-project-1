@@ -1,6 +1,6 @@
 .games {
-	padding-top: 40px;
-	padding-bottom: 40px;
+	padding-top: 25px;
+	padding-bottom: 25px;
 
 	@include media-tablet {
 		display: flex;
@@ -17,7 +17,7 @@
 .games__color {
 	box-sizing: border-box;
 
-	padding: 40px;
+	padding:  38px 40px 40px;
 	background-color: $color-bg-accent;
 
 	@include media-tablet {
@@ -47,16 +47,43 @@
 	}
 }
 
-.games__wrapp {
-	display: flex;
-}
-
 .games__text {
-	padding-top: 16px;
-	padding-bottom: 16px;
+	margin-bottom: 16px;
 
 	@include media-desktop {
 		padding-top: 30px;
 		padding-bottom: 30px;
 	}
+}
+
+.games__wrapp {
+	display: flex;
+	gap: 37px;
+	margin-bottom: 15px;
+
+}
+.games__link {
+	@include list-reset;
+	width: 56px;
+	@include media-tablet {
+		width: 100px;
+
+	}
+}
+
+.games__term {
+	border-bottom: 1px solid $color-white;
+	padding-bottom: 2px;
+}
+
+.games__definition {
+	padding-top: 2px;
+	padding-bottom: 0;
+	margin-left: 0;
+	display: flex;
+	gap: 3px;
+}
+
+.games__term + .games__definition {
+	padding-bottom: 6px;
 }

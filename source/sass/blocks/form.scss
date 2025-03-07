@@ -11,7 +11,7 @@
 }
 
 .form__title {
-	margin-bottom: 36px;
+	margin-bottom: 34px;
 
 	@include media-tablet {
 		text-align: center;
@@ -24,25 +24,28 @@
 	gap: 36px;
 
 	@include media-tablet {
-				width: 440px;
-				margin: 0 auto;
+		width: 440px;
+		margin: 0 auto;
 	}
 }
 
 .form__field {
-	width: 100%;	
+	width: 100%;
+	margin: 0;
+	padding: 0;
 	height: 27px;
 	border: none;
 	border-bottom: 1px solid $color-divider;
 	background-color: transparent;
-	padding-bottom: 4px;
+	padding-bottom: 1px;
 
 	@include media-tablet {
-	height: 28px;
+		height: 28px;
 	}
 }
 
 .form__label {
+
 	@include media-tablet {
 		flex-grow: 1;
 
@@ -50,11 +53,14 @@
 }
 
 .form__wrapp {
-	@include media-tablet {
 	width: 100%;
 		display: flex;
-	gap: 30px;
+		gap: 34px;
+	flex-direction: column;
 
-	align-items: stretch;
+	@include media-tablet {
+		
+
+		align-items: stretch;
 	}
 }
