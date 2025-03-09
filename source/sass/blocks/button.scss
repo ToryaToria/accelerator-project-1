@@ -10,14 +10,22 @@
 		padding: 25px 10px;
 
 	}
+
 	&--color-dark {
 		padding: 25px 10px;
 
 		border: 2px solid $color-text-base;
-		width: 206px;
-	}
+		width: 100%;
 
+		@include media-tablet {
+			margin-top: 30px;
+		}
+	}
+}
+
+.games__button {
 	@include media-tablet {
-		// padding: 27px 16px;
+		padding-top: 25px;
+		padding-bottom: 25px;
 	}
 }

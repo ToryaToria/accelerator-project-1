@@ -26,6 +26,10 @@
   position: relative;
   z-index: 5;
   text-align: left;
+	@include media-tablet {
+  padding-top: 60px;
+  padding-left: 20px;
+  }
 }
 
 .card__prise-shadow::after {
@@ -59,4 +63,11 @@
   background-repeat: no-repeat;
   background-size: 24px 33px;
   
+
+  @include media-tablet {
+    width: 30px;
+    height: 42px;
+    background-size: 30px 42px;
+
+  }
 }

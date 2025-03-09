@@ -17,11 +17,12 @@
 .games__color {
 	box-sizing: border-box;
 
-	padding:  39px 40px 40px;
+	padding: 39px 40px 40px;
 	background-color: $color-bg-accent;
 
 	@include media-tablet {
 		width: 300px;
+		flex-shrink: 0;
 	}
 
 	@include media-desktop {
@@ -39,6 +40,8 @@
 	@include media-tablet {
 		width: 378px;
 		height: 348px;
+		// flex-grow: 1;
+		// flex-shrink: 0;
 	}
 
 	@include media-desktop {
@@ -49,6 +52,11 @@
 
 .games__text {
 	margin-bottom: 16px;
+
+	@include media-tablet {
+		margin-bottom: 10px;
+
+	}
 
 	@include media-desktop {
 		padding-top: 30px;
@@ -61,13 +69,20 @@
 	gap: 37px;
 	margin-bottom: 15px;
 
+	@include media-tablet {
+		gap: 0;
+		margin-bottom: 0;
+
+	}
 }
+
 .games__link {
 	@include list-reset;
 	width: 56px;
+
 	@include media-tablet {
 		width: 100px;
-
+		flex-shrink: 0;
 	}
 }
 
@@ -82,8 +97,22 @@
 	margin-left: 0;
 	display: flex;
 	gap: 3px;
+
+	@include media-tablet {
+	align-items: center;
+	gap: 6px;
+	}
 }
 
-.games__term + .games__definition {
+.games__term+.games__definition {
 	padding-bottom: 6px;
+
+	@include media-tablet {
+		padding-bottom: 9px;
+
+	}
+}
+
+.games__year {
+	display: block;
 }

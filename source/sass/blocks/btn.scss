@@ -2,9 +2,15 @@
 	display: none;
 
 	@include media-tablet {
+		display: block;
 		display: flex;
 		justify-content: space-between;
-		align-items: center;
+		position: absolute;
+		width: 100%;
+		top: 50%;
+		left: 0;
+		
+		transform: translate(0, -50%);
 	}
 }
 
@@ -23,8 +29,14 @@
 
 	background-image: url(../../img/sprite/btn_l.svg);
 
+	@include media-tablet {
+	margin-left: 45px;
+	}
 	&--r {
 		background-image: url(../../img/sprite/btn_r.svg);
+		@include media-tablet {
+			margin-right: 45px;
+			}
 	}
 }
 

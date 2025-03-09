@@ -24,7 +24,7 @@
 
 	@include media-tablet {
 		margin-bottom: 20px;
-
+		text-align: center;
 	}
 
 	@include media-desktop {
@@ -38,14 +38,14 @@
 	margin-bottom: 36px;
 	text-align: left;
 
-
 	@include media-tablet {
-		margin-bottom: 12px;
+		text-align: center;
 
 	}
 
 	@include media-desktop {
 		text-align: left;
+		margin-bottom: 12px;
 
 	}
 }
