@@ -5,8 +5,7 @@
 	border: 2px solid $color-white;
 	background-color: transparent;
 
-
-	&--card {
+		&--card {
 		padding: 25px 10px;
 
 	}
@@ -19,7 +18,7 @@
 		width: 100%;
 
 		@include media-tablet {
-			margin-top: 30px;
+			margin-top: 0;
 		}
 	}
 }

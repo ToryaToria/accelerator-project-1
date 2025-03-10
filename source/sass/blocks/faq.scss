@@ -16,7 +16,7 @@
 }
 
 .faq__title {
-	margin-bottom: 35px;
+	margin-bottom: 34px;
 	text-align: center;
 
 	@include media-tablet {
@@ -54,7 +54,7 @@
 
 .faq__list-faq {
 	@include list-reset;
-	margin-top: 34px;
+	margin-top: 35px;
 	border-bottom: 1px solid $color-divider;
 
 	@include media-tablet {
@@ -68,21 +68,24 @@
 }
 
 .faq__text {
-	padding-bottom: 20px;
+	// padding-bottom: 20px;
 	margin-right: 52px;
 
 	@include media-tablet {
-		margin-bottom: 23px;
+		// margin-bottom: 3px;
+		margin-right: 118px;
 	}
 }
 
 .faq__item-faq {
 	padding-top: 20px;
-	
+	margin-bottom: 20px;
+
 	border-top: 1px solid $color-divider;
 
 	@include media-tablet {
 		padding-top: 23px;
+		margin-bottom: 23px;
 	}
 }
 
@@ -91,6 +94,13 @@
 	align-items: center;
 	margin-bottom: 20px;
 
+	@include media-tablet {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-bottom: 10px;
+	}
+
 }
 
 .faq__title-faq {
@@ -98,12 +108,11 @@
 	margin-right: 20px;
 
 	&--1 {
- padding-right: 35px;
-
+		padding-right: 35px;
 	}
 
 	@include media-tablet {
-		margin-bottom: 10px;
+		margin-right: 0;
 	}
 }
 
@@ -119,13 +128,19 @@
 	background-color: transparent;
 
 	background-image: url('../../img/sprite/plus.svg');
-background-repeat: no-repeat;
-// background-size: auto;
-background-position: center;
+	background-repeat: no-repeat;
+	// background-size: auto;
+	background-position: center;
+
 	&--active {
 		background-color: $color-bg-secondary;
 		background-image: url('../../img/sprite/minus.svg');
-
-
 	}
+
+	@include media-tablet {
+		width: 40px;
+		height: 40px;
+		margin-left: 138px;
+	}
+
 }

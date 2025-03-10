@@ -23,6 +23,8 @@
 	@include media-tablet {
 		width: 300px;
 		flex-shrink: 0;
+		padding: 40px;
+
 	}
 
 	@include media-desktop {

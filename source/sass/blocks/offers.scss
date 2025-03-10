@@ -18,7 +18,7 @@
 	text-align: center;
 
 	@include media-tablet {
-		margin-bottom: 35px;
+		margin-bottom: 34px;
 	}
 
 	@include media-desktop {
@@ -28,9 +28,9 @@
 
 .offers__wrapper {
 	@include media-desktop {
-	display: flex;
-	gap: 40PX;
-	align-items: flex-end;
+		display: flex;
+		gap: 40PX;
+		align-items: flex-end;
 	}
 }
 
@@ -71,8 +71,9 @@
 	margin-bottom: 9px;
 
 	color: $color-white;
-		@include media-tablet {
-		margin-bottom: 20px;
+
+	@include media-tablet {
+		margin-bottom: 21px;
 		font-size: 24px;
 		line-height: 24px;
 	}
@@ -94,8 +95,13 @@
 }
 
 .offers__text {
+	color: $color-bg-secondary;
+
+	&--invert {
+		color: $color-white;
+	}
 	@include media-tablet {
-	text-align: left;
+		text-align: left;
 	}
 }
 
@@ -106,11 +112,16 @@
 	text-decoration: none;
 	border-bottom: 1px solid $color-white;
 	align-self: center;
+	color: $color-bg-secondary;
 
-&--color {
-	margin-top: 0;
-	border-bottom: 1px solid $color-divider;
-}
+	&--invert {
+		color: $color-white;
+	}
+
+	&--color {
+		margin-top: 0;
+		border-bottom: 1px solid $color-divider;
+	}
 
 	@include media-tablet {
 		margin-top: auto;
@@ -140,7 +151,7 @@
 	display: flex;
 	flex-direction: column;
 	gap: 30px;
-	
+
 
 	@include media-tablet {
 		flex-direction: row;
@@ -150,7 +161,7 @@
 
 	@include media-desktop {
 		flex-direction: column;
-		}
+	}
 }
 
 .offers__item {
@@ -160,6 +171,9 @@
 	padding: 20px;
 	border: 7px solid $color-bg-accent;
 
+	border-image: linear-gradient(155deg, #ED0233, #003EB7 95%);
+	border-image-slice: 7;
+	/* Равно толщине рамки */
 	display: flex;
 	flex-direction: column;
 	gap: 20px;
@@ -167,5 +181,13 @@
 	@include media-tablet {
 		width: 324px;
 		text-align: left;
+		gap: 10px;
+		padding: 20px 20px 19px;
+	}
+}
+
+.offers__text {
+	@include media-tablet {
+		margin-bottom: 21px;
 	}
 }

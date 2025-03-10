@@ -1,24 +1,28 @@
-.form {
+.request {
 	box-sizing: border-box;
-	padding-top: 70px;
+	padding-top: 71px;
 	padding-bottom: 70px;
 	background-color: $color-text-base;
 
 	@include media-tablet {
-		padding-top: 60px;
+		padding-top: 59px;
 		padding-bottom: 60px;
 	}
 }
 
-.form__title {
+.request__title {
 	margin-bottom: 34px;
 
 	@include media-tablet {
 		text-align: center;
+		font-size: 54px;
+		line-height: 54px;
+		margin-bottom: 33px;
+
 	}
 }
 
-.form__form {
+.request__form {
 	display: flex;
 	flex-direction: column;
 	gap: 36px;
@@ -26,10 +30,12 @@
 	@include media-tablet {
 		width: 440px;
 		margin: 0 auto;
+		gap: 36px;
+
 	}
 }
 
-.form__field {
+.request__field {
 	width: 100%;
 	margin: 0;
 	padding: 0;
@@ -44,23 +50,29 @@
 	}
 }
 
-.form__label {
+.request__label {
 
 	@include media-tablet {
 		flex-grow: 1;
-
 	}
 }
 
-.form__wrapp {
+.request__wrapp {
 	width: 100%;
 		display: flex;
 		gap: 34px;
 	flex-direction: column;
 
 	@include media-tablet {
-		
-
+		flex-direction: row;
 		align-items: stretch;
+		gap: 31px;
+
 	}
 }
+
+	.request__btn {
+		@include media-tablet {
+padding: 25px 10px;	
+	}
+	}

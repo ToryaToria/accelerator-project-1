@@ -1,5 +1,5 @@
 .contacts {
-	padding-top: 37px;
+	padding-top: 36px;
 	padding-bottom: 40px;
 
 	@include media-tablet {
@@ -8,16 +8,18 @@
 	}
 
 	@include media-desktop {
-	border-top: 1px solid $color-divider;
+		border-top: 1px solid $color-divider;
 	}
 }
 
 .contacts__title {
-	margin-bottom: 38px;
+	margin-bottom: 32px;
 
 	@include media-tablet {
 		margin-bottom: 36px;
 		text-align: center;
+		font-size: 54px;
+		line-height: 54px;
 	}
 }
 
@@ -25,7 +27,7 @@
 	@include list-reset;
 	display: flex;
 	flex-direction: column;
-	gap: 28px;
+	gap: 22px;
 
 	@include media-tablet {
 		width: 440px;
@@ -42,7 +44,7 @@
 
 	@include media-tablet {
 		width: 220px;
-		padding-bottom: 28px;
+		padding-bottom: 16px;
 
 		&--1,
 		&--2 {
@@ -75,12 +77,15 @@
 
 		&--4 {
 			order: 3;
-			// background-color: blueviolet;
 
 		}
 	}
 }
 
 .contacts__name {
-	margin-bottom: 12px;
+	margin-bottom: 8px;
+
+	@include media-tablet {
+		margin-bottom: 6px;
+	}
 }

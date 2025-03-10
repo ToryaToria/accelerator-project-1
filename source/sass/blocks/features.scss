@@ -19,7 +19,7 @@
 	margin-bottom: 40px;
 
 	@include media-tablet {
-		margin-bottom: 50px;
+		margin-bottom: 51px;
 	}
 }
 
@@ -82,11 +82,11 @@
 	color: $color-white;
 	background-color: $color-bg-secondary;
 
-	// @include media-tablet {
-	// 	margin-left: 179px;
-	// 	margin-right: 179px;	
-	// 	padding: 35px;
-	// }
+	@include media-tablet {
+		margin-left: 179px;
+		margin-right: 179px;	
+		padding: 35px;
+	}
 
 	@include media-desktop {
 		margin-left: 0;
@@ -103,6 +103,11 @@
 		margin-bottom: 0;
 		color: $color-white;
 
+		@include media-tablet {
+			margin-top: 24px;
+
+		}
+
 	}
 }
 
@@ -116,15 +121,23 @@
 
 .features__digit {
 	margin-bottom: 12px;
+	color: transparent; // задает прозрачный цвет шрифта.
+	background-clip: text; // окрашивает текст в цвет background-image.
+	background-image: linear-gradient(145deg, #ED0233, #003EB7 45%);
+
+
+
 
 	&--dark {
+		color: $color-white;
+	background-image: none;
 		margin-bottom: 20px;
 	}
 	@include media-tablet {
 		margin-bottom: 0;
 
 		&--dark {
-			margin-bottom: 25px;
+			margin-bottom: 26px;
 		}
 	}
 }

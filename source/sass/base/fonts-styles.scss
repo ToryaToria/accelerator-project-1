@@ -74,7 +74,7 @@
 	/* h3 */
 
 	@include font ($family: $font-secondary, $size: 32px, $line-height: 32px, $weight: 600);
-	letter-spacing: -0.005em;
+	// letter-spacing: -0.005em;
 
 
 	@include media-tablet {
@@ -104,14 +104,28 @@
 	}
 
 	@include media-desktop {
-		font-size: 22px;
-		line-height: 22px;
+		font-size: 24px;
+		line-height: 24px;
 	}
 }
 
-.title-faq,
-.title-contacts {
-	/*h5, текст для заголовков в аккордеоне в вопросах и ответах */
+.subtitle-rewiews {
+	@include font ($size: 18px, $line-height: 20px, $weight: 400);
+
+	@include media-tablet {
+		font-size: 22px;
+		line-height: 22px;
+
+	}
+
+	@include media-desktop {
+		font-size: 20px;
+		line-height: 150%;
+	}
+}
+
+.title-faq {
+	/*h5, текст для заголовков в аккордеоне*/
 
 	@include font ($size: 20px, $line-height: 100%);
 
@@ -119,8 +133,24 @@
 		font-size: 22px;
 	}
 
-	@include media-desktop {
+	// @include media-desktop {
+	// 	font-size: 22px;
+	// }
+}
+
+.title-contacts {
+	/*h5, текст для заголовков в аккордеоне в вопросах и ответах */
+
+	@include font ($size: 20px, $line-height: 150%);
+
+	@include media-tablet {
 		font-size: 24px;
+		line-height: 24px;
+	}
+
+	@include media-desktop {
+		font-size: 16px;
+		line-height: 150%;
 	}
 }
 
@@ -149,7 +179,7 @@
 }
 
 .title-price {
-	@include font ($size: 22px, $line-height: 110%, $weight: 700);
+	@include font ($size: 22px, $line-height: 24px, $weight: 700);
 	// text-decoration: none;
 
 	@include media-tablet {
@@ -159,8 +189,7 @@
 }
 
 .text-offer {
-
-	@include font ($size: 22px, $line-height: 22px, $weight: 700);
+	@include font ($size: 22px, $line-height: 22px, $weight: 700,$color: $color-bg-secondary);
 	@include media-tablet {
 				font-size: 26px;
 		line-height: 26px;
