@@ -80,6 +80,8 @@
 	@include media-tablet {
 		font-size: 42px;
 		line-height: 42px;
+		letter-spacing: 0;
+
 
 		&--big {
 			font-size: 54px;
@@ -129,11 +131,10 @@
 }
 
 .text-nav,
-.title-price,
-.text-offer {
+.text-features {
 	/* телефон в меню */
 
-	@include font ($size: 22px, $line-height: 22px, $weight: 600);
+	@include font ($size: 22px, $line-height: 22px, $weight: 700);
 	text-decoration: none;
 
 	@include media-tablet {
@@ -146,6 +147,24 @@
 		line-height: 26px;
 	}
 }
+
+.title-price {
+	@include font ($size: 22px, $line-height: 110%, $weight: 700);
+	// text-decoration: none;
+
+	@include media-tablet {
+		font-size: 24px;
+		// line-height: 26px;
+	}
+}
+
+.text-offer {
+
+	@include font ($size: 22px, $line-height: 22px, $weight: 700);
+	@include media-tablet {
+				font-size: 26px;
+		line-height: 26px;
+	}}
 
 .text-btn-L {
 	/*текст для ссылки */
@@ -187,7 +206,7 @@
 .text-number-L {
 	@include font ($size: 64px, $line-height: 64px, $weight: 700, $color: $color-price);
 
-	@include media-desktop {
+	@include media-tablet {
 		font-size: 70px;
 		line-height: 70px;
 	}

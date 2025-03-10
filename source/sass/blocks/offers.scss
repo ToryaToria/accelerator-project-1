@@ -1,9 +1,9 @@
 .offers {
-	padding-top: 41px;
+	padding-top: 40px;
 	padding-bottom: 40px;
 
 	@include media-tablet {
-		padding-top: 60px;
+		padding-top: 61px;
 		padding-bottom: 60px;
 	}
 
@@ -66,19 +66,36 @@
 }
 
 
-.offers__text {
-	margin-bottom: 8px;
+.offers__year {
+	@include font ($size: 22px, $line-height: 22px, $weight: 700);
+	margin-bottom: 9px;
 
-	@include media-tablet {
-		margin-top: 20px;
+	color: $color-white;
+		@include media-tablet {
+		margin-bottom: 20px;
+		font-size: 24px;
+		line-height: 24px;
+	}
+
+	@include media-desktop {
+		font-size: 26px;
+		line-height: 26px;
 	}
 }
 
 .offers__number {
-	margin-bottom: 28px;
+	margin-bottom: 27px;
 
 	@include media-tablet {
-		margin-top: 40px;
+		// margin-top: 20px;
+		margin-bottom: 40px;
+
+	}
+}
+
+.offers__text {
+	@include media-tablet {
+	text-align: left;
 	}
 }
 
@@ -93,11 +110,11 @@
 &--color {
 	margin-top: 0;
 	border-bottom: 1px solid $color-divider;
-
 }
 
 	@include media-tablet {
 		margin-top: auto;
+		align-self: flex-start;
 	}
 }
 
@@ -149,5 +166,6 @@
 
 	@include media-tablet {
 		width: 324px;
+		text-align: left;
 	}
 }

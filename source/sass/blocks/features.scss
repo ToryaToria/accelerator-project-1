@@ -32,7 +32,7 @@
 
 	@include media-tablet {
 		grid-template-columns: 1fr 1fr;
-		gap: 40px 30px;
+		gap: 41px 30px;
 	}
 
 	@include media-desktop {
@@ -41,12 +41,15 @@
 }
 
 .features__item {
+	box-sizing: border-box;
 	padding-left: 30px;
 	padding-right: 30px;
 
 	@include media-tablet {
 		display: flex;
 		padding-top: 0;
+		padding-left: 0;
+		padding-right: 0;
 		text-align: left;
 		gap: 14px;
 	}
@@ -74,14 +77,16 @@
 }
 
 .features__item-dark {
+	box-sizing: border-box;
 	padding: 30px 75px 40px;
 	color: $color-white;
 	background-color: $color-bg-secondary;
 
-	@include media-tablet {
-		margin-left: 179px;
-		margin-right: 179px;
-	}
+	// @include media-tablet {
+	// 	margin-left: 179px;
+	// 	margin-right: 179px;	
+	// 	padding: 35px;
+	// }
 
 	@include media-desktop {
 		margin-left: 0;
@@ -89,25 +94,37 @@
 	}
 }
 
-.features__digit {
-	margin-bottom: 12px;
-
-	@include media-tablet {
-		margin-bottom: 0;
-	}
-}
-
 .features__name {
 	color: $color-desc;
-
 	display: block;
 
 	&--invert {
-		margin-top: 5px;
-		margin-bottom: 20px;
+		margin-top: 4px;
+		margin-bottom: 0;
+		color: $color-white;
+
 	}
 }
 
 .features__subtitle {
 	margin-bottom: 12px;
+
+	@include media-tablet {
+		margin-bottom: 10px;
+	}
+}
+
+.features__digit {
+	margin-bottom: 12px;
+
+	&--dark {
+		margin-bottom: 20px;
+	}
+	@include media-tablet {
+		margin-bottom: 0;
+
+		&--dark {
+			margin-bottom: 25px;
+		}
+	}
 }
