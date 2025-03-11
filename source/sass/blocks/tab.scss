@@ -7,15 +7,6 @@
 	border: 1px solid $color-line-tab;
 	background-color: $color-white;
 
-	@include media-tablet {
-		width: 162px;
-		height: 54px;
-	}
-
-	@include media-desktop {
-		width: 260px;
-	}
-
 	&--count {
 		padding: 12px 10px 15px;
 		border: none;
@@ -23,4 +14,23 @@
 		background: $linear-gradient-btn;
 		color: $color-white;
 	}
+
+	@include media-tablet {
+		width: 162px;
+		height: 54px;
+	}
+
+	@include media-desktop {
+		width: 260px;
+		// padding: 18px 10px;
+		padding-top: 19px;
+		padding-bottom: 18px;
+
+		&--count {
+			padding-top: 21px;
+
+		}
+	}
+
+
 }

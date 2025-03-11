@@ -8,6 +8,9 @@
 		padding-top: 59px;
 		padding-bottom: 60px;
 	}
+	@include media-desktop {
+		padding-top: 61px;
+	}
 }
 
 .request__title {
@@ -18,7 +21,11 @@
 		font-size: 54px;
 		line-height: 54px;
 		margin-bottom: 34px;
+	}
 
+	@include media-desktop {
+		text-align: left;
+		margin-bottom: 36px;
 	}
 }
 
@@ -31,7 +38,10 @@
 		width: 440px;
 		margin: 0 auto;
 		gap: 36px;
-
+	}
+	@include media-desktop {
+		margin: 0;
+		width: 100%;
 	}
 }
 

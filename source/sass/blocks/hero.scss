@@ -13,6 +13,11 @@
 	@include media-tablet {
 		padding-bottom: 100px; // иcпрваить как всё переделаю на флексы
 	}
+
+	@include media-desktop {
+		padding-bottom: 150px; // иcпрваить как всё переделаю на флексы
+
+	}
 }
 
 .hero__wrapp {

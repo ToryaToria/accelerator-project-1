@@ -24,7 +24,7 @@
 	}
 
 	@include media-desktop {
-		margin-bottom: 70px;
+		margin-bottom: 75px;
 	}
 }
 
@@ -45,6 +45,12 @@
 		width: 500px;
 		display: flex;
 		gap: 40px;
+	}
+
+	@include media-desktop {
+		padding: 60px;
+		width: 560px;
+		gap: 30px;
 	}
 }
 

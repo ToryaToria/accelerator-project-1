@@ -75,6 +75,10 @@
 		// margin-bottom: 3px;
 		margin-right: 118px;
 	}
+
+	@include media-desktop {
+		margin-right: 200px;
+	}
 }
 
 .faq__item-faq {
@@ -86,6 +90,10 @@
 	@include media-tablet {
 		padding-top: 23px;
 		margin-bottom: 23px;
+	}
+
+	@include media-desktop {
+		padding-top: 21px;
 	}
 }
 
@@ -99,6 +107,11 @@
 	justify-content: space-between;
 	align-items: center;
 	margin-bottom: 10px;
+	}
+
+	@include media-desktop {
+		margin-bottom: 24px;
+
 	}
 
 }

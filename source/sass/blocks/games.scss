@@ -67,8 +67,8 @@
 	}
 
 	@include media-desktop {
-		padding-top: 19px;
-		padding-bottom: 19px;
+		padding-top: 23px;
+		padding-bottom: 20px;
 	}
 }
 
@@ -124,6 +124,11 @@
 		align-items: center;
 		gap: 6px;
 		// padding-top: 7px;
+	}
+
+	@include media-desktop {
+		padding-top: 0;
+		align-items: stretch;
 
 	}
 }
@@ -133,6 +138,11 @@
 
 	@include media-tablet {
 		padding-bottom: 10px;
+	}
+
+	@include media-desktop {
+		padding-bottom: 12px;
+
 	}
 }
 

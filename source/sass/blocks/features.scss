@@ -37,6 +37,7 @@
 
 	@include media-desktop {
 		grid-template-columns: 1fr 1fr 1fr;
+		gap: 40px;
 	}
 }
 
@@ -53,9 +54,18 @@
 		text-align: left;
 		gap: 14px;
 	}
+
+	@include media-desktop {
+	justify-content: space-between;
+
+	&--bottom {
+		border-top: 1px solid $color-line;
+		padding-top: 40px;
+	}
+	}
 }
 
-.features__item-wrapp {
+.features__item-container {
 	margin-top: 5px;
 	margin-bottom: 5px;
 	margin-left: -15px;
@@ -72,7 +82,18 @@
 	@include media-desktop {
 		grid-column: span 1;
 		grid-row: span 2;
-		order: -3;
+		// order: -3;
+
+		grid-column-start: 2;
+		grid-column-end: 3;
+		grid-row-start: 1;
+		grid-row-end: 3;
+	}
+}
+
+.features__item-wrapp {
+	@include media-desktop {
+	width: 210px;
 	}
 }
 
@@ -91,6 +112,7 @@
 	@include media-desktop {
 		margin-left: 0;
 		margin-right: 0;
+		padding: 58px 40px;
 	}
 }
 
@@ -105,9 +127,11 @@
 
 		@include media-tablet {
 			margin-top: 24px;
-
 		}
 
+		@include media-desktop {
+			margin-top: 9px;
+		}
 	}
 }
 
@@ -117,6 +141,10 @@
 	@include media-tablet {
 		margin-bottom: 10px;
 	}
+
+	@include media-desktop {
+		margin-bottom: 6px;
+	}
 }
 
 .features__digit {
@@ -125,13 +153,11 @@
 	background-clip: text; // окрашивает текст в цвет background-image.
 	background-image: linear-gradient(145deg, #ED0233, #003EB7 45%);
 
-
-
-
 	&--dark {
 		color: $color-white;
 	background-image: none;
 		margin-bottom: 20px;
+		
 	}
 	@include media-tablet {
 		margin-bottom: 0;
@@ -140,4 +166,12 @@
 			margin-bottom: 26px;
 		}
 	}
+
+	@include media-desktop {
+		&--dark {
+			margin-bottom: 29px;
+		}
+	}
+
+	
 }

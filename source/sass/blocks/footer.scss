@@ -11,6 +11,11 @@
 		// gap: 36px;
 		justify-content: space-between;
 	}
+
+	@include media-desktop {
+		padding-top: 40px;
+		padding-bottom: 40px;
+	}
 }
 
 .footer__logo {
@@ -64,6 +69,10 @@
 	@include media-tablet {
 	gap: 15px;
 	}
+
+	@include media-desktop {
+		gap: 10px;
+		}
 }
 
 .footer__social-link {

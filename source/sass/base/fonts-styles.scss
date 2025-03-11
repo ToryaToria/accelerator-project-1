@@ -24,15 +24,18 @@
 
 	@include media-desktop {
 		line-height: 150%;
+		letter-spacing: 0;
+
 	}
 }
 
-.text-offers {
-	// подзаголовок для акций
-	@include font ($size: 16px, $line-height: 20px, $weight: 300);
+.text-offers  {
+
+	// background-color: blue;
+	@include font ($size: 16px, $line-height: 140%, $weight: 300);
 
 	@include media-tablet {
-		font-size: 18px;
+		// font-size: 18px;
 		line-height: 24px;
 	}
 
@@ -72,6 +75,11 @@
 	@include media-tablet {
 		font-size: 14px;
 		line-height: 22px;
+	}
+
+	@include media-desktop {
+		font-size: 14px;
+		line-height: 28px;
 	}
 }
 
@@ -159,10 +167,10 @@
 
 	}
 
-	@include media-desktop {
-		font-size: 20px;
-		line-height: 150%;
-	}
+	// @include media-desktop {
+	// 	font-size: 20px;
+	// 	line-height: 150%;
+	// }
 }
 
 .title-faq {
@@ -174,24 +182,17 @@
 		font-size: 22px;
 	}
 
-	// @include media-desktop {
-	// 	font-size: 22px;
-	// }
+	@include media-desktop {
+		font-size: 24px;
+	}
 }
 
 .title-contacts {
-	/*h5, текст для заголовков в аккордеоне в вопросах и ответах */
-
-	@include font ($size: 20px, $line-height: 150%);
+	@include font ($size: 20px, $line-height: 20px);
 
 	@include media-tablet {
 		font-size: 24px;
 		line-height: 24px;
-	}
-
-	@include media-desktop {
-		font-size: 16px;
-		line-height: 150%;
 	}
 }
 
@@ -229,7 +230,8 @@
 	}
 }
 
-.text-offer {
+.title-offers {
+		// подзаголовок для акций
 	@include font ($size: 22px, $line-height: 22px, $weight: 700, $color: $color-bg-secondary);
 
 	@include media-tablet {
@@ -254,7 +256,7 @@
 	text-align: center;
 }
 
-.text-btn-N {
+.text-btn-faq {
 	/*текст для табов в вопросах и ответах */
 
 	@include font ($size: 16px, $line-height: 100%);
@@ -263,9 +265,9 @@
 		font-size: 18px;
 	}
 
-	@include media-desktop {
-		font-size: 20px;
-	}
+	// @include media-desktop {
+	// 	font-size: 20px;
+	// }
 }
 
 
@@ -303,7 +305,7 @@
 	}
 	@include media-desktop {
 		font-size: 40px;
-		line-height: 150%;
+		line-height: 142%;
 	}
 }
 
@@ -313,6 +315,9 @@
 
 .text-name {
 	@include font ($size: 14px, $line-height: 20px);
+	@include media-tablet {
+	line-height: 22px;
+	}
 }
 
 .text-form {
