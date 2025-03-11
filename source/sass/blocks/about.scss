@@ -45,7 +45,7 @@
 
 	@include media-desktop {
 		text-align: left;
-		margin-bottom: 12px;
+		margin-bottom: 95px;
 
 	}
 }
@@ -53,6 +53,10 @@
 .about__text {
 	text-align: left;
 	margin-bottom: 36px;
+
+	&--desktop {
+		display: none;
+		}
 
 	@include media-tablet {
 		text-align: center;
@@ -62,8 +66,13 @@
 	}
 
 	@include media-desktop {
-		margin-top: auto;
-		margin-bottom: 0;
+		text-align: left;
+
+		margin: 0;
+		&--desktop {
+			margin-top: 8px;
+			display: block;
+			}
 	}
 }
 
@@ -92,14 +101,12 @@
 		height: 345px;
 		margin-left: 0;
 		margin-bottom: 0;
-
 	}
 
 	@include media-desktop {
 		width: 660px;
 		height: 400px;
 		order: 1;
-
 	}
 }
 
@@ -125,5 +132,13 @@
 		transform: translate(-50%, 0);
 		// right: 0;
 		bottom: 35px;
+	}
+
+	@include media-desktop {
+		width: 360px;
+		height: 230px;
+		left: 50%;
+		
+		bottom: 125px;
 	}
 }

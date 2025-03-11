@@ -10,7 +10,7 @@ box-sizing: border-box;
 	background: $linear-gradient;
 
 	@include media-tablet {
-			padding-bottom: 100px;
+			padding-bottom: 150px; // импрваить как все переделаю на флексы
 	}
 }
 
