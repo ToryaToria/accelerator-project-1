@@ -29,7 +29,7 @@
 		width: 300px;
 		flex-shrink: 0;
 		padding: 40px;
-			}
+	}
 
 	@include media-desktop {
 		width: 500px;
@@ -103,8 +103,12 @@
 	border-bottom: 1px solid $color-white;
 	padding-bottom: 2px;
 
+	@include media-tablet {
+		padding-bottom: 1px;
+	}
+
 	@include media-desktop {
-	padding-bottom: 6px;
+		padding-bottom: 6px;
 	}
 }
 
@@ -117,8 +121,10 @@
 	align-items: flex-start;
 
 	@include media-tablet {
-	align-items: center;
-	gap: 6px;
+		align-items: center;
+		gap: 6px;
+		// padding-top: 7px;
+
 	}
 }
 
@@ -126,7 +132,7 @@
 	padding-bottom: 6px;
 
 	@include media-tablet {
-		padding-bottom: 9px;
+		padding-bottom: 10px;
 	}
 }
 
