@@ -1,5 +1,10 @@
 .text-base {
 	@include font ($size: 14px, $line-height: 20px);
+	// background-color: burlywood;
+	@include media-tablet {
+		line-height: 22px;
+
+	}
 }
 
 .text-faq {
@@ -86,20 +91,20 @@
 .title-main {
 	/* h1 */
 
-	@include font ($family: $font-secondary, $size: 62px, $line-height: 62px, $weight: 700);
-	letter-spacing: 0.01em;
+	@include font ($family: $font-secondary, $size: 62px, $line-height: 62px, $weight: 800);
+	letter-spacing: 0.017em;
 	text-transform: uppercase;
 
 	@include media-tablet {
 		font-size: 72px;
 		line-height: 85px;
-		letter-spacing: 0.025em;
+		letter-spacing: 0.026em;
 	}
 
 	@include media-desktop {
 		font-size: 92px;
 		line-height: 110px;
-		letter-spacing: -0.04em;
+		letter-spacing: 0.045em;
 	}
 }
 
