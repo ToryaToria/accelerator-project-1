@@ -1,0 +1,89 @@
+.video {
+  box-sizing: border-box;
+  width: 320px;
+  height: 170px;
+
+  @include media-tablet {
+    width: 270px;
+
+  }
+
+  @include media-desktop {
+    width: 360px;
+    height: 230px;
+  }
+}
+
+.video__play {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+
+  width: 52px;
+  height: 52px;
+  outline: 2px solid rgba(237, 2, 51, 0.2);
+  border-radius: 50%;
+  border: none;
+  outline-offset: 20px;
+  background-image: linear-gradient(to right, #ED0233, #003EB7);
+
+
+  // transition: scale, opacity 0.3s ease-in-out;
+
+&::before {
+  display: block;
+  content: '';
+  width: 12px;
+  height: 12px;
+  background-image: url('../../img/sprite/play.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: auto;  
+}
+
+   @include media-desktop {
+    width: 72px;
+    height: 72px;
+  }
+
+  &:not(:disabled):hover {
+outline:2px solid rgba(16, 38, 84, 0.6);  
+background-color: $color-white;
+background-image: none;
+}
+
+&:not(:disabled):focus {
+  outline:2px solid $color-text-base;  
+  background-color: $color-bg-play;
+  background-image: none;
+  }
+
+  &:not(:disabled):active {
+    outline:2px solid $color-text-base;  
+    background-color: $color-white;
+    background-image: none;
+  }
+
+  &:disabled {
+    outline:2px solid $color-text-base;  
+    background-color: $color-white;
+    background-image: none;
+    opacity: 0.4;
+  }
+}
+
+
+.video__play-wrapp {
+  width: 100%;
+  height: 100%;
+  z-index: 10;
+
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

@@ -5,7 +5,32 @@
 	border: 2px solid $color-white;
 	background-color: transparent;
 
-		&--card {
+
+	&:hover {
+		color: $color-price;
+		background-color: $color-white;
+	}
+
+	&:focus {
+		color: $color-price;
+
+		opacity: 0.8;
+		background-color: $color-white;
+	}
+
+
+	&:active {
+		color: $color-text-base;
+		background-color: $color-white;
+		opacity: 1;
+	}
+
+&:disabled {
+	opacity: 0.3;
+}
+
+
+	&--card {
 		padding: 25px 10px;
 
 	}
@@ -16,6 +41,31 @@
 
 		border: 2px solid $color-text-base;
 		width: 100%;
+
+
+		&:hover {
+			color: $color-white;
+			background-image: linear-gradient(to left, #003EB7, #ED0233);	
+			border:2px solid transparent;
+	}
+
+		&:focus {
+			color: $color-white;
+			background-image: linear-gradient(to left, #003EB7, #ED0233);	
+border: 2px solid $color-black;
+		}
+	
+	
+		&:active {
+			color:rgba(255, 255, 255, 0.7);
+			background-image: linear-gradient(to left, #003EB7, #ED0233);	
+			border:2px solid transparent;
+opacity: 1;
+		}
+	
+	&:disabled {
+		opacity: 0.5;
+	}
 
 		@include media-tablet {
 			margin-top: 0;

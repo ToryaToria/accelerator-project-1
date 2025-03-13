@@ -73,6 +73,16 @@
 		color: $color-text-base;
 		border-bottom: 2px solid $color-line;
 		opacity: 1;
+
+		// .nav-link-current::after {
+		// 	content: "";
+		// 	position: absolute;
+		// 	height: 2px;
+		// 	right: 16px;
+		// 	left: 16px;
+		// 	bottom: -1px;
+		// 	background-color: #756257;
+		// }
 	}
 }
 

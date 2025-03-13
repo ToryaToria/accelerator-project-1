@@ -153,6 +153,12 @@
 	background-clip: text; // окрашивает текст в цвет background-image.
 	background-image: linear-gradient(145deg, #ED0233, #003EB7 45%);
 
+	// из ТЗ
+// 	background: linear-gradient(128deg, #D10A42 0%, #0041CA 45.58%);
+// background-clip: text;
+// -webkit-background-clip: text;
+// -webkit-text-fill-color: transparent;
+
 	&--dark {
 		color: $color-white;
 	background-image: none;

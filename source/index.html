@@ -22,7 +22,7 @@
 
 			<img class="hero__logo" src="./img/sprite/logo_mob.svg" alt="логотипчик" width="100" height="20">
 
-			<a class="hero__tel text-nav text-invert" href="#">8 800 555-55-55</a>
+			<a class="hero__tel text-nav text-invert" href="tel:88005555555">8 800 555-55-55</a>
 		</div>
 
 		<div class="hero__contein1">
@@ -39,11 +39,24 @@
 					<h1 class="hero__title title-main text-invert">
 						Фитнес <br> центр
 					</h1>
-								</div>
-								<a class="hero__button button text-btn-M text-invert" href="#">Купить абонемент</a>
 				</div>
+				<a class="hero__button button text-btn-M text-invert" href="#price">Купить абонемент</a>
+			</div>
 
-				<img class="hero__img" src="./img/hero-img_tab.jpg" alt="тренер" width="324" height="390">
+			<picture class="hero__img">
+				<source type="image/webp" media="(min-width: 1366px)" srcset="./img/hero/hero-img_deskt@1x.webp 1x,
+            ./img/hero/hero-img_deskt@2x.webp 2x" width="500" height="524">
+
+				<source type="image/webp" srcset="./img/hero/hero-img_tabl@1x.webp 1x,
+          ./img/hero/hero-img_tabl@2x.webp 2x" width="324" height="390">
+
+				<source type="image/jpg" media="(min-width:1366px)" srcset="./img/hero/hero-img_deskt@1x.jpg 1x,
+          ./img/hero/hero-img_deskt@2x.jpg 2x" width="500" height="524">
+
+
+				<img class="hero__img" src="./img/hero/hero-img_tabl@1x.jpg" srcset="./img/hero/hero-img_tabl@2x.jpg 2x"
+					alt="тренер" width="324" height="390">
+			</picture>
 		</div>
 	</header>
 
@@ -62,14 +75,50 @@
 				</p>
 			</div>
 
-			<img class="about__img" src="./img/main-img_mob.jpg" alt="Тренажёрный зал" width="320" height="280">
 
-			<video class="about__video" src="" width="320" height="170" poster="./img/video_mob.jpg"></video>
+			<picture>
+				<source type="image/webp" media="(min-width: 1366px)" srcset="./img/main/main-img_deskt@1x.webp 1x,
+					./img/main/main-img_deskt@2x.webp 2x" width="360" height="230">
 
-			<!-- <div class="about__video" src="" width="320" height="170" poster="./img/video_mob.jpg"></div> -->
+				<source type="image/webp" media="(min-width: 768px)" srcset="./img/main/main-img_tabl@1x.webp 1x,
+					./img/main/main-img_tabl@2x.webp 2x" width="270" height="170">
+
+				<source type="image/webp" srcset="./img/main/main-img_mob@1x.webp 1x,
+				./img/main/main-img_mob@2x.webp 2x" width="320" height="280">
+
+				<source type="image/jpg" media="(min-width:1366px)" srcset="./img/main/main-img_deskt@1x.jpg 1x,
+				./img/main/main-img_deskt@2x.jpg 2x" width="360" height="230">
+
+				<source type="image/jpg" media="(min-width:768px)" srcset="./img/main/main-img_tabl@1x.jpg 1x,
+				./img/main/main-img_tabl@2x.jpg 2x" width="270" height="170">
+
+				<img class="about__img" src="./img/main/main-img_mob@1x.jpg" srcset="./img/main/main-img_mob@2x.jpg 2x"
+					alt="Тренажёрный зал" width="320" height="280">
+			</picture>
+
+			<div class="about__video">
+				<video class="video" poster="./img/video.jpg">
+
+					<!-- width="260" height="150" controls -->
+
+					<source src="./video/rabbit320.webm" type="video/webm">
+					<source src="./video/rabbit320.mp4" type="video/mp4">
+					<source src="./video/rabbit320.ogv" type="video/ogg">
+					<source src="./video/rabbit320.avi" type="video/avi">
+					<p> Простите, но ваш браузер не поддерживает встроенные видео.
+						Попробуйте скачать видео <a href="./video/rabbit320.webm">по этой ссылке</a>
+						и открыть его на своём устройстве.
+					</p>
+				</video>
+
+				<div class="video__play-wrapp">
+					<button class="video__play" type="button">
+						<span class="visually-hidden">кнопка пуск</span>
+					</button>
+				</div>
 		</section>
 
-		<section class="price container" data-test="price">
+		<section class="price container" data-test="price" id="price">
 			<h2 class="price__title title-section">Абонементы</h2>
 
 			<ul class="price__month text-btn-month">
@@ -143,29 +192,76 @@
 				<a class="games__button button text-btn-M text-invert" href="#">заполнить заявку</a>
 			</div>
 
-			<img class="games__img" src="./img/games_mob.jpg" alt="спортмен" width="290" height="290">
+
+			<picture>
+				<source type="image/webp" media="(min-width: 1366px)" srcset="./img/games/games_deskt@1x.webp 1x,
+					./img/games/games_deskt@2x.webp 2x" width="660" height="500">
+
+				<source type="image/webp" media="(min-width: 768px)" srcset="./img/games/games_tabl@1x.webp 1x,
+					./img/games/games_tabl@2x.webp 2x" width="378" height="348">
+
+				<source type="image/webp" srcset="./img/games/games_mob@1x.webp 1x,
+				./img/games/games_mob@2x.webp 2x" width="290" height="290">
+
+				<source type="image/jpg" media="(min-width:1366px)" srcset="./img/games/games_deskt@1x.jpg 1x,
+				./img/games/games_deskt@2x.jpg 2x" width="660" height="500">
+
+				<source type="image/jpg" media="(min-width:768px)" srcset="./img/games/games_tabl@1x.jpg 1x,
+				./img/games/games_tabl@2x.jpg 2x" width="378" height="348">
+
+				<img class="games__img" src="./img/games/games_mob@1x.jpg" srcset="./img/games/games_mob@2x.jpg 2x"
+					alt="спортсмен" width="290" height="290">
+			</picture>
 		</section>
 
 		<section class="juri container" data-test="juri">
 			<h2 class="juri__title title-section title-section--big">Жюри</h2>
 			<ul class="juri__list">
 				<li class="juri__card">
-					<img class="juri__img" src="./img/juri_1_mob.jpg" alt="Анна Павлова" width="260" height="300">
+
+					<picture>
+						<source type="image/webp" srcset="./img/iuri/juri-anna_mob@1x.webp 1x,
+						./img/iuri/juri-anna_mob@2x.webp 2x" width="260" height="300">
+
+						<img class="juri__img" src="./img/iuri/juri-anna_mob@1x.jpg" srcset="./img/iuri/juri-anna_mob@2x.jpg 2x"
+							alt="Анна Павлова" width="260" height="300">
+					</picture>
+
 					<p class="juri__name text-juri">Анна Павлова</p>
 				</li>
 
 				<li class="juri__card juri__card--tabl">
-					<img class="juri__img" src="./img/juri_2_mob.jpg" alt="Алексей Лавров" width="260" height="300">
+					<picture>
+						<source type="image/webp" srcset="./img/iuri/juri-lavr_mob@1x.webp 1x,
+						./img/iuri/juri-lavr_mob@2x.webp 2x" width="260" height="300">
+
+						<img class="juri__img" src="./img/iuri/juri-lavr_mob@1x.jpg" srcset="./img/iuri/juri-lavr_mob@2x.jpg 2x"
+							alt="Алексей Лавров" width="260" height="300">
+					</picture>
+
 					<p class="juri__name text-juri">Алексей Лавров</p>
 				</li>
 
 				<li class="juri__card juri__card--desk">
-					<img class="juri__img" src="./img/juri_3_mob.jpg" alt="Александр Пашков" width="260" height="300">
+					<picture>
+						<source type="image/webp" srcset="./img/iuri/juri-pash_mob@1x.webp 1x,
+						./img/iuri/juri-pash_mob@2x.webp 2x" width="260" height="300">
+
+						<img class="juri__img" src="./img/iuri/juri-pash_mob@1x.jpg" srcset="./img/iuri/juri-pash_mob@2x.jpg 2x"
+							alt="Александр Пашков" width="260" height="300">
+					</picture>
+
 					<p class="juri__name text-juri">Александр Пашков</p>
 				</li>
 
 				<li class="juri__card juri__card--desk">
-					<img class="juri__img" src="./img/juri_4_mob.jpg" alt="Мария Кетова" width="260" height="300">
+					<picture>
+						<source type="image/webp" srcset="./img/iuri/juri-mari_mob@1x.webp 1x,
+						./img/iuri/juri-mari_mob@2x.webp 2x" width="260" height="300">
+
+						<img class="juri__img" src="./img/iuri/juri-mari_mob@1x.jpg" srcset="./img/iuri/juri-mari_mob@2x.jpg 2x"
+							alt="Мария Кетова" width="260" height="300">
+					</picture>
 					<p class="juri__name text-juri">Мария Кетова</p>
 				</li>
 			</ul>
@@ -248,7 +344,25 @@
 						<a class="offers__link offers__link--invert text-btn-L" href="#">подробнее</a>
 					</div>
 
-					<img class="offers__img" src="./img/girl-img_mob.jpg" alt="стройная девушка" width="320" height="360">
+					<picture>
+						<source type="image/webp" media="(min-width: 1366px)" srcset="./img/girl/girl_deskt@1x.webp 1x,
+							./img/girl/girl_deskt@2x.webp 2x" width="280" height="460">
+
+						<source type="image/webp" media="(min-width: 768px)" srcset="./img/girl/girl_tabl@1x.webp 1x,
+							./img/girl/girl_tabl@2x.webp 2x" width="400" height="462">
+
+						<source type="image/webp" srcset="./img/girl/girl_mob@1x.webp 1x,
+						./img/girl/girl_mob@2x.webp 2x" width="320" height="360">
+
+						<source type="image/jpg" media="(min-width:1366px)" srcset="./img/girl/girl_deskt@1x.jpg 1x,
+						./img/girl/girl_deskt@2x.jpg 2x" width="280" height="460">
+
+						<source type="image/jpg" media="(min-width:768px)" srcset="./img/girl/girl_tabl@1x.jpg 1x,
+						./img/girl/girl_tabl@2x.jpg 2x" width="400" height="462">
+
+						<img class="offers__img" src="./img/girl/girl_mob@1x.jpg" srcset="./img/girl/girl_mob@2x.jpg 2x"
+							alt="стройная девушка" width="320" height="360">
+					</picture>
 				</div>
 
 				<ul class="offers__list">
@@ -336,7 +450,16 @@
 			<h2 class="reviews__title title-section">Отзывы</h2>
 			<ul class="reviews__list">
 				<li class="reviews__item">
-					<img class="reviews__img" src="./img/ava_1_mob.jpeg" alt="Анна Орлова" width="68" height="68">
+
+
+					<picture>
+						<source type="image/webp" srcset="./img/avatar/avatar_mob@1x.webp 1x,
+						./img/avatar/avatar_mob@2x.webp 2x" width="68" height="68">
+
+						<img class="reviews__img" src="./img/avatar/avatar_mob@1x.jpeg" srcset="./avatar/avatar_mob@2x.jpg 2x"
+							alt="Анна Орлова" width="68" height="68">
+					</picture>
+
 					<div>
 						<h3 class="reviews__subtitle subtitle-rewiews text-invert">Анна Орлова</h3>
 						<p class="reviews__text text-basic-M text-invert">
