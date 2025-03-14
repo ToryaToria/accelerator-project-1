@@ -85,9 +85,11 @@
 
 .about__img {
 	display: block;
-	width: 290px;
-	height: 290px;
+	width: 320px;
+	height: 280px;
 	margin-bottom: 36px;
+	margin-left: -15px;
+	margin-right: -15px;
 
 	@include media-tablet {
 		width: 678px;

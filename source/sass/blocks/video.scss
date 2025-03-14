@@ -15,61 +15,103 @@
 }
 
 .video__play {
+  position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
   box-sizing: border-box;
+  background-color: transparent;
+  width: 72px;
+  height: 72px;
 
-  width: 52px;
-  height: 52px;
-  outline: 2px solid rgba(237, 2, 51, 0.2);
+  border: 2px solid rgba(237, 2, 51, 0.2);
   border-radius: 50%;
-  border: none;
-  outline-offset: 20px;
-  background-image: linear-gradient(to right, #ED0233, #003EB7);
 
+  &::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 
-  // transition: scale, opacity 0.3s ease-in-out;
+    display: block;
+    width: 52px;
+    height: 52px;
+    border-radius: 50%;
 
-&::before {
-  display: block;
-  content: '';
-  width: 12px;
-  height: 12px;
-  background-image: url('../../img/sprite/play.svg');
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: auto;  
-}
+    background-image: linear-gradient(to right, #ED0233, #003EB7);
+  }
 
-   @include media-desktop {
+  &::after {
+    content: '';
+    z-index: 5;
+    display: block;
+    width: 12px;
+    height: 12px;
+    background-color: $color-white;
+
+    mask-image: url('../../__spritemap#sprite-play-view');
+    mask-repeat: no-repeat;
+    mask-position: center;
+    mask-size: auto;
+  }
+
+  @include media-desktop {
     width: 72px;
     height: 72px;
   }
 
   &:not(:disabled):hover {
-outline:2px solid rgba(16, 38, 84, 0.6);  
-background-color: $color-white;
-background-image: none;
-}
+    border: 2px solid $color-text-base-60;
 
-&:not(:disabled):focus {
-  outline:2px solid $color-text-base;  
-  background-color: $color-bg-play;
-  background-image: none;
+    &::before {
+      background-image: none;
+      background-color: $color-white;
+    }
+
+    &::after {
+      background-color: $color-text-base-60;
+    }
+  }
+
+  &:not(:disabled):focus {
+    border: 2px solid $color-text-base;
+
+    &::before {
+      background-image: none;
+      background-color: $color-disabled;
+    }
+
+    &::after {
+      background-color: $color-text-base;
+    }
   }
 
   &:not(:disabled):active {
-    outline:2px solid $color-text-base;  
-    background-color: $color-white;
-    background-image: none;
+    border: 2px solid $color-text-base;
+
+    &::before {
+      background-image: none;
+      background-color: $color-white;
+    }
+
+    &::after {
+      background-color: $color-text-base;
+    }
   }
 
   &:disabled {
-    outline:2px solid $color-text-base;  
-    background-color: $color-white;
-    background-image: none;
     opacity: 0.4;
+    border: 2px solid $color-text-base;
+
+    &::before {
+      background-image: none;
+      background-color: $color-white;
+    }
+
+    &::after {
+      background-color: $color-text-base;
+    }
   }
 }
 

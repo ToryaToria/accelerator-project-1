@@ -1,5 +1,5 @@
 .contacts {
-	padding-top: 36px;
+	padding-top: 37px;
 	padding-bottom: 40px;
 
 	@include media-tablet {
@@ -13,7 +13,7 @@
 }
 
 .contacts__title {
-	margin-bottom: 32px;
+	margin-bottom: 37px;
 
 	@include media-tablet {
 		margin-bottom: 36px;
@@ -31,7 +31,7 @@
 	@include list-reset;
 	display: flex;
 	flex-direction: column;
-	gap: 22px;
+	gap: 27px;
 
 	@include media-tablet {
 		width: 440px;
@@ -100,7 +100,7 @@
 }
 
 .contacts__name {
-	margin-bottom: 8px;
+	margin-bottom: 13px;
 
 	@include media-tablet {
 		margin-bottom: 6px;

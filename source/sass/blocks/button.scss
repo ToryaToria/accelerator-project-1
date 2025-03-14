@@ -6,28 +6,26 @@
 	background-color: transparent;
 
 
-	&:hover {
+	&:not(--isDisabled):hover {
 		color: $color-price;
 		background-color: $color-white;
 	}
 
-	&:focus {
+	&:not(--isDisabled):focus {
 		color: $color-price;
-
-		opacity: 0.8;
-		background-color: $color-white;
+		background-color: $color-white-80;
 	}
 
 
-	&:active {
+	&:not(--isDisabled):active {
 		color: $color-text-base;
 		background-color: $color-white;
-		opacity: 1;
 	}
 
-&:disabled {
-	opacity: 0.3;
-}
+	&--isDisabled {
+		cursor: default;
+		opacity: 0.5;
+	}
 
 
 	&--card {
@@ -43,29 +41,29 @@
 		width: 100%;
 
 
-		&:hover {
+		&:not(--isDisabled):hover {
 			color: $color-white;
-			background-image: linear-gradient(to left, #003EB7, #ED0233);	
-			border:2px solid transparent;
-	}
+			background-image: linear-gradient(to left, #003EB7, #ED0233);
+			border: 2px solid transparent;
+		}
 
-		&:focus {
+		&:not(--isDisabled):focus {
 			color: $color-white;
-			background-image: linear-gradient(to left, #003EB7, #ED0233);	
-border: 2px solid $color-black;
+			background-image: linear-gradient(to left, #003EB7, #ED0233);
+			border: 2px solid $color-black;
 		}
-	
-	
-		&:active {
-			color:rgba(255, 255, 255, 0.7);
-			background-image: linear-gradient(to left, #003EB7, #ED0233);	
-			border:2px solid transparent;
-opacity: 1;
+
+
+		&:not(--isDisabled):active {
+			color: rgba(255, 255, 255, 0.7);
+			background-image: linear-gradient(to left, #003EB7, #ED0233);
+			border: 2px solid transparent;
+			opacity: 1;
 		}
-	
-	&:disabled {
-		opacity: 0.5;
-	}
+
+		&--isDisabled {
+			opacity: 0.3;
+		}
 
 		@include media-tablet {
 			margin-top: 0;

@@ -20,7 +20,7 @@
 		<div class="hero__wrapp">
 			<img class="hero__logo" src="./__spritemap#sprite-logo_mob-view" alt="Это спрайт" width="100" height="20">
 
-			<a class="hero__tel text-nav text-invert" href="tel:88005555555">8 800 555-55-55</a>
+			<a class=" hero__tel text-nav text-invert" href="tel:88005555555">8 800 555-55-55</a>
 		</div>
 
 		<div class="hero__contein1">
@@ -115,49 +115,85 @@
 				</div>
 		</section>
 
-		<section class="price container" data-test="price" id="price">
+		<section class="price container tab" data-test="price" id="price">
 			<h2 class="price__title title-section">Абонементы</h2>
 
-			<ul class="price__month text-btn-month">
-				<li>
-					<button class="price__month-btn price__month-btn--active text-btn-N" type="button">1 месяц</button>
-				</li>
+			<div class="price__month tab-price">
+				<label for="tab1">
+					<input class="tab-price__radio visually-hidden tab1" type="radio" name="tab-price" value="1" checked id="tab1">
+					<span class="tab-price__button tab-price__button--current text-btn-month">1 месяц</span>
+					</input>
+				</label>
 
-				<li>
-					<button class="price__month-btn text-btn-N" type="button">6 месяцев
-					</button>
-				</li>
+				<label for="tab2">
+					<input class="tab-price__radio visually-hidden tab2" type="radio" name="tab-price" value="6" id="tab2">
+					<span class="tab-price__button text-btn-month">6 месяцев</span>
+				</label>
 
-				<li>
-					<button class="price__month-btn text-btn-N" type="button">12 месяцев
-					</button>
-				</li>
-			</ul>
+				<label for="tab3">
+					<input class="tab-price__radio visually-hidden tab3" type="radio" name="tab-price" value="12" id="tab3">
+					<span class="tab-price__button text-btn-month">12 месяцев</span>
+				</label>
+			</div>
 
 			<ul class="price__cards-list">
 				<li class="price__card card">
 					<h3 class="title-price">С тренером</h3>
 					<p class="text-basic-M">12 занятий</p>
-					<p class="card__prise-shadow text-number-M" data-tip="5000">5000 
-							<!-- <img src="/__spritemap#sprite-rublik-view" alt=""> -->
-
-						<span class="card__ruble-symbol">
+					<p class="card__prise text-number-M tab1-show" data-tip="5000">5000
+						<span class="card__ruble-symbol" role="img" aria-label="рублей">
 						</span>
 					</p>
+
+					<p class="card__prise text-number-M tab2-show" data-tip="30000">30000
+						<span class="card__ruble-symbol" role="img" aria-label="рублей">
+						</span>
+					</p>
+					<p class="card__prise text-number-M tab3-show" data-tip="60000">60000
+						<span class="card__ruble-symbol" role="img" aria-label="рублей">
+						</span>
+					</p>
+
 					<a class="button button--color-dark text-btn-M" href="#">Купить абонемент</a>
 				</li>
 
 				<li class="price__card card">
 					<h3 class="title-price">Дневной</h3>
 					<p class="text-basic-M">с 8:00 до 17:00</p>
-					<p class="card__prise-shadow text-number-M" data-tip="1700">1700 <span class="card__ruble-symbol"></span></p>
+					<p class="card__prise text-number-M tab1-show" data-tip="1700">1700
+						<span class="card__ruble-symbol" role="img" aria-label="рублей">
+						</span>
+					</p>
+
+					<p class="card__prise text-number-M tab2-show" data-tip="10200">10200
+						<span class="card__ruble-symbol" role="img" aria-label="рублей">
+						</span>
+					</p>
+					<p class="card__prise text-number-M tab3-show" data-tip="20400">20400
+						<span class="card__ruble-symbol" role="img" aria-label="рублей">
+						</span>
+					</p>
+
 					<a class="button button--color-dark  text-btn-M" href="#">Купить абонемент</a>
 				</li>
 
 				<li class="price__card card">
 					<h3 class="title-price">Полный день</h3>
 					<p class="text-basic-M">с 8:00 до 22:00</p>
-					<p class="card__prise-shadow text-number-M" data-tip="2700">2700 <span class="card__ruble-symbol"></span></p>
+					<p class="card__prise text-number-M tab1-show" data-tip="2700" id="tab1-show">2700
+						<span class="card__ruble-symbol" role="img" aria-label="рублей">
+						</span>
+					</p>
+
+					<p class="card__prise text-number-M tab2-show" data-tip="16200" id="tab2-show">16200
+						<span class="card__ruble-symbol" role="img" aria-label="рублей">
+						</span>
+					</p>
+					<p class="card__prise text-number-M tab3-show" data-tip="32400" id="tab3-show">32400
+						<span class="card__ruble-symbol" role="img" aria-label="рублей">
+						</span>
+					</p>
+
 					<a class="button  button--color-dark text-btn-M" href="#">Купить абонемент</a>
 				</li>
 			</ul>
@@ -342,7 +378,8 @@
 					<div class="offers__bid">
 						<p class="offers__year">Год</p>
 						<p class="offers__number text-number-L text-invert">4999</p>
-						<p class="offers__text offers__text--invert text-offers ">Безлимитный абонемент <br> в тренажёрный зал</p>
+						<p class="offers__text offers__text--invert subtitle-offers ">Безлимитный абонемент <br> в тренажёрный зал
+						</p>
 						<a class="offers__link offers__link--invert text-btn-L" href="#">подробнее</a>
 					</div>
 
@@ -389,19 +426,19 @@
 			<div class="faq__wrapp">
 				<ul class="faq__list-tab">
 					<li>
-						<button class="tab tab--count text-btn-faq" type="button">Центр</button>
+						<button class="tab-faq tab-faq--count text-btn-faq" type="button">Центр</button>
 					</li>
 
 					<li>
-						<button class="tab text-btn-faq" type="button">Абонемент</button>
+						<button class="tab-faq text-btn-faq" type="button">Абонемент</button>
 					</li>
 
 					<li>
-						<button class="tab text-btn-faq" type="button">Услуги</button>
+						<button class="tab-faq text-btn-faq" type="button">Услуги</button>
 					</li>
 
 					<li>
-						<button class="tab text-btn-faq" type="button">Правила</button>
+						<button class="tab-faq text-btn-faq" type="button">Правила</button>
 					</li>
 				</ul>
 
@@ -556,7 +593,7 @@
 			</li>
 
 			<li>
-				<a class="footer__social-link footer__social-link--xz" href="#"><span class="visually-hidden">xz</span></a>
+				<a class="footer__social-link footer__social-link--reddit" href="#"><span class="visually-hidden">xz</span></a>
 			</li>
 		</ul>
 	</footer>

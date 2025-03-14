@@ -1,19 +1,28 @@
 // FONTS
 ;
-$font-secondary:"AlumniSans", impact, sans-serif;
-$font-base: "RobotoCondensed", arial, sans-serif; 
+$font-secondary: "AlumniSans", impact, sans-serif;
+$font-base: "RobotoCondensed", arial, sans-serif;
 
 
 // COLORS
 $color-black: #000000;
 $color-white: #ffffff;
+$color-white-80: rgba(255, 255, 255, 0.8);
+
 $color-shadow: #ebebeb;
 
 $linear-gradient: linear-gradient(to right, #1C3477, #1A3578 39%, #73184B 76%, #B4022A);
 
 $linear-gradient-btn: linear-gradient(to right, #ED0233, #003EB7);
+
 //  для текста
 $color-text-base: #102654;
+$color-text-base-20: rgba(16, 38, 84, 0.2);
+$color-text-base-50: rgba(16, 38, 84, 0.5);
+$color-text-base-60: rgba(16, 38, 84, 0.6);
+$color-text-base-70: rgba(16, 38, 84, 0.7);
+
+
 
 $color-price: #103AAE;
 
@@ -22,11 +31,14 @@ $color-desc: #2E35AC;
 
 //  для фонов
 $color-bg-primary: #F8F9FC;
+$color-bg-primary-50: rgba(248, 249, 252, 0.5);
 
 $color-bg-accent: #ed0233;
 $color-bg-secondary: #1C3374;
+$color-bg-secondary-50: rgba(28, 51, 116, 0.5);
+
 $color-bg-footer: #030A1A;
-$color-bg-play: #C8C9CC;
+$color-disabled: #C8C9CC;
 
 
 $color-bg-grad1: #1C3477;
@@ -39,6 +51,11 @@ $color-bg-grad4: #B4022A;
 
 //  для линий
 $color-line: rgba(209, 10, 66, 0.2); // 20%
+$color-line-current: #D10A42;
+
+$color-line-grey: #787878;
+$color-line-grey-20: rgba(120, 120, 120, 0.2);
+
 $color-divider: #74819C; //разделитель
 $color-line-month: rgba(120, 120, 120, 0.2);
 $color-line-tab: rgba(16, 38, 84, 0.2);

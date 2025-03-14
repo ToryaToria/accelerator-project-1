@@ -19,29 +19,25 @@
 	}
 }
 
-.card__prise-shadow {
+.card__prise {
+  display: block;
   box-sizing: border-box;
   padding-top: 45px;
-  // padding-left: 38px;
+  
   text-align: center;
   width: 206px;
   height: 120px;
   position: relative;
   z-index: 5;
-  // text-align: left;
 
 	@include media-tablet {
     width: 250px;
     height: 150px;
     padding-top: 61px;
-
-    // background-color: antiquewhite;
-
-  // padding-left: 20px;
   }
 }
 
-.card__prise-shadow::after {
+.card__prise::after {
   text-align: center;
 
   z-index: -1;
@@ -59,7 +55,6 @@
 
 	@include media-tablet {
 		font-size: 100px;
-    // background-color: aquamarine;
     opacity: 50%;
     width: 250px;
     height: 150px;

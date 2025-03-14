@@ -1,31 +1,34 @@
 .price {
-	padding-top: 39px; // А ДОЛЖЕН БЫТЬ 40!!!
+	padding-top: 41px;
 	padding-bottom: 40px;
 	text-align: center;
 	background-color: $color-bg-primary;
 
 	@include media-tablet {
-		padding-top: 60px;
+		padding-top: 59px;
 		padding-bottom: 60px;
 
 		padding-left: 194px;
 		padding-right: 194px;
 
-		background-image: url('../../img/blin_bg_tab.png');
-
 		background-repeat: no-repeat;
 		background-size: auto;
 		background-position: bottom 0 right 0;
-		background-size: 326px ;
+		background-size: 324px;
+
+		background-image: image-set(url("../../img/blin/blin_bg_tab@1x.webp") 1x type("image/webp"),
+				url("../..img/blin/blin_bg_tab@1x.jpg") 1x,
+				url("../../img/blin/blin_bg_tab@2x.webp") 2x type("image/webp"),
+				url("../../img/blin/blin_bg_tab@2x.jpg") 2x);
 	}
 
 	@include media-desktop {
 		padding-top: 100px;
-	padding-bottom: 100px;
-	padding-left: 103px;
+		padding-bottom: 100px;
+		padding-left: 103px;
 		padding-right: 103px;
 		background-position: bottom -10px right -75px;
-		background-size: 384px ;
+		background-size: 384px;
 	}
 }
 
@@ -36,20 +39,21 @@
 		margin-bottom: 36px;
 
 	}
+
 	@include media-desktop {
-		margin-bottom: 20px;
+		margin-bottom: 15px;
 	}
 }
 
 .price__month {
 	box-sizing: border-box;
-	@include list-reset;
-	// margin-left: 35px;
-	// margin-right: 35px;
+
 	display: flex;
 	justify-content: space-between;
-	border-bottom: 2px solid $color-line-month;
 	margin-bottom: 30px;
+	padding-bottom: 3px;
+	border-bottom: 2px solid $color-line-grey-20;
+
 
 	@include media-tablet {
 		margin-left: 35px;
@@ -58,31 +62,9 @@
 	}
 
 	@include media-desktop {
-	width: 350px;
-	margin: 0 auto;
-		margin-bottom: 42px;
-	}
-}
-
-.price__month-btn {
-	@include btn-reset;
-	padding-bottom: 5px;
-	opacity: 0.5;
-
-	&--active {
-		color: $color-text-base;
-		border-bottom: 2px solid $color-line;
-		opacity: 1;
-
-		// .nav-link-current::after {
-		// 	content: "";
-		// 	position: absolute;
-		// 	height: 2px;
-		// 	right: 16px;
-		// 	left: 16px;
-		// 	bottom: -1px;
-		// 	background-color: #756257;
-		// }
+		width: 350px;
+		margin: 0 auto;
+		margin-bottom: 40px;
 	}
 }
 
@@ -93,8 +75,9 @@
 	gap: 35px;
 
 	@include media-tablet {
-	gap: 40px;
+		gap: 40px;
 	}
+
 	@include media-desktop {
 		flex-direction: row;
 		gap: 40px;
