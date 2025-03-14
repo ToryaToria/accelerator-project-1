@@ -53,7 +53,7 @@
 	}
 
 	@include media-desktop {
-	gap: 82px;
+		gap: 82px;
 	}
 }
 
@@ -67,12 +67,12 @@
 	gap: 20px;
 
 	@include media-tablet {
-	gap: 15px;
+		gap: 15px;
 	}
 
 	@include media-desktop {
 		gap: 10px;
-		}
+	}
 }
 
 .footer__social-link {
@@ -85,23 +85,58 @@
 	justify-content: center;
 	align-items: center;
 
-
-	background-repeat: no-repeat;
-	background-position: center;
-	background-size: 14px 14px;
-
-
-	&--vk {
-		background-image: url('../../img/sprite/social_vk.svg');
+	&::before {
+		display: block;
+		width: 14px;
+		height: 14px;
+		content: '';
+		background-color: $color-bg-footer;
+		mask-size: auto;
+		mask-repeat: no-repeat;
+		mask-position: center;
 	}
 
-	&--ok {
-		background-image: url('../../img/sprite/social_ok.svg');
-		background-size: 9px 16px;
 
+	&--vk::before {
+		mask-image: url('../../__spritemap#sprite-social_vk-view');
 	}
 
-	&--xz {
-		background-image: url('../../img/sprite/social_xz.svg');
+	&--ok::before {
+		mask-image: url('../../__spritemap#sprite-social_ok-view');
+	}
+
+	&--xz::before {
+		mask-image: url('../../__spritemap#sprite-social_xz-view');
+	}
+
+
+	&:not(&--isDisabled):hover {
+		background-color: $color-divider;
+
+		&::before {
+			background-color: $color-white;
+		}
+	}
+
+	&:not(&--isDisabled):focus {
+		background-color: $color-price;
+
+		&::before {
+			background-color: $color-white;
+		}
+	}
+
+	&:not(&--isDisabled):active {
+		background-color: $color-text-base;
+
+		&::before {
+			background-color: $color-white;
+		}
+	}
+
+	&--isDisabled {
+		cursor: default;
+		background-color: $color-white;
+		opacity: 0.3;
 	}
 }

@@ -140,14 +140,16 @@
 	height: 30px;
 	background-color: transparent;
 
-	background-image: url('../../img/sprite/plus.svg');
+	background-image: url('../../__spritemap#sprite-plus-view');
 	background-repeat: no-repeat;
-	// background-size: auto;
+	background-size: 14px 14px;
 	background-position: center;
 
 	&--active {
 		background-color: $color-bg-secondary;
-		background-image: url('../../img/sprite/minus.svg');
+		background-size: 14px 3px;
+
+		background-image: url('../../__spritemap#sprite-minus-view');
 	}
 
 	@include media-tablet {
