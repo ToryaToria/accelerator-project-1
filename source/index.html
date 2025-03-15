@@ -115,23 +115,25 @@
 				</div>
 		</section>
 
-		<section class="price container tab" data-test="price" id="price">
+		<section class="price container tab-price" data-test="price" id="price">
 			<h2 class="price__title title-section">Абонементы</h2>
 
-			<div class="price__month tab-price">
-				<label for="tab1">
-					<input class="tab-price__radio visually-hidden tab1" type="radio" name="tab-price" value="1" checked id="tab1">
+			<div class="price__month">
+				<label for="tab-price-1">
+					<input class="tab-price__radio visually-hidden tab1" type="radio" name="tab-price" value="1" checked
+						id="tab-price-1">
 					<span class="tab-price__button tab-price__button--current text-btn-month">1 месяц</span>
 					</input>
 				</label>
 
-				<label for="tab2">
-					<input class="tab-price__radio visually-hidden tab2" type="radio" name="tab-price" value="6" id="tab2">
+				<label for="tab-price-2">
+					<input class="tab-price__radio visually-hidden tab2" type="radio" name="tab-price" value="6" id="tab-price-2">
 					<span class="tab-price__button text-btn-month">6 месяцев</span>
 				</label>
 
-				<label for="tab3">
-					<input class="tab-price__radio visually-hidden tab3" type="radio" name="tab-price" value="12" id="tab3">
+				<label for="tab-price-3">
+					<input class="tab-price__radio visually-hidden tab3" type="radio" name="tab-price" value="12"
+						id="tab-price-3">
 					<span class="tab-price__button text-btn-month">12 месяцев</span>
 				</label>
 			</div>
@@ -140,16 +142,16 @@
 				<li class="price__card card">
 					<h3 class="title-price">С тренером</h3>
 					<p class="text-basic-M">12 занятий</p>
-					<p class="card__prise text-number-M tab1-show" data-tip="5000">5000
+					<p class="card__prise text-number-M tab-price__show1" data-tip="5000">5000
 						<span class="card__ruble-symbol" role="img" aria-label="рублей">
 						</span>
 					</p>
 
-					<p class="card__prise text-number-M tab2-show" data-tip="30000">30000
+					<p class="card__prise text-number-M tab-price__show2" data-tip="30000">30000
 						<span class="card__ruble-symbol" role="img" aria-label="рублей">
 						</span>
 					</p>
-					<p class="card__prise text-number-M tab3-show" data-tip="60000">60000
+					<p class="card__prise text-number-M tab-price__show3" data-tip="60000">60000
 						<span class="card__ruble-symbol" role="img" aria-label="рублей">
 						</span>
 					</p>
@@ -160,16 +162,16 @@
 				<li class="price__card card">
 					<h3 class="title-price">Дневной</h3>
 					<p class="text-basic-M">с 8:00 до 17:00</p>
-					<p class="card__prise text-number-M tab1-show" data-tip="1700">1700
+					<p class="card__prise text-number-M tab-price__show1" data-tip="1700">1700
 						<span class="card__ruble-symbol" role="img" aria-label="рублей">
 						</span>
 					</p>
 
-					<p class="card__prise text-number-M tab2-show" data-tip="10200">10200
+					<p class="card__prise text-number-M tab-price__show2" data-tip="10200">10200
 						<span class="card__ruble-symbol" role="img" aria-label="рублей">
 						</span>
 					</p>
-					<p class="card__prise text-number-M tab3-show" data-tip="20400">20400
+					<p class="card__prise text-number-M tab-price__show3" data-tip="20400">20400
 						<span class="card__ruble-symbol" role="img" aria-label="рублей">
 						</span>
 					</p>
@@ -180,16 +182,16 @@
 				<li class="price__card card">
 					<h3 class="title-price">Полный день</h3>
 					<p class="text-basic-M">с 8:00 до 22:00</p>
-					<p class="card__prise text-number-M tab1-show" data-tip="2700" id="tab1-show">2700
+					<p class="card__prise text-number-M tab-price__show1" data-tip="2700" id="tab-price__show1">2700
 						<span class="card__ruble-symbol" role="img" aria-label="рублей">
 						</span>
 					</p>
 
-					<p class="card__prise text-number-M tab2-show" data-tip="16200" id="tab2-show">16200
+					<p class="card__prise text-number-M tab-price__show2" data-tip="16200">16200
 						<span class="card__ruble-symbol" role="img" aria-label="рублей">
 						</span>
 					</p>
-					<p class="card__prise text-number-M tab3-show" data-tip="32400" id="tab3-show">32400
+					<p class="card__prise text-number-M tab-price__show3" data-tip="32400" id="tab-price__show3">32400
 						<span class="card__ruble-symbol" role="img" aria-label="рублей">
 						</span>
 					</p>
@@ -407,13 +409,13 @@
 				<ul class="offers__list">
 					<li class="offers__item">
 						<h3 class="offers__title-item title-offers">Месяц бесплатно</h3>
-						<p class="offers__text text-offers">Приведи друга, получи абонемент в подарок</p>
+						<p class="offers__text text-offers">Приведи друга, получи абонемент в&nbsp;подарок</p>
 						<a class="offers__link offers__link--color  text-btn-L" href="#">подробнее</a>
 					</li>
 
 					<li class="offers__item">
 						<h3 class="offers__title-item title-offers">Скидка 20%</h3>
-						<p class="offers__text text-offers">Корпоративный фитнес с командой</p>
+						<p class="offers__text text-offers">Корпоративный фитнес с командой</p>
 						<a class="offers__link offers__link--color  text-btn-L" href="#">подробнее</a>
 					</li>
 				</ul>
@@ -423,65 +425,244 @@
 		<section class="faq container" data-test="faq">
 			<h2 class="faq__title title-section">Вопросы и ответы</h2>
 
-			<div class="faq__wrapp">
-				<ul class="faq__list-tab">
-					<li>
-						<button class="tab-faq tab-faq--count text-btn-faq" type="button">Центр</button>
+			<div class="faq__wrapp tab-faq">
+
+				<div class="faq__tabs">
+
+					<label for="tab-faq-1">
+						<input class="tab-faq__radio visually-hidden" type="radio" name="tab-faq" value="Центр" id="tab-faq-1"
+							checked>
+						<span class="tab-faq__button text-btn-faq">Центр</span>
+					</label>
+
+					<label for="tab-faq-2">
+						<input class="tab-faq__radio visually-hidden" type="radio" name="tab-faq" value="Абонемент" id="tab-faq-2">
+						<span class="tab-faq__button text-btn-faq">Абонемент</span>
+					</label>
+
+					<label for="tab-faq-3">
+						<input class="tab-faq__radio visually-hidden" type="radio" name="tab-faq" value="Услуги" id="tab-faq-3">
+						<span class="tab-faq__button text-btn-faq">Услуги</span>
+					</label>
+
+					<label for="tab-faq-4">
+						<input class="tab-faq__radio visually-hidden" type="radio" name="tab-faq" value="Правила" id="tab-faq-4">
+						<span class="tab-faq__button text-btn-faq">Правила</span>
+					</label>
+				</div>
+
+				<ul class="faq__list tab-faq__show1">
+					<li class="faq__item">
+						<details class="faq__details" open>
+							<summary class="faq__summary">
+								<h3 class="title-faq">Как стать членом фитнес-центра?</h3>
+							</summary>
+
+							<p class="faq__text text-faq">
+								При первом посещении и&nbsp;покупке абонемента, необходимо заполнить анкету и&nbsp;подписать договор.
+								При&nbsp;покупке абонемента онлайн, анкета также&nbsp;заполняется онлайн и&nbsp;договор придёт вам на
+								почту.
+							</p>
+						</details>
 					</li>
 
-					<li>
-						<button class="tab-faq text-btn-faq" type="button">Абонемент</button>
+					<li class="faq__item">
+						<details class="faq__details">
+							<summary class="faq__summary">
+								<h3 class="title-faq">Где можно посмотреть расписание?</h3>
+							</summary>
+
+							<p class="faq__text text-faq">
+								Вы можете ознакомиться с расписание на стойке информации, на нашем официальном сайте. Так же есть
+								возможность оформить подписку на наши новости и получать расписание и обновления на почту каждую неделю.
+							</p>
+						</details>
 					</li>
 
-					<li>
-						<button class="tab-faq text-btn-faq" type="button">Услуги</button>
+					<li class="faq__item">
+						<details class="faq__details">
+							<summary class="faq__summary">
+								<h3 class="title-faq">Есть кулеры в центре? Предоставляются полотенца?</h3>
+							</summary>
+
+							<p class="faq__text text-faq">
+								Текст-рыба :))
+							</p>
+						</details>
 					</li>
 
-					<li>
-						<button class="tab-faq text-btn-faq" type="button">Правила</button>
+					<li class="faq__item">
+						<details class="faq__details">
+							<summary class="faq__summary faq__summary--1">
+								<h3 class="title-faq">Сколько тренеров работает в&nbsp;клубе и какова их&nbsp;квалификация?</h3>
+							</summary>
+
+							<p class="faq__text text-faq">
+								Текст-рыба :))
+							</p>
+						</details>
 					</li>
 				</ul>
 
-				<ul class="faq__list-faq">
-					<li class="faq__item-faq">
-						<div class="faq__wrapp-title">
-							<h3 class="faq__title-faq faq__title-faq--1 title-faq">Как стать членом фитнес-центра?</h3>
-							<button class="faq__btn faq__btn--active" type="button">
-								<span class="visually-hidden">Открыть-закрыть</span>
-							</button>
-						</div>
-						<p class="faq__text text-faq">При первом посещении и&nbsp;покупке абонемента, необходимо заполнить анкету
-							и&nbsp;подписать договор. При&nbsp;покупке
-							абонемента онлайн, анкета также&nbsp;заполняется онлайн и&nbsp;договор придёт вам на почту.</p>
+
+				<ul class="faq__list tab-faq__show2">
+					<li class="faq__item">
+						<details class="faq__details" open>
+							<summary class="faq__summary">
+								<h3 class="title-faq">Занятия с тренером входят в абонемент?</h3>
+							</summary>
+
+							<p class="faq__text text-faq">
+								При посещении тренажерного зала вам необходимо оплатить занятия с тренером отдельно. В зале всегда
+								присутствует дежурный тренер, которому можно задать вопрос, получить небольшую консультацию по тренажеру
+								или технике выполнения упражнения.
+							</p>
+						</details>
 					</li>
 
-					<li class="faq__item-faq">
-						<div class="faq__wrapp-title">
-							<h3 class="faq__title-faq title-faq">Где можно посмотреть расписание?</h3>
-							<button class="faq__btn " type="button">
-								<span class="visually-hidden">Открыть-закрыть</span>
-							</button>
-						</div>
+					<li class="faq__item">
+						<details class="faq__details">
+							<summary class="faq__summary">
+								<h3 class="title-faq">Можно ли заморозить абонемент?</h3>
+							</summary>
+
+							<p class="faq__text text-faq">
+								Текст-рыба :))
+							</p>
+						</details>
 					</li>
 
-					<li class="faq__item-faq">
-						<div class="faq__wrapp-title">
-							<h3 class="faq__title-faq title-faq">Есть кулеры в центре? Предоставляются полотенца?</h3>
-							<button class="faq__btn " type="button">
-								<span class="visually-hidden">Открыть-закрыть</span>
-							</button>
-						</div>
+					<li class="faq__item">
+						<details class="faq__details">
+							<summary class="faq__summary">
+								<h3 class="title-faq">Есть ли лимит по посещениям тренажерного зала и групповых занятий?
+								</h3>
+							</summary>
+
+							<p class="faq__text text-faq">
+								Текст-рыба :))
+							</p>
+						</details>
 					</li>
 
-					<li class="faq__item-faq">
-						<div class="faq__wrapp-title">
-							<h3 class="faq__title-faq title-faq">Сколько тренеров работает в клубе и какова их квалификация?</h3>
-							<button class="faq__btn " type="button">
-								<span class="visually-hidden">Открыть-закрыть</span>
-							</button>
-						</div>
+					<li class="faq__item">
+						<details class="faq__details">
+							<summary class="faq__summary">
+								<h3 class="title-faq">Что такое семейный доступ и доступ для друзей?</h3>
+							</summary>
+
+							<p class="faq__text text-faq">
+								Текст-рыба :))
+							</p>
+						</details>
 					</li>
 				</ul>
+
+				<ul class="faq__list tab-faq__show3">
+					<li class="faq__item">
+						<details class="faq__details" open>
+							<summary class="faq__summary">
+								<h3 class="title-faq">Рыбные услуги 1 ?</h3>
+							</summary>
+
+							<p class="faq__text text-faq">
+								Текст-рыба :))
+							</p>
+						</details>
+					</li>
+
+					<li class="faq__item">
+						<details class="faq__details">
+							<summary class="faq__summary">
+								<h3 class="title-faq">Рыбные услуги 2</h3>
+							</summary>
+
+							<p class="faq__text text-faq">
+								Текст-рыба :))
+							</p>
+						</details>
+					</li>
+
+					<li class="faq__item">
+						<details class="faq__details">
+							<summary class="faq__summary">
+								<h3 class="title-faq">Рыбные у 3 ?</h3>
+							</summary>
+
+							<p class="faq__text text-faq">
+								Текст-рыба :))
+							</p>
+						</details>
+					</li>
+
+					<li class="faq__item">
+						<details class="faq__details">
+							<summary class="faq__summary">
+								<h3 class="title-faq">Рыбные услуги 4</h3>
+							</summary>
+
+							<p class="faq__text text-faq">
+								Текст-рыба :))
+							</p>
+						</details>
+					</li>
+				</ul>
+
+				<ul class="faq__list tab-faq__show4">
+					<li class="faq__item">
+						<details class="faq__details" open>
+							<summary class="faq__summary">
+								<h3 class="title-faq">Есть в фитнес-центре дресс-код?</h3>
+							</summary>
+
+							<p class="faq__text text-faq">
+								Для тренировок необходимо иметь предназначенную для этого закрытую спортивную обувь и одежду. Верхняя и
+								нижняя части тела должны быть закрыты (используйте футболки, майки, спортивные брюки, шорты, кроссовки).
+								В
+								целях безопасности, запрещается тренироваться босиком, в пляжных или домашних тапочках и т. п.,
+								исключения
+								составляют специальные классы (например, йога, пилатес).
+							</p>
+						</details>
+					</li>
+
+					<li class="faq__item">
+						<details class="faq__details">
+							<summary class="faq__summary">
+								<h3 class="title-faq">Можно ли приводить с собой детей на тренировки?</h3>
+							</summary>
+
+							<p class="faq__text text-faq">
+								Текст-рыба :))
+							</p>
+						</details>
+					</li>
+
+					<li class="faq__item">
+						<details class="faq__details">
+							<summary class="faq__summary">
+								<h3 class="title-faq">Какие дополнительные правила посещения центра?</h3>
+							</summary>
+
+							<p class="faq__text text-faq">
+								Текст-рыба :))
+							</p>
+						</details>
+					</li>
+
+					<li class="faq__item">
+						<details class="faq__details">
+							<summary class="faq__summary">
+								<h3 class="title-faq">Нужна ли медицинская справка для посещения залов и бассейна?</h3>
+							</summary>
+
+							<p class="faq__text text-faq">
+								Текст-рыба :))
+							</p>
+						</details>
+					</li>
+				</ul>
+
 			</div>
 		</section>
 

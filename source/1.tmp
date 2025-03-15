@@ -1,3 +1,22 @@
   // transition: scale, opacity 0.3s ease-in-out;
 
   aria-hiddden: true;
+
+
+
+
+	<ul class="faq__list-faq tab-faq__show1">
+					<li class="faq__item-faq">
+						<div class="faq__wrapp-title">
+							<h3 class="faq__title-faq faq__title-faq--1 title-faq">Как стать членом фитнес-центра?</h3>
+							<button class="faq__btn faq__btn--active" type="button">
+								<span class="visually-hidden">Открыть-закрыть</span>
+							</button>
+						</div>
+
+						<p class="faq__text text-faq">
+							При первом посещении и&nbsp;покупке абонемента, необходимо заполнить анкету и&nbsp;подписать договор.
+							При&nbsp;покупке абонемента онлайн, анкета также&nbsp;заполняется онлайн и&nbsp;договор придёт вам на
+							почту.
+						</p>
+					</li>

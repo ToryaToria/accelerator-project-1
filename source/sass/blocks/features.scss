@@ -5,8 +5,8 @@
 	background-color: $color-bg-primary;
 
 	@include media-tablet {
-		padding-top: 60px;
-		padding-bottom: 60px;
+		padding-top: 61px;
+		padding-bottom: 58px;
 	}
 
 	@include media-desktop {
@@ -19,7 +19,7 @@
 	margin-bottom: 40px;
 
 	@include media-tablet {
-		margin-bottom: 51px;
+		margin-bottom: 50px;
 	}
 }
 
@@ -56,12 +56,12 @@
 	}
 
 	@include media-desktop {
-	justify-content: space-between;
+		justify-content: space-between;
 
-	&--bottom {
-		border-top: 1px solid $color-line;
-		padding-top: 40px;
-	}
+		&--bottom {
+			border-top: 1px solid $color-line;
+			padding-top: 40px;
+		}
 	}
 }
 
@@ -82,7 +82,6 @@
 	@include media-desktop {
 		grid-column: span 1;
 		grid-row: span 2;
-		// order: -3;
 
 		grid-column-start: 2;
 		grid-column-end: 3;
@@ -93,7 +92,7 @@
 
 .features__item-wrapp {
 	@include media-desktop {
-	width: 210px;
+		width: 210px;
 	}
 }
 
@@ -105,7 +104,7 @@
 
 	@include media-tablet {
 		margin-left: 179px;
-		margin-right: 179px;	
+		margin-right: 179px;
 		padding: 35px;
 	}
 
@@ -154,22 +153,23 @@
 	background-image: linear-gradient(145deg, #ED0233, #003EB7 45%);
 
 	// из ТЗ
-// 	background: linear-gradient(128deg, #D10A42 0%, #0041CA 45.58%);
-// background-clip: text;
-// -webkit-background-clip: text;
-// -webkit-text-fill-color: transparent;
+	// 	background: linear-gradient(128deg, #D10A42 0%, #0041CA 45.58%);
+	// background-clip: text;
+	// -webkit-background-clip: text;
+	// -webkit-text-fill-color: transparent;
 
 	&--dark {
 		color: $color-white;
-	background-image: none;
+		background-image: none;
 		margin-bottom: 20px;
-		
+
 	}
+
 	@include media-tablet {
 		margin-bottom: 0;
 
 		&--dark {
-			margin-bottom: 26px;
+			margin-bottom: 25px;
 		}
 	}
 
@@ -178,6 +178,4 @@
 			margin-bottom: 29px;
 		}
 	}
-
-	
 }

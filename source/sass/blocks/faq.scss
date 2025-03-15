@@ -25,7 +25,7 @@
 
 	@include media-desktop {
 		text-align: left;
-		margin-bottom: 50px;
+		margin-bottom: 49px;
 	}
 }
 
@@ -33,10 +33,11 @@
 	@include media-desktop {
 		display: flex;
 		gap: 40px;
+		align-items: flex-start;
 	}
 }
 
-.faq__list-tab {
+.faq__tabs {
 	@include list-reset;
 	display: flex;
 	gap: 10px;
@@ -52,10 +53,11 @@
 	}
 }
 
-.faq__list-faq {
+.faq__list {
 	@include list-reset;
 	margin-top: 35px;
 	border-bottom: 1px solid $color-divider;
+	flex-grow: 1;
 
 	@include media-tablet {
 		margin-top: 45px;
@@ -63,16 +65,13 @@
 
 	@include media-desktop {
 		margin-top: 0;
-
 	}
 }
 
 .faq__text {
-	// padding-bottom: 20px;
 	margin-right: 52px;
 
 	@include media-tablet {
-		// margin-bottom: 3px;
 		margin-right: 118px;
 	}
 
@@ -81,10 +80,9 @@
 	}
 }
 
-.faq__item-faq {
+.faq__item {
 	padding-top: 20px;
 	margin-bottom: 20px;
-
 	border-top: 1px solid $color-divider;
 
 	@include media-tablet {
@@ -93,69 +91,77 @@
 	}
 
 	@include media-desktop {
-		padding-top: 21px;
+		padding-top: 22px;
 	}
 }
 
-.faq__wrapp-title {
-	display: flex;
-	align-items: center;
-	margin-bottom: 20px;
-
-	@include media-tablet {
+.faq__summary {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	margin-bottom: 10px;
-	}
-
-	@include media-desktop {
-		margin-bottom: 24px;
-
-	}
-
 }
 
-.faq__title-faq {
-	margin-bottom: 0px;
-	margin-right: 20px;
+.faq__summary {
+	&::after {
+		content: '';
+
+		flex-shrink: 0;
+		box-sizing: border-box;
+		border: 1px solid $color-bg-secondary;
+		border-radius: 50%;
+		display: inline-block;
+		padding: 0;
+		width: 30px;
+		height: 30px;
+		margin-left: 50px;
+
+		background-color: transparent;
+
+		background-image: url('../../__spritemap#sprite-plus-view');
+		background-repeat: no-repeat;
+		background-size: 14px 14px;
+		background-position: center;
+
+		@include media-tablet {
+			width: 40px;
+			height: 40px;
+			margin-left: 138px;
+		}
+	}
 
 	&--1 {
-		padding-right: 35px;
-	}
+		&::after {
+			margin-left: 10px;
 
-	@include media-tablet {
-		margin-right: 0;
+			@include media-tablet {
+				margin-left: 60px;
+			}
+		}
 	}
 }
 
-.faq__btn {
-	flex-shrink: 0;
-	box-sizing: border-box;
-	border: 1px solid $color-bg-secondary;
-	border-radius: 50%;
-	display: block;
-	padding: 0;
-	width: 30px;
-	height: 30px;
-	background-color: transparent;
-
-	background-image: url('../../__spritemap#sprite-plus-view');
-	background-repeat: no-repeat;
-	background-size: 14px 14px;
-	background-position: center;
-
-	&--active {
-		background-color: $color-bg-secondary;
-		background-size: 14px 3px;
-
-		background-image: url('../../__spritemap#sprite-minus-view');
+.faq__details {
+	&::marker {
+		content: '';
 	}
 
-	@include media-tablet {
-		width: 40px;
-		height: 40px;
-		margin-left: 138px;
-	}
+	&[open] .faq__summary {
+		margin-bottom: 20px;
 
+		&::after {
+			background-color: $color-bg-secondary;
+			background-image: url('../../__spritemap#sprite-minus-view');
+			background-repeat: no-repeat;
+			background-size: 14px 14px;
+			background-position: center;
+		}
+
+		@include media-tablet {
+			margin-bottom: 10px;
+		}
+
+		@include media-desktop {
+			margin-bottom: 24px;
+		}
+	}
 }
