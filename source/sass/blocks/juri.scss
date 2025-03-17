@@ -1,7 +1,10 @@
 .juri {
 	padding-top: 41px;
 	padding-bottom: 40px;
+
 	text-align: center;
+
+	overflow:hidden;
 
 	@include media-tablet {
 		padding-top: 30px;
@@ -25,7 +28,12 @@
 
 .juri__list {
 	@include list-reset;
+	
+	margin-left: 15px;
+  margin-right: 15px;
+
 	display: flex;
+	gap: 30px;
 
 	@include media-tablet {
 		gap: 40px;
@@ -41,52 +49,9 @@
 	}
 }
 
-.juri__card {
-	margin-left: 15px;
-	margin-right: 15px;
-	// width: 100%;
-	height: 300px;
-	background-color: gray;
-	position: relative;
 
-	&--tabl {
-		display: none;
 
-		@include media-tablet {
-			display: block;
 
-			margin-left: 0;
-			margin-right: 0;
-		}
-	}
-
-	&--desk {
-		display: none;
-
-		@include media-desktop {
-			display: block;
-		}
-	}
-
-	@include media-tablet {
-		margin-left: 0;
-		margin-right: 0;
-	}
-}
-
-.juri__img {
-	display: block;
-	width: 260px;
-	height: 300px;
-}
-
-.juri__name {
-	text-align: center;
-	position: absolute;
-	bottom: 25px;
-	left: 0;
-	right: 0;
-}
 
 // .juri__btn-wrapp {
 	

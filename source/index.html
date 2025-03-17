@@ -119,19 +119,19 @@
 			<h2 class="price__title title-section">Абонементы</h2>
 
 			<div class="price__month">
-				<label for="tab-price-1">
+				<label for="tab-price-1" tabindex="0">
 					<input class="tab-price__radio visually-hidden tab1" type="radio" name="tab-price" value="1" checked
 						id="tab-price-1">
 					<span class="tab-price__button tab-price__button--current text-btn-month">1 месяц</span>
 					</input>
 				</label>
 
-				<label for="tab-price-2">
+				<label for="tab-price-2" tabindex="0">
 					<input class="tab-price__radio visually-hidden tab2" type="radio" name="tab-price" value="6" id="tab-price-2">
 					<span class="tab-price__button text-btn-month">6 месяцев</span>
 				</label>
 
-				<label for="tab-price-3">
+				<label for="tab-price-3" tabindex="0">
 					<input class="tab-price__radio visually-hidden tab3" type="radio" name="tab-price" value="12"
 						id="tab-price-3">
 					<span class="tab-price__button text-btn-month">12 месяцев</span>
@@ -256,54 +256,185 @@
 
 		<section class="juri container" data-test="juri">
 			<h2 class="juri__title title-section title-section--big">Жюри</h2>
-			<ul class="juri__list">
-				<li class="juri__card">
 
+			<ul class="juri__list">
+
+				<li class="juri-card" name="juri" open tabindex="0">
 					<picture>
 						<source type="image/webp" srcset="./img/iuri/juri-anna_mob@1x.webp 1x,
 						./img/iuri/juri-anna_mob@2x.webp 2x" width="260" height="300">
 
-						<img class="juri__img" src="./img/iuri/juri-anna_mob@1x.jpg" srcset="./img/iuri/juri-anna_mob@2x.jpg 2x"
-							alt="Анна Павлова" width="260" height="300">
+						<img class="juri-card__img" src="./img/iuri/juri-anna_mob@1x.jpg"
+							srcset="./img/iuri/juri-anna_mob@2x.jpg 2x" alt="Анна Павлова" width="260" height="300">
 					</picture>
 
-					<p class="juri__name text-juri">Анна Павлова</p>
+					<p class="juri-card__name text-juri">Анна Павлова</p>
+
+					<div class="juri-card__info">
+						<h3 class="juri-card__title">Анна Павлова</h3>
+						<p class="juri-card__specialty">CrossFit</p>
+						<ul class="juri-card__list">
+							<li class="juri-card__skills">Certified Level 3 Trainer</li>
+							<li class="juri-card__skills">Победитель чемпионата России по CrossFit </li>
+							<li class="juri-card__skills">Опыт — 6 лет</li>
+						</ul>
+					</div>
 				</li>
 
-				<li class="juri__card juri__card--tabl">
+				<li class="juri-card" name="juri" tabindex="0">
 					<picture>
 						<source type="image/webp" srcset="./img/iuri/juri-lavr_mob@1x.webp 1x,
 						./img/iuri/juri-lavr_mob@2x.webp 2x" width="260" height="300">
 
-						<img class="juri__img" src="./img/iuri/juri-lavr_mob@1x.jpg" srcset="./img/iuri/juri-lavr_mob@2x.jpg 2x"
+						<img class="juri-card__img" src="./img/iuri/juri-lavr_mob@1x.jpg" srcset="./img/iuri/juri-lavr_mob@2x.jpg 2x"
 							alt="Алексей Лавров" width="260" height="300">
 					</picture>
 
-					<p class="juri__name text-juri">Алексей Лавров</p>
+					<p class="juri-card__name text-juri">Алексей Лавров</p>
+
+					<div class="juri-card__info">
+						<h3 class="juri-card__title">Алексей Лавров</h3>
+						<p class="juri-card__specialty">CrossFit</p>
+						<ul class="juri-card__list">
+							<li class="juri-card__skills">Certified Level 3 Trainer</li>
+							<li class="juri-card__skills">Победитель чемпионата России по CrossFit </li>
+							<li class="juri-card__skills">Опыт — 6 лет</li>
+						</ul>
+					</div>
 				</li>
 
-				<li class="juri__card juri__card--desk">
+				<li class="juri-card" name="juri" tabindex="0"> 
 					<picture>
 						<source type="image/webp" srcset="./img/iuri/juri-pash_mob@1x.webp 1x,
-						./img/iuri/juri-pash_mob@2x.webp 2x" width="260" height="300">
+							./img/iuri/juri-pash_mob@2x.webp 2x" width="260" height="300">
 
-						<img class="juri__img" src="./img/iuri/juri-pash_mob@1x.jpg" srcset="./img/iuri/juri-pash_mob@2x.jpg 2x"
+						<img class="juri-card__img" src="./img/iuri/juri-pash_mob@1x.jpg" srcset="./img/iuri/juri-pash_mob@2x.jpg 2x"
 							alt="Александр Пашков" width="260" height="300">
 					</picture>
 
-					<p class="juri__name text-juri">Александр Пашков</p>
+					<p class="juri-card__name text-juri">Александр Пашков</p>
+
+					<div class="juri-card__info">
+						<h3 class="juri-card__title">Александр Пашков</h3>
+						<p class="juri-card__specialty">CrossFit</p>
+						<ul class="juri-card__list">
+							<li class="juri-card__skills">Certified Level 3 Trainer</li>
+							<li class="juri-card__skills">Победитель чемпионата России по CrossFit </li>
+							<li class="juri-card__skills">Опыт — 6 лет</li>
+						</ul>
+					</div>
 				</li>
 
-				<li class="juri__card juri__card--desk">
+				<li class="juri-card" name="juri" tabindex="0">
 					<picture>
 						<source type="image/webp" srcset="./img/iuri/juri-mari_mob@1x.webp 1x,
-						./img/iuri/juri-mari_mob@2x.webp 2x" width="260" height="300">
+							./img/iuri/juri-mari_mob@2x.webp 2x" width="260" height="300">
 
-						<img class="juri__img" src="./img/iuri/juri-mari_mob@1x.jpg" srcset="./img/iuri/juri-mari_mob@2x.jpg 2x"
+						<img class="juri-card__img" src="./img/iuri/juri-mari_mob@1x.jpg" srcset="./img/iuri/juri-mari_mob@2x.jpg 2x"
 							alt="Мария Кетова" width="260" height="300">
 					</picture>
-					<p class="juri__name text-juri">Мария Кетова</p>
+
+					<p class="juri-card__name text-juri">Мария Кетова</p>
+
+					<div class="juri-card__info">
+						<h3 class="juri-card__title">Мария Кетова</h3>
+						<p class="juri-card__specialty">CrossFit</p>
+						<ul class="juri-card__list">
+							<li class="juri-card__skills">Certified Level 3 Trainer</li>
+							<li class="juri-card__skills">Победитель чемпионата России по CrossFit </li>
+							<li class="juri-card__skills">Опыт — 6 лет</li>
+						</ul>
+					</div>
 				</li>
+
+				<li class="juri-card" name="juri" open tabindex="0">
+					<picture>
+						<source type="image/webp" srcset="./img/iuri/juri-anna_mob@1x.webp 1x,
+						./img/iuri/juri-anna_mob@2x.webp 2x" width="260" height="300">
+
+						<img class="juri-card__img" src="./img/iuri/juri-anna_mob@1x.jpg"
+							srcset="./img/iuri/juri-anna_mob@2x.jpg 2x" alt="Анна Павлова" width="260" height="300">
+					</picture>
+
+					<p class="juri-card__name text-juri">Анна Павлова-2</p>
+
+					<div class="juri-card__info">
+						<h3 class="juri-card__title">Анна Павлова</h3>
+						<p class="juri-card__specialty">CrossFit</p>
+						<ul class="juri-card__list">
+							<li class="juri-card__skills">Certified Level 3 Trainer</li>
+							<li class="juri-card__skills">Победитель чемпионата России по CrossFit </li>
+							<li class="juri-card__skills">Опыт — 6 лет</li>
+						</ul>
+					</div>
+				</li>
+
+				<li class="juri-card" name="juri" tabindex="0">
+					<picture>
+						<source type="image/webp" srcset="./img/iuri/juri-lavr_mob@1x.webp 1x,
+						./img/iuri/juri-lavr_mob@2x.webp 2x" width="260" height="300">
+
+						<img class="juri-card__img" src="./img/iuri/juri-lavr_mob@1x.jpg" srcset="./img/iuri/juri-lavr_mob@2x.jpg 2x"
+							alt="Алексей Лавров" width="260" height="300">
+					</picture>
+
+					<p class="juri-card__name text-juri">Алексей Лавров-2</p>
+
+					<div class="juri-card__info">
+						<h3 class="juri-card__title">Алексей Лавров</h3>
+						<p class="juri-card__specialty">CrossFit</p>
+						<ul class="juri-card__list">
+							<li class="juri-card__skills">Certified Level 3 Trainer</li>
+							<li class="juri-card__skills">Победитель чемпионата России по CrossFit </li>
+							<li class="juri-card__skills">Опыт — 6 лет</li>
+						</ul>
+					</div>
+				</li>
+
+				<li class="juri-card" name="juri" tabindex="0"> 
+					<picture>
+						<source type="image/webp" srcset="./img/iuri/juri-pash_mob@1x.webp 1x,
+							./img/iuri/juri-pash_mob@2x.webp 2x" width="260" height="300">
+
+						<img class="juri-card__img" src="./img/iuri/juri-pash_mob@1x.jpg" srcset="./img/iuri/juri-pash_mob@2x.jpg 2x"
+							alt="Александр Пашков" width="260" height="300">
+					</picture>
+
+					<p class="juri-card__name text-juri">Александр Пашков-2</p>
+
+					<div class="juri-card__info">
+						<h3 class="juri-card__title">Александр Пашков</h3>
+						<p class="juri-card__specialty">CrossFit</p>
+						<ul class="juri-card__list">
+							<li class="juri-card__skills">Certified Level 3 Trainer</li>
+							<li class="juri-card__skills">Победитель чемпионата России по CrossFit </li>
+							<li class="juri-card__skills">Опыт — 6 лет</li>
+						</ul>
+					</div>
+				</li>
+
+				<li class="juri-card" name="juri" tabindex="0">
+					<picture>
+						<source type="image/webp" srcset="./img/iuri/juri-mari_mob@1x.webp 1x,
+							./img/iuri/juri-mari_mob@2x.webp 2x" width="260" height="300">
+
+						<img class="juri-card__img" src="./img/iuri/juri-mari_mob@1x.jpg" srcset="./img/iuri/juri-mari_mob@2x.jpg 2x"
+							alt="Мария Кетова" width="260" height="300">
+					</picture>
+
+					<p class="juri-card__name text-juri">Мария Кетова-2</p>
+
+					<div class="juri-card__info">
+						<h3 class="juri-card__title">Мария Кетова</h3>
+						<p class="juri-card__specialty">CrossFit</p>
+						<ul class="juri-card__list">
+							<li class="juri-card__skills">Certified Level 3 Trainer</li>
+							<li class="juri-card__skills">Победитель чемпионата России по CrossFit </li>
+							<li class="juri-card__skills">Опыт — 6 лет</li>
+						</ul>
+					</div>
+				</li>
+
 			</ul>
 
 			<div class="juri__btn-wrapp btn">
@@ -432,22 +563,22 @@
 					<label for="tab-faq-1">
 						<input class="tab-faq__radio visually-hidden" type="radio" name="tab-faq" value="Центр" id="tab-faq-1"
 							checked>
-						<span class="tab-faq__button text-btn-faq">Центр</span>
+						<span class="tab-faq__button text-btn-faq" tabindex="0">Центр</span>
 					</label>
 
 					<label for="tab-faq-2">
 						<input class="tab-faq__radio visually-hidden" type="radio" name="tab-faq" value="Абонемент" id="tab-faq-2">
-						<span class="tab-faq__button text-btn-faq">Абонемент</span>
+						<span class="tab-faq__button text-btn-faq" tabindex="0">Абонемент</span>
 					</label>
 
 					<label for="tab-faq-3">
 						<input class="tab-faq__radio visually-hidden" type="radio" name="tab-faq" value="Услуги" id="tab-faq-3">
-						<span class="tab-faq__button text-btn-faq">Услуги</span>
+						<span class="tab-faq__button text-btn-faq" tabindex="0">Услуги</span>
 					</label>
 
 					<label for="tab-faq-4">
 						<input class="tab-faq__radio visually-hidden" type="radio" name="tab-faq" value="Правила" id="tab-faq-4">
-						<span class="tab-faq__button text-btn-faq">Правила</span>
+						<span class="tab-faq__button text-btn-faq" tabindex="0">Правила</span>
 					</label>
 				</div>
 
