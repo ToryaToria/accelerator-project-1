@@ -57,8 +57,9 @@
 
 	@include media-tablet {
 		text-align: center;
-		margin-left: 90px;
-		margin-right: 88px;
+		margin: 0 90px 36px;
+		// margin-left: 90px;
+		// margin-right: 88px;
 	}
 
 	@include media-desktop {
