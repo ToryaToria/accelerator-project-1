@@ -1,15 +1,16 @@
 .card {
   box-sizing: border-box;
-  padding: 50px 42px;
+  border: 7px solid transparent;
+
+  padding: 43px 35px;
   background-color: $color-white;
   display: flex;
   flex-direction: column;
   gap: 18px;
   align-items: center;
-  border: 7px solid transparent;
 
   @include media-tablet {
-    padding: 65px 65px 65px;
+    padding: 58px;
     gap: 22px;
   }
 
