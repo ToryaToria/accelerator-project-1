@@ -55,13 +55,43 @@
 	background-color: transparent;
 	padding-bottom: 1px;
 
+	&:hover {
+		border-bottom: 1px solid $color-white;
+	}
+
+	&:focus {
+		border: 1px solid $color-white;
+		outline: none;
+	}
+
+	&:disabled {
+		opacity: 0.4;
+	}
+
+	&:not(:placeholder-shown):invalid {
+		border-bottom: 1px solid $color-errer;
+		
+	}
+	
+	&:not(:placeholder-shown):invalid +	.equest__err {
+		display: block;
+	}
+
 	@include media-tablet {
 		height: 28px;
 	}
 }
 
-.request__label {
+.equest__err {
+	display: none;
+	position: absolute;
+	bottom: -25px;
+	left: 0;
+	@include font ($size: 14px, $line-height: 22px, $color: $color-errer);
+}
 
+.request__label {
+position: relative;
 	@include media-tablet {
 		flex-grow: 1;
 	}
