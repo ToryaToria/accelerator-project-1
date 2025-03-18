@@ -6,25 +6,34 @@
 
 	@include media-tablet {
 		padding-top: 61px;
-		padding-bottom: 58px;
+		padding-bottom: 60px;
 	}
 
 	@include media-desktop {
 		padding-top: 100px;
 		padding-bottom: 100px;
 	}
+	// * {
+	// 	outline: auto;
+	// }
 }
 
 .features__title {
 	margin-bottom: 40px;
 
+
 	@include media-tablet {
 		margin-bottom: 50px;
+	}
+
+	@include media-desktop {
+		margin-bottom: 51px;
 	}
 }
 
 .features__list {
 	@include list-reset;
+	// line-height: 100px;
 
 	display: grid;
 	grid-template-columns: 1fr;
@@ -32,7 +41,7 @@
 
 	@include media-tablet {
 		grid-template-columns: 1fr 1fr;
-		gap: 41px 30px;
+		gap: 40px 30px;
 	}
 
 	@include media-desktop {
@@ -52,7 +61,8 @@
 		padding-left: 0;
 		padding-right: 0;
 		text-align: left;
-		gap: 14px;
+		gap: 15px;
+		align-items: flex-start;
 	}
 
 	@include media-desktop {
@@ -106,6 +116,7 @@
 		margin-left: 179px;
 		margin-right: 179px;
 		padding: 35px;
+		padding-bottom: 36px;
 	}
 
 	@include media-desktop {
@@ -134,11 +145,13 @@
 	}
 }
 
+
+
 .features__subtitle {
 	margin-bottom: 12px;
 
 	@include media-tablet {
-		margin-bottom: 10px;
+		margin-bottom: 12px;
 	}
 
 	@include media-desktop {
@@ -150,10 +163,12 @@
 	margin-bottom: 12px;
 	color: transparent; // задает прозрачный цвет шрифта.
 	background-clip: text; // окрашивает текст в цвет background-image.
-	background-image: linear-gradient(145deg, #ED0233, #003EB7 45%);
+
+	// background-image: linear-gradient(145deg, #ED0233, #003EB7 45%);
 
 	// из ТЗ
-	// 	background: linear-gradient(128deg, #D10A42 0%, #0041CA 45.58%);
+		background-image: linear-gradient(128deg, #D10A42 0%, #0041CA 45.58%);
+
 	// background-clip: text;
 	// -webkit-background-clip: text;
 	// -webkit-text-fill-color: transparent;

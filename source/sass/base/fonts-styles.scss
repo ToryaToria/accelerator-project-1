@@ -82,11 +82,27 @@
 .text-basic-M {
 	@include font ($size: 14px, $line-height: 22px, $weight: 300);
 
+	// background-color: chocolate;
+
 	@include media-tablet {
 		font-size: 16px;
 		line-height: 24px;
 	}
 }
+
+// .text-features {
+// 	@include font ($size: 14px, $line-height: 22px, $weight: 300);
+
+// 	// background-color: rgb(36, 210, 30);
+
+// 	@include media-tablet {
+// 		font-size: 16px;
+// 		line-height: 140%;
+// 	}
+// 	@include media-desktop {
+// 		line-height: 24px;
+// 	}
+// }
 
 .text-games-month {
 	@include font ($size: 12px, $line-height: 100%);
@@ -164,17 +180,20 @@
 }
 
 .subtitle {
-	@include font ($size: 18px, $line-height: 20px, $weight: 500);
+			// background-color: red;
+
+	@include font ($size: 18px, $line-height: 20px);
 
 	@include media-tablet {
 		font-size: 20px;
+			// letter-spacing: 0.004em;
+
 	}
 
 	@include media-desktop {
+			// letter-spacing: 0;
 
-		// background-colo: red;
-
-		font-size: 22px;
+	font-size: 22px;
 		line-height: 22px;
 	}
 }
@@ -224,7 +243,8 @@
 }
 
 .text-nav,
-.text-features {
+.subtitle-features {
+	// background-color: antiquewhite;
 	/* телефон в меню */
 
 	@include font ($size: 22px, $line-height: 22px, $weight: 700);
