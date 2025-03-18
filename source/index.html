@@ -94,25 +94,19 @@
 			</picture>
 
 			<div class="about__video">
-				<video class="video" poster="./img/video.jpg">
 
-					<!-- width="260" height="150" controls -->
-
-					<source src="./video/rabbit320.webm" type="video/webm">
-					<source src="./video/rabbit320.mp4" type="video/mp4">
-					<source src="./video/rabbit320.ogv" type="video/ogg">
-					<source src="./video/rabbit320.avi" type="video/avi">
-					<p> Простите, но ваш браузер не поддерживает встроенные видео.
-						Попробуйте скачать видео <a href="./video/rabbit320.webm">по этой ссылке</a>
-						и открыть его на своём устройстве.
-					</p>
-				</video>
-
-				<div class="video__play-wrapp">
-					<button class="video__play" type="button">
-						<span class="visually-hidden">кнопка пуск</span>
-					</button>
+				<div class="video-wrapp">
+					<iframe class="video" id="myVideo" width="320" height="170" loading="lazy" frameborder="0"
+						title="YouTube video player" allowfullscreen referrerpolicy="strict-origin-when-cross-origin"
+						data-src="https://www.youtube.com/embed/9TZXsZItgdw?si=lhUb-X2bliaV0EZ0?&autoplay=1">
+						>
+					</iframe>
 				</div>
+
+				<button class="video__play" type="button">
+					<span class="visually-hidden">кнопка пуск</span>
+				</button>
+			</div>
 		</section>
 
 		<section class="price container tab-price" data-test="price" id="price">
@@ -286,8 +280,8 @@
 						<source type="image/webp" srcset="./img/iuri/juri-lavr_mob@1x.webp 1x,
 						./img/iuri/juri-lavr_mob@2x.webp 2x" width="260" height="300">
 
-						<img class="juri-card__img" src="./img/iuri/juri-lavr_mob@1x.jpg" srcset="./img/iuri/juri-lavr_mob@2x.jpg 2x"
-							alt="Алексей Лавров" width="260" height="300">
+						<img class="juri-card__img" src="./img/iuri/juri-lavr_mob@1x.jpg"
+							srcset="./img/iuri/juri-lavr_mob@2x.jpg 2x" alt="Алексей Лавров" width="260" height="300">
 					</picture>
 
 					<p class="juri-card__name text-juri">Алексей Лавров</p>
@@ -303,13 +297,13 @@
 					</div>
 				</li>
 
-				<li class="juri-card" name="juri" tabindex="0"> 
+				<li class="juri-card" name="juri" tabindex="0">
 					<picture>
 						<source type="image/webp" srcset="./img/iuri/juri-pash_mob@1x.webp 1x,
 							./img/iuri/juri-pash_mob@2x.webp 2x" width="260" height="300">
 
-						<img class="juri-card__img" src="./img/iuri/juri-pash_mob@1x.jpg" srcset="./img/iuri/juri-pash_mob@2x.jpg 2x"
-							alt="Александр Пашков" width="260" height="300">
+						<img class="juri-card__img" src="./img/iuri/juri-pash_mob@1x.jpg"
+							srcset="./img/iuri/juri-pash_mob@2x.jpg 2x" alt="Александр Пашков" width="260" height="300">
 					</picture>
 
 					<p class="juri-card__name text-juri">Александр Пашков</p>
@@ -330,8 +324,8 @@
 						<source type="image/webp" srcset="./img/iuri/juri-mari_mob@1x.webp 1x,
 							./img/iuri/juri-mari_mob@2x.webp 2x" width="260" height="300">
 
-						<img class="juri-card__img" src="./img/iuri/juri-mari_mob@1x.jpg" srcset="./img/iuri/juri-mari_mob@2x.jpg 2x"
-							alt="Мария Кетова" width="260" height="300">
+						<img class="juri-card__img" src="./img/iuri/juri-mari_mob@1x.jpg"
+							srcset="./img/iuri/juri-mari_mob@2x.jpg 2x" alt="Мария Кетова" width="260" height="300">
 					</picture>
 
 					<p class="juri-card__name text-juri">Мария Кетова</p>
@@ -374,8 +368,8 @@
 						<source type="image/webp" srcset="./img/iuri/juri-lavr_mob@1x.webp 1x,
 						./img/iuri/juri-lavr_mob@2x.webp 2x" width="260" height="300">
 
-						<img class="juri-card__img" src="./img/iuri/juri-lavr_mob@1x.jpg" srcset="./img/iuri/juri-lavr_mob@2x.jpg 2x"
-							alt="Алексей Лавров" width="260" height="300">
+						<img class="juri-card__img" src="./img/iuri/juri-lavr_mob@1x.jpg"
+							srcset="./img/iuri/juri-lavr_mob@2x.jpg 2x" alt="Алексей Лавров" width="260" height="300">
 					</picture>
 
 					<p class="juri-card__name text-juri">Алексей Лавров-2</p>
@@ -391,13 +385,13 @@
 					</div>
 				</li>
 
-				<li class="juri-card" name="juri" tabindex="0"> 
+				<li class="juri-card" name="juri" tabindex="0">
 					<picture>
 						<source type="image/webp" srcset="./img/iuri/juri-pash_mob@1x.webp 1x,
 							./img/iuri/juri-pash_mob@2x.webp 2x" width="260" height="300">
 
-						<img class="juri-card__img" src="./img/iuri/juri-pash_mob@1x.jpg" srcset="./img/iuri/juri-pash_mob@2x.jpg 2x"
-							alt="Александр Пашков" width="260" height="300">
+						<img class="juri-card__img" src="./img/iuri/juri-pash_mob@1x.jpg"
+							srcset="./img/iuri/juri-pash_mob@2x.jpg 2x" alt="Александр Пашков" width="260" height="300">
 					</picture>
 
 					<p class="juri-card__name text-juri">Александр Пашков-2</p>
@@ -418,8 +412,8 @@
 						<source type="image/webp" srcset="./img/iuri/juri-mari_mob@1x.webp 1x,
 							./img/iuri/juri-mari_mob@2x.webp 2x" width="260" height="300">
 
-						<img class="juri-card__img" src="./img/iuri/juri-mari_mob@1x.jpg" srcset="./img/iuri/juri-mari_mob@2x.jpg 2x"
-							alt="Мария Кетова" width="260" height="300">
+						<img class="juri-card__img" src="./img/iuri/juri-mari_mob@1x.jpg"
+							srcset="./img/iuri/juri-mari_mob@2x.jpg 2x" alt="Мария Кетова" width="260" height="300">
 					</picture>
 
 					<p class="juri-card__name text-juri">Мария Кетова-2</p>
@@ -909,7 +903,8 @@
 			</li>
 		</ul>
 	</footer>
-</body>
 
+	<script src="js/main.js" type="module"></script>
+</body>
 
 </html>
