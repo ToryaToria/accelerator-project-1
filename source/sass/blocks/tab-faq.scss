@@ -35,9 +35,9 @@
 		border: 1px solid $color-text-base;
 	}
 
-	// &:not(:disabled):focus+.tab-faq__button {
-	// 	outline: auto;  // НАДО ЛИ?
-	// }
+	&:not(:disabled):focus+.tab-faq__button {
+		outline: auto;  // НАДО ЛИ?
+	}
 
 	&:disabled+.tab-faq__button {
 		color: $color-text-base;
