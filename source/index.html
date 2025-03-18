@@ -96,7 +96,7 @@
 			<div class="about__video">
 
 				<div class="video-wrapp">
-					<iframe class="video" id="myVideo" width="320" height="170" loading="lazy" frameborder="0"
+					<iframe class="video" id="myVideo" width="320" height="170" loading="lazy" tabindex="-1" frameborder="0"
 						title="YouTube video player" allowfullscreen referrerpolicy="strict-origin-when-cross-origin"
 						data-src="https://www.youtube.com/embed/9TZXsZItgdw?si=lhUb-X2bliaV0EZ0?&autoplay=1">
 						>
@@ -112,20 +112,20 @@
 		<section class="price container tab-price" data-test="price" id="price">
 			<h2 class="price__title title-section">Абонементы</h2>
 
-			<div class="price__month">
-				<label for="tab-price-1" tabindex="0">
+			<div class="price__month" >
+				<label for="tab-price-1">
 					<input class="tab-price__radio visually-hidden tab1" type="radio" name="tab-price" value="1" checked
 						id="tab-price-1">
 					<span class="tab-price__button tab-price__button--current text-btn-month">1 месяц</span>
 					</input>
 				</label>
 
-				<label for="tab-price-2" tabindex="0">
+				<label for="tab-price-2">
 					<input class="tab-price__radio visually-hidden tab2" type="radio" name="tab-price" value="6" id="tab-price-2">
 					<span class="tab-price__button text-btn-month">6 месяцев</span>
 				</label>
 
-				<label for="tab-price-3" tabindex="0">
+				<label for="tab-price-3">
 					<input class="tab-price__radio visually-hidden tab3" type="radio" name="tab-price" value="12"
 						id="tab-price-3">
 					<span class="tab-price__button text-btn-month">12 месяцев</span>
@@ -133,7 +133,7 @@
 			</div>
 
 			<ul class="price__cards-list">
-				<li class="price__card card">
+				<li class="price__card card" id="price__card1">
 					<h3 class="title-price">С тренером</h3>
 					<p class="text-basic-M">12 занятий</p>
 					<p class="card__prise text-number-M tab-price__show1" data-tip="5000">5000
@@ -150,10 +150,10 @@
 						</span>
 					</p>
 
-					<a class="button button--color-dark text-btn-M" href="#">Купить абонемент</a>
+					<a class="card__btn button button--color-dark text-btn-M" href="#" id="card__btn1">Купить абонемент</a>
 				</li>
 
-				<li class="price__card card">
+				<li class="price__card card" id="price__card2">
 					<h3 class="title-price">Дневной</h3>
 					<p class="text-basic-M">с 8:00 до 17:00</p>
 					<p class="card__prise text-number-M tab-price__show1" data-tip="1700">1700
@@ -170,10 +170,10 @@
 						</span>
 					</p>
 
-					<a class="button button--color-dark  text-btn-M" href="#">Купить абонемент</a>
+					<a class=" card__btn button button--color-dark  text-btn-M" href="#" id="card__btn2">Купить абонемент</a>
 				</li>
 
-				<li class="price__card card">
+				<li class="price__card card" id="price__card3">
 					<h3 class="title-price">Полный день</h3>
 					<p class="text-basic-M">с 8:00 до 22:00</p>
 					<p class="card__prise text-number-M tab-price__show1" data-tip="2700" id="tab-price__show1">2700
@@ -190,7 +190,7 @@
 						</span>
 					</p>
 
-					<a class="button  button--color-dark text-btn-M" href="#">Купить абонемент</a>
+					<a class="card__btn button  button--color-dark text-btn-M" href="#" id="card__btn3">Купить абонемент</a>
 				</li>
 			</ul>
 		</section>

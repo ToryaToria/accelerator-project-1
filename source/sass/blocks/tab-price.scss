@@ -46,7 +46,7 @@
 
   &:not(:disabled):focus+.tab-price__button {
     color: $color-text-base;
-    // outline: auto; // НУЖЕН???
+    outline: auto; // НУЖЕН???
 
     &::after {
       background-color: currentColor;

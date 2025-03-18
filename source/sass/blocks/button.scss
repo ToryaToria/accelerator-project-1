@@ -41,25 +41,7 @@
 		width: 100%;
 
 
-		&:not(--isDisabled):hover {
-			color: $color-white;
-			background-image: linear-gradient(to left, #003EB7, #ED0233);
-			border: 2px solid transparent;
-		}
-
-		&:not(--isDisabled):focus {
-			color: $color-white;
-			background-image: linear-gradient(to left, #003EB7, #ED0233);
-			border: 2px solid $color-black;
-		}
-
-
-		&:not(--isDisabled):active {
-			color: rgba(255, 255, 255, 0.7);
-			background-image: linear-gradient(to left, #003EB7, #ED0233);
-			border: 2px solid transparent;
-			opacity: 1;
-		}
+		
 
 		&--isDisabled {
 			opacity: 0.3;
