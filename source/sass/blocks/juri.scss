@@ -18,6 +18,7 @@
 	}
 }
 
+
 .juri__title {
 	margin-bottom: 20px;
 
@@ -27,6 +28,8 @@
 }
 
 .juri__list {
+	position: relative;
+	z-index: 10;
 	@include list-reset;
 	
 	margin-left: 15px;
@@ -49,10 +52,13 @@
 	}
 }
 
+.juri-card--hidden,
+.juri-card--hidden2 {
+	display: none;
+}
 
-
-
-
-// .juri__btn-wrapp {
-	
-// }
+.juri-card--hidden{
+	@include media-desktop {
+	display: block;
+	}
+}

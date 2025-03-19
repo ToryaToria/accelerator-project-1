@@ -247,9 +247,10 @@
 			</picture>
 		</section>
 
-		<section class="juri container" data-test="juri">
+		<section class="juri container slider" data-test="juri">
 			<h2 class="juri__title title-section title-section--big">Жюри</h2>
 
+			<div class="slider__container">
 			<ul class="juri__list">
 
 				<li class="juri-card" name="juri" open tabindex="0">
@@ -296,7 +297,7 @@
 					</div>
 				</li>
 
-				<li class="juri-card" name="juri" tabindex="0">
+				<li class="juri-card juri-card--hidden" name="juri" tabindex="0">
 					<picture>
 						<source type="image/webp" srcset="./img/iuri/juri-pash_mob@1x.webp 1x,
 							./img/iuri/juri-pash_mob@2x.webp 2x" width="260" height="300">
@@ -318,7 +319,7 @@
 					</div>
 				</li>
 
-				<li class="juri-card" name="juri" tabindex="0">
+				<li class="juri-card juri-card--hidden" name="juri" tabindex="0">
 					<picture>
 						<source type="image/webp" srcset="./img/iuri/juri-mari_mob@1x.webp 1x,
 							./img/iuri/juri-mari_mob@2x.webp 2x" width="260" height="300">
@@ -340,7 +341,7 @@
 					</div>
 				</li>
 
-				<li class="juri-card" name="juri" open tabindex="0">
+				<li class="juri-card juri-card--hidden2" name="juri" open tabindex="0">
 					<picture>
 						<source type="image/webp" srcset="./img/iuri/juri-anna_mob@1x.webp 1x,
 						./img/iuri/juri-anna_mob@2x.webp 2x" width="260" height="300">
@@ -362,7 +363,7 @@
 					</div>
 				</li>
 
-				<li class="juri-card" name="juri" tabindex="0">
+				<li class="juri-card juri-card--hidden2" name="juri" tabindex="0">
 					<picture>
 						<source type="image/webp" srcset="./img/iuri/juri-lavr_mob@1x.webp 1x,
 						./img/iuri/juri-lavr_mob@2x.webp 2x" width="260" height="300">
@@ -384,7 +385,7 @@
 					</div>
 				</li>
 
-				<li class="juri-card" name="juri" tabindex="0">
+				<li class="juri-card juri-card--hidden2" name="juri" tabindex="0">
 					<picture>
 						<source type="image/webp" srcset="./img/iuri/juri-pash_mob@1x.webp 1x,
 							./img/iuri/juri-pash_mob@2x.webp 2x" width="260" height="300">
@@ -406,7 +407,7 @@
 					</div>
 				</li>
 
-				<li class="juri-card" name="juri" tabindex="0">
+				<li class="juri-card juri-card--hidden2" name="juri" tabindex="0">
 					<picture>
 						<source type="image/webp" srcset="./img/iuri/juri-mari_mob@1x.webp 1x,
 							./img/iuri/juri-mari_mob@2x.webp 2x" width="260" height="300">
@@ -430,9 +431,15 @@
 
 			</ul>
 
-			<div class="juri__btn-wrapp btn">
-				<button class="btn__button" type="button"><span class="visually-hidden">туда</span></button>
-				<button class="btn__button btn__button--r" type="button"><span class="visually-hidden">сюда</span></button>
+			<div class="slider__btn-wrapp">
+				<button class="slider__button slider__button--l" type="button">
+					<span class="visually-hidden">туда</span>
+				</button>
+
+				<button class="slider__button" type="button">
+					<span class="visually-hidden">сюда</span>
+				</button>
+			</div>
 			</div>
 		</section>
 
@@ -790,12 +797,13 @@
 			</div>
 		</section>
 
-		<section class="reviews container" data-test="reviews">
+		<section class="reviews container slider" data-test="reviews">
 			<h2 class="reviews__title title-section">Отзывы</h2>
+		
+			<div class="slider__container">
+
 			<ul class="reviews__list">
 				<li class="reviews__item">
-
-
 					<picture>
 						<source type="image/webp" srcset="./img/avatar/avatar_mob@1x.webp 1x,
 						./img/avatar/avatar_mob@2x.webp 2x" width="68" height="68">
@@ -812,11 +820,35 @@
 						</p>
 					</div>
 				</li>
+
+				<li class="reviews__item reviews__item--hidden">
+					<picture>
+						<source type="image/webp" srcset="./img/avatar/avatar_mob@1x.webp 1x,
+						./img/avatar/avatar_mob@2x.webp 2x" width="68" height="68">
+
+						<img class="reviews__img" src="./img/avatar/avatar_mob@1x.jpeg" srcset="./avatar/avatar_mob@2x.jpg 2x"
+							alt="Анна Орлова" width="68" height="68">
+					</picture>
+
+					<div>
+						<h3 class="reviews__subtitle subtitle-rewiews text-invert">Анна Орлова-2</h3>
+						<p class="reviews__text text-basic-M text-invert">
+							«Хожу в Supergym уже больше года. Нравится, что в клубе всегда чисто, тренажёры обновляют, персонал
+							дружелюбный. Зал просторный, даже в вечернее время нет очередей»
+						</p>
+					</div>
+				</li>
 			</ul>
 
-			<div class="visually-hidden">
-				<button type="button">туда</button>
-				<button type="button">сюда</button>
+			<div class="slider__btn-wrapp">
+				<button class="slider__button  slider__button--l slider__button--l--reviews" type="button">
+					<span class="visually-hidden">туда</span>
+				</button>
+
+				<button class="slider__button slider__button--reviews" type="button">
+					<span class="visually-hidden">сюда</span>
+				</button>
+			</div>
 			</div>
 		</section>
 
