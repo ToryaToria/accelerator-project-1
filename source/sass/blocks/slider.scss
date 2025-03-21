@@ -1,98 +1,77 @@
-.slider__container {
-	position: relative;
+// .slider__container {
+// 	position: relative;
+// }
 
-}
-
-.slider__btn-wrapp {
-	// outline: auto;
-	display: none;
-
-	z-index: 1;
+.slider__container--reviews {
+	width: 240px;
 
 	@include media-tablet {
-		display: block;
-		display: flex;
-		justify-content: space-between;
-		position: absolute;
-		width: 100%;
-		height: 50px;
-		top: 50%;
-		left: 0px;
-
-		transform: translate(0, -50%);
-
+		width: 500px;
 	}
 
-	// @include media-desktop {
-	// 	width: 100%;
-
-	// margin-left: -60px;
-	// margin-right: -240px;
-
-	// }
+	@include media-desktop {
+		width: 560px;
+	}
 }
 
 .slider__button {
-	@include btn-reset;
-	cursor: pointer;
-	position: absolute;
-	right: -11px;
+	display: none;
 
-	@include media-desktop {
-		right: -70px;
+	@include media-tablet {
+		@include btn-reset;
+		cursor: pointer;
+		display: flex;
+		justify-content: center;
+		align-items: center;
 
-	}
+		width: 50px;
+		height: 50px;
+		border: 1px solid transparent;
+		border-radius: 50%;
 
-	&--reviews {
-		right: -17px;
+		margin-top: 11px;
+		margin-right: 23px;
 
+		&--l {
+			transform: rotate(180deg);
+			margin-left: 23px;
+		}
 
-		@include media-desktop {
-			right: 180px;
+		&--reviews {
+			margin-top: 19px;
+			margin-left: 18px;
 
+			&--r {
+				margin-right: 18px;
+			}
 		}
 	}
-
-	display: flex;
-	justify-content: center;
-	align-items: center;
-
-	width: 50px;
-	height: 50px;
-	border: 1px solid transparent;
-	border-radius: 50%;
-
-	// background-color: red;
 
 	&::before {
 		display: block;
 		content: '';
-		width: 16px;
-		height: 32px;
+		width: 35px;
+		height: 35px;
 		background-color: $color-text-base;
 
 		mask-position: center;
 		mask-repeat: no-repeat;
-		mask-size: auto;
+		mask-size: contain;
 		mask-image: url('../../__spritemap#sprite-arrow-view');
 	}
 
+	&::after {
+		content: '';
+	}
 
-	&--l {
-		transform: rotate(180deg);
-		left: -11px;
-
-
-		@include media-desktop {
-			left: -70px;
-		}
+	@include media-desktop {
+		margin-top: 22px;
 
 		&--reviews {
-			left: -17px;
 
-			@include media-desktop {
-				left: 180px;
-							}
+		margin-top: 39px;
+		margin-right: 272px;
+		margin-left: 272px;
 		}
 	}
 
