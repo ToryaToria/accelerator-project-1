@@ -674,7 +674,7 @@
 						</details>
 					</li>
 
-	
+
 					<li class="faq__item">
 						<details class="faq__details">
 							<summary class="faq__summary">
@@ -795,8 +795,8 @@
 
 			</div>
 		</section>
-	
-			<section class="reviews container container--reviews slider" data-test="reviews">
+
+		<section class="reviews container container--reviews slider" data-test="reviews">
 			<h2 class="reviews__title title-section">Отзывы</h2>
 
 			<div class="slider__container slider__container--reviews swiper">
@@ -898,7 +898,7 @@
 					<div class="request__wrapp">
 						<label class="request__label" for="">
 							<input class="request__field text-form" type="text" placeholder="Имя" required
-								pattern="[A-Za-zА-Яа-яЁё\s]+$" name="name">
+								pattern="[A-Za-zА-Яа-яЁё\s]+$" name="name" disabled>
 							<span class="equest__err">Только буквы и пробел!</span>
 						</label>
 
@@ -927,12 +927,12 @@
 
 					<li class="contacts__item contacts__item--3">
 						<h3 class="contacts__name title-contacts">Телефон:</h3>
-						<p class="text-name">8 800 555-55-55</p>
-					</li>
+						<a class="text-name" href="tel:88005555555">8 800 555-55-55</a>
+					</li>	
 
 					<li class="contacts__item   contacts__item--4">
 						<h3 class="contacts__name title-contacts">Email:</h3>
-						<p class="text-name">oмск@supergym.ru</p>
+						<a class="text-name" href="mailto:oмск@supergym.ru">oмск@supergym.ru</a>
 					</li>
 				</ul>
 			</section>
@@ -978,7 +978,7 @@
 		</ul>
 	</footer>
 	<script src="./js/vendor/swiper-bundle.js"></script>
-	 	<!-- <script src="./js/vendor/swiper.js"></script> -->
+	<!-- <script src="./js/vendor/swiper.js"></script> -->
 
 	<script src="js/main.js" type="module"></script>
 </body>

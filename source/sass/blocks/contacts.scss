@@ -42,8 +42,8 @@
 	}
 
 	@include media-desktop {
-	margin: 0;
-	width: 100%;
+		margin: 0;
+		width: 100%;
 	}
 }
 
@@ -63,10 +63,12 @@
 		&--3,
 		&--4 {
 			padding-left: 30px;
+
 			@include media-desktop {
 				padding-left: 60px;
 
 			}
+
 			// background-color: antiquewhite;
 		}
 
@@ -95,7 +97,8 @@
 	}
 
 	@include media-desktop {
-	width: 238px;
+		width: 238px;
+		padding-bottom: 14px;
 	}
 }
 
@@ -104,5 +107,9 @@
 
 	@include media-tablet {
 		margin-bottom: 6px;
+	}
+
+	@include media-desktop {
+		margin-bottom: 5px;
 	}
 }

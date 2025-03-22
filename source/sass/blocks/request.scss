@@ -5,11 +5,11 @@
 	background-color: $color-text-base;
 
 	@include media-tablet {
-		padding-top: 59px;
+		padding-top: 60px;
 		padding-bottom: 60px;
 	}
 	@include media-desktop {
-		padding-top: 61px;
+		padding-top: 60px;
 	}
 }
 
@@ -37,11 +37,13 @@
 	@include media-tablet {
 		width: 440px;
 		margin: 0 auto;
-		gap: 36px;
+		// gap: 35px;
 	}
 	@include media-desktop {
 		margin: 0;
 		width: 100%;
+		gap: 35px;
+
 	}
 }
 
@@ -51,9 +53,17 @@
 	padding: 0;
 	height: 27px;
 	border: none;
-	border-bottom: 1px solid $color-divider;
+	border-bottom: 1px solid $color-white-50;
 	background-color: transparent;
 	padding-bottom: 1px;
+
+	@include media-tablet {
+	height: 26px;
+	}
+
+	&::placeholder {
+		color: $color-white-70;
+	}
 
 	&:hover {
 		border-bottom: 1px solid $color-white;
@@ -65,7 +75,7 @@
 	}
 
 	&:disabled {
-		opacity: 0.4;
+color: $color-white-40;
 	}
 
 	&:not(:placeholder-shown):invalid {
@@ -78,7 +88,7 @@
 	}
 
 	@include media-tablet {
-		height: 28px;
+		height: 26px;
 	}
 }
 

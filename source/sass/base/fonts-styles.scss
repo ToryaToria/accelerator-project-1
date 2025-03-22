@@ -365,6 +365,7 @@
 
 .text-name {
 	@include font ($size: 14px, $line-height: 20px);
+	text-decoration: none;
 
 	@include media-tablet {
 		line-height: 22px;
@@ -372,7 +373,7 @@
 }
 
 .text-form {
-	@include font ($size: 14px, $line-height: 22px, $weight: 300);
+	@include font ($size: 14px, $line-height: 22px);
 	color: $color-white;
 }
 
