@@ -1,3 +1,6 @@
+// import './vendor/swiper-bundle.js';
+// import "./vendor/swiper.js";
+
 console.log('ky')
 
 const dataSliderJuri = {
@@ -37,6 +40,10 @@ function slider(data) {
       1366: {
         slidesPerView: data.slidesPerView1366,
         spaceBetween: data.spaceBetween,
+        navigation: {
+          nextEl: data.btnNext,
+          prevEl: data.btnPrev,
+        },
       }
     }
   });
@@ -44,10 +51,21 @@ function slider(data) {
   return slider;
 }
 
-// slider(dataSliderJuri);
-// slider(dataSliderReviews);
+slider(dataSliderJuri);
+slider(dataSliderReviews);
 
-// slider('.slider__container--reviews', ".swiper-button-next-reviews", ".swiper-button-prev-reviews", false, 1, 0);
+// const sliderReviews = new Swiper('.slider__container--reviews', {
+//   loop: false,
+
+//  breakpoints: {
+//    768: {
+//      navigation: {
+//        nextEl: ".swiper-button-next-reviews",
+//        prevEl: ".swiper-button-prev-reviews",
+//      },
+//    },
+//  }
+// });
 
 // const sliderJuri = new Swiper('.slider__container--juri', {
 //   loop: true,
@@ -57,31 +75,37 @@ function slider(data) {
 //       slidesPerView: 2,
 //       spaceBetween: 40,
 //       navigation: {
-//         nextEl: ".swiper-button-next-juri",
-//         prevEl: ".swiper-button-prev-juri",
+//         nextEl: ".swiper-button-next",
+//         prevEl: ".swiper-button-prev",
 //       },
 //     },
 //     1366: {
 //       slidesPerView: 4,
 //       spaceBetween: 40,
+//       navigation: {
+//         nextEl: ".swiper-button-next",
+//         prevEl: ".swiper-button-prev",
+//       },
 //     }
 //   }
 // });
 
+// const sliderReviews = new Swiper('.slider__container--juri', {
+//   loop: false,
+
+//  breakpoints: {
+//    768: {
+//      navigation: {
+//        nextEl: ".swiper-button-next",
+//        prevEl: ".swiper-button-prev",
+//      },
+//    },
+//  }
+// });
+
 // console.log(sliderJuri)
 
-// const sliderReviews = new Swiper('.slider__container--reviews', {
-//    loop: false,
 
-//   breakpoints: {
-//     768: {
-//       navigation: {
-//         nextEl: ".swiper-button-next-reviews",
-//         prevEl: ".swiper-button-prev-reviews",
-//       },
-//     },
-//   }
-// });
 
 // console.log(sliderReviews)
 

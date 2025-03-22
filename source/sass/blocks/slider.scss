@@ -29,7 +29,7 @@
 		border: 1px solid transparent;
 		border-radius: 50%;
 
-		background-color: aquamarine;
+		// background-color: aquamarine;
 		margin-top: 11px;
 		margin-right: 23px;
 
@@ -53,8 +53,8 @@
 		content: '';
 		width: 35px;
 		height: 35px;
-		// background-color: $color-text-base;
-		background-color: blueviolet;
+		background-color: $color-text-base;
+		// background-color: blueviolet;
 
 		mask-position: center;
 		mask-repeat: no-repeat;
@@ -79,21 +79,21 @@
 
 	&:not(:disabled):hover {
 		border: 1px solid $color-text-base;
-		background-color: red;
+		// background-color: red;
 	}
 
-	// &:not(:disabled):focus {
-	// 	border: 1px solid $color-text-base;
-	// 	background-color: $color-bg-slider-btn;
-	// }
+	&:not(:disabled):focus {
+		border: 1px solid $color-text-base;
+		background-color: $color-bg-slider-btn;
+	}
 
-	// &:not(:disabled):active {
-	// 	background-color: $color-text-base;
+	&:not(:disabled):active {
+		background-color: $color-text-base;
 
-	// 	&::before {
-	// 		background-color: $color-white;
-	// 	}
-	// }
+		&::before {
+			background-color: $color-white;
+		}
+	}
 
 	&:disabled {
 		cursor: default;

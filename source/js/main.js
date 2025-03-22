@@ -4,7 +4,7 @@
 // import 'swiper/css';
 
 import './video.js';
-import './vendor/swiper-bundle.js';
+// import './vendor/swiper-bundle.js';
 
 import './slider.js';
 
