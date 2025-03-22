@@ -251,7 +251,7 @@
 		<section class="juri container container--juri slider" data-test="juri">
 			<h2 class="juri__title title-section title-section--big">Жюри</h2>
 
-			<div class="slider__container slider__container--juri  swiper">
+			<div class="slider__container slider__container--juri swiper">
 				<ul class="juri__list swiper-wrapper">
 
 					<li class="juri-card swiper-slide" name="juri" open tabindex="0">
@@ -433,11 +433,11 @@
 				</ul>
 			</div>
 
-			<button class="slider__button slider__button--l swiper-button-prev" type="button">
+			<button class="slider__button slider__button--l swiper-button-prev swiper-button-prev-juri" type="button">
 				<span class="visually-hidden">туда</span>
 			</button>
 
-			<button class="slider__button swiper-button-next" type="button">
+			<button class="slider__button swiper-button-next swiper-button-next-juri" type="button">
 				<span class="visually-hidden">сюда</span>
 			</button>
 		</section>
@@ -1242,8 +1242,7 @@
 
 				<ul class="reviews__list swiper-wrapper">
 					<li class="reviews__item swiper-slide">
-						<img class="reviews__img" src="./img/avatar/Rectangle.jpg" 
-								alt="Анна Орлова" width="80" height="80">
+						<img class="reviews__img" src="./img/avatar/Rectangle.jpg" alt="Анна Орлова" width="80" height="80">
 
 						<!-- <picture>
 							<source type="image/webp" srcset="./img/avatar/avatar_mob@1x.webp 1x,
@@ -1297,14 +1296,33 @@
 							</p>
 						</div>
 					</li>
+
+					<li class="reviews__item swiper-slide">
+						<picture>
+							<source type="image/webp" srcset="./img/avatar/avatar_mob@1x.webp 1x,
+						./img/avatar/avatar_mob@2x.webp 2x" width="68" height="68">
+
+							<img class="reviews__img" src="./img/avatar/avatar_mob@1x.jpeg" srcset="./avatar/avatar_mob@2x.jpg 2x"
+								alt="Анна Орлова" width="68" height="68">
+						</picture>
+
+						<div>
+							<h3 class="reviews__subtitle subtitle-rewiews text-invert">Анна Орлова-4</h3>
+							<p class="reviews__text text-basic-M text-invert">
+								«Хожу в Supergym уже больше года. Нравится, что в клубе всегда чисто, тренажёры обновляют, персонал
+								дружелюбный. Зал просторный, даже в вечернее время нет очередей»
+							</p>
+						</div>
+					</li>
 				</ul>
 			</div>
 
-			<button class="slider__button  slider__button--l slider__button--reviews swiper-button-prev" type="button">
+			<button class="slider__button  slider__button--l slider__button--reviews swiper-button-prev swiper-button-prev-reviews" type="button">
 				<span class="visually-hidden">туда</span>
 			</button>
 
-			<button class="slider__button slider__button--reviews slider__button--reviews--r swiper-button-next" type="button">
+			<button class="slider__button slider__button--reviews slider__button--reviews--r swiper-button-next swiper-button-next-reviews"
+				type="button">
 				<span class="visually-hidden">сюда</span>
 			</button>
 		</section>
@@ -1395,8 +1413,8 @@
 			</li>
 		</ul>
 	</footer>
-	<script src="./js/vendor/swiper-bundle.js"></script>
-	<script src="js/main.js" type="module"></script>
+	<!-- <script src="./js/vendor/swiper-bundle.js"></script>
+	<script src="js/main.js" type="module"></script> -->
 </body>
 
 </html>
