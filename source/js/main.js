@@ -5,6 +5,14 @@
 
 import './video.js';
 // import './vendor/swiper-bundle.js';
-
+// import "./vendor/swiper.js";
 import './slider.js';
+// {
+//   slider,
+//   dataSliderReviews,
+//   dataSliderJuri
+// } from 
 
+
+// slider(dataSliderJuri);
+// slider(dataSliderReviews);

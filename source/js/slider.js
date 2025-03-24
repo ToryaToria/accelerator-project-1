@@ -1,5 +1,8 @@
 // import './vendor/swiper-bundle.js';
 // import "./vendor/swiper.js";
+// import Swiper from "./vendor/swiper.js";
+// import Swiper from "swiper";
+// import Navigation from "swiper/modules";
 
 console.log('ky')
 
@@ -24,7 +27,7 @@ const dataSliderReviews = {
 }
 
 function slider(data) {
-  console.log(data);
+  // console.log(data);
 
   const slider = new Swiper(data.elem, {
     loop: data.loop,
@@ -53,6 +56,12 @@ function slider(data) {
 
 slider(dataSliderJuri);
 slider(dataSliderReviews);
+
+export{
+  slider,
+  dataSliderReviews,
+  dataSliderJuri
+}
 
 // const sliderReviews = new Swiper('.slider__container--reviews', {
 //   loop: false,

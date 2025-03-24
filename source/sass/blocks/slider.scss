@@ -19,7 +19,7 @@
 
 	@include media-tablet {
 		@include btn-reset;
-		cursor: copy;
+cursor: pointer;
 		display: flex;
 		justify-content: center;
 		align-items: center;

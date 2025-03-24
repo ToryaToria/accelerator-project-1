@@ -103,6 +103,8 @@
 
 .faq__summary {
 	&::after {
+		// transition: all 0.5s;
+
 		content: '';
 
 		flex-shrink: 0;
@@ -155,6 +157,28 @@
 			background-size: 14px 14px;
 			background-position: center;
 		}
+
+		// ~ .faq__text { 
+		// 	max-height: 0;
+		// 	opacity: 0;
+
+		// 	animation: sweep 3s ease-in-out,
+		// 	hi .9s ease-in-out;
+
+		// 	background-color: gold;
+		// }
+		// @keyframes hi {
+		// 	0%    {opacity: 0;}
+		// 	100%  {opacity: 1;}
+		// }
+		// @keyframes sweep {
+		// 	0%    {
+		// 		// opacity: 0;
+		// 		max-height:0;}
+		// 	100%  {
+		// 		// opacity: 1;
+		// 		max-height:2000px;}
+		// }
 
 		@include media-tablet {
 			margin-bottom: 10px;
