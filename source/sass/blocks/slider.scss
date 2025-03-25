@@ -1,6 +1,16 @@
 // .slider__container {
-// 	position: relative;
 // }
+
+.slider__container--juri{
+	width: 260px;
+	@include media-tablet {
+		width: 560px;
+	}
+
+	@include media-desktop {
+		width: 1160px;
+	}
+}
 
 .slider__container--reviews {
 	width: 240px;

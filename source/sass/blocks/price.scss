@@ -47,18 +47,22 @@
 
 .price__month {
 	box-sizing: border-box;
+	width: 290px;
 
 	display: flex;
 	justify-content: space-between;
+
+	margin: 0 auto;
 	margin-bottom: 30px;
 	padding-bottom: 3px;
 	border-bottom: 2px solid $color-line-grey-20;
 
 
 	@include media-tablet {
-		margin-left: 35px;
-		margin-right: 35px;
+		margin-left: auto;
+		margin-right: auto;
 		margin-bottom: 45px;
+		width: 310px;
 	}
 
 	@include media-desktop {

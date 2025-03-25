@@ -60,7 +60,7 @@
 
 	<main class="page__main">
 		<section class="about container" data-test="about">
-			<div class="about__wrapp">
+			<div class="about__container">
 				<h2 class="about__title title-section">Тренажёрный зал</h2>
 				<p class="about__subtitle subtitle">Просторный зал площадью 900 кв/м</p>
 				<p class="about__text text-basic-M">
@@ -73,40 +73,42 @@
 				</p>
 			</div>
 
-			<picture>
-				<source type="image/webp" media="(min-width: 1366px)" srcset="./img/main/main-img_deskt@1x.webp 1x,
+			<div class="about__wrapper">
+				<picture>
+					<source type="image/webp" media="(min-width: 1366px)" srcset="./img/main/main-img_deskt@1x.webp 1x,
 					./img/main/main-img_deskt@2x.webp 2x" width="360" height="230">
 
-				<source type="image/webp" media="(min-width: 768px)" srcset="./img/main/main-img_tabl@1x.webp 1x,
+					<source type="image/webp" media="(min-width: 768px)" srcset="./img/main/main-img_tabl@1x.webp 1x,
 					./img/main/main-img_tabl@2x.webp 2x" width="270" height="170">
 
-				<source type="image/webp" srcset="./img/main/main-img_mob@1x.webp 1x,
+					<source type="image/webp" srcset="./img/main/main-img_mob@1x.webp 1x,
 				./img/main/main-img_mob@2x.webp 2x" width="320" height="280">
 
-				<source type="image/jpg" media="(min-width:1366px)" srcset="./img/main/main-img_deskt@1x.jpg 1x,
+					<source type="image/jpg" media="(min-width:1366px)" srcset="./img/main/main-img_deskt@1x.jpg 1x,
 				./img/main/main-img_deskt@2x.jpg 2x" width="360" height="230">
 
-				<source type="image/jpg" media="(min-width:768px)" srcset="./img/main/main-img_tabl@1x.jpg 1x,
+					<source type="image/jpg" media="(min-width:768px)" srcset="./img/main/main-img_tabl@1x.jpg 1x,
 				./img/main/main-img_tabl@2x.jpg 2x" width="270" height="170">
 
-				<img class="about__img" src="./img/main/main-img_mob@1x.jpg" srcset="./img/main/main-img_mob@2x.jpg 2x"
-					alt="Тренажёрный зал" width="320" height="280">
-			</picture>
+					<img class="about__img" src="./img/main/main-img_mob@1x.jpg" srcset="./img/main/main-img_mob@2x.jpg 2x"
+						alt="Тренажёрный зал" width="320" height="280">
+				</picture>
 
-			<div class="about__video">
+				<div class="about__video">
+					<div class="video-wrapp">
+						<iframe class="video" id="myVideo" width="320" height="170" loading="lazy" tabindex="-1" frameborder="0"
+							title="YouTube video player" allowfullscreen referrerpolicy="strict-origin-when-cross-origin"
+							data-src="https://www.youtube.com/embed/9TZXsZItgdw?si=lhUb-X2bliaV0EZ0?&autoplay=1">
+							>
+						</iframe>
+					</div>
 
-				<div class="video-wrapp">
-					<iframe class="video" id="myVideo" width="320" height="170" loading="lazy" tabindex="-1" frameborder="0"
-						title="YouTube video player" allowfullscreen referrerpolicy="strict-origin-when-cross-origin"
-						data-src="https://www.youtube.com/embed/9TZXsZItgdw?si=lhUb-X2bliaV0EZ0?&autoplay=1">
-						>
-					</iframe>
+					<button class="video__play" type="button">
+						<span class="visually-hidden">кнопка пуск</span>
+					</button>
 				</div>
-
-				<button class="video__play" type="button">
-					<span class="visually-hidden">кнопка пуск</span>
-				</button>
 			</div>
+
 		</section>
 
 		<section class="price container tab-price" data-test="price" id="price">
@@ -196,56 +198,57 @@
 		</section>
 
 		<section class="games container" data-test="games">
-			<div class=" games__color">
-				<div class="games__wrapp">
-					<h2 class="title-super text-invert ">Super games</h2>
+			<div class="games__container">
+				<div class=" games__color">
+					<div class="games__wrapp">
+						<h2 class="title-super text-invert ">Super games</h2>
 
-					<dl class="games__link">
-						<dt class="games__term">
-							<p class="text-games-term text-invert">Дата</p>
-						</dt>
+						<dl class="games__link">
+							<dt class="games__term">
+								<p class="text-games-term text-invert">Дата</p>
+							</dt>
 
-						<dd class="games__definition">
-							<p class="text-games-number text-invert">7</p>
-							<p class="text-games-month text-invert">
-								Марта
-								<span class="games__year">2019</span>
-							</p>
-						</dd>
+							<dd class="games__definition">
+								<p class="text-games-number text-invert">7</p>
+								<p class="text-games-month text-invert">
+									Марта
+									<span class="games__year">2019</span>
+								</p>
+							</dd>
 
-						<dt class="games__term">
-							<p class="text-games-term text-invert">Время</p>
-						</dt>
-						<dd class="games__definition">
-							<p class="text-games-number text-invert">12:00</p>
-						</dd>
-					</dl>
+							<dt class="games__term">
+								<p class="text-games-term text-invert">Время</p>
+							</dt>
+							<dd class="games__definition">
+								<p class="text-games-number text-invert">12:00</p>
+							</dd>
+						</dl>
+					</div>
+					<p class="games__text text-games text-invert">Ежегодные соревнования по&nbsp;CrossFit</p>
+
+					<a class="games__button button text-btn-M text-invert" href="#">заполнить заявку</a>
 				</div>
-				<p class="games__text text-games text-invert">Ежегодные соревнования по&nbsp;CrossFit</p>
 
-				<a class="games__button button text-btn-M text-invert" href="#">заполнить заявку</a>
-			</div>
-
-
-			<picture>
-				<source type="image/webp" media="(min-width: 1366px)" srcset="./img/games/games_deskt@1x.webp 1x,
+				<picture>
+					<source type="image/webp" media="(min-width: 1366px)" srcset="./img/games/games_deskt@1x.webp 1x,
 					./img/games/games_deskt@2x.webp 2x" width="660" height="500">
 
-				<source type="image/webp" media="(min-width: 768px)" srcset="./img/games/games_tabl@1x.webp 1x,
+					<source type="image/webp" media="(min-width: 768px)" srcset="./img/games/games_tabl@1x.webp 1x,
 					./img/games/games_tabl@2x.webp 2x" width="378" height="348">
 
-				<source type="image/webp" srcset="./img/games/games_mob@1x.webp 1x,
+					<source type="image/webp" srcset="./img/games/games_mob@1x.webp 1x,
 				./img/games/games_mob@2x.webp 2x" width="290" height="290">
 
-				<source type="image/jpg" media="(min-width:1366px)" srcset="./img/games/games_deskt@1x.jpg 1x,
+					<source type="image/jpg" media="(min-width:1366px)" srcset="./img/games/games_deskt@1x.jpg 1x,
 				./img/games/games_deskt@2x.jpg 2x" width="660" height="500">
 
-				<source type="image/jpg" media="(min-width:768px)" srcset="./img/games/games_tabl@1x.jpg 1x,
+					<source type="image/jpg" media="(min-width:768px)" srcset="./img/games/games_tabl@1x.jpg 1x,
 				./img/games/games_tabl@2x.jpg 2x" width="378" height="348">
 
-				<img class="games__img" src="./img/games/games_mob@1x.jpg" srcset="./img/games/games_mob@2x.jpg 2x"
-					alt="спортсмен" width="290" height="290">
-			</picture>
+					<img class="games__img" src="./img/games/games_mob@1x.jpg" srcset="./img/games/games_mob@2x.jpg 2x"
+						alt="спортсмен" width="290" height="290">
+				</picture>
+			</div>
 		</section>
 
 		<section class="juri container container--juri slider" data-test="juri">
@@ -928,7 +931,7 @@
 					<li class="contacts__item contacts__item--3">
 						<h3 class="contacts__name title-contacts">Телефон:</h3>
 						<a class="text-name" href="tel:88005555555">8 800 555-55-55</a>
-					</li>	
+					</li>
 
 					<li class="contacts__item   contacts__item--4">
 						<h3 class="contacts__name title-contacts">Email:</h3>

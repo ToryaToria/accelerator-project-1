@@ -3,7 +3,6 @@
 	padding-bottom: 25px;
 
 	@include media-tablet {
-		display: flex;
 		padding-top: 60px;
 		padding-bottom: 60px;
 	}
@@ -11,15 +10,31 @@
 	@include media-desktop {
 		padding-top: 100px;
 		padding-bottom: 100px;
+	}
+}
 
+.games__container {
+	box-sizing: border-box;
+	width: 290px;
+	margin: 0 auto;
+	background-color: aqua;
+
+	@include media-tablet {
+		width: 678px;
+		display: flex;
+		justify-content: center;
+	}
+
+	@include media-desktop {
+		width: 1160px;
 		justify-content: stretch;
 		align-items: stretch;
 		// gap: 30px;
-
 	}
 }
 
 .games__color {
+	width: 290px;
 	box-sizing: border-box;
 
 	padding: 40px 40px 40px;

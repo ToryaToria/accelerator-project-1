@@ -25,5 +25,7 @@
 .page__section-wrapp {
   @include media-desktop {
   display: flex;
+  max-width: 1366px;
+  margin: 0 auto;
   }
 }
