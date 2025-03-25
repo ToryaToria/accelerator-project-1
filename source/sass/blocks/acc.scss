@@ -1,0 +1,65 @@
+.qna__answer {
+
+  .js-details & {
+    max-height: 0;
+    overflow: hidden;
+    animation: slideUp 0.3s;
+  }
+
+  .js-details.is-open & {
+    max-height: none;
+    animation: slideDown 0.3s;
+  }
+
+  .js-details.is-open.is-animating & {
+    max-height: var(--details-height);
+  }
+}
+
+.faq__details:not(.js-details)[open] .faq__summary,
+.qna__item.is-open .faq__summary {
+  margin-bottom: 20px;
+
+  @include media-tablet {
+    margin-bottom: 10px;
+  }
+
+  @include media-desktop {
+    margin-bottom: 24px;
+  }
+}
+
+.faq__details:not(.js-details)[open] .faq__summary::after,
+.qna__item.is-open .faq__summary::after {
+
+  background-color: $color-bg-secondary;
+  background-image: url('../../__spritemap#sprite-minus-view');
+  background-repeat: no-repeat;
+  background-size: 14px 14px;
+  background-position: center;
+}
+
+
+@keyframes slideUp {
+  0% {
+    max-height: var(--details-height);
+    opacity: 1;
+  }
+
+  100% {
+    max-height: 0;
+    opacity: 0;
+  }
+}
+
+@keyframes slideDown {
+  0% {
+    max-height: 0;
+    opacity: 0;
+  }
+
+  100% {
+    max-height: var(--details-height);
+    opacity: 1;
+  }
+}
