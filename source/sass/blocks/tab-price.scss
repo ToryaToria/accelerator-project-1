@@ -28,7 +28,7 @@
 }
 
 .tab-price__radio {
-  &:checked+.tab-price__button {
+  &:checked + .tab-price__button {
     color: $color-text-base;
 
     &::after {
@@ -36,7 +36,7 @@
     }
   }
 
-  &:not(:disabled):hover+.tab-price__button {
+  &:not(:disabled):hover + .tab-price__button {
     color: $color-text-base-70;
 
     &::after {
@@ -44,7 +44,7 @@
     }
   }
 
-  &:not(:disabled):focus+.tab-price__button {
+  &:not(:disabled):focus + .tab-price__button {
     color: $color-text-base;
     outline: auto; // НУЖЕН???
 
@@ -53,7 +53,7 @@
     }
   }
 
-  &:not(:disabled):active+.tab-price__button {
+  &:not(:disabled):active + .tab-price__button {
     color: $color-text-base;
 
     &::after {
@@ -61,7 +61,7 @@
     }
   }
 
-  &:disabled+.tab-price__button {
+  &:disabled + .tab-price__button {
     opacity: 0.3;
     cursor: default;
     color: $color-text-base;

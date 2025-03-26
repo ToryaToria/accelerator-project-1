@@ -1,14 +1,13 @@
 .qna__answer {
-
   .js-details & {
     max-height: 0;
     overflow: hidden;
-    animation: slideUp 0.3s;
+    animation: slide-up 0.3s;
   }
 
   .js-details.is-open & {
     max-height: none;
-    animation: slideDown 0.3s;
+    animation: slide-down 0.3s;
   }
 
   .js-details.is-open.is-animating & {
@@ -31,16 +30,15 @@
 
 .faq__details:not(.js-details)[open] .faq__summary::after,
 .qna__item.is-open .faq__summary::after {
-
   background-color: $color-bg-secondary;
-  background-image: url('../../__spritemap#sprite-minus-view');
+  background-image: url("../../__spritemap#sprite-minus-view");
   background-repeat: no-repeat;
   background-size: 14px 14px;
   background-position: center;
 }
 
 
-@keyframes slideUp {
+@keyframes slide-up {
   0% {
     max-height: var(--details-height);
     opacity: 1;
@@ -52,7 +50,7 @@
   }
 }
 
-@keyframes slideDown {
+@keyframes slide-down {
   0% {
     max-height: 0;
     opacity: 0;

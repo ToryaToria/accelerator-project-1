@@ -2,6 +2,7 @@
   box-sizing: border-box;
   width: 320px;
   height: 170px;
+  border: none;
 
   @include media-tablet {
     width: 270px;
@@ -21,10 +22,11 @@
 
   // background-image: url('../../img/video-img/video_mob@1x.jpg');
 
-  background-image: image-set(url("../../img/video-img/video_mob@1x.webp") 1x type("image/webp"),
-      url("../..img/video-img/video_mob@1x.jpg") 1x,
-      url("../../img/video-img/video_mob@2x.webp") 2x type("image/webp"),
-      url("../../img/video-img/video_mob@2x.jpg") 2x);
+  background-image:
+    image-set(url("../../img/video-img/video_mob@1x.webp") 1x type("image/webp"),
+    url("../..img/video-img/video_mob@1x.jpg") 1x,
+    url("../../img/video-img/video_mob@2x.webp") 2x type("image/webp"),
+    url("../../img/video-img/video_mob@2x.jpg") 2x);
 
   background-position: center;
   background-size: cover;
@@ -32,21 +34,22 @@
   @include media-tablet {
     width: 270px;
 
-    background-image: image-set(url("../../img/video-img/video_tabl@1x.webp") 1x type("image/webp"),
-    url("../..img/video-img/video_tabl@1x.jpg") 1x,
-    url("../../img/video-img/video_tabl@2x.webp") 2x type("image/webp"),
-    url("../../img/video-img/video_tabl@2x.jpg") 2x);
-
+    background-image:
+      image-set(url("../../img/video-img/video_tabl@1x.webp") 1x type("image/webp"),
+      url("../..img/video-img/video_tabl@1x.jpg") 1x,
+      url("../../img/video-img/video_tabl@2x.webp") 2x type("image/webp"),
+      url("../../img/video-img/video_tabl@2x.jpg") 2x);
   }
 
   @include media-desktop {
     width: 360px;
     height: 230px;
 
-    background-image: image-set(url("../../img/video-img/video_desct@1x.webp") 1x type("image/webp"),
-    url("../..img/video-img/video_desct@1x.jpg") 1x,
-    url("../../img/video-img/video_desct@2x.webp") 2x type("image/webp"),
-    url("../../img/video-img/video_desct@2x.jpg") 2x);
+    background-image:
+      image-set(url("../../img/video-img/video_desct@1x.webp") 1x type("image/webp"),
+      url("../..img/video-img/video_desct@1x.jpg") 1x,
+      url("../../img/video-img/video_desct@2x.webp") 2x type("image/webp"),
+      url("../../img/video-img/video_desct@2x.jpg") 2x);
   }
 }
 
@@ -67,7 +70,7 @@
   border-radius: 50%;
 
   &::before {
-    content: '';
+    content: "";
     position: absolute;
     top: 50%;
     left: 50%;
@@ -78,7 +81,7 @@
     height: 52px;
     border-radius: 50%;
 
-    background-image: linear-gradient(to right, #ED0233, #003EB7);
+    background-image: linear-gradient(to right, #ed0233, #003eb7);
 
     @include media-desktop {
       width: 72px;
@@ -87,14 +90,14 @@
   }
 
   &::after {
-    content: '';
+    content: "";
     z-index: 5;
     display: block;
     width: 12px;
     height: 12px;
     background-color: $color-white;
 
-    mask-image: url('../../__spritemap#sprite-play-view');
+    mask-image: url("../../__spritemap#sprite-play-view");
     mask-repeat: no-repeat;
     mask-position: center;
     mask-size: auto;

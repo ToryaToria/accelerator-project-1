@@ -1,9 +1,10 @@
- .juri-card {
+.juri-card {
   position: relative;
   width: 260px;
   min-height: 300px;
   flex-shrink: 0;
   flex-grow: 0;
+
   // background-color: aqua;
 
   // display: flex;
@@ -46,11 +47,11 @@
   box-sizing: border-box;
   width: 260px;
   height: 100%;
-  
+
   position: absolute;
   top: 0;
   left: 0;
- 
+
 
   background-color: $color-text-base-89;
   padding: 45px 40px 50px;
@@ -58,11 +59,13 @@
 
 .juri-card__title {
   @include font ($size: 22px, $line-height: 22px, $color: $color-white);
+
   margin-bottom: 8px;
 }
 
 .juri-card__specialty {
   @include font ($size: 16px, $line-height: 24px, $weight: 300, $color: $color-grey);
+
   margin-bottom: 34px;
 }
 

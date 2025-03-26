@@ -1,44 +1,44 @@
 // Vendor ---------------------------------
 
-@import "./vendor/normalize.scss";
+@import "./vendor/normalize";
 @import "./vendor/swiper-bundle.css";
+
 // @import "./vendor/swiper.css"; // с этим файлом не работают кнопки
 
 // Base ---------------------------------
 
-@import "./base/variables.scss";
-@import "./base/mixins.scss";
-@import "./base/fonts.scss";
-@import "./base/fonts-styles.scss";
-@import "./base/page.scss";
+@import "./base/variables";
+@import "./base/mixins";
+@import "./base/fonts";
+@import "./base/fonts-styles";
+@import "./base/page";
 @import "./base/visually-hidden";
-@import "./base/container.scss";
+@import "./base/container";
 
 
 // Blocks ---------------------------------
 
-@import "./blocks/button.scss";
-@import "./blocks/hero.scss";
-@import "./blocks/about.scss";
-@import "./blocks/price.scss";
-@import "./blocks/games.scss";
-@import "./blocks/juri.scss";
-@import "./blocks/juri-card.scss";
-@import "./blocks/features.scss";
-@import "./blocks/offers.scss";
-@import "./blocks/faq.scss";
-@import "./blocks/tab-faq.scss";
-@import "./blocks/reviews.scss";
-@import "./blocks/request.scss";
-@import "./blocks/contacts.scss";
-@import "./blocks/footer.scss";
-@import "./blocks/slider.scss";
-@import "./blocks/card.scss";
-@import "./blocks/video.scss";
-@import "./blocks/tab-price.scss";
+@import "./blocks/button";
+@import "./blocks/hero";
+@import "./blocks/about";
+@import "./blocks/price";
+@import "./blocks/games";
+@import "./blocks/juri";
+@import "./blocks/juri-card";
+@import "./blocks/features";
+@import "./blocks/offers";
+@import "./blocks/faq";
+@import "./blocks/tab-faq";
+@import "./blocks/reviews";
+@import "./blocks/request";
+@import "./blocks/contacts";
+@import "./blocks/footer";
+@import "./blocks/slider";
+@import "./blocks/card";
+@import "./blocks/video";
+@import "./blocks/tab-price";
+
 // @import "./blocks/accordion.scss";
 
-@import "./blocks/acc.scss";
-
-
+@import "./blocks/acc";
 

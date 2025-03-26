@@ -1,60 +1,61 @@
 .juri {
-	position: relative;
-	padding-top: 41px;
-	padding-bottom: 40px;
+  position: relative;
+  padding-top: 41px;
+  padding-bottom: 40px;
 
-	text-align: center;
+  text-align: center;
 
-	overflow:hidden;
+  overflow: hidden;
 
-	@include media-tablet {
-		padding-top: 30px;
-		padding-bottom: 60px;
-		position: relative;
-	}
+  @include media-tablet {
+    padding-top: 30px;
+    padding-bottom: 60px;
+    position: relative;
+  }
 
-	@include media-desktop {
-		padding-top: 100px;
-		padding-bottom: 100px;
-	}
+  @include media-desktop {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
 }
 
 
 .juri__title {
-	margin-bottom: 20px;
+  margin-bottom: 20px;
 
-	@include media-tablet {
-		margin-bottom: 47px;
-	}
+  @include media-tablet {
+    margin-bottom: 47px;
+  }
 }
 
 .juri__list {
-// background-color: blue;
-	position: relative;
-	z-index: 10;
-	@include list-reset;
-	
-	width: 260px;
-	// margin-left: 15px;
+  // background-color: blue;
+  position: relative;
+  z-index: 10;
+
+  @include list-reset;
+
+  width: 260px;
+
+  // margin-left: 15px;
   // margin-right: 15px;
 
-	display: flex;
-	// gap: 30px;
+  display: flex;
 
-	@include media-tablet {
-		// gap: 40px;
-		// margin-left: 59px;
-		// margin-right: 59px;
-		width: 560px;
+  // gap: 30px;
 
-	}
+  @include media-tablet {
+    // gap: 40px;
+    // margin-left: 59px;
+    // margin-right: 59px;
+    width: 560px;
+  }
 
-	@include media-desktop {
-		// gap: 10px;
-		margin-left: 0;
-		margin-right: 0;
-	
-	}
+  @include media-desktop {
+    // gap: 10px;
+    margin-left: 0;
+    margin-right: 0;
+  }
 }
 
 // .juri-card--hidden,

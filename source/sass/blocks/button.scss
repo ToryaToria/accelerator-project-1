@@ -1,61 +1,57 @@
 .button {
-	box-sizing: border-box;
-	display: block;
-	padding: 22px 10px;
-	border: 2px solid $color-white;
-	background-color: transparent;
+  box-sizing: border-box;
+  display: block;
+  padding: 22px 10px;
+  border: 2px solid $color-white;
+  background-color: transparent;
 
 
-	&:not(--isDisabled):hover {
-		color: $color-price;
-		background-color: $color-white;
-	}
+  &:not(.button--isDisabled):hover {
+    color: $color-price;
+    background-color: $color-white;
+  }
 
-	&:not(--isDisabled):focus {
-		color: $color-price;
-		background-color: $color-white-80;
-	}
-
-
-	&:not(--isDisabled):active {
-		color: $color-text-base;
-		background-color: $color-white;
-	}
-
-	&--isDisabled {
-		cursor: default;
-		opacity: 0.5;
-	}
+  &:not(.button--isDisabled):focus {
+    color: $color-price;
+    background-color: $color-white-80;
+  }
 
 
-	&--card {
-		padding: 25px 10px;
+  &:not(.button--isDisabled):active {
+    color: $color-text-base;
+    background-color: $color-white;
+  }
 
-	}
-
-	&--color-dark {
-		padding: 25px 10px;
-		margin-top: -2px;
-
-		border: 2px solid $color-text-base;
-		width: 100%;
+  &--isDisabled {
+    cursor: default;
+    opacity: 0.5;
+  }
 
 
-		
+  &--card {
+    padding: 25px 10px;
+  }
 
-		&--isDisabled {
-			opacity: 0.3;
-		}
+  &--color-dark {
+    padding: 25px 10px;
+    margin-top: -2px;
 
-		@include media-tablet {
-			margin-top: 0;
-		}
-	}
+    border: 2px solid $color-text-base;
+    width: 100%;
+
+    &--isDisabled {
+      opacity: 0.3;
+    }
+
+    @include media-tablet {
+      margin-top: 0;
+    }
+  }
 }
 
 .games__button {
-	@include media-tablet {
-		padding-top: 25px;
-		padding-bottom: 25px;
-	}
+  @include media-tablet {
+    padding-top: 25px;
+    padding-bottom: 25px;
+  }
 }

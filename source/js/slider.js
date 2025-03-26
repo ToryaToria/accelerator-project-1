@@ -4,12 +4,12 @@
 // import Swiper from "swiper";
 // import Navigation from "swiper/modules";
 
-console.log('ky')
+// console.log('ky');
 
 const dataSliderJuri = {
   elem: '.slider__container--juri',
-  btnNext: ".swiper-button-next-juri",
-  btnPrev: ".swiper-button-prev-juri",
+  btnNext: '.swiper-button-next-juri',
+  btnPrev: '.swiper-button-prev-juri',
   loop: true,
   slidesPerView768: 2,
   slidesPerView1366: 4,
@@ -18,15 +18,15 @@ const dataSliderJuri = {
 
 const dataSliderReviews = {
   elem: '.slider__container--reviews',
-  btnNext: ".swiper-button-next-reviews",
-  btnPrev: ".swiper-button-prev-reviews",
+  btnNext: '.swiper-button-next-reviews',
+  btnPrev: '.swiper-button-prev-reviews',
   loop: false,
   slidesPerView768: 1,
   slidesPerView1366: 1,
   spaceBetween: 0,
-}
+};
 
-function slider(data) {
+function sliders(data) {
   // console.log(data);
 
   const slider = new Swiper(data.elem, {
@@ -54,14 +54,14 @@ function slider(data) {
   return slider;
 }
 
-slider(dataSliderJuri);
-slider(dataSliderReviews);
+sliders(dataSliderJuri);
+sliders(dataSliderReviews);
 
 export{
-  slider,
+  sliders,
   dataSliderReviews,
   dataSliderJuri
-}
+};
 
 // const sliderReviews = new Swiper('.slider__container--reviews', {
 //   loop: false,
@@ -113,7 +113,6 @@ export{
 // });
 
 // console.log(sliderJuri)
-
 
 
 // console.log(sliderReviews)

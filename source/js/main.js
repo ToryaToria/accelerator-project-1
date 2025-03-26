@@ -12,11 +12,11 @@ import './acc.js';
 
 
 //import {
-//   slider,
+//   sliders,
 //   dataSliderReviews,
 //   dataSliderJuri
 // } from './slider.js';
 
 
-// slider(dataSliderJuri);
-// slider(dataSliderReviews);
+// sliders(dataSliderJuri);
+// sliders(dataSliderReviews);

@@ -1,98 +1,103 @@
 .reviews {
-	position: relative;
-	padding-top: 40px;
-	padding-bottom: 40px;
+  position: relative;
+  padding-top: 40px;
+  padding-bottom: 40px;
 
-	@include media-tablet {
-		padding-top: 60px;
-		padding-bottom: 60px;
-	}
+  @include media-tablet {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
 
-	@include media-desktop {
-		padding-top: 100px;
-		padding-bottom: 100px;
-	}
+  @include media-desktop {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
 }
 
 .reviews__title {
-	margin-bottom: 40px;
-	text-align: center;
+  margin-bottom: 40px;
+  text-align: center;
 
-	@include media-tablet {
-		margin-bottom: 35px;
-		font-size: 54px;
-		line-height: 54px;
-	}
+  @include media-tablet {
+    margin-bottom: 35px;
+    font-size: 54px;
+    line-height: 54px;
+  }
 
-	@include media-desktop {
-		margin-bottom: 75px;
-	}
+  @include media-desktop {
+    margin-bottom: 75px;
+  }
 }
 
 .reviews__list {
-	position: relative;
-	@include list-reset;
-	z-index: 10;
+  position: relative;
+
+  @include list-reset;
+
+  z-index: 10;
 }
 
 .reviews__item {
-	box-sizing: border-box;
-	// width: 240px;
-	margin: 0 auto;
-	padding: 30px 25px;
-	background-color: $color-bg-secondary;
-	color: $color-white;
+  box-sizing: border-box;
 
-	@include media-tablet {
-		padding: 41px 30px;
-		// width: 500px;
-		display: flex;
-		gap: 40px;
-	}
+  // width: 240px;
+  margin: 0 auto;
+  padding: 30px 25px;
+  background-color: $color-bg-secondary;
+  color: $color-white;
 
-	@include media-desktop {
-		padding: 60px;
-		// width: 560px;
-		gap: 30px;
-	}
+  @include media-tablet {
+    padding: 41px 30px;
+
+    // width: 500px;
+    display: flex;
+    gap: 40px;
+  }
+
+  @include media-desktop {
+    padding: 60px;
+
+    // width: 560px;
+    gap: 30px;
+  }
 }
 
 .reviews__img {
-	box-sizing: border-box;
-	display: block;
-	width: 68px;
-	height: 68px;
-	border-radius: 50%;
-	margin: 0 auto;
-	margin-bottom: 10px;
-	object-fit: cover;
+  box-sizing: border-box;
+  display: block;
+  width: 68px;
+  height: 68px;
+  border-radius: 50%;
+  margin: 0 auto;
+  margin-bottom: 10px;
+  object-fit: cover;
 
-	@include media-tablet {
-		width: 80px;
-		height: 80px;
-		flex-shrink: 0;
-	}
+  @include media-tablet {
+    width: 80px;
+    height: 80px;
+    flex-shrink: 0;
+  }
 }
 
 .reviews__subtitle {
-	margin-bottom: 16px;
-	text-align: center;
+  margin-bottom: 16px;
+  text-align: center;
 
 
-	@include media-tablet {
-		margin-bottom: 20px;
-		text-align: left;
-	}
+  @include media-tablet {
+    margin-bottom: 20px;
+    text-align: left;
+  }
 }
 
 .reviews__text {
-	text-align: center;
+  text-align: center;
 
-	@include media-tablet {
-		text-align: left;
-	}
+  @include media-tablet {
+    text-align: left;
+  }
 }
 
 .reviews__item--hidden {
-	display: none;
+  display: none;
 }

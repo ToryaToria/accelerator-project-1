@@ -1,57 +1,57 @@
 .tab-faq__button {
-	box-sizing: border-box;
-	display: block;
-	width: 140px;
-	height: 46px;
-	text-align: center;
-	padding: 17px 10px 14px;
+  box-sizing: border-box;
+  display: block;
+  width: 140px;
+  height: 46px;
+  text-align: center;
+  padding: 17px 10px 14px;
 
-	border: 1px solid $color-line-tab;
-	background-color: $color-white;
+  border: 1px solid $color-line-tab;
+  background-color: $color-white;
 
-	@include media-tablet {
-		width: 162px;
-		height: 54px;
-	}
+  @include media-tablet {
+    width: 162px;
+    height: 54px;
+  }
 
-	@include media-desktop {
-		width: 260px;
-		padding-top: 19px;
-			}
+  @include media-desktop {
+    width: 260px;
+    padding-top: 19px;
+  }
 }
 
 .tab-faq__radio {
-	&:checked+.tab-faq__button {
-		// padding: 12px 10px 15px;
-		border: 1px solid transparent;
+  &:checked + .tab-faq__button {
+    // padding: 12px 10px 15px;
+    border: 1px solid transparent;
 
-		background: $linear-gradient-btn;
-		color: $color-white;
-	}
+    background: $linear-gradient-btn;
+    color: $color-white;
+  }
 
-	&:not(:disabled):hover+.tab-faq__button,
-	&:not(:disabled):focus+.tab-faq__button {
-		// color: $color-text-base;
-		border: 1px solid $color-text-base;
-	}
+  &:not(:disabled):hover + .tab-faq__button,
+  &:not(:disabled):focus + .tab-faq__button {
+    // color: $color-text-base;
+    border: 1px solid $color-text-base;
+  }
 
-	&:not(:disabled):focus+.tab-faq__button {
-		outline: auto;  // НАДО ЛИ?
-	}
+  &:not(:disabled):focus + .tab-faq__button {
+    outline: auto;  // НАДО ЛИ?
+  }
 
-	&:disabled+.tab-faq__button {
-		color: $color-text-base;
-		border: 1px solid $color-text-base;
-		opacity: 0.2;
-		cursor: default;
-	}
+  &:disabled + .tab-faq__button {
+    color: $color-text-base;
+    border: 1px solid $color-text-base;
+    opacity: 0.2;
+    cursor: default;
+  }
 }
 
 .tab-faq__show1,
 .tab-faq__show2,
 .tab-faq__show3,
 .tab-faq__show4 {
-	display: none;
+  display: none;
 }
 
 .tab-faq:has(#tab-faq-1:checked) .tab-faq__show1,

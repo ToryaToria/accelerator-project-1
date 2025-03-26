@@ -17,7 +17,6 @@
   @include media-desktop {
     width: 360px;
     gap: 17px;
-
   }
 }
 
@@ -76,44 +75,40 @@
     width: 30px;
     height: 42px;
     background-size: 30px 42px;
-
   }
 }
 
-.price:has(#card__btn1:hover) #price__card1,
-.price:has(#card__btn2:hover) #price__card2,
-.price:has(#card__btn3:hover) #price__card3,
-
-.price:has(#card__btn1:focus) #price__card1,
-.price:has(#card__btn2:focus) #price__card2,
-.price:has(#card__btn3:focus) #price__card3 {
+.price:has(#card-btn1:hover) #price-card1,
+.price:has(#card-btn2:hover) #price-card2,
+.price:has(#card-btn3:hover) #price-card3,
+.price:has(#card-btn1:focus) #price-card1,
+.price:has(#card-btn2:focus) #price-card2,
+.price:has(#card-btn3:focus) #price-card3 {
   border: 7px solid $color-bg-accent;
 
-	border-image: linear-gradient(155deg, #ED0233, #003EB7 95%);
-	border-image-slice: 7;
-
+  border-image: linear-gradient(155deg, #ed0233, #003eb7 95%);
+  border-image-slice: 7;
 }
 
 
 .card__btn {
   &:not(--isDisabled):hover {
     color: $color-white;
-    background-image: linear-gradient(to left, #003EB7, #ED0233);
+    background-image: linear-gradient(to left, #003eb7, #ed0233);
     border: 2px solid transparent;
   }
 
   &:not(--isDisabled):focus {
     color: $color-white;
-    background-image: linear-gradient(to left, #003EB7, #ED0233);
+    background-image: linear-gradient(to left, #003eb7, #ed0233);
     border: 2px solid $color-black;
   }
 
 
   &:not(--isDisabled):active {
     color: rgba(255, 255, 255, 0.7);
-    background-image: linear-gradient(to left, #003EB7, #ED0233);
+    background-image: linear-gradient(to left, #003eb7, #ed0233);
     border: 2px solid transparent;
     opacity: 1;
   }
-
 }
