@@ -113,7 +113,7 @@
   }
 
 
-  &:not(.footer__social-link--isDisabled):hover {
+  &:not(.footer__social-link--disabled):hover {
     background-color: $color-divider;
 
     &::before {
@@ -121,7 +121,7 @@
     }
   }
 
-  &:not(.footer__social-link--isDisabled):focus {
+  &:not(.footer__social-link--disabled):focus {
     background-color: $color-price;
 
     &::before {
@@ -129,7 +129,7 @@
     }
   }
 
-  &:not(.footer__social-link--isDisabled):active {
+  &:not(.footer__social-link--disabled):active {
     background-color: $color-text-base;
 
     &::before {
@@ -137,7 +137,7 @@
     }
   }
 
-  &--isDisabled {
+  &--disabled {
     cursor: default;
     background-color: $color-white;
     opacity: 0.3;

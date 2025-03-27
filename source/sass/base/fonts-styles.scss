@@ -2,8 +2,20 @@
   @include font ($size: 14px, $line-height: 20px);
 
   // background-color: burlywood;
+
   @include media-tablet {
     line-height: 22px;
+  }
+}
+
+.text-basic {
+  @include font ($size: 14px, $line-height: 22px, $weight: 300);
+
+  // background-color: chocolate;
+
+  @include media-tablet {
+    font-size: 16px;
+    line-height: 24px;
   }
 }
 
@@ -20,7 +32,8 @@
 .text-games {
   @include font ($size: 16px, $line-height: 20px);
 
-  letter-spacing: -0.008em;
+  letter-spacing: -0.01em;
+
 
   @include media-tablet {
     font-size: 18px;
@@ -42,10 +55,6 @@
     font-size: 18px;
     line-height: 24px;
   }
-
-  // @include media-desktop {
-  // 	line-height: 140%;
-  // }
 }
 
 .text-offers {
@@ -76,31 +85,6 @@
   }
 }
 
-.text-basic-M {
-  @include font ($size: 14px, $line-height: 22px, $weight: 300);
-
-  // background-color: chocolate;
-
-  @include media-tablet {
-    font-size: 16px;
-    line-height: 24px;
-  }
-}
-
-// .text-features {
-// 	@include font ($size: 14px, $line-height: 22px, $weight: 300);
-
-// 	// background-color: rgb(36, 210, 30);
-
-// 	@include media-tablet {
-// 		font-size: 16px;
-// 		line-height: 140%;
-// 	}
-// 	@include media-desktop {
-// 		line-height: 24px;
-// 	}
-// }
-
 .text-games-month {
   @include font ($size: 12px, $line-height: 100%);
 
@@ -123,18 +107,25 @@
   @include font ($family: $font-secondary, $size: 62px, $line-height: 62px, $weight: 800);
 
   letter-spacing: 0.017em;
+
+  // letter-spacing: 0.02em;
+
   text-transform: uppercase;
 
   @include media-tablet {
     font-size: 72px;
     line-height: 85px;
     letter-spacing: 0.026em;
+
+    // letter-spacing: 0.03em;
   }
 
   @include media-desktop {
     font-size: 92px;
     line-height: 110px;
-    letter-spacing: 0.045em;
+
+    // letter-spacing: 0.045em;
+    letter-spacing: 0.04em;
   }
 }
 
@@ -144,7 +135,7 @@
   @include font ($family: $font-secondary, $size: 48px, $line-height: 54px, $weight: 600);
 
   text-transform: uppercase;
-  letter-spacing: 0.003em;
+  letter-spacing: 0;
 
   @include media-desktop {
     font-size: 82px;
@@ -157,14 +148,10 @@
 
   @include font ($family: $font-secondary, $size: 32px, $line-height: 32px, $weight: 600);
 
-  // letter-spacing: -0.005em;
-
-
   @include media-tablet {
     font-size: 42px;
     line-height: 42px;
     letter-spacing: 0;
-
 
     &--big {
       font-size: 54px;
@@ -185,13 +172,9 @@
 
   @include media-tablet {
     font-size: 20px;
-
-    // letter-spacing: 0.004em;
   }
 
   @include media-desktop {
-    // letter-spacing: 0;
-
     font-size: 22px;
     line-height: 22px;
   }
@@ -204,11 +187,6 @@
     font-size: 22px;
     line-height: 22px;
   }
-
-  // @include media-desktop {
-  // 	font-size: 20px;
-  // 	line-height: 150%;
-  // }
 }
 
 .title-faq {
@@ -242,8 +220,6 @@
 
 .text-nav,
 .subtitle-features {
-  // background-color: antiquewhite;
-
   /* телефон в меню */
 
   @include font ($size: 22px, $line-height: 22px, $weight: 700);
@@ -264,12 +240,8 @@
 .title-price {
   @include font ($size: 22px, $line-height: 24px, $weight: 700);
 
-  // text-decoration: none;
-
   @include media-tablet {
     font-size: 26px;
-
-    // line-height: 26px;
   }
 }
 
@@ -283,22 +255,11 @@
   }
 }
 
-.text-btn-L {
+.text-detailed {
   /* текст для ссылки */
-
   @include font ($size: 14px, $line-height: 14px, $weight: 700);
 
   text-transform: uppercase;
-}
-
-.text-btn-M {
-  /* текст для кнопки */
-
-  @include font ($size: 12px, $line-height: 12px, $weight: 700);
-
-  text-transform: uppercase;
-  text-decoration: none;
-  text-align: center;
 }
 
 .text-btn-faq {
@@ -309,15 +270,11 @@
   @include media-tablet {
     font-size: 18px;
   }
-
-  // @include media-desktop {
-  // 	font-size: 20px;
-  // }
 }
 
-
-.text-btn-month {
+.text-month {
   /* текст для месяцев */
+  // background-color: rebeccapurple;
   @include font ($size: 16px, $line-height: 100%);
 
   @include media-tablet {
@@ -330,7 +287,7 @@
   }
 }
 
-.text-number-L {
+.text-features-number {
   @include font ($size: 64px, $line-height: 64px, $weight: 700, $color: $color-price);
 
   @include media-tablet {
@@ -339,7 +296,7 @@
   }
 }
 
-.text-number-M {
+.text-price-number {
   @include font ($size: 48px, $line-height: 150%, $weight: 600, $color: $color-price);
 
   @include media-tablet {
@@ -351,7 +308,6 @@
 .text-games-number {
   @include font ($size: 24px, $line-height: 100%, $weight: 700);
 
-  // background-color: cadetblue;
   @include media-tablet {
     line-height: 24px;
   }
@@ -382,7 +338,7 @@
   color: $color-white;
 }
 
-//==========================
+// ==========================
 .text-invert {
   color: $color-white;
 }

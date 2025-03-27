@@ -40,19 +40,19 @@
     margin-top: -1px;
   }
 
-  &:not(--isDisabled):hover {
+  &:not(.hero__tel--disabled):hover {
     color: $color-bg-secondary-50;
   }
 
-  &:not(--isDisabled):focus {
+  &:not(.hero__tel--disabled):focus {
     color: $color-bg-secondary;
   }
 
-  &:not(--isDisabled):active {
+  &:not(.hero__tel--disabled):active {
     color: $color-text-base;
   }
 
-  &--isDisabled {
+  &--disabled {
     cursor: default;
     color: $color-bg-primary-50;
   }

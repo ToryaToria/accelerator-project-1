@@ -5,47 +5,54 @@
   border: 2px solid $color-white;
   background-color: transparent;
 
+  @include font ($size: 12px, $line-height: 12px, $color: $color-white, $weight: 700);
 
-  &:not(.button--isDisabled):hover {
+  text-transform: uppercase;
+  text-decoration: none;
+  text-align: center;
+
+  &:not(.button--disabled):hover {
     color: $color-price;
     background-color: $color-white;
   }
 
-  &:not(.button--isDisabled):focus {
+  &:not(.button--disabled):focus {
     color: $color-price;
     background-color: $color-white-80;
   }
 
 
-  &:not(.button--isDisabled):active {
+  &:not(.button--disabled):active {
     color: $color-text-base;
     background-color: $color-white;
   }
 
-  &--isDisabled {
+  &--disabled {
     cursor: default;
     opacity: 0.5;
   }
 
-
   &--card {
     padding: 25px 10px;
   }
+}
 
-  &--color-dark {
-    padding: 25px 10px;
-    margin-top: -2px;
+.button--dark {
+  color: $color-text-base;
+  padding: 25px 10px;
+  margin-top: -2px;
 
-    border: 2px solid $color-text-base;
-    width: 100%;
+  border: 2px solid $color-text-base;
+  width: 100%;
 
-    &--isDisabled {
-      opacity: 0.3;
-    }
+  @include media-tablet {
+    margin-top: 0;
+  }
 
-    @include media-tablet {
-      margin-top: 0;
-    }
+  &:not(.button--disabled):hover,
+  &:not(.button--disabled):active,
+  &:not(.button--disabled):focus {
+    color: $color-white;
   }
 }
 

@@ -21,9 +21,9 @@
   display: none;
 }
 
-.tab-price:has(#tab-price-1:checked) .tab-price__show1,
-.tab-price:has(#tab-price-2:checked) .tab-price__show2,
-.tab-price:has(#tab-price-3:checked) .tab-price__show3 {
+.tab-price:has(.tab-price--1:checked) .tab-price__show1,
+.tab-price:has(.tab-price--2:checked) .tab-price__show2,
+.tab-price:has(.tab-price--3:checked) .tab-price__show3 {
   display: block;
 }
 

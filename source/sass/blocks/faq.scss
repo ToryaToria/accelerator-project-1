@@ -128,14 +128,14 @@
       margin-left: 138px;
     }
   }
+}
 
-  &--1 {
-    &::after {
-      margin-left: 10px;
+.faq__summary--1 {
+  &::after {
+    margin-left: 10px;
 
-      @include media-tablet {
-        margin-left: 60px;
-      }
+    @include media-tablet {
+      margin-left: 60px;
     }
   }
 }

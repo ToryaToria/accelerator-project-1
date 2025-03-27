@@ -78,19 +78,6 @@
   }
 }
 
-.price:has(#card-btn1:hover) #price-card1,
-.price:has(#card-btn2:hover) #price-card2,
-.price:has(#card-btn3:hover) #price-card3,
-.price:has(#card-btn1:focus) #price-card1,
-.price:has(#card-btn2:focus) #price-card2,
-.price:has(#card-btn3:focus) #price-card3 {
-  border: 7px solid $color-bg-accent;
-
-  border-image: linear-gradient(155deg, #ed0233, #003eb7 95%);
-  border-image-slice: 7;
-}
-
-
 .card__btn {
   &:not(--isDisabled):hover {
     color: $color-white;

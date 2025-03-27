@@ -53,10 +53,7 @@
     &--reviews {
       margin-top: 19px;
       margin-left: 18px;
-
-      &--r {
-        margin-right: 18px;
-      }
+      margin-right: 18px;
     }
   }
 
@@ -66,8 +63,6 @@
     width: 35px;
     height: 35px;
     background-color: $color-text-base;
-
-    // background-color: blueviolet;
 
     mask-position: center;
     mask-repeat: no-repeat;
@@ -91,8 +86,6 @@
 
   &:not(:disabled):hover {
     border: 1px solid $color-text-base;
-
-    // background-color: red;
   }
 
   &:not(:disabled):focus {

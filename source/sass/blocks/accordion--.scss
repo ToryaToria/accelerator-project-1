@@ -52,14 +52,14 @@
       margin-left: 138px;
     }
   }
+}
 
-  &--1 {
-    &::after {
-      margin-left: 10px;
+.accordion__control--1 {
+  &::after {
+    margin-left: 10px;
 
-      @include media-tablet {
-        margin-left: 60px;
-      }
+    @include media-tablet {
+      margin-left: 60px;
     }
   }
 }
