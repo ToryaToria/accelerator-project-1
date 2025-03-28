@@ -38,7 +38,7 @@
 						Фитнес <br> центр
 					</h1>
 				</div>
-				<a class="hero__button button text-btnM text-invert" href="#price">Купить абонемент</a>
+				<a class="hero__button button text-btn-M text-invert" href="#price">Купить абонемент</a>
 			</div>
 
 			<picture class="hero__img">
@@ -60,196 +60,192 @@
 
 	<main class="page__main">
 		<section class="about container" data-test="about">
-			<div class="about__container">
+			<div class="about__wrapp">
 				<h2 class="about__title title-section">Тренажёрный зал</h2>
 				<p class="about__subtitle subtitle">Просторный зал площадью 900 кв/м</p>
-				<div class="about__content">
-					<p>
-						Supergym – самый большой фитнес центр за&nbsp;Уралом и идеальное место для укрепления тела и здоровья.
-						Тренажёрный зал оснащён всем необходимым современным оборудованием для&nbsp;всех спортсменов.
-					</p>
-					<p>
-						В зале расположены отдельная зона для Crossfit и кардио-зона с 40 тренажёрами. Также в фитнес центре
-						есть несколько оборудованных залов для различных видов групповых занятий.
-					</p>
-				</div>
+				<p class="about__text text-basic-M">
+					Supergym – самый большой фитнес центр за&nbsp;Уралом и идеальное место для укрепления тела и здоровья.
+					Тренажёрный зал оснащён всем необходимым современным оборудованием для&nbsp;всех спортсменов.
+				</p>
+				<p p class="about__text about__text--desktop text-basic-M">
+					В зале расположены отдельная зона для Crossfit и кардио-зона с 40 тренажёрами. Также в фитнес центре
+					есть несколько оборудованных залов для различных видов групповых занятий.
+				</p>
 			</div>
-			<div class="about__wrapper">
-				<picture>
-					<source type="image/webp" media="(min-width: 1366px)" srcset="./img/main/main-img_deskt@1x.webp 1x,
+
+			<picture>
+				<source type="image/webp" media="(min-width: 1366px)" srcset="./img/main/main-img_deskt@1x.webp 1x,
 					./img/main/main-img_deskt@2x.webp 2x" width="360" height="230">
 
-					<source type="image/webp" media="(min-width: 768px)" srcset="./img/main/main-img_tabl@1x.webp 1x,
+				<source type="image/webp" media="(min-width: 768px)" srcset="./img/main/main-img_tabl@1x.webp 1x,
 					./img/main/main-img_tabl@2x.webp 2x" width="270" height="170">
 
-					<source type="image/webp" srcset="./img/main/main-img_mob@1x.webp 1x,
+				<source type="image/webp" srcset="./img/main/main-img_mob@1x.webp 1x,
 				./img/main/main-img_mob@2x.webp 2x" width="320" height="280">
 
-					<source type="image/jpg" media="(min-width:1366px)" srcset="./img/main/main-img_deskt@1x.jpg 1x,
+				<source type="image/jpg" media="(min-width:1366px)" srcset="./img/main/main-img_deskt@1x.jpg 1x,
 				./img/main/main-img_deskt@2x.jpg 2x" width="360" height="230">
 
-					<source type="image/jpg" media="(min-width:768px)" srcset="./img/main/main-img_tabl@1x.jpg 1x,
+				<source type="image/jpg" media="(min-width:768px)" srcset="./img/main/main-img_tabl@1x.jpg 1x,
 				./img/main/main-img_tabl@2x.jpg 2x" width="270" height="170">
 
-					<img class="about__img" src="./img/main/main-img_mob@1x.jpg" srcset="./img/main/main-img_mob@2x.jpg 2x"
-						alt="Тренажёрный зал" width="320" height="280">
-				</picture>
+				<img class="about__img" src="./img/main/main-img_mob@1x.jpg" srcset="./img/main/main-img_mob@2x.jpg 2x"
+					alt="Тренажёрный зал" width="320" height="280">
+			</picture>
 
-				<div class="about__video">
-					<div class="video-wrapp">
-						<iframe class="video" id="myVideo" width="320" height="170" loading="lazy" tabindex="-1"
-							title="YouTube video player" allowfullscreen referrerpolicy="strict-origin-when-cross-origin"
-							data-src="https://www.youtube.com/embed/9TZXsZItgdw?si=lhUb-X2bliaV0EZ0?&autoplay=1">
-						</iframe>
-					</div>
+			<div class="about__video">
 
-					<button class="video__play" type="button">
-						<span class="visually-hidden">кнопка пуск</span>
-					</button>
+				<div class="video-wrapp">
+					<iframe class="video" id="myVideo" width="320" height="170" loading="lazy" tabindex="-1" frameborder="0"
+						title="YouTube video player" allowfullscreen referrerpolicy="strict-origin-when-cross-origin"
+						data-src="https://www.youtube.com/embed/9TZXsZItgdw?si=lhUb-X2bliaV0EZ0?&autoplay=1">
+						>
+					</iframe>
 				</div>
-			</div>
 
+				<button class="video__play" type="button">
+					<span class="visually-hidden">кнопка пуск</span>
+				</button>
+			</div>
 		</section>
 
 		<section class="price container tab-price" data-test="price" id="price">
 			<h2 class="price__title title-section">Абонементы</h2>
 
 			<div class="price__month">
-				<label>
-					<input class="tab-price__radio tab-price--1 visually-hidden" type="radio" name="tab-price" value="1"
-						id="tab-price-1" checked>
-					<span class="tab-price__button tab-price__button--current text-month">1 месяц</span>
-					<!-- </input> -->
+				<label for="tab-price-1">
+					<input class="tab-price__radio visually-hidden tab1" type="radio" name="tab-price" value="1" id="tab-price-1"
+						checked>
+					<span class="tab-price__button tab-price__button--current text-btn-month">1 месяц</span>
+					</input>
 				</label>
 
-				<label>
-					<input class="tab-price__radio tab-price--2 visually-hidden" type="radio" name="tab-price" value="6"
-						id="tab-price-2">
-					<span class="tab-price__button text-month">6 месяцев</span>
+				<label for="tab-price-2">
+					<input class="tab-price__radio visually-hidden tab2" type="radio" name="tab-price" value="6" id="tab-price-2">
+					<span class="tab-price__button text-btn-month">6 месяцев</span>
 				</label>
 
-				<label>
-					<input class="tab-price__radio tab-price--3 visually-hidden" type="radio" name="tab-price" value="12"
+				<label for="tab-price-3">
+					<input class="tab-price__radio visually-hidden tab3" type="radio" name="tab-price" value="12"
 						id="tab-price-3">
-					<span class="tab-price__button text-month">12 месяцев</span>
+					<span class="tab-price__button text-btn-month">12 месяцев</span>
 				</label>
 			</div>
 
 			<ul class="price__cards-list">
-				<li class="price__card price-card--1 card" id="price-card1">
+				<li class="price__card card" id="price__card1">
 					<h3 class="title-price">С тренером</h3>
-					<p class="text-basic">12 занятий</p>
-					<p class="card__prise text-price-number tab-price__show1" data-tip="5000">5000
+					<p class="text-basic-M">12 занятий</p>
+					<p class="card__prise text-number-M tab-price__show1" data-tip="5000">5000
 						<span class="card__ruble-symbol" role="img" aria-label="рублей">
 						</span>
 					</p>
 
-					<p class="card__prise text-price-number tab-price__show2" data-tip="30000">30000
+					<p class="card__prise text-number-M tab-price__show2" data-tip="30000">30000
 						<span class="card__ruble-symbol" role="img" aria-label="рублей">
 						</span>
 					</p>
-					<p class="card__prise text-price-number tab-price__show3" data-tip="60000">60000
+					<p class="card__prise text-number-M tab-price__show3" data-tip="60000">60000
 						<span class="card__ruble-symbol" role="img" aria-label="рублей">
 						</span>
 					</p>
 
-					<a class="card__btn card-btn--1 button button--dark text-btnM" href="#" id="card-btn1">Купить абонемент</a>
+					<a class="card__btn button button--color-dark text-btn-M" href="#" id="card__btn1">Купить абонемент</a>
 				</li>
 
-				<li class="price__card price__card--2 card" id="price-card2">
+				<li class="price__card card" id="price__card2">
 					<h3 class="title-price">Дневной</h3>
-					<p class="text-basic">с 8:00 до 17:00</p>
-					<p class="card__prise text-price-number tab-price__show1" data-tip="1700">1700
+					<p class="text-basic-M">с 8:00 до 17:00</p>
+					<p class="card__prise text-number-M tab-price__show1" data-tip="1700">1700
 						<span class="card__ruble-symbol" role="img" aria-label="рублей">
 						</span>
 					</p>
 
-					<p class="card__prise text-price-number tab-price__show2" data-tip="10200">10200
+					<p class="card__prise text-number-M tab-price__show2" data-tip="10200">10200
 						<span class="card__ruble-symbol" role="img" aria-label="рублей">
 						</span>
 					</p>
-					<p class="card__prise text-price-number tab-price__show3" data-tip="20400">20400
+					<p class="card__prise text-number-M tab-price__show3" data-tip="20400">20400
 						<span class="card__ruble-symbol" role="img" aria-label="рублей">
 						</span>
 					</p>
 
-					<a class=" card__btn card-btn--2 button button--dark  text-btnM" href="#" id="card-btn2">Купить абонемент</a>
+					<a class=" card__btn button button--color-dark  text-btn-M" href="#" id="card__btn2">Купить абонемент</a>
 				</li>
 
-				<li class="price__card price__card--3 card" id="price-card3">
+				<li class="price__card card" id="price__card3">
 					<h3 class="title-price">Полный день</h3>
-					<p class="text-basic">с 8:00 до 22:00</p>
-					<p class="card__prise text-price-number tab-price__show1" data-tip="2700" id="tab-price__show1">2700
+					<p class="text-basic-M">с 8:00 до 22:00</p>
+					<p class="card__prise text-number-M tab-price__show1" data-tip="2700" id="tab-price__show1">2700
 						<span class="card__ruble-symbol" role="img" aria-label="рублей">
 						</span>
 					</p>
 
-					<p class="card__prise text-price-number tab-price__show2" data-tip="16200">16200
+					<p class="card__prise text-number-M tab-price__show2" data-tip="16200">16200
 						<span class="card__ruble-symbol" role="img" aria-label="рублей">
 						</span>
 					</p>
-					<p class="card__prise text-price-number tab-price__show3" data-tip="32400" id="tab-price__show3">32400
+					<p class="card__prise text-number-M tab-price__show3" data-tip="32400" id="tab-price__show3">32400
 						<span class="card__ruble-symbol" role="img" aria-label="рублей">
 						</span>
 					</p>
 
-					<a class="card__btn card-btn--3 button  button--dark text-btnM" href="#" id="card-btn3">Купить абонемент</a>
+					<a class="card__btn button  button--color-dark text-btn-M" href="#" id="card__btn3">Купить абонемент</a>
 				</li>
 			</ul>
 		</section>
 
 		<section class="games container" data-test="games">
-			<div class="games__container">
-				<div class=" games__color">
-					<div class="games__wrapp">
-						<h2 class="title-super text-invert ">Super games</h2>
+			<div class=" games__color">
+				<div class="games__wrapp">
+					<h2 class="title-super text-invert ">Super games</h2>
 
-						<dl class="games__link">
-							<dt class="games__term">
-								<p class="text-games-term text-invert">Дата</p>
-							</dt>
+					<dl class="games__link">
+						<dt class="games__term">
+							<p class="text-games-term text-invert">Дата</p>
+						</dt>
 
-							<dd class="games__definition">
-								<p class="text-games-number text-invert">7</p>
-								<p class="text-games-month text-invert">
-									Марта
-									<span class="games__year">2019</span>
-								</p>
-							</dd>
+						<dd class="games__definition">
+							<p class="text-games-number text-invert">7</p>
+							<p class="text-games-month text-invert">
+								Марта
+								<span class="games__year">2019</span>
+							</p>
+						</dd>
 
-							<dt class="games__term">
-								<p class="text-games-term text-invert">Время</p>
-							</dt>
-							<dd class="games__definition">
-								<p class="text-games-number text-invert">12:00</p>
-							</dd>
-						</dl>
-					</div>
-					<p class="games__text text-games text-invert">Ежегодные соревнования по&nbsp;CrossFit</p>
-
-					<a class="games__button button text-btnM text-invert" href="#">заполнить заявку</a>
+						<dt class="games__term">
+							<p class="text-games-term text-invert">Время</p>
+						</dt>
+						<dd class="games__definition">
+							<p class="text-games-number text-invert">12:00</p>
+						</dd>
+					</dl>
 				</div>
+				<p class="games__text text-games text-invert">Ежегодные соревнования по&nbsp;CrossFit</p>
 
-				<picture>
-					<source type="image/webp" media="(min-width: 1366px)" srcset="./img/games/games_deskt@1x.webp 1x,
+				<a class="games__button button text-btn-M text-invert" href="#">заполнить заявку</a>
+			</div>
+
+
+			<picture>
+				<source type="image/webp" media="(min-width: 1366px)" srcset="./img/games/games_deskt@1x.webp 1x,
 					./img/games/games_deskt@2x.webp 2x" width="660" height="500">
 
-					<source type="image/webp" media="(min-width: 768px)" srcset="./img/games/games_tabl@1x.webp 1x,
+				<source type="image/webp" media="(min-width: 768px)" srcset="./img/games/games_tabl@1x.webp 1x,
 					./img/games/games_tabl@2x.webp 2x" width="378" height="348">
 
-					<source type="image/webp" srcset="./img/games/games_mob@1x.webp 1x,
+				<source type="image/webp" srcset="./img/games/games_mob@1x.webp 1x,
 				./img/games/games_mob@2x.webp 2x" width="290" height="290">
 
-					<source type="image/jpg" media="(min-width:1366px)" srcset="./img/games/games_deskt@1x.jpg 1x,
+				<source type="image/jpg" media="(min-width:1366px)" srcset="./img/games/games_deskt@1x.jpg 1x,
 				./img/games/games_deskt@2x.jpg 2x" width="660" height="500">
 
-					<source type="image/jpg" media="(min-width:768px)" srcset="./img/games/games_tabl@1x.jpg 1x,
+				<source type="image/jpg" media="(min-width:768px)" srcset="./img/games/games_tabl@1x.jpg 1x,
 				./img/games/games_tabl@2x.jpg 2x" width="378" height="348">
 
-					<img class="games__img" src="./img/games/games_mob@1x.jpg" srcset="./img/games/games_mob@2x.jpg 2x"
-						alt="спортсмен" width="290" height="290">
-				</picture>
-			</div>
+				<img class="games__img" src="./img/games/games_mob@1x.jpg" srcset="./img/games/games_mob@2x.jpg 2x"
+					alt="спортсмен" width="290" height="290">
+			</picture>
 		</section>
 
 		<section class="juri container container--juri slider" data-test="juri">
@@ -258,7 +254,7 @@
 			<div class="slider__container slider__container--juri swiper">
 				<ul class="juri__list swiper-wrapper">
 
-					<li class="juri-card swiper-slide" tabindex="0">
+					<li class="juri-card swiper-slide" name="juri" open tabindex="0">
 						<picture>
 							<source type="image/webp" srcset="./img/iuri/juri-anna_mob@1x.webp 1x,
 						./img/iuri/juri-anna_mob@2x.webp 2x" width="260" height="300">
@@ -280,7 +276,7 @@
 						</div>
 					</li>
 
-					<li class="juri-card swiper-slide" tabindex="0">
+					<li class="juri-card swiper-slide" name="juri" tabindex="0">
 						<picture>
 							<source type="image/webp" srcset="./img/iuri/juri-lavr_mob@1x.webp 1x,
 						./img/iuri/juri-lavr_mob@2x.webp 2x" width="260" height="300">
@@ -302,7 +298,7 @@
 						</div>
 					</li>
 
-					<li class="juri-card swiper-slide" tabindex="0">
+					<li class="juri-card swiper-slide" name="juri" tabindex="0">
 						<picture>
 							<source type="image/webp" srcset="./img/iuri/juri-pash_mob@1x.webp 1x,
 							./img/iuri/juri-pash_mob@2x.webp 2x" width="260" height="300">
@@ -324,7 +320,7 @@
 						</div>
 					</li>
 
-					<li class="juri-card swiper-slide" tabindex="0">
+					<li class="juri-card swiper-slide" name="juri" tabindex="0">
 						<picture>
 							<source type="image/webp" srcset="./img/iuri/juri-mari_mob@1x.webp 1x,
 							./img/iuri/juri-mari_mob@2x.webp 2x" width="260" height="300">
@@ -346,7 +342,7 @@
 						</div>
 					</li>
 
-					<li class="juri-card swiper-slide" tabindex="0">
+					<li class="juri-card swiper-slide" name="juri" open tabindex="0">
 						<picture>
 							<source type="image/webp" srcset="./img/iuri/juri-anna_mob@1x.webp 1x,
 						./img/iuri/juri-anna_mob@2x.webp 2x" width="260" height="300">
@@ -368,7 +364,7 @@
 						</div>
 					</li>
 
-					<li class="juri-card swiper-slide" tabindex="0">
+					<li class="juri-card swiper-slide" name="juri" tabindex="0">
 						<picture>
 							<source type="image/webp" srcset="./img/iuri/juri-lavr_mob@1x.webp 1x,
 						./img/iuri/juri-lavr_mob@2x.webp 2x" width="260" height="300">
@@ -390,7 +386,7 @@
 						</div>
 					</li>
 
-					<li class="juri-card swiper-slide" tabindex="0">
+					<li class="juri-card swiper-slide" name="juri" tabindex="0">
 						<picture>
 							<source type="image/webp" srcset="./img/iuri/juri-pash_mob@1x.webp 1x,
 							./img/iuri/juri-pash_mob@2x.webp 2x" width="260" height="300">
@@ -412,7 +408,7 @@
 						</div>
 					</li>
 
-					<li class="juri-card swiper-slide" tabindex="0">
+					<li class="juri-card swiper-slide" name="juri" tabindex="0">
 						<picture>
 							<source type="image/webp" srcset="./img/iuri/juri-mari_mob@1x.webp 1x,
 							./img/iuri/juri-mari_mob@2x.webp 2x" width="260" height="300">
@@ -450,115 +446,57 @@
 			<h2 class="features__title title-section container">Наши преимущества</h2>
 
 			<ul class="features__list">
-				<li class="features__item features__content">
-					<!-- <div class="features__content"> -->
-						<dl>
-							<dt>900</dt>
-							<dd>кв/м</dd>
-						</dl>
-
-						<!-- <p class="features__digit text-features-number">900
-							<span class="features__name text-name">кв/м</span>
-						</p> -->
-
-						<div>
-							<h3>Площадь</h3>
-							<p>Занимайтесь без очередей и толкучки</p>
-						</div>
-						
-
-						<!-- <div class="features__item-wrapp">
-							<h3 class="features__subtitle subtitle">Площадь</h3>
-							<p class="features__text text-basic">Занимайтесь без очередей и толкучки</p>
-						</div> -->
-					<!-- </div> -->
-				</li>
-
-				<li class="features__item features__content">
-					<!-- <div class="features__content"> -->
-						<dl>
-							<dt>70</dt>
-							<dd>машин</dd>
-						</dl>
-
-						<!-- <p class="features__digit text-features-number">70
-							<span class="features__name text-name">машин </span>
-						</p> -->
-
-						<div>
-							<h3>Собственная парковка</h3>
-							<p>Вы всегда найдёте место для своей машины на нашей парковке</p>
-						</div>
-
-						<!-- <div class="features__item-wrapp">
-							<h3 class="features__subtitle subtitle">Собственная парковка</h3>
-							<p class="features__text text-basic">Вы всегда найдёте место для своей машины на нашей парковке</p>
-						</div> -->
-					<!-- </div> -->
-				</li>
-
-				<li class="features__item-container">
-					<div class="features__item-dark features__content-dark">
-						<!-- <div class="features__content-dark"> -->
-							<dl>
-								<dt>100</dt>
-								<dd>Тренажёров</dd>
-							</dl>
-							<!-- <p class="features__digit features__digit--dark  features__subtitle text-features-number text-invert">100
-								<span class="features__name features__name--invert subtitle-features ">Тренажёров </span>
-							</p> -->
-
-							<p>Современные тренажёры на все группы мышц</p>
-
-							<!-- <p class="features__text text-basic text-invert">Современные тренажёры на все группы мышц</p> -->
-						<!-- </div> -->
+				<li class="features__item">
+					<p class="features__digit text-number-L">900
+						<span class="features__name text-name">кв/м</span>
+					</p>
+					<div class="features__item-wrapp">
+						<h3 class="features__subtitle subtitle">Площадь</h3>
+						<p class="features__text text-basic-M">Занимайтесь без очередей и толкучки</p>
 					</div>
 				</li>
 
-				<li class="features__item features__item--bottom features__content ">
-					<!-- <div class="features__content"> -->
-						<dl>
-							<dt>350</dt>
-							<dd>мест</dd>
-						</dl>
-						
-						<!-- <p class="features__digit text-features-number">350
-							<span class="features__name text-name">мест</span>
-						</p> -->
+				<li class="features__item">
+					<p class="features__digit text-number-L">70
+						<span class="features__name text-name">машин </span>
+					</p>
 
-						<div>
-							<h3>Комфорт</h3>
-							<p>Просторные раздевалки, душевые, фен, Wi-Fi, кулеры</p>
-						</div>
-
-						<!-- <div class="features__item-wrapp">
-							<h3 class="features__subtitle subtitle">Комфорт</h3>
-							<p class="features__text text-basic">Просторные раздевалки, душевые, фен, Wi-Fi, кулеры</p>
-						</div> -->
-					<!-- </div> -->
+					<div class="features__item-wrapp">
+						<h3 class="features__subtitle subtitle">Собственная парковка</h3>
+						<p class="features__text text-basic-M">Вы всегда найдёте место для своей машины на нашей парковке</p>
+					</div>
 				</li>
 
-				<li class="features__item features__item--bottom features__content">
-					<!-- <div class="features__content"> -->
-						<dl>
-							<dt>5+</dt>
-							<dd>лет</dd>
-						</dl>
+				<li class="features__item-container">
+					<div class="features__item-dark">
+						<p class="features__digit features__digit--dark  features__subtitle text-number-L text-invert">100
+							<span class="features__name features__name--invert subtitle-features ">Тренажёров </span>
+						</p>
 
-						<!-- <p class="features__digit  text-features-number">5+
-							<span class="features__name text-name">лет</span>
-						</p> -->
+						<p class="features__text text-basic-M text-invert">Современные тренажёры на все группы мышц</p>
+					</div>
+				</li>
 
-						<div>
-							<h3>Тренерский опыт</h3>
-							<p>Добивайтесь своих целей быстрее с профессиональным тренером</p>
-						</div>
+				<li class="features__item features__item--bottom">
+					<p class="features__digit text-number-L">350
+						<span class="features__name text-name">мест</span>
+					</p>
 
-						<!-- <div class="features__item-wrapp">
-							<h3 class="features__subtitle  subtitle">Тренерский опыт</h3>
-							<p class="features__text text-basic">Добивайтесь своих целей быстрее с профессиональным тренером</p>
-						</div> -->
-					<!-- </div> -->
+					<div class="features__item-wrapp">
+						<h3 class="features__subtitle subtitle">Комфорт</h3>
+						<p class="features__text text-basic-M">Просторные раздевалки, душевые, фен, Wi-Fi, кулеры</p>
+					</div>
+				</li>
+
+				<li class="features__item features__item--bottom">
+					<p class="features__digit  text-number-L">5+
+						<span class="features__name text-name">лет</span>
+					</p>
+
+					<div class="features__item-wrapp">
+						<h3 class="features__subtitle  subtitle">Тренерский опыт</h3>
+						<p class="features__text text-basic-M">Добивайтесь своих целей быстрее с профессиональным тренером</p>
+					</div>
 				</li>
 			</ul>
 		</section>
@@ -570,16 +508,11 @@
 				<div class="offers__wrapp">
 					<!-- bid - заявка -->
 					<div class="offers__bid">
-						<div class="offers__content-1">
-							<dl>
-								<dt>Год</dt>
-								<dd>4999</dd>
-							</dl>
-							<p>Безлимитный абонемент <br> в тренажёрный зал
-							</p>
-						</div>
-
-						<a class="offers__link offers__link--invert text-detailed" href="#">подробнее</a>
+						<p class="offers__year">Год</p>
+						<p class="offers__number text-number-L text-invert">4999</p>
+						<p class="offers__text offers__text--invert subtitle-offers ">Безлимитный абонемент <br> в тренажёрный зал
+						</p>
+						<a class="offers__link offers__link--invert text-btn-L" href="#">подробнее</a>
 					</div>
 
 					<picture>
@@ -604,22 +537,16 @@
 				</div>
 
 				<ul class="offers__list">
-					<li class="offers__item offers__item--shadow">
-						<div class="offers__content-2">
-							<h3>Месяц бесплатно</h3>
-							<p>Приведи друга, получи абонемент в&nbsp;подарок</p>
-						</div>
-
-						<a class="offers__link offers__link--color  text-detailed" href="#">подробнее</a>
+					<li class="offers__item">
+						<h3 class="offers__title-item title-offers">Месяц бесплатно</h3>
+						<p class="offers__text text-offers">Приведи друга, получи абонемент в&nbsp;подарок</p>
+						<a class="offers__link offers__link--color  text-btn-L" href="#">подробнее</a>
 					</li>
 
 					<li class="offers__item">
-						<div class="offers__content-2">
-							<h3>Скидка 20%</h3>
-							<p>Корпоративный фитнес с командой</p>
-						</div>
-
-						<a class="offers__link offers__link--color  text-detailed" href="#">подробнее</a>
+						<h3 class="offers__title-item title-offers">Скидка 20%</h3>
+						<p class="offers__text text-offers">Корпоративный фитнес с командой</p>
+						<a class="offers__link offers__link--color  text-btn-L" href="#">подробнее</a>
 					</li>
 				</ul>
 			</div>
@@ -632,92 +559,88 @@
 
 				<div class="faq__tabs">
 
-					<label>
-						<input class="tab-faq__radio tab-faq--1 visually-hidden" type="radio" name="tab-faq" value="Центр"
-							id="tab-faq-1" checked>
+					<label for="tab-faq-1">
+						<input class="tab-faq__radio visually-hidden" type="radio" name="tab-faq" value="Центр" id="tab-faq-1"
+							checked>
 						<span class="tab-faq__button text-btn-faq">Центр</span>
 					</label>
 
-					<label>
-						<input class="tab-faq__radio tab-faq--2 visually-hidden" type="radio" name="tab-faq" value="Абонемент"
-							id="tab-faq-2">
+					<label for="tab-faq-2">
+						<input class="tab-faq__radio visually-hidden" type="radio" name="tab-faq" value="Абонемент" id="tab-faq-2">
 						<span class="tab-faq__button text-btn-faq">Абонемент</span>
 					</label>
 
-					<label>
-						<input class="tab-faq__radio tab-faq--3 visually-hidden" type="radio" name="tab-faq" value="Услуги"
-							id="tab-faq-3">
+					<label for="tab-faq-3">
+						<input class="tab-faq__radio visually-hidden" type="radio" name="tab-faq" value="Услуги" id="tab-faq-3">
 						<span class="tab-faq__button text-btn-faq">Услуги</span>
 					</label>
 
-					<label>
-						<input class="tab-faq__radio tab-faq--4 visually-hidden" type="radio" name="tab-faq" value="Правила"
-							id="tab-faq-4">
+					<label for="tab-faq-4">
+						<input class="tab-faq__radio visually-hidden" type="radio" name="tab-faq" value="Правила" id="tab-faq-4">
 						<span class="tab-faq__button text-btn-faq">Правила</span>
 					</label>
 				</div>
 
-				<ul class="faq__list tab-faq__show1">
-					<li class="faq__item">
-						<!-- qna__item -->
-						<details class="faq__details" open>
-							<!-- qna__question -->
-							<summary class="faq__summary ">
-								<h3 class="title-faq">Как стать членом фитнес-центра?</h3>
-								<span class="faq__btn"></span>
-							</summary>
 
-							<!-- qna__answer -->
-							<p class="faq__text text-faq ">
+				<!-- <li class="accordion">
+					<button class="accordion__control" aria-expanded="false">
+						<span class="accordion__title">Accordion 1</span>
+						<span class="accordion__icon"></span>
+					</button>
+					<div class="accordion__content" -->
+
+
+
+				<ul class="faq__list tab-faq__show1">
+					<li class="faq__item accordion">
+						<!-- <details class="faq__details" open> -->
+							<button class="faq__summary accordion__control" type="button">
+								<h3 class="title-faq accordion__title">Как стать членом фитнес-центра?</h3>
+							</button>
+
+							<p class="faq__text text-faq accordion__content">
 								При первом посещении и&nbsp;покупке абонемента, необходимо заполнить анкету и&nbsp;подписать договор.
 								При&nbsp;покупке абонемента онлайн, анкета также&nbsp;заполняется онлайн и&nbsp;договор придёт вам на
 								почту.
 							</p>
-						</details>
+						<!-- </details> -->
 					</li>
 
-					<li class="faq__item">
-						<!-- qna__item -->
-						<details class="faq__details ">
-
-							<!-- qna__question -->
-							<summary class="faq__summary disabled" >
+					<li class="faq__item accordion">
+						<!-- <details class="faq__details"> -->
+							<button class="faq__summary accordion__control" type="button">
 								<h3 class="title-faq">Где можно посмотреть расписание?</h3>
-								<span class="faq__btn"></span>
-							</summary>
+							</button>
 
-							<!-- qna__answer -->
-							<p class="faq__text text-faq ">
+							<p class="faq__text text-faq accordion__content">
 								Вы можете ознакомиться с расписание на стойке информации, на нашем официальном сайте. Так же есть
 								возможность оформить подписку на наши новости и получать расписание и обновления на почту каждую неделю.
 							</p>
-						</details>
+						<!-- </details> -->
 					</li>
 
-					<li class="faq__item">
-						<details class="faq__details">
-							<summary class="faq__summary ">
+					<li class="faq__item accordion">
+						<!-- <details class="faq__details"> -->
+							<button class="faq__summary accordion__control" type="button">
 								<h3 class="title-faq">Есть кулеры в центре? Предоставляются полотенца?</h3>
-								<span class="faq__btn"></span>
-							</summary>
+							</button>
+
+							<p class="faq__text text-faq accordion__content">
+								Текст-рыба :))
+							</p>
+						<!-- </details> -->
+					</li>
+
+					<li class="faq__item accordion">
+						<!-- <details class="faq__details"> -->
+							<button class="faq__summary faq__summary--1 accordion__control" type="button">
+								<h3 class="title-faq">Сколько тренеров работает в&nbsp;клубе и какова их&nbsp;квалификация?</h3>
+							</button>
 
 							<p class="faq__text text-faq">
 								Текст-рыба :))
 							</p>
-						</details>
-					</li>
-
-					<li class="faq__item">
-						<details class="faq__details ">
-							<summary class="faq__summary">
-								<h3 class="title-faq">Сколько тренеров работает в&nbsp;клубе и какова их&nbsp;квалификация?</h3>
-								<span class="faq__btn faq__btn--1"></span>
-							</summary>
-
-							<p class="faq__text text-faq ">
-								Текст-рыба :))
-							</p>
-						</details>
+						<!-- </details> -->
 					</li>
 				</ul>
 
@@ -727,7 +650,6 @@
 						<details class="faq__details" open>
 							<summary class="faq__summary">
 								<h3 class="title-faq">Занятия с тренером входят в абонемент?</h3>
-								<span class="faq__btn"></span>
 							</summary>
 
 							<p class="faq__text text-faq">
@@ -742,7 +664,6 @@
 						<details class="faq__details">
 							<summary class="faq__summary">
 								<h3 class="title-faq">Можно ли заморозить абонемент?</h3>
-								<span class="faq__btn"></span>
 							</summary>
 
 							<p class="faq__text text-faq">
@@ -755,7 +676,6 @@
 						<details class="faq__details">
 							<summary class="faq__summary">
 								<h3 class="title-faq">Есть ли лимит по посещениям тренажерного зала и групповых занятий?</h3>
-								<span class="faq__btn"></span>
 							</summary>
 
 							<p class="faq__text text-faq">
@@ -769,7 +689,6 @@
 						<details class="faq__details">
 							<summary class="faq__summary">
 								<h3 class="title-faq">Что такое семейный доступ и доступ для друзей?</h3>
-								<span class="faq__btn"></span>
 							</summary>
 
 							<p class="faq__text text-faq">
@@ -784,7 +703,6 @@
 						<details class="faq__details" open>
 							<summary class="faq__summary">
 								<h3 class="title-faq">Рыбные услуги 1</h3>
-								<span class="faq__btn"></span>
 							</summary>
 
 							<p class="faq__text text-faq">
@@ -797,7 +715,6 @@
 						<details class="faq__details">
 							<summary class="faq__summary">
 								<h3 class="title-faq">Рыбные услуги 2</h3>
-								<span class="faq__btn"></span>
 							</summary>
 
 							<p class="faq__text text-faq">
@@ -810,7 +727,6 @@
 						<details class="faq__details">
 							<summary class="faq__summary">
 								<h3 class="title-faq">Рыбные услуги 3</h3>
-								<span class="faq__btn"></span>
 							</summary>
 
 							<p class="faq__text text-faq">
@@ -823,7 +739,6 @@
 						<details class="faq__details">
 							<summary class="faq__summary">
 								<h3 class="title-faq">Рыбные услуги 4</h3>
-								<span class="faq__btn"></span>
 							</summary>
 
 							<p class="faq__text text-faq">
@@ -838,7 +753,6 @@
 						<details class="faq__details" open>
 							<summary class="faq__summary">
 								<h3 class="title-faq">Есть в фитнес-центре дресс-код?</h3>
-								<span class="faq__btn"></span>
 							</summary>
 
 							<p class="faq__text text-faq">
@@ -856,7 +770,6 @@
 						<details class="faq__details">
 							<summary class="faq__summary">
 								<h3 class="title-faq">Можно ли приводить с собой детей на тренировки?</h3>
-								<span class="faq__btn"></span>
 							</summary>
 
 							<p class="faq__text text-faq">
@@ -869,7 +782,6 @@
 						<details class="faq__details">
 							<summary class="faq__summary">
 								<h3 class="title-faq">Какие дополнительные правила посещения центра?</h3>
-								<span class="faq__btn"></span>
 							</summary>
 
 							<p class="faq__text text-faq">
@@ -882,7 +794,6 @@
 						<details class="faq__details">
 							<summary class="faq__summary">
 								<h3 class="title-faq">Нужна ли медицинская справка для посещения залов и бассейна?</h3>
-								<span class="faq__btn"></span>
 							</summary>
 
 							<p class="faq__text text-faq">
@@ -900,75 +811,75 @@
 
 			<div class="slider__container slider__container--reviews swiper">
 
-				<ul class="reviews__list  swiper-wrapper">
-					<li class="reviews__item reviews__content swiper-slide">
-						<!-- <img src="./img/avatar/Rectangle.jpg" alt="Анна Орлова" width="80" height="80"> -->
+				<ul class="reviews__list swiper-wrapper">
+					<li class="reviews__item swiper-slide">
+						<img class="reviews__img" src="./img/avatar/Rectangle.jpg" alt="Анна Орлова" width="80" height="80">
 
-						<picture>
-							<source type="image/webp" srcset="./img/avatar/avatar@1x.webp 1x,
-						./img/avatar/avatar@2x.webp 2x" width="68" height="68">
+						<!-- <picture>
+							<source type="image/webp" srcset="./img/avatar/avatar_mob@1x.webp 1x,
+						./img/avatar/avatar_mob@2x.webp 2x" width="68" height="68">
 
-							<img src="./img/avatar/avatar_@1x.jpeg" srcset="./avatar/avatar@2x.jpg 2x" alt="Анна Орлова" width="68"
-								height="68">
-						</picture>
+							<img class="reviews__img" src="./img/avatar/avatar_mob@1x.jpeg" srcset="./avatar/avatar_mob@2x.jpg 2x"
+								alt="Анна Орлова" width="68" height="68">
+						</picture> -->
 
 						<div>
-							<h3>Анна Орлова</h3>
-							<p>
+							<h3 class="reviews__subtitle subtitle-rewiews text-invert">Анна Орлова</h3>
+							<p class="reviews__text text-basic-M text-invert">
 								«Хожу в Supergym уже больше года. Нравится, что в клубе всегда чисто, тренажёры обновляют, персонал
 								дружелюбный. Зал просторный, даже в вечернее время нет очередей»
 							</p>
 						</div>
 					</li>
 
-					<li class="reviews__item reviews__content swiper-slide">
+					<li class="reviews__item swiper-slide">
 						<picture>
-							<source type="image/webp" srcset="./img/avatar/avatar@1x.webp 1x,
-						./img/avatar/avatar@2x.webp 2x" width="68" height="68">
+							<source type="image/webp" srcset="./img/avatar/avatar_mob@1x.webp 1x,
+						./img/avatar/avatar_mob@2x.webp 2x" width="68" height="68">
 
-							<img src="./img/avatar/avatar_@1x.jpeg" srcset="./avatar/avatar@2x.jpg 2x" alt="Анна Орлова" width="68"
-								height="68">
+							<img class="reviews__img" src="./img/avatar/avatar_mob@1x.jpeg" srcset="./avatar/avatar_mob@2x.jpg 2x"
+								alt="Анна Орлова" width="68" height="68">
 						</picture>
 
 						<div>
-							<h3>Анна Орлова-2</h3>
-							<p>
+							<h3 class="reviews__subtitle subtitle-rewiews text-invert">Анна Орлова-2</h3>
+							<p class="reviews__text text-basic-M text-invert">
 								«Хожу в Supergym уже больше года. Нравится, что в клубе всегда чисто, тренажёры обновляют, персонал
 								дружелюбный. Зал просторный, даже в вечернее время нет очередей»
 							</p>
 						</div>
 					</li>
 
-					<li class="reviews__item reviews__content swiper-slide">
+					<li class="reviews__item swiper-slide">
 						<picture>
-							<source type="image/webp" srcset="./img/avatar/avatar@1x.webp 1x,
-						./img/avatar/avatar@2x.webp 2x" width="68" height="68">
+							<source type="image/webp" srcset="./img/avatar/avatar_mob@1x.webp 1x,
+						./img/avatar/avatar_mob@2x.webp 2x" width="68" height="68">
 
-							<img src="./img/avatar/avatar_@1x.jpeg" srcset="./avatar/avatar@2x.jpg 2x" alt="Анна Орлова" width="68"
-								height="68">
+							<img class="reviews__img" src="./img/avatar/avatar_mob@1x.jpeg" srcset="./avatar/avatar_mob@2x.jpg 2x"
+								alt="Анна Орлова" width="68" height="68">
 						</picture>
 
 						<div>
-							<h3>Анна Орлова-3</h3>
-							<p>
+							<h3 class="reviews__subtitle subtitle-rewiews text-invert">Анна Орлова-3</h3>
+							<p class="reviews__text text-basic-M text-invert">
 								«Хожу в Supergym уже больше года. Нравится, что в клубе всегда чисто, тренажёры обновляют, персонал
 								дружелюбный. Зал просторный, даже в вечернее время нет очередей»
 							</p>
 						</div>
 					</li>
 
-					<li class="reviews__item reviews__content swiper-slide">
+					<li class="reviews__item swiper-slide">
 						<picture>
-							<source type="image/webp" srcset="./img/avatar/avatar@1x.webp 1x,
-						./img/avatar/avatar@2x.webp 2x" width="68" height="68">
+							<source type="image/webp" srcset="./img/avatar/avatar_mob@1x.webp 1x,
+						./img/avatar/avatar_mob@2x.webp 2x" width="68" height="68">
 
-							<img src="./img/avatar/avatar_@1x.jpeg" srcset="./avatar/avatar@2x.jpg 2x" alt="Анна Орлова" width="68"
-								height="68">
+							<img class="reviews__img" src="./img/avatar/avatar_mob@1x.jpeg" srcset="./avatar/avatar_mob@2x.jpg 2x"
+								alt="Анна Орлова" width="68" height="68">
 						</picture>
 
 						<div>
-							<h3>Анна Орлова-4</h3>
-							<p>
+							<h3 class="reviews__subtitle subtitle-rewiews text-invert">Анна Орлова-4</h3>
+							<p class="reviews__text text-basic-M text-invert">
 								«Хожу в Supergym уже больше года. Нравится, что в клубе всегда чисто, тренажёры обновляют, персонал
 								дружелюбный. Зал просторный, даже в вечернее время нет очередей»
 							</p>
@@ -983,7 +894,8 @@
 				<span class="visually-hidden">туда</span>
 			</button>
 
-			<button class="slider__button slider__button--reviews swiper-button-next swiper-button-next-reviews"
+			<button
+				class="slider__button slider__button--reviews slider__button--reviews--r swiper-button-next swiper-button-next-reviews"
 				type="button">
 				<span class="visually-hidden">сюда</span>
 			</button>
@@ -994,19 +906,19 @@
 				<h2 class="request__title title-section text-invert">Бесплатное занятие</h2>
 				<form class="request__form" action="https://echo.htmlacademy.ru/" method="post">
 					<div class="request__wrapp">
-						<label class="request__label">
+						<label class="request__label" for="">
 							<input class="request__field text-form" type="text" placeholder="Имя" required
-								pattern="[A-Za-zА-Яа-яЁё\s]+$" name="name" id="name">
-							<span class="request__err">Только буквы и пробел!</span>
+								pattern="[A-Za-zА-Яа-яЁё\s]+$" name="name" disabled>
+							<span class="equest__err">Только буквы и пробел!</span>
 						</label>
 
-						<label class="request__label">
+						<label class="request__label" for="">
 							<input class="request__field text-form" type="text" placeholder="Телефон" required
-								pattern="[^A-Za-zА-Яа-яЁё]+$" name="tel" id="tel">
-							<span class="request__err">Только не буквы!</span>
+								pattern="[^A-Za-zА-Яа-яЁё]+$" name="tel">
+							<span class="equest__err">Только не буквы!</span>
 						</label>
 					</div>
-					<button class="request__btn button text-btnM text-invert" type="submit">отправить</button>
+					<button class="request__btn button text-btn-M text-invert" type="submit">отправить</button>
 				</form>
 			</section>
 
@@ -1026,7 +938,7 @@
 					<li class="contacts__item contacts__item--3">
 						<h3 class="contacts__name title-contacts">Телефон:</h3>
 						<a class="text-name" href="tel:88005555555">8 800 555-55-55</a>
-					</li>
+					</li>	
 
 					<li class="contacts__item   contacts__item--4">
 						<h3 class="contacts__name title-contacts">Email:</h3>

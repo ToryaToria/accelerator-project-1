@@ -1,0 +1,168 @@
+.video {
+  box-sizing: border-box;
+  width: 320px;
+  height: 170px;
+  border: none;
+
+  @include media-tablet {
+    width: 270px;
+  }
+
+  @include media-desktop {
+    width: 360px;
+    height: 230px;
+  }
+}
+
+.video-wrapp {
+  box-sizing: border-box;
+  display: block;
+  width: 320px;
+  height: 170px;
+
+  // background-image: url('../../img/video-img/video_mob@1x.jpg');
+
+  background-image:
+    image-set(url("../../img/video-img/video_mob@1x.webp") 1x type("image/webp"),
+    url("../..img/video-img/video_mob@1x.jpg") 1x,
+    url("../../img/video-img/video_mob@2x.webp") 2x type("image/webp"),
+    url("../../img/video-img/video_mob@2x.jpg") 2x);
+
+  background-position: center;
+  background-size: cover;
+
+  @include media-tablet {
+    width: 270px;
+
+    background-image:
+      image-set(url("../../img/video-img/video_tabl@1x.webp") 1x type("image/webp"),
+      url("../..img/video-img/video_tabl@1x.jpg") 1x,
+      url("../../img/video-img/video_tabl@2x.webp") 2x type("image/webp"),
+      url("../../img/video-img/video_tabl@2x.jpg") 2x);
+  }
+
+  @include media-desktop {
+    width: 360px;
+    height: 230px;
+
+    background-image:
+      image-set(url("../../img/video-img/video_desct@1x.webp") 1x type("image/webp"),
+      url("../..img/video-img/video_desct@1x.jpg") 1x,
+      url("../../img/video-img/video_desct@2x.webp") 2x type("image/webp"),
+      url("../../img/video-img/video_desct@2x.jpg") 2x);
+  }
+}
+
+.video__play {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  background-color: transparent;
+  width: 72px;
+  height: 72px;
+
+  border: 2px solid rgba(237, 2, 51, 0.2);
+  border-radius: 50%;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    display: block;
+    width: 52px;
+    height: 52px;
+    border-radius: 50%;
+
+    background-image: linear-gradient(to right, #ed0233, #003eb7);
+
+    @include media-desktop {
+      width: 72px;
+      height: 72px;
+    }
+  }
+
+  &::after {
+    content: "";
+    z-index: 5;
+    display: block;
+    width: 12px;
+    height: 12px;
+    background-color: $color-white;
+
+    mask-image: url("../../__spritemap#sprite-play-view");
+    mask-repeat: no-repeat;
+    mask-position: center;
+    mask-size: auto;
+
+    @include media-desktop {
+      width: 17px;
+      height: 17px;
+    }
+  }
+
+  @include media-desktop {
+    width: 100px;
+    height: 100px;
+  }
+
+  &:not(:disabled):hover {
+    border: 2px solid $color-text-base-60;
+
+    &::before {
+      background-image: none;
+      background-color: $color-white;
+    }
+
+    &::after {
+      background-color: $color-text-base-60;
+    }
+  }
+
+  &:not(:disabled):focus {
+    border: 2px solid $color-text-base;
+
+    &::before {
+      background-image: none;
+      background-color: $color-disabled;
+    }
+
+    &::after {
+      background-color: $color-text-base;
+    }
+  }
+
+  &:not(:disabled):active {
+    border: 2px solid $color-text-base;
+
+    &::before {
+      background-image: none;
+      background-color: $color-white;
+    }
+
+    &::after {
+      background-color: $color-text-base;
+    }
+  }
+
+  &:disabled {
+    opacity: 0.4;
+    border: 2px solid $color-text-base;
+
+    &::before {
+      background-image: none;
+      background-color: $color-white;
+    }
+
+    &::after {
+      background-color: $color-text-base;
+    }
+  }
+}

@@ -1,4 +1,44 @@
-// Vendor
-// ---------------------------------
+// Vendor ---------------------------------
 
-@import "vendor/normalize";
+@import "./vendor/normalize";
+@import "./vendor/swiper-bundle.css";
+
+// @import "./vendor/swiper.css"; // с этим файлом не работают кнопки
+
+// Base ---------------------------------
+
+@import "./base/variables";
+@import "./base/mixins";
+@import "./base/fonts";
+@import "./base/fonts-styles";
+@import "./base/page";
+@import "./base/visually-hidden";
+@import "./base/container";
+
+
+// Blocks ---------------------------------
+
+@import "./blocks/button";
+@import "./blocks/hero";
+@import "./blocks/about";
+@import "./blocks/price";
+@import "./blocks/games";
+@import "./blocks/juri";
+@import "./blocks/juri-card";
+@import "./blocks/features";
+@import "./blocks/offers";
+@import "./blocks/faq";
+@import "./blocks/tab-faq";
+@import "./blocks/reviews";
+@import "./blocks/request";
+@import "./blocks/contacts";
+@import "./blocks/footer";
+@import "./blocks/slider";
+@import "./blocks/card";
+@import "./blocks/video";
+@import "./blocks/tab-price";
+
+// @import "./blocks/accordion.scss";
+
+@import "./blocks/acc";
+

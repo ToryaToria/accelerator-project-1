@@ -1,0 +1,168 @@
+.about {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  text-align: center;
+
+  @include media-tablet {
+    padding-top: 60px;
+    padding-bottom: 120px;
+  }
+
+  @include media-desktop {
+    position: relative;
+    padding-top: 120px;
+    padding-bottom: 240px;
+    display: flex;
+    gap: 145px;
+  }
+}
+
+.about__title {
+  margin-bottom: 12px;
+  text-align: left;
+
+  @include media-tablet {
+    margin-bottom: 20px;
+    text-align: center;
+  }
+
+  @include media-desktop {
+    margin-bottom: 25px;
+    text-align: left;
+  }
+}
+
+.about__subtitle {
+  margin-bottom: 36px;
+  text-align: left;
+
+  @include media-tablet {
+    text-align: center;
+  }
+
+  @include media-desktop {
+    text-align: left;
+    margin-bottom: 95px;
+  }
+}
+
+.about__content {
+  @include font ($size: 14px, $line-height: 22px, $weight: 300);
+
+  margin-bottom: 36px;
+  text-align: left;
+
+  @include media-tablet {
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    margin: 0 90px 36px;
+  }
+
+  @include media-desktop {
+    text-align: left;
+    margin: 0;
+  }
+
+  p {
+    margin-top: 0;
+    margin-bottom: 0;
+    display: none;
+
+    &:nth-child(1) {
+      display: block;
+    }
+
+    @include media-desktop {
+      display: block;
+
+      &:not(:nth-child(1)) {
+        margin-top: 8px;
+      }
+    }
+  }
+}
+
+.about__container {
+  box-sizing: border-box;
+  margin: 0 auto;
+
+  @include media-desktop {
+    width: 355px;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.about__wrapper {
+  position: relative;
+  margin-left: -15px;
+  margin-right: -15px;
+
+  @include media-tablet {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  @include media-desktop {
+    position: static;
+  }
+}
+
+.about__img {
+  display: block;
+  width: 320px;
+  height: 280px;
+  margin: 0 auto;
+  margin-bottom: 36px;
+
+
+  @include media-tablet {
+    width: 678px;
+    height: 345px;
+
+    // margin-left: auto;
+    // margin-right: auto;
+    margin-bottom: 0;
+  }
+
+  @include media-desktop {
+    width: 660px;
+    height: 400px;
+    order: 1;
+  }
+}
+
+.about__video {
+  position: relative;
+  box-sizing: border-box;
+  display: block;
+  width: 320px;
+  height: 170px;
+
+  // margin-left: -15px;
+  // margin-right: -15px;
+  margin: 0 auto;
+
+
+  @include media-tablet {
+    width: 270px;
+    margin-left: 0;
+    margin-right: 0;
+    height: 170px;
+    object-fit: cover;
+
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 0);
+    bottom: -85px;
+  }
+
+  @include media-desktop {
+    width: 360px;
+    height: 230px;
+    left: 50%;
+    bottom: 125px;
+  }
+}

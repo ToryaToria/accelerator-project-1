@@ -1,0 +1,73 @@
+.tab-price__button {
+  padding-bottom: 7px;
+  color: $color-text-base-50;
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    display: block;
+    height: 2px;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background-color: $color-line-grey-20;
+  }
+}
+
+.tab-price__show1,
+.tab-price__show2,
+.tab-price__show3 {
+  display: none;
+}
+
+.tab-price:has(.tab-price--1:checked) .tab-price__show1,
+.tab-price:has(.tab-price--2:checked) .tab-price__show2,
+.tab-price:has(.tab-price--3:checked) .tab-price__show3 {
+  display: block;
+}
+
+.tab-price__radio {
+  &:checked + .tab-price__button {
+    color: $color-text-base;
+
+    &::after {
+      background-color: $color-line-current;
+    }
+  }
+
+  &:not(:disabled):hover + .tab-price__button {
+    color: $color-text-base-70;
+
+    &::after {
+      background-color: $color-line-grey;
+    }
+  }
+
+  &:not(:disabled):focus + .tab-price__button {
+    color: $color-text-base;
+    outline: auto; // НУЖЕН???
+
+    &::after {
+      background-color: currentColor;
+    }
+  }
+
+  &:not(:disabled):active + .tab-price__button {
+    color: $color-text-base;
+
+    &::after {
+      background-color: $color-bg-accent;
+    }
+  }
+
+  &:disabled + .tab-price__button {
+    opacity: 0.3;
+    cursor: default;
+    color: $color-text-base;
+
+    &::after {
+      background-color: currentColor;
+    }
+  }
+}

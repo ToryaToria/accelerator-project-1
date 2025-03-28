@@ -1,0 +1,167 @@
+.games {
+  padding-top: 25px;
+  padding-bottom: 25px;
+
+  @include media-tablet {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+
+  @include media-desktop {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+}
+
+.games__container {
+  box-sizing: border-box;
+  width: 290px;
+  margin: 0 auto;
+
+  // background-color: aqua;
+
+  @include media-tablet {
+    width: 678px;
+    display: flex;
+    justify-content: center;
+  }
+
+  @include media-desktop {
+    width: 1160px;
+    justify-content: stretch;
+    align-items: stretch;
+
+    // gap: 30px;
+  }
+}
+
+.games__color {
+  width: 290px;
+  box-sizing: border-box;
+
+  padding: 40px;
+  background-color: $color-bg-accent;
+
+  @include media-tablet {
+    width: 300px;
+    flex-shrink: 0;
+    padding: 40px;
+  }
+
+  @include media-desktop {
+    width: 500px;
+    padding: 62px 80px 98px;
+  }
+}
+
+.games__img {
+  display: block;
+  background-color: $color-price;
+  width: 290px;
+  height: 290px;
+
+  @include media-tablet {
+    width: 378px;
+    height: 348px;
+
+    // flex-grow: 1;
+    // flex-shrink: 0;
+  }
+
+  @include media-desktop {
+    width: 660px;
+    min-height: 500px;
+    object-fit: cover;
+
+    // height: auto;
+  }
+}
+
+.games__text {
+  margin-bottom: 16px;
+
+  @include media-tablet {
+    margin-bottom: 10px;
+  }
+
+  @include media-desktop {
+    padding-top: 23px;
+    padding-bottom: 20px;
+  }
+}
+
+.games__wrapp {
+  display: flex;
+  gap: 37px;
+  margin-bottom: 14px;
+
+  @include media-tablet {
+    gap: 0;
+    margin-bottom: 0;
+  }
+}
+
+.games__link {
+  @include list-reset;
+
+  width: 56px;
+
+  @include media-tablet {
+    width: 100px;
+    flex-shrink: 0;
+  }
+
+  @include media-desktop {
+    width: 95px;
+  }
+}
+
+.games__term {
+  border-bottom: 1px solid $color-white;
+  padding-bottom: 2px;
+
+  @include media-tablet {
+    padding-bottom: 1px;
+  }
+
+  @include media-desktop {
+    padding-bottom: 6px;
+  }
+}
+
+.games__definition {
+  padding-top: 2px;
+  padding-bottom: 0;
+  margin-left: 0;
+  display: flex;
+  gap: 3px;
+  align-items: flex-start;
+
+  @include media-tablet {
+    align-items: center;
+    gap: 6px;
+
+    // padding-top: 7px;
+  }
+
+  @include media-desktop {
+    padding-top: 0;
+    align-items: stretch;
+  }
+}
+
+.games__term + .games__definition {
+  padding-bottom: 6px;
+
+  @include media-tablet {
+    padding-bottom: 10px;
+  }
+
+  @include media-desktop {
+    padding-bottom: 12px;
+  }
+}
+
+.games__year {
+  display: block;
+}

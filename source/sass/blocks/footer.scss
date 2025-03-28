@@ -1,0 +1,145 @@
+.footer {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  background-color: $color-bg-footer;
+  color: $color-white;
+
+  @include media-tablet {
+    padding-top: 45px;
+    padding-bottom: 48px;
+    display: flex;
+
+    // gap: 36px;
+    justify-content: space-between;
+  }
+
+  @include media-desktop {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+}
+
+.footer__logo {
+  display: block;
+  width: 100px;
+  height: 20px;
+
+  margin-bottom: 30px;
+
+  @include media-tablet {
+    width: 110px;
+    height: 22px;
+    margin-bottom: 0;
+  }
+
+  @include media-desktop {
+    width: 130px;
+    height: 26px;
+  }
+}
+
+.footer__list-user {
+  @include list-reset;
+
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px 35px;
+  padding-right: 20px;
+  margin-bottom: 30px;
+
+  @include media-tablet {
+    flex-wrap: wrap;
+    gap: 30px;
+    padding-right: 0;
+    margin-bottom: 0;
+  }
+
+  @include media-desktop {
+    gap: 82px;
+  }
+}
+
+.footer__link {
+  text-decoration: none;
+}
+
+.footer__social-list {
+  @include list-reset;
+
+  display: flex;
+  gap: 20px;
+
+  @include media-tablet {
+    gap: 15px;
+  }
+
+  @include media-desktop {
+    gap: 10px;
+  }
+}
+
+.footer__social-link {
+  width: 25px;
+  height: 25px;
+  background-color: $color-white;
+  border-radius: 50%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &::before {
+    display: block;
+    width: 14px;
+    height: 14px;
+    content: "";
+    background-color: $color-bg-footer;
+    mask-size: auto;
+    mask-repeat: no-repeat;
+    mask-position: center;
+  }
+
+
+  &--vk::before {
+    mask-image: url("../../__spritemap#sprite-vk-view");
+  }
+
+  &--ok::before {
+    mask-image: url("../../__spritemap#sprite-ok-view");
+  }
+
+  &--reddit::before {
+    mask-image: url("../../__spritemap#sprite-reddit-view");
+  }
+
+
+  &:not(.footer__social-link--disabled):hover {
+    background-color: $color-divider;
+
+    &::before {
+      background-color: $color-white;
+    }
+  }
+
+  &:not(.footer__social-link--disabled):focus {
+    background-color: $color-price;
+
+    &::before {
+      background-color: $color-white;
+    }
+  }
+
+  &:not(.footer__social-link--disabled):active {
+    background-color: $color-text-base;
+
+    &::before {
+      background-color: $color-white;
+    }
+  }
+
+  &--disabled {
+    cursor: default;
+    background-color: $color-white;
+    opacity: 0.3;
+  }
+}
