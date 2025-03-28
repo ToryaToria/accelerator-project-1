@@ -14,7 +14,7 @@
 }
 
 .offers__title {
-  margin-bottom: 40px;
+  margin-bottom: 39px;
   text-align: center;
 
   @include media-tablet {
@@ -32,13 +32,6 @@
     gap: 40px;
     align-items: flex-end;
   }
-
-
-  // @include media-desktop {
-  // 	align-items: center;
-  // 	justify-content: space-between;
-
-  // }
 }
 
 .offers__wrapp {
@@ -48,9 +41,6 @@
   @include media-tablet {
     width: 678px;
     display: flex;
-
-    // margin-left: 0;
-    // margin-right: 0;
     margin: 0 auto;
   }
 }
@@ -58,10 +48,8 @@
 .offers__bid {
   box-sizing: border-box;
   width: 320px;
-
-  // padding-top: 30px;
-  // padding-bottom: 30px;
   padding: 30px;
+  padding-top: 30px;
   margin: 0 auto;
 
   background-color: $color-bg-accent;
@@ -83,56 +71,65 @@
   }
 }
 
-.offers__year {
-  @include font ($size: 22px, $line-height: 22px, $weight: 700);
+.offers__content-1 {
+  dl {
+    margin: 0;
 
-  margin-bottom: 9px;
-
-  color: $color-white;
-
-  @include media-tablet {
-    margin-bottom: 20px;
-    font-size: 24px;
-    line-height: 24px;
+    @include media-tablet {
+      text-align: left;
+    }
   }
 
-  @include media-desktop {
-    font-size: 26px;
-    line-height: 26px;
-  }
-}
+  dt {
+    @include font ($size: 22px, $line-height: 22px, $weight: 700);
+    // margin-top: -1px;
+    margin-bottom: 9px;
 
-.offers__number {
-  margin-bottom: 27px;
-
-  @include media-tablet {
-    // margin-top: 20px;
-    margin-bottom: 40px;
-  }
-}
-
-.offers__text {
-  color: $color-bg-secondary;
-
-  // background-color: #ED0233;
-
-  &--invert {
     color: $color-white;
+
+    @include media-tablet {
+      margin-bottom: 20px;
+      font-size: 24px;
+      line-height: 24px;
+    }
+
+    @include media-desktop {
+      font-size: 26px;
+      line-height: 26px;
+    }
   }
 
-  @include media-tablet {
-    text-align: left;
-    margin-bottom: 21px;
+  dd {
+    @include font ($size: 64px, $line-height: 64px, $weight: 700, $color: $color-white);
+    margin-left: 0;
+    margin-bottom: 27px;
+
+    @include media-tablet {
+      font-size: 70px;
+      line-height: 70px;
+      margin-bottom: 40px;
+    }
   }
 
-  @include media-desktop {
-    margin-bottom: 40px;
+  p {
+    @include font ($size: 16px, $line-height: 20px, $color: $color-white, $weight: 300);
+
+    @include media-tablet {
+      font-size: 18px;
+      line-height: 24px;
+      text-align: left;
+      margin-bottom: 21px;
+    }
+
+    @include media-desktop {
+      margin-bottom: 40px;
+    }
   }
 }
 
 .offers__link {
   display: inline-block;
-  margin-top: 28px;
+  margin-top: 29px;
   padding-bottom: 5px;
   text-decoration: none;
   border-bottom: 1px solid $color-white;
@@ -151,6 +148,36 @@
   @include media-tablet {
     margin-top: auto;
     align-self: flex-start;
+  }
+}
+
+.offers__content-2 {
+  @include media-desktop {
+    margin-bottom: 40px;
+  }
+  h3 {
+    @include font ($size: 22px, $line-height: 22px, $weight: 700, $color: $color-bg-secondary);
+    margin-bottom: 20px;
+
+    @include media-tablet {
+      font-size: 26px;
+      line-height: 26px;
+      text-align: left;
+      margin-bottom: 10px;
+    }
+  }
+
+  p {
+    @include font ($size: 14px, $line-height: 22px, $weight: 300);
+
+    @include media-tablet {
+      font-size: 16px;
+      line-height: 24px;
+    }
+
+    @include media-desktop {
+      line-height: 140%;
+    }
   }
 }
 
@@ -176,8 +203,6 @@
   box-sizing: border-box;
 
   @include list-reset ($padd-left: 0);
-
-  // margin-bottom: 40px;
   margin-top: 40px;
 
   display: flex;
@@ -211,7 +236,6 @@
   border-image: linear-gradient(155deg, #ed0233, #003eb7 95%);
   border-image-slice: 7;
 
-  /* Равно толщине рамки */
   display: flex;
   flex-direction: column;
   gap: 20px;
@@ -219,8 +243,9 @@
   @include media-tablet {
     width: 324px;
     text-align: left;
-    gap: 10px;
-    padding: 20px 20px 19px;
+    gap: 30px;
+    padding: 20px;
+    align-items: stretch;
   }
 
   @include media-desktop {
@@ -231,15 +256,5 @@
     &--shadow {
       box-shadow: 0 4px 4px 0 $color-black-25;
     }
-  }
-}
-
-.offers__title-item {
-  @include media-tablet {
-    text-align: left;
-  }
-
-  @include media-desktop {
-    margin-bottom: 10px;
   }
 }

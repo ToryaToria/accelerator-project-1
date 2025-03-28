@@ -47,29 +47,19 @@
   }
 }
 
-.subtitle-offers {
-  // background-color: red;
-  @include font ($size: 16px, $line-height: 20px, $weight: 300);
+// .text-offers {
+//   // background-color: blue;
+//   @include font ($size: 14px, $line-height: 22px, $weight: 300);
 
-  @include media-tablet {
-    font-size: 18px;
-    line-height: 24px;
-  }
-}
+//   @include media-tablet {
+//     font-size: 16px;
+//     line-height: 24px;
+//   }
 
-.text-offers {
-  // background-col: blue;
-  @include font ($size: 14px, $line-height: 22px, $weight: 300);
-
-  @include media-tablet {
-    font-size: 16px;
-    line-height: 24px;
-  }
-
-  @include media-desktop {
-    line-height: 140%;
-  }
-}
+//   @include media-desktop {
+//     line-height: 140%;
+//   }
+// }
 
 .text-games-term {
   @include font ($size: 16px, $line-height: 20px, $weight: 300);
@@ -180,14 +170,14 @@
   }
 }
 
-.subtitle-rewiews {
-  @include font ($size: 18px, $line-height: 20px, $weight: 400);
+// .subtitle-rewiews {
+//   @include font ($size: 18px, $line-height: 20px, $weight: 400);
 
-  @include media-tablet {
-    font-size: 22px;
-    line-height: 22px;
-  }
-}
+//   @include media-tablet {
+//     font-size: 22px;
+//     line-height: 22px;
+//   }
+// }
 
 .title-faq {
   /* h5, текст для заголовков в аккордеоне */
@@ -245,15 +235,15 @@
   }
 }
 
-.title-offers {
-  // подзаголовок для акций
-  @include font ($size: 22px, $line-height: 22px, $weight: 700, $color: $color-bg-secondary);
+// .title-offers- {
+//   // подзаголовок для акций
+//   @include font ($size: 22px, $line-height: 22px, $weight: 700, $color: $color-bg-secondary);
 
-  @include media-tablet {
-    font-size: 26px;
-    line-height: 26px;
-  }
-}
+//   @include media-tablet {
+//     font-size: 26px;
+//     line-height: 26px;
+//   }
+// }
 
 .text-detailed {
   /* текст для ссылки */
@@ -287,16 +277,14 @@
   }
 }
 
-.text-features-number {
-  background-color: aqua;
-  // только для цифр в приемуществах
-  @include font ($size: 64px, $line-height: 64px, $weight: 700, $color: $color-price);
+// .text-features-number {
+//   @include font ($size: 64px, $line-height: 64px, $weight: 700, $color: $color-price);
 
-  @include media-tablet {
-    font-size: 70px;
-    line-height: 70px;
-  }
-}
+//   @include media-tablet {
+//     font-size: 70px;
+//     line-height: 70px;
+//   }
+// }
 
 .text-price-number {
   @include font ($size: 48px, $line-height: 150%, $weight: 600, $color: $color-price);
