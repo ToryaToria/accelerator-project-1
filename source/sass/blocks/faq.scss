@@ -101,47 +101,98 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+.faq__btn {
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30px;
+  height: 30px;
+  flex-shrink: 0;
+  border: 1px solid $color-bg-secondary;
+  border-radius: 50%;
+  padding: 0;
+  margin-left: 50px;
+
 
   &::after {
     content: "";
+    display: block;
+    width: 14px;
+    height: 14px;
+    background-color: $color-bg-secondary;
 
-    flex-shrink: 0;
-    box-sizing: border-box;
-    border: 1px solid $color-bg-secondary;
-    border-radius: 50%;
-    display: inline-block;
-    padding: 0;
-    width: 30px;
-    height: 30px;
-    margin-left: 50px;
-
-    background-color: transparent;
-
-    background-image: url("../../__spritemap#sprite-plus-view");
-    background-repeat: no-repeat;
-    background-size: 14px 14px;
-    background-position: center;
+    mask-image: url("../../__spritemap#sprite-plus-view");
+    mask-repeat: no-repeat;
+    mask-size: auto;
+    mask-position: center;
 
     @include media-tablet {
       width: 40px;
       height: 40px;
-      margin-left: 138px;
+      // margin-left: 138px;
     }
   }
 }
 
-.faq__summary--1 {
-  &::after {
+.faq__btn--1 {
     margin-left: 10px;
 
     @include media-tablet {
       margin-left: 60px;
     }
-  }
+  
 }
 
 .faq__details {
   &::marker {
     content: "";
   }
+}
+
+.faq__details[open] .faq__summary {
+  margin-bottom: 20px;
+
+  @include media-tablet {
+    margin-bottom: 10px;
+  }
+
+  @include media-desktop {
+    margin-bottom: 24px;
+  }
+}
+
+.faq__details[open] .faq__btn {
+  background-color: $color-bg-secondary;
+}
+
+.faq__details[open] .faq__btn::after {
+  background-color: $color-white;
+  mask-image: url("../../__spritemap#sprite-minus-view");
+}
+
+.faq__summary:hover .faq__btn {
+  cursor: pointer;
+  background-color: $color-bg-secondary;
+
+  &::after {
+    background-color: $color-white;
+  }
+}
+
+.faq__summary:focus .faq__btn {
+  cursor: pointer;
+  background-color: $color-divider;
+
+  &::after {
+    background-color: $color-white;
+  }
+}
+
+
+ .faq__btn--disabled{
+  cursor: default;
+  opacity: 30%;
 }

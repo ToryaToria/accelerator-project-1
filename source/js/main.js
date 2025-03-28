@@ -8,7 +8,7 @@ import './video.js';
 // import "./vendor/swiper.js";
 import './slider.js';
 // import './accordion.js';
-import './acc.js';
+// import './acc.js';
 
 
 //import {
