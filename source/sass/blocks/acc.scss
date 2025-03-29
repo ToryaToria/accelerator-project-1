@@ -1,42 +1,26 @@
+:root {
+  --details-height:0;
+}
 .qna__answer {
   .js-details & {
     max-height: 0;
     overflow: hidden;
-    animation: slide-up 0.3s;
+
+    // animation: name duration timing-function delay iteration-count direction fill-mode;
+
+
+    animation: slide-up 0.9s 1 forwards;
   }
 
   .js-details.is-open & {
     max-height: none;
-    animation: slide-down 0.3s;
+    animation: slide-down 3s;
   }
 
   .js-details.is-open.is-animating & {
     max-height: var(--details-height);
   }
 }
-
-.faq__details:not(.js-details)[open] .faq__summary,
-.qna__item.is-open .faq__summary {
-  margin-bottom: 20px;
-
-  @include media-tablet {
-    margin-bottom: 10px;
-  }
-
-  @include media-desktop {
-    margin-bottom: 24px;
-  }
-}
-
-.faq__details:not(.js-details)[open] .faq__summary::after,
-.qna__item.is-open .faq__summary::after {
-  background-color: $color-bg-secondary;
-  background-image: url("../../__spritemap#sprite-minus-view");
-  background-repeat: no-repeat;
-  background-size: 14px 14px;
-  background-position: center;
-}
-
 
 @keyframes slide-up {
   0% {

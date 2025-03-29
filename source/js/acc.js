@@ -1,5 +1,7 @@
 const animationDuration = 300;
 
+console.log('ky')
+
 document.querySelectorAll('.qna__item').forEach((item) => {
   const question = item.querySelector('.qna__question');
   const answer = item.querySelector('.qna__answer');
@@ -14,21 +16,21 @@ document.querySelectorAll('.qna__item').forEach((item) => {
 
     let isAnimating = true;
     item.classList.toggle('is-open');
-    item.classList.add('is-animating');
+    // item.classList.add('is-animating');
 
-    setTimeout(() => {
-      item.classList.remove('is-animating');
-    }, animationDuration);
+    // setTimeout(() => {
+    //   item.classList.remove('is-animating');
+    // }, animationDuration);
 
     if (item.open) {
       event.preventDefault();
       if (isAnimating) {
         return;
       }
-      setTimeout(() => {
+      // setTimeout(() => {
         item.open = false;
         isAnimating = false;
-      }, animationDuration);
+      // }, animationDuration);
     }
   };
 

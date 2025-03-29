@@ -98,6 +98,7 @@
 }
 
 .faq__summary {
+  cursor: pointer;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -128,47 +129,81 @@
     mask-repeat: no-repeat;
     mask-size: auto;
     mask-position: center;
+  }
 
-    @include media-tablet {
-      width: 40px;
-      height: 40px;
-      // margin-left: 138px;
-    }
+  @include media-tablet {
+    width: 40px;
+    height: 40px;
+    margin-left: 138px;
   }
 }
 
 .faq__btn--1 {
-    margin-left: 10px;
-
-    @include media-tablet {
-      margin-left: 60px;
-    }
-  
-}
-
-.faq__details {
-  &::marker {
-    content: "";
-  }
-}
-
-.faq__details[open] .faq__summary {
-  margin-bottom: 20px;
+  margin-left: 10px;
 
   @include media-tablet {
-    margin-bottom: 10px;
+    margin-left: 60px;
   }
 
-  @include media-desktop {
-    margin-bottom: 24px;
+}
+
+// .faq__details[open] .faq__summary
+// {
+
+// }
+
+.faq_content-summary {
+  h3 {
+    @include font ($size: 20px, $line-height: 100%);
+
+    @include media-tablet {
+      font-size: 22px;
+    }
+
+    @include media-desktop {
+      font-size: 24px;
+    }
   }
 }
 
-.faq__details[open] .faq__btn {
+.faq_content-answer {
+
+  // background-color: aqua;
+
+  max-height: 0;
+  overflow: hidden;
+  // padding: 0 20px;  
+  will-change: max-height;
+  transition: max-height 2s ease-out;
+  box-sizing: content-box;
+
+  p {
+    @include font ($size: 16px, $line-height: 20px, $weight: 300);
+    margin-top: 20px;
+
+    margin-right: 52px;
+
+    @include media-tablet {
+      margin-right: 118px;
+      font-size: 18px;
+      line-height: 24px;
+      margin-top: 10px;
+
+    }
+
+    @include media-desktop {
+      margin-right: 200px;
+      margin-top: 24px;
+    }
+  }
+}
+
+.faq__details.js-open .faq__btn {
   background-color: $color-bg-secondary;
 }
 
-.faq__details[open] .faq__btn::after {
+.faq__details.js-open .faq__btn::after
+ {
   background-color: $color-white;
   mask-image: url("../../__spritemap#sprite-minus-view");
 }
@@ -182,6 +217,10 @@
   }
 }
 
+.faq__summary:focus {
+  outline: auto;
+}
+
 .faq__summary:focus .faq__btn {
   cursor: pointer;
   background-color: $color-divider;
@@ -192,7 +231,7 @@
 }
 
 
- .faq__btn--disabled{
-  cursor: default;
-  opacity: 30%;
-}
+//  .faq__btn--disabled{
+//   cursor: default;
+//   opacity: 30%;
+// }
