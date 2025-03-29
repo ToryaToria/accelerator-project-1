@@ -47,6 +47,7 @@ function sliders(data) {
           nextEl: data.btnNext,
           prevEl: data.btnPrev,
         },
+        simulateTouch: false
       }
     }
   });
