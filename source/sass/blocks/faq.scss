@@ -144,15 +144,9 @@
   @include media-tablet {
     margin-left: 60px;
   }
-
 }
 
-// .faq__details[open] .faq__summary
-// {
-
-// }
-
-.faq_content-summary {
+.faq__content-summary {
   h3 {
     @include font ($size: 20px, $line-height: 100%);
 
@@ -166,19 +160,16 @@
   }
 }
 
-.faq_content-answer {
-
-  // background-color: aqua;
-
+.faq__content-answer {
   max-height: 0;
   overflow: hidden;
-  // padding: 0 20px;  
   will-change: max-height;
   transition: max-height 2s ease-out;
   box-sizing: content-box;
 
   p {
     @include font ($size: 16px, $line-height: 20px, $weight: 300);
+
     margin-top: 20px;
 
     margin-right: 52px;
@@ -188,7 +179,6 @@
       font-size: 18px;
       line-height: 24px;
       margin-top: 10px;
-
     }
 
     @include media-desktop {
@@ -202,8 +192,7 @@
   background-color: $color-bg-secondary;
 }
 
-.faq__details.js-open .faq__btn::after
- {
+.faq__details.js-open .faq__btn::after {
   background-color: $color-white;
   mask-image: url("../../__spritemap#sprite-minus-view");
 }
@@ -230,8 +219,7 @@
   }
 }
 
-
-//  .faq__btn--disabled{
-//   cursor: default;
-//   opacity: 30%;
-// }
+.faq__btn--disabled {
+  cursor: default;
+  opacity: 30%;
+}

@@ -1,21 +1,23 @@
 .footer {
   padding-top: 40px;
-  padding-bottom: 40px;
   background-color: $color-bg-footer;
   color: $color-white;
+
+  padding-bottom: 200px;
 
   @include media-tablet {
     padding-top: 45px;
     padding-bottom: 48px;
     display: flex;
+    align-items: flex-start;
 
-    // gap: 36px;
+    gap: 26px;
     justify-content: space-between;
   }
 
   @include media-desktop {
     padding-top: 40px;
-    padding-bottom: 40px;
+    padding-bottom: 200px;
   }
 }
 
@@ -41,21 +43,26 @@
 .footer__list-user {
   @include list-reset;
 
-  display: flex;
-  flex-wrap: wrap;
-  gap: 20px 35px;
   padding-right: 20px;
   margin-bottom: 30px;
 
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px 35px;
+
   @include media-tablet {
-    flex-wrap: wrap;
-    gap: 30px;
+    max-width: 400px;
     padding-right: 0;
     margin-bottom: 0;
+
+    flex-shrink: 0;
+    gap: 16px 30px;
   }
 
   @include media-desktop {
-    gap: 82px;
+    max-width: 810px;
+
+    gap: 20px 82px;
   }
 }
 
@@ -67,6 +74,7 @@
   @include list-reset;
 
   display: flex;
+  flex-wrap: wrap;
   gap: 20px;
 
   @include media-tablet {

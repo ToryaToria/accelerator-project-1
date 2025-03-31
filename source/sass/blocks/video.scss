@@ -1,4 +1,4 @@
-.video {
+.video__frame {
   box-sizing: border-box;
   width: 320px;
   height: 170px;
@@ -14,13 +14,13 @@
   }
 }
 
-.video-wrapp {
+.video__wrapp {
   box-sizing: border-box;
   display: block;
   width: 320px;
   height: 170px;
 
-  // background-image: url('../../img/video-img/video_mob@1x.jpg');
+  background-color: #003eb7;
 
   background-image:
     image-set(url("../../img/video-img/video_mob@1x.webp") 1x type("image/webp"),

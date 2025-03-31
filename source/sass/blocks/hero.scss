@@ -4,7 +4,8 @@
   // background-color: $color-bg-grad1;
   text-align: right;
 
-  background: $linear-gradient;
+  background-color: $color-text-base;
+  background-image: $linear-gradient;
 
   @include media-tablet {
     padding-bottom: 100px; // иcпрваить как всё переделаю на флексы
@@ -35,6 +36,7 @@
 
 .hero__tel {
   margin-top: -2px;
+  max-width: 360px;
 
   @include media-tablet {
     margin-top: -1px;
@@ -144,6 +146,8 @@
 .hero__list {
   box-sizing: border-box;
 
+  max-width: 113px;
+
   @include list-reset;
 
   flex-shrink: 1;
@@ -156,11 +160,20 @@
 
   @include media-desktop {
     margin-top: 66px;
+    max-width: 115px;
   }
 }
 
 .hero__title-wrapp {
+  // width: clamp(158px, 100%, 158px) ;
+
+  @include media-tablet {
+    // max-width: 185px;
+  }
+
   @include media-desktop {
+    // max-width: auto;
+
     flex-shrink: 0;
     flex-grow: 1;
   }

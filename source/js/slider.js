@@ -4,7 +4,6 @@
 // import Swiper from "swiper";
 // import Navigation from "swiper/modules";
 
-// console.log('ky');
 
 const dataSliderJuri = {
   elem: '.slider__container--juri',
@@ -27,7 +26,6 @@ const dataSliderReviews = {
 };
 
 function sliders(data) {
-  // console.log(data);
 
   const slider = new Swiper(data.elem, {
     loop: data.loop,
@@ -58,63 +56,8 @@ function sliders(data) {
 sliders(dataSliderJuri);
 sliders(dataSliderReviews);
 
-export{
-  sliders,
-  dataSliderReviews,
-  dataSliderJuri
-};
-
-// const sliderReviews = new Swiper('.slider__container--reviews', {
-//   loop: false,
-
-//  breakpoints: {
-//    768: {
-//      navigation: {
-//        nextEl: ".swiper-button-next-reviews",
-//        prevEl: ".swiper-button-prev-reviews",
-//      },
-//    },
-//  }
-// });
-
-// const sliderJuri = new Swiper('.slider__container--juri', {
-//   loop: true,
-
-//   breakpoints: {
-//     768: {
-//       slidesPerView: 2,
-//       spaceBetween: 40,
-//       navigation: {
-//         nextEl: ".swiper-button-next",
-//         prevEl: ".swiper-button-prev",
-//       },
-//     },
-//     1366: {
-//       slidesPerView: 4,
-//       spaceBetween: 40,
-//       navigation: {
-//         nextEl: ".swiper-button-next",
-//         prevEl: ".swiper-button-prev",
-//       },
-//     }
-//   }
-// });
-
-// const sliderReviews = new Swiper('.slider__container--juri', {
-//   loop: false,
-
-//  breakpoints: {
-//    768: {
-//      navigation: {
-//        nextEl: ".swiper-button-next",
-//        prevEl: ".swiper-button-prev",
-//      },
-//    },
-//  }
-// });
-
-// console.log(sliderJuri)
-
-
-// console.log(sliderReviews)
-
+// export{
+//   sliders,
+//   dataSliderReviews,
+//   dataSliderJuri
+// };

@@ -288,7 +288,6 @@
 }
 
 .text-features-number {
-  background-color: aqua;
   // только для цифр в приемуществах
   @include font ($size: 64px, $line-height: 64px, $weight: 700, $color: $color-price);
 

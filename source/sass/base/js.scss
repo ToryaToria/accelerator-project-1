@@ -1,7 +1,7 @@
 
-.js-open-init .faq_content-answer {
-	max-height: fit-content;
-	will-change: max-height;
-	transition: max-height 0.3s ease-out;
-	box-sizing: content-box;
+.js-open-init .faq__content-answer {
+  max-height: fit-content;
+  will-change: max-height;
+  transition: max-height 0.3s ease-out;
+  box-sizing: content-box;
 }

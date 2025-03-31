@@ -50,6 +50,8 @@
 
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 16px 40px;
 
   margin: 0 auto;
   margin-bottom: 30px;
@@ -83,17 +85,19 @@
   }
 
   @include media-desktop {
+    flex-wrap: wrap;
     flex-direction: row;
     gap: 40px;
   }
 }
 
-.price:has(.card-btn--1:hover) #price-card1,
-.price:has(.card-btn--2:hover) #price-card2,
-.price:has(.card-btn--3:hover) #price-card3,
-.price:has(.card-btn--1:focus) #price-card1,
-.price:has(.card-btn--2:focus) #price-card2,
-.price:has(.card-btn--3:focus) #price-card3 {
+
+.price:has(.card__btn--2:hover) .price__card--2,
+.price:has(.card__btn--1:hover) .price__card--1,
+.price:has(.card__btn--3:hover) .price__card--3,
+.price:has(.card__btn--1:focus) .price__card--1,
+.price:has(.card__btn--2:focus) .price__card--2,
+.price:has(.card__btn--3:focus) .price__card--3 {
   border: 7px solid $color-bg-accent;
 
   border-image: linear-gradient(155deg, #ed0233, #003eb7 95%);

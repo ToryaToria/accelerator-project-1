@@ -19,6 +19,7 @@
   &:not(.button--disabled):focus {
     color: $color-price;
     background-color: $color-white-80;
+    outline: none;
   }
 
 

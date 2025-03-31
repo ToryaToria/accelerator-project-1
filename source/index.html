@@ -4,23 +4,21 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>SUPERGYM</title>
-	
-	<link rel="icon" href="./favicon.ico">
-  <link rel="mask-icon" href="./favicons/favicon.svg" type="image/svg+xml" color="#7859CF">
-  <link rel="apple-touch-icon" href="./favicons/apple-touch-icon.png">
-  <link rel="manifest" href="manifest.webmanifest">
+	<title>СУПЕРГУМ</title>
 
-	
+	<link rel="icon" href="./favicon.ico">
+	<link rel="mask-icon" href="./favicons/favicon.svg" type="image/svg+xml" color="#7859CF">
+	<link rel="apple-touch-icon" href="./favicons/apple-touch-icon.png">
+	<link rel="manifest" href="manifest.webmanifest">
+
+  <!-- <link rel="preload" href="./fonts/RobotoCondensed-Regular.woff2" type="font/woff2" as="font">
+	<link rel="preload" href="./fonts/RobotoCondensed-Bold.woff2" type="font/woff2" as="font">
+	<link rel="preload" href="./fonts/AlumniSans-ExtraBold.woff2" type="font/woff2" as="font">
+	<link rel="preload" href="./fonts/AlumniSans-SemiBold.woff2" type="font/woff2" as="font"> -->
+
+<link rel="stylesheet" href="./sass/vendor/swiper-bundle.css">
 	<link rel="stylesheet" href="sass/style.scss">
 </head>
-
-<!-- пример использования спрайта -->
-<!-- <img src="/__spritemap#sprite-logo-view" alt="Это спрайт">
-    <svg>
-      <use href="/__spritemap#sprite-user"></use>
-    </svg> -->
-
 
 <body class="page__body text-base">
 	<header class="hero container" data-test="hero">
@@ -40,7 +38,7 @@
 				</ul>
 
 				<div class="hero__title-wrapp">
-					<h2 class="hero__omsk title-section text-invert">Омск</h2>
+					<p class="hero__omsk title-section text-invert">Омск</p>
 					<h1 class="hero__title title-main text-invert">
 						Фитнес <br> центр
 					</h1>
@@ -48,7 +46,7 @@
 				<a class="hero__button button text-btnM text-invert" href="#price">Купить абонемент</a>
 			</div>
 
-			<picture class="hero__img">
+			<picture>
 				<source type="image/webp" media="(min-width: 1366px)" srcset="./img/hero/hero-img_deskt@1x.webp 1x,
             ./img/hero/hero-img_deskt@2x.webp 2x" width="500" height="524">
 
@@ -102,9 +100,9 @@
 						alt="Тренажёрный зал" width="320" height="280">
 				</picture>
 
-				<div class="about__video">
-					<div class="video-wrapp">
-						<iframe class="video" id="myVideo" width="320" height="170" loading="lazy" tabindex="-1"
+				<div class="about__video video">
+					<div class="video__wrapp ">
+						<iframe class="video__frame" id="myVideo" width="320" height="170" loading="lazy" tabindex="-1"
 							title="YouTube video player" allowfullscreen referrerpolicy="strict-origin-when-cross-origin"
 							data-src="https://www.youtube.com/embed/9TZXsZItgdw?si=lhUb-X2bliaV0EZ0?&autoplay=1">
 						</iframe>
@@ -123,27 +121,27 @@
 
 			<div class="price__month">
 				<label>
-					<input class="tab-price__radio tab-price--1 visually-hidden" type="radio" name="tab-price" value="1"
+					<input class="tab-price__radio tab-price__radio--1 visually-hidden" type="radio" name="tab-price" value="1"
 						id="tab-price-1" checked>
 					<span class="tab-price__button tab-price__button--current text-month">1 месяц</span>
 					<!-- </input> -->
 				</label>
 
 				<label>
-					<input class="tab-price__radio tab-price--2 visually-hidden" type="radio" name="tab-price" value="6"
+					<input class="tab-price__radio tab-price__radio--2 visually-hidden" type="radio" name="tab-price" value="6"
 						id="tab-price-2">
 					<span class="tab-price__button text-month">6 месяцев</span>
 				</label>
 
 				<label>
-					<input class="tab-price__radio tab-price--3 visually-hidden" type="radio" name="tab-price" value="12"
+					<input class="tab-price__radio tab-price__radio--3 visually-hidden" type="radio" name="tab-price" value="12"
 						id="tab-price-3">
 					<span class="tab-price__button text-month">12 месяцев</span>
 				</label>
 			</div>
 
 			<ul class="price__cards-list">
-				<li class="price__card price-card--1 card" id="price-card1">
+				<li class="price__card price__card--1 card" id="price-card1">
 					<h3 class="title-price">С тренером</h3>
 					<p class="text-basic">12 занятий</p>
 					<p class="card__prise text-price-number tab-price__show1" data-tip="5000">5000
@@ -160,7 +158,7 @@
 						</span>
 					</p>
 
-					<a class="card__btn card-btn--1 button button--dark text-btnM" href="#" id="card-btn1">Купить абонемент</a>
+					<a class="card__btn card__btn--1 button button--dark text-btnM" href="#" id="card-btn1">Купить абонемент</a>
 				</li>
 
 				<li class="price__card price__card--2 card" id="price-card2">
@@ -180,7 +178,7 @@
 						</span>
 					</p>
 
-					<a class=" card__btn card-btn--2 button button--dark  text-btnM" href="#" id="card-btn2">Купить абонемент</a>
+					<a class=" card__btn card__btn--2 button button--dark  text-btnM" href="#" id="card-btn2">Купить абонемент</a>
 				</li>
 
 				<li class="price__card price__card--3 card" id="price-card3">
@@ -200,7 +198,7 @@
 						</span>
 					</p>
 
-					<a class="card__btn card-btn--3 button  button--dark text-btnM" href="#" id="card-btn3">Купить абонемент</a>
+					<a class="card__btn card__btn--3 button  button--dark text-btnM" href="#" id="card-btn3">Купить абонемент</a>
 				</li>
 			</ul>
 		</section>
@@ -261,6 +259,14 @@
 
 		<section class="juri container container--juri slider" data-test="juri">
 			<h2 class="juri__title title-section title-section--big">Жюри</h2>
+
+			<button class="slider__button slider__button--l swiper-button-prev swiper-button-prev-juri" type="button">
+				<span class="visually-hidden">туда</span>
+			</button>
+
+			<button class="slider__button swiper-button-next swiper-button-next-juri" type="button">
+				<span class="visually-hidden">сюда</span>
+			</button>
 
 			<div class="slider__container slider__container--juri swiper">
 				<ul class="juri__list swiper-wrapper">
@@ -443,14 +449,7 @@
 
 				</ul>
 			</div>
-
-			<button class="slider__button slider__button--l swiper-button-prev swiper-button-prev-juri" type="button">
-				<span class="visually-hidden">туда</span>
-			</button>
-
-			<button class="slider__button swiper-button-next swiper-button-next-juri" type="button">
-				<span class="visually-hidden">сюда</span>
-			</button>
+		
 		</section>
 
 		<section class="features container" data-test="features">
@@ -459,53 +458,27 @@
 			<ul class="features__list">
 				<li class="features__item features__content-">
 					<div class="features__content">
-						<!-- <div> -->
-						<h4>900
+						<h3>900
 							<span>кв/м</span>
-						</h4>
-						<!-- </div> -->
-
-						<!-- <p class="features__digit text-features-number">900
-							<span class="features__name text-name">кв/м</span>
-						</p> -->
+						</h3>
 
 						<div>
-							<h3>Площадь</h3>
+							<h4>Площадь</h4>
 							<p>Занимайтесь без очередей и толкучки</p>
 						</div>
-
-
-						<!-- <div class="features__item-wrapp">
-							<h3 class="features__subtitle subtitle">Площадь</h3>
-							<p class="features__text text-basic">Занимайтесь без очередей и толкучки</p>
-						</div> -->
 					</div>
 				</li>
 
 				<li class="features__item features__content-">
 					<div class="features__content">
-						<h4>70
+						<h3>70
 							<span>машин</span>
-						</h4>
-
-						<!-- <dl>
-							<dt>70</dt>
-							<dd>машин</dd>
-						</dl> -->
-
-						<!-- <p class="features__digit text-features-number">70
-							<span class="features__name text-name">машин </span>
-						</p> -->
+						</h3>
 
 						<div>
-							<h3>Собственная парковка</h3>
+							<h4>Собственная парковка</h4>
 							<p>Вы всегда найдёте место для своей машины на нашей парковке</p>
 						</div>
-
-						<!-- <div class="features__item-wrapp">
-							<h3 class="features__subtitle subtitle">Собственная парковка</h3>
-							<p class="features__text text-basic">Вы всегда найдёте место для своей машины на нашей парковке</p>
-						</div> -->
 					</div>
 				</li>
 
@@ -522,11 +495,12 @@
 
 				<li class="features__item features__item--bottom features__content-">
 					<div class="features__content">
-						<h4>350
+						<h3>350
 							<span>мест</span>
-						</h4>
+						</h3>
+
 						<div>
-							<h3>Комфорт</h3>
+							<h4>Комфорт</h4>
 							<p>Просторные раздевалки, душевые, фен, Wi-Fi, кулеры</p>
 						</div>
 					</div>
@@ -534,11 +508,11 @@
 
 				<li class="features__item features__item--bottom features__content-">
 					<div class="features__content">
-						<h4>5+
+						<h3>5+
 							<span>лет</span>
-						</h4>
+						</h3>
 						<div>
-							<h3>Тренерский опыт</h3>
+							<h4>Тренерский опыт</h4>
 							<p>Добивайтесь своих целей быстрее с профессиональным тренером</p>
 						</div>
 					</div>
@@ -615,25 +589,25 @@
 				<div class="faq__tabs">
 
 					<label>
-						<input class="tab-faq__radio tab-faq--1 visually-hidden" type="radio" name="tab-faq" value="Центр"
-							id="tab-faq-1" checked>
+						<input class="tab-faq__radio tab-faq__radio--1 visually-hidden" type="radio" name="tab-faq" value="Центр"
+							id="tab-faq-1" checked >
 						<span class="tab-faq__button text-btn-faq">Центр</span>
 					</label>
 
 					<label>
-						<input class="tab-faq__radio tab-faq--2 visually-hidden" type="radio" name="tab-faq" value="Абонемент"
-							id="tab-faq-2">
+						<input class="tab-faq__radio tab-faq__radio--2 visually-hidden" type="radio" name="tab-faq"
+							value="Абонемент" id="tab-faq-2">
 						<span class="tab-faq__button text-btn-faq">Абонемент</span>
 					</label>
 
 					<label>
-						<input class="tab-faq__radio tab-faq--3 visually-hidden" type="radio" name="tab-faq" value="Услуги"
+						<input class="tab-faq__radio tab-faq__radio--3 visually-hidden" type="radio" name="tab-faq" value="Услуги"
 							id="tab-faq-3">
 						<span class="tab-faq__button text-btn-faq">Услуги</span>
 					</label>
 
 					<label>
-						<input class="tab-faq__radio tab-faq--4 visually-hidden" type="radio" name="tab-faq" value="Правила"
+						<input class="tab-faq__radio tab-faq__radio--4 visually-hidden" type="radio" name="tab-faq" value="Правила"
 							id="tab-faq-4">
 						<span class="tab-faq__button text-btn-faq">Правила</span>
 					</label>
@@ -643,13 +617,13 @@
 					<li class="faq__item">
 						<div class="faq__details js-open js-open-init">
 							<div class="faq__summary" tabindex="0">
-								<div class="faq_content-summary">
+								<div class="faq__content-summary">
 									<h3>Как стать членом фитнес-центра?</h3>
 								</div>
 								<span class="faq__btn"></span>
 							</div>
 
-							<div class="faq_content-answer ">
+							<div class="faq__content-answer ">
 								<p>
 									При первом посещении и&nbsp;покупке абонемента, необходимо заполнить анкету и&nbsp;подписать договор.
 									При&nbsp;покупке абонемента онлайн, анкета также&nbsp;заполняется онлайн и&nbsp;договор придёт вам на
@@ -663,13 +637,13 @@
 						<div class="faq__details ">
 
 							<div class="faq__summary" tabindex="0">
-								<div class="faq_content-summary">
+								<div class="faq__content-summary">
 									<h3>Где можно посмотреть расписание?</h3>
 								</div>
 								<span class="faq__btn"></span>
 							</div>
 
-							<div class="faq_content-answer">
+							<div class="faq__content-answer">
 								<p>
 									Вы можете ознакомиться с расписание на стойке информации, на нашем официальном сайте. Так же есть
 									возможность оформить подписку на наши новости и получать расписание и обновления на почту каждую
@@ -682,13 +656,13 @@
 					<li class="faq__item">
 						<div class="faq__details ">
 							<div class="faq__summary" tabindex="0">
-								<div class="faq_content-summary">
+								<div class="faq__content-summary">
 									<h3>Есть кулеры в центре? Предоставляются полотенца?</h3>
 								</div>
 								<span class="faq__btn"></span>
 							</div>
 
-							<div class="faq_content-answer ">
+							<div class="faq__content-answer ">
 								<p>
 									Текст-рыба :))
 								</p>
@@ -697,19 +671,20 @@
 					</li>
 
 					<li class="faq__item">
-						<div class="faq__details ">
+						<div class="faq__details">
 							<div class="faq__summary" tabindex="0">
-								<div class="faq_content-summary">
+								<div class="faq__content-summary">
 									<h3>Сколько тренеров работает в&nbsp;клубе и какова их&nbsp;квалификация?</h3>
 								</div>
 								<span class="faq__btn faq__btn--1"></span>
 							</div>
 
-							<div class="faq_content-answer ">
+							<div class="faq__content-answer ">
 								<p>
 									Текст-рыба :))
 								</p>
 							</div>
+						</div>
 					</li>
 				</ul>
 
@@ -717,13 +692,13 @@
 					<li class="faq__item">
 						<div class="faq__details js-open js-open-init">
 							<div class="faq__summary" tabindex="0">
-								<div class="faq_content-summary">
+								<div class="faq__content-summary">
 									<h3>Занятия с тренером входят в абонемент?</h3>
 								</div>
 								<span class="faq__btn"></span>
 							</div>
 
-							<div class="faq_content-answer ">
+							<div class="faq__content-answer ">
 								<p>
 									При посещении тренажерного зала вам необходимо оплатить занятия с тренером отдельно. В зале всегда
 									присутствует дежурный тренер, которому можно задать вопрос, получить небольшую консультацию по
@@ -737,13 +712,13 @@
 					<li class="faq__item">
 						<div class="faq__details ">
 							<div class="faq__summary">
-								<div class="faq_content-summary">
+								<div class="faq__content-summary">
 									<h3>Можно ли заморозить абонемент?</h3>
 								</div>
 								<span class="faq__btn"></span>
 							</div>
 
-							<div class="faq_content-answer ">
+							<div class="faq__content-answer ">
 								<p>
 									Текст-рыба :))
 								</p>
@@ -754,13 +729,13 @@
 					<li class="faq__item">
 						<div class="faq__details ">
 							<div class="faq__summary ">
-								<div class="faq_content-summary">
+								<div class="faq__content-summary">
 									<h3>Есть ли лимит по посещениям тренажерного зала и групповых занятий?</h3>
 								</div>
 								<span class="faq__btn"></span>
 							</div>
 
-							<div class="faq_content-answer ">
+							<div class="faq__content-answer ">
 								<p>
 									Текст-рыба :))
 								</p>
@@ -771,13 +746,13 @@
 					<li class="faq__item">
 						<div class="faq__details ">
 							<div class="faq__summary ">
-								<div class="faq_content-summary">
+								<div class="faq__content-summary">
 									<h3>Что такое семейный доступ и доступ для друзей?</h3>
 								</div>
 								<span class="faq__btn"></span>
 							</div>
 
-							<div class="faq_content-answer ">
+							<div class="faq__content-answer ">
 								<p>
 									Текст-рыба :))
 								</p>
@@ -790,13 +765,13 @@
 					<li class="faq__item">
 						<div class="faq__details js-open js-open-init">
 							<div class="faq__summary ">
-								<div class="faq_content-summary">
+								<div class="faq__content-summary">
 									<h3>Рыбные услуги 1</h3>
 								</div>
 								<span class="faq__btn"></span>
 							</div>
 
-							<div class="faq_content-answer ">
+							<div class="faq__content-answer ">
 								<p>
 									Текст-рыба :))
 								</p>
@@ -807,13 +782,13 @@
 					<li class="faq__item">
 						<div class="faq__details ">
 							<div class="faq__summary ">
-								<div class="faq_content-summary">
+								<div class="faq__content-summary">
 									<h3>Рыбные услуги 2</h3>
 								</div>
 								<span class="faq__btn"></span>
 							</div>
 
-							<div class="faq_content-answer ">
+							<div class="faq__content-answer ">
 								<p>
 									Текст-рыба :))
 								</p>
@@ -824,13 +799,13 @@
 					<li class="faq__item">
 						<div class="faq__details ">
 							<div class="faq__summary ">
-								<div class="faq_content-summary">
+								<div class="faq__content-summary">
 									<h3>Рыбные услуги 3</h3>
 								</div>
 								<span class="faq__btn"></span>
 							</div>
 
-							<div class="faq_content-answer ">
+							<div class="faq__content-answer ">
 								<p>
 									Текст-рыба :))
 								</p>
@@ -841,13 +816,13 @@
 					<li class="faq__item">
 						<div class="faq__details ">
 							<div class="faq__summary ">
-								<div class="faq_content-summary">
+								<div class="faq__content-summary">
 									<h3>Рыбные услуги 4</h3>
 								</div>
 								<span class="faq__btn"></span>
 							</div>
 
-							<div class="faq_content-answer ">
+							<div class="faq__content-answer ">
 								<p>
 									Текст-рыба :))
 								</p>
@@ -860,13 +835,13 @@
 					<li class="faq__item">
 						<div class="faq__details js-open js-open-init">
 							<div class="faq__summary ">
-								<div class="faq_content-summary">
+								<div class="faq__content-summary">
 									<h3>Есть в фитнес-центре дресс-код?</h3>
 								</div>
 								<span class="faq__btn"></span>
 							</div>
 
-							<div class="faq_content-answer ">
+							<div class="faq__content-answer ">
 								<p>
 									Для тренировок необходимо иметь предназначенную для этого закрытую спортивную обувь и одежду. Верхняя
 									и
@@ -884,13 +859,13 @@
 					<li class="faq__item">
 						<div class="faq__details ">
 							<div class="faq__summary ">
-								<div class="faq_content-summary">
+								<div class="faq__content-summary">
 									<h3>Можно ли приводить с собой детей на тренировки?</h3>
 								</div>
 								<span class="faq__btn"></span>
 							</div>
 
-							<div class="faq_content-answer ">
+							<div class="faq__content-answer ">
 								<p>
 									Текст-рыба :))
 								</p>
@@ -901,13 +876,13 @@
 					<li class="faq__item">
 						<div class="faq__details ">
 							<div class="faq__summary ">
-								<div class="faq_content-summary">
+								<div class="faq__content-summary">
 									<h3>Какие дополнительные правила посещения центра?</h3>
 								</div>
 								<span class="faq__btn"></span>
 							</div>
 
-							<div class="faq_content-answer ">
+							<div class="faq__content-answer ">
 								<p>
 									Текст-рыба :))
 								</p>
@@ -918,13 +893,13 @@
 					<li class="faq__item">
 						<div class="faq__details ">
 							<div class="faq__summary ">
-								<div class="faq_content-summary">
+								<div class="faq__content-summary">
 									<h3>Нужна ли медицинская справка для посещения залов и бассейна?</h3>
 								</div>
 								<span class="faq__btn"></span>
 							</div>
 
-							<div class="faq_content-answer  ">
+							<div class="faq__content-answer  ">
 								<p>
 									Текст-рыба :))
 								</p>
@@ -1104,15 +1079,18 @@
 
 		<ul class="footer__social-list">
 			<li>
-				<a class="footer__social-link footer__social-link--vk" href="#"><span class="visually-hidden">vk</span></a>
+				<a class="footer__social-link footer__social-link--vk" href="https://vk.com/htmlacademy" target="_blank"><span
+						class="visually-hidden">vk</span></a>
 			</li>
 
 			<li>
-				<a class="footer__social-link footer__social-link--ok" href="#"><span class="visually-hidden">ok</span></a>
+				<a class="footer__social-link footer__social-link--ok" href="https://vk.com/htmlacademy" target="_blank"><span
+						class="visually-hidden">ok</span></a>
 			</li>
 
 			<li>
-				<a class="footer__social-link footer__social-link--reddit" href="#"><span class="visually-hidden">xz</span></a>
+				<a class="footer__social-link footer__social-link--reddit" href="https://vk.com/htmlacademy"
+					target="_blank"><span class="visually-hidden">xz</span></a>
 			</li>
 		</ul>
 	</footer>
