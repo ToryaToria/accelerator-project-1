@@ -58,8 +58,6 @@
     &--1,
     &--2 {
       border-right: 1px solid $color-divider;
-
-      // background-color: aqua;
     }
 
     &--3,
@@ -69,28 +67,20 @@
       @include media-desktop {
         padding-left: 60px;
       }
-
-      // background-color: antiquewhite;
     }
 
     &--2,
     &--4 {
       padding-bottom: 0;
-
-      // background-color: aqua;
     }
 
     &--2 {
       order: 2;
-
-      // background-color: rgb(250, 215, 238);
       padding-right: 20px;
     }
 
     &--3 {
       order: 1;
-
-      // background-color: rgb(207, 207, 216);
     }
 
     &--4 {

@@ -2,9 +2,7 @@
   position: relative;
   padding-top: 41px;
   padding-bottom: 40px;
-
   text-align: center;
-
   overflow: hidden;
 
   @include media-tablet {
@@ -19,7 +17,6 @@
   }
 }
 
-
 .juri__title {
   margin-bottom: 20px;
 
@@ -29,42 +26,20 @@
 }
 
 .juri__list {
-  // background-color: blue;
   position: relative;
   z-index: 10;
 
   @include list-reset;
 
   width: 260px;
-
-  // margin-left: 15px;
-  // margin-right: 15px;
-
   display: flex;
 
-  // gap: 30px;
-
   @include media-tablet {
-    // gap: 40px;
-    // margin-left: 59px;
-    // margin-right: 59px;
     width: 560px;
   }
 
   @include media-desktop {
-    // gap: 10px;
     margin-left: 0;
     margin-right: 0;
   }
 }
-
-// .juri-card--hidden,
-// .juri-card--hidden2 {
-// 	display: none;
-// }
-
-// .juri-card--hidden{
-// 	@include media-desktop {
-// 	display: block;
-// 	}
-// }

@@ -32,6 +32,7 @@
 .reviews__list {
   position: relative;
   z-index: 10;
+
   @include list-reset;
 }
 
@@ -74,6 +75,7 @@
 
   h3 {
     @include font ($size: 18px, $line-height: 20px, $color: $color-white, $weight: 400);
+
     margin-bottom: 16px;
     text-align: center;
 
@@ -87,6 +89,7 @@
 
   p {
     text-align: center;
+
     @include font ($size: 14px, $line-height: 22px, $color: $color-white, $weight: 300);
 
     @include media-tablet {

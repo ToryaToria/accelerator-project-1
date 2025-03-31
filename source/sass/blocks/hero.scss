@@ -1,17 +1,16 @@
 .hero {
   padding-bottom: 32px;
-
-  // background-color: $color-bg-grad1;
   text-align: right;
 
-  background: $linear-gradient;
+  background-color: $color-text-base;
+  background-image: $linear-gradient;
 
   @include media-tablet {
-    padding-bottom: 100px; // иcпрваить как всё переделаю на флексы
+    padding-bottom: 100px;
   }
 
   @include media-desktop {
-    padding-bottom: 120px; // иcпрваить как всё переделаю на флексы
+    padding-bottom: 120px;
   }
 }
 
@@ -35,6 +34,7 @@
 
 .hero__tel {
   margin-top: -2px;
+  max-width: 360px;
 
   @include media-tablet {
     margin-top: -1px;
@@ -62,7 +62,7 @@
   }
 }
 
-.hero__contein {
+.hero__conteiner {
   margin-top: 48px;
   display: flex;
   align-items: flex-end;
@@ -80,7 +80,7 @@
   }
 }
 
-.hero__contein1 {
+.hero__conteiner-external {
   @include media-tablet {
     display: flex;
     align-items: center;
@@ -144,6 +144,8 @@
 .hero__list {
   box-sizing: border-box;
 
+  max-width: 113px;
+
   @include list-reset;
 
   flex-shrink: 1;
@@ -156,6 +158,7 @@
 
   @include media-desktop {
     margin-top: 66px;
+    max-width: 115px;
   }
 }
 

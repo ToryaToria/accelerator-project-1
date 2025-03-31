@@ -21,9 +21,9 @@
   display: none;
 }
 
-.tab-price:has(.tab-price--1:checked) .tab-price__show1,
-.tab-price:has(.tab-price--2:checked) .tab-price__show2,
-.tab-price:has(.tab-price--3:checked) .tab-price__show3 {
+.tab-price:has(.tab-price__radio--1:checked) .tab-price__show1,
+.tab-price:has(.tab-price__radio--2:checked) .tab-price__show2,
+.tab-price:has(.tab-price__radio--3:checked) .tab-price__show3 {
   display: block;
 }
 
@@ -46,7 +46,7 @@
 
   &:not(:disabled):focus + .tab-price__button {
     color: $color-text-base;
-    outline: auto; // НУЖЕН???
+    outline: auto;
 
     &::after {
       background-color: currentColor;

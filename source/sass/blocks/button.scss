@@ -19,8 +19,8 @@
   &:not(.button--disabled):focus {
     color: $color-price;
     background-color: $color-white-80;
+    outline: none;
   }
-
 
   &:not(.button--disabled):active {
     color: $color-text-base;

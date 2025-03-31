@@ -1,9 +1,6 @@
 // Vendor ---------------------------------
 
 @import "./vendor/normalize";
-@import "./vendor/swiper-bundle.css";
-
-// @import "./vendor/swiper.css"; // с этим файлом не работают кнопки
 
 // Base ---------------------------------
 
@@ -14,7 +11,7 @@
 @import "./base/page";
 @import "./base/visually-hidden";
 @import "./base/container";
-
+@import "./base/js";
 
 // Blocks ---------------------------------
 
@@ -40,5 +37,4 @@
 
 // @import "./blocks/accordion.scss";
 
-@import "./blocks/acc";
-
+// @import "./blocks/acc";

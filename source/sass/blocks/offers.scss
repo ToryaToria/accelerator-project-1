@@ -4,7 +4,7 @@
 
   @include media-tablet {
     padding-top: 61px;
-    padding-bottom: 58px; // ВРЕМЕННО!!!
+    padding-bottom: 58px;
   }
 
   @include media-desktop {
@@ -34,7 +34,7 @@
   }
 }
 
-.offers__wrapp {
+.offers__wrapper-inner {
   margin-left: -15px;
   margin-right: -15px;
 
@@ -48,8 +48,7 @@
 .offers__bid {
   box-sizing: border-box;
   width: 320px;
-  padding: 30px;
-  padding-top: 30px;
+  padding: 30px 30px 33px;
   margin: 0 auto;
 
   background-color: $color-bg-accent;
@@ -59,19 +58,18 @@
   @include media-tablet {
     box-sizing: border-box;
     width: 280px;
-
-    padding: 40px 25px;
+    padding: 40px 25px 46px;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
   }
 
   @include media-desktop {
-    padding: 40px 45px;
+    padding: 40px 45px 46px;
   }
 }
 
-.offers__content-1 {
+.offers__content {
   dl {
     margin: 0;
 
@@ -82,7 +80,7 @@
 
   dt {
     @include font ($size: 22px, $line-height: 22px, $weight: 700);
-    // margin-top: -1px;
+
     margin-bottom: 9px;
 
     color: $color-white;
@@ -101,6 +99,7 @@
 
   dd {
     @include font ($size: 64px, $line-height: 64px, $weight: 700, $color: $color-white);
+
     margin-left: 0;
     margin-bottom: 27px;
 
@@ -128,21 +127,43 @@
 }
 
 .offers__link {
+  position: relative;
   display: inline-block;
   margin-top: 29px;
-  padding-bottom: 5px;
   text-decoration: none;
-  border-bottom: 1px solid $color-white;
   align-self: center;
   color: $color-bg-secondary;
+
+  &::after {
+    position: absolute;
+    content: "";
+    display: block;
+    height: 1px;
+    right: 0;
+    left: 0;
+    bottom: -5px;
+    background-color: $color-white;
+  }
 
   &--invert {
     color: $color-white;
   }
 
-  &--color {
-    margin-top: 0;
-    border-bottom: 1px solid $color-divider;
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:focus {
+    outline: 1px solid $color-white;
+    outline-offset: 10px;
+
+    &::after {
+      background-color: transparent;
+    }
+  }
+
+  &--disabled {
+    opacity: 0.5;
   }
 
   @include media-tablet {
@@ -151,12 +172,30 @@
   }
 }
 
-.offers__content-2 {
+.offers__link--color {
+  margin-top: 0;
+
+  &::after {
+    background-color: $color-divider;
+  }
+
+  &:active {
+    outline: 1px solid $color-bg-secondary;
+  }
+
+  &:focus {
+    outline: 1px solid $color-bg-secondary;
+  }
+}
+
+.offers__content-card {
   @include media-desktop {
     margin-bottom: 40px;
   }
+
   h3 {
     @include font ($size: 22px, $line-height: 22px, $weight: 700, $color: $color-bg-secondary);
+
     margin-bottom: 20px;
 
     @include media-tablet {
@@ -203,6 +242,7 @@
   box-sizing: border-box;
 
   @include list-reset ($padd-left: 0);
+
   margin-top: 40px;
 
   display: flex;
@@ -231,6 +271,7 @@
   box-sizing: border-box;
   text-align: center;
   padding: 20px;
+  padding-bottom: 26px;
   border: 7px solid $color-bg-accent;
 
   border-image: linear-gradient(155deg, #ed0233, #003eb7 95%);
@@ -245,12 +286,12 @@
     text-align: left;
     gap: 30px;
     padding: 20px;
+    padding-bottom: 26px;
     align-items: stretch;
   }
 
   @include media-desktop {
     width: 100%;
-    padding: 20px;
     gap: 0;
 
     &--shadow {
