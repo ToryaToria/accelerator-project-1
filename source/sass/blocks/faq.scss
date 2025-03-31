@@ -29,7 +29,7 @@
   }
 }
 
-.faq__wrapp {
+.faq__wrapper {
   @include media-desktop {
     display: flex;
     gap: 40px;
@@ -67,18 +67,6 @@
 
   @include media-desktop {
     margin-top: 0;
-  }
-}
-
-.faq__text {
-  margin-right: 52px;
-
-  @include media-tablet {
-    margin-right: 118px;
-  }
-
-  @include media-desktop {
-    margin-right: 200px;
   }
 }
 

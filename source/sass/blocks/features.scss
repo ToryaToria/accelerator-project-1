@@ -234,34 +234,3 @@
     padding: 58px 40px;
   }
 }
-
-.features__name {
-  color: $color-desc;
-  display: block;
-
-  &--invert {
-    margin-top: 4px;
-    margin-bottom: 0;
-    color: $color-white;
-
-    @include media-tablet {
-      margin-top: 24px;
-    }
-
-    @include media-desktop {
-      margin-top: 9px;
-    }
-  }
-}
-
-.features__subtitle {
-  margin-bottom: 12px;
-
-  @include media-tablet {
-    margin-bottom: 12px;
-  }
-
-  @include media-desktop {
-    margin-bottom: 6px;
-  }
-}

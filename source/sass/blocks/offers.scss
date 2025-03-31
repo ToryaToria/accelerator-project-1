@@ -34,7 +34,7 @@
   }
 }
 
-.offers__wrapp {
+.offers__wrapper-inner {
   margin-left: -15px;
   margin-right: -15px;
 
@@ -69,7 +69,7 @@
   }
 }
 
-.offers__content-1 {
+.offers__content {
   dl {
     margin: 0;
 
@@ -188,7 +188,7 @@
   }
 }
 
-.offers__content-2 {
+.offers__content-card {
   @include media-desktop {
     margin-bottom: 40px;
   }

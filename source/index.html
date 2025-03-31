@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru" data-validate="html" class="page">
+<html class="page" lang="ru" data-validate="html">
 
 <head>
 	<meta charset="UTF-8">
@@ -8,18 +8,18 @@
 
 	<meta name="description" content="самый большой фитнес центр за Уралом">
 
-
 	<link rel="icon" href="./favicon.ico">
-	<link rel="mask-icon" href="./favicons/favicon.svg" type="image/svg+xml" color="#7859CF">
+	<link rel="icon" href="./favicons/favicon.png" type="image/png">
+	<link rel="mask-icon" href="./favicons/favicon.svg" type="image/svg+xml">
 	<link rel="apple-touch-icon" href="./favicons/apple-touch-icon.png">
 	<link rel="manifest" href="manifest.webmanifest">
 
-  <!-- <link rel="preload" href="./fonts/RobotoCondensed-Regular.woff2" type="font/woff2" as="font">
+	<link rel="preload" href="./fonts/RobotoCondensed-Regular.woff2" type="font/woff2" as="font">
 	<link rel="preload" href="./fonts/RobotoCondensed-Bold.woff2" type="font/woff2" as="font">
 	<link rel="preload" href="./fonts/AlumniSans-ExtraBold.woff2" type="font/woff2" as="font">
-	<link rel="preload" href="./fonts/AlumniSans-SemiBold.woff2" type="font/woff2" as="font"> -->
+	<link rel="preload" href="./fonts/AlumniSans-SemiBold.woff2" type="font/woff2" as="font">
 
-<link rel="stylesheet" href="./sass/vendor/swiper-bundle.css">
+	<link rel="stylesheet" href="./sass/vendor/swiper-bundle.css">
 	<link rel="stylesheet" href="sass/style.scss">
 </head>
 
@@ -31,9 +31,9 @@
 			<a class=" hero__tel text-nav text-invert" href="tel:88005555555">8 800 555-55-55</a>
 		</div>
 
-		<div class="hero__contein1">
+		<div class="hero__conteiner-external">
 
-			<div class="hero__contein">
+			<div class="hero__conteiner">
 				<ul class="hero__list">
 					<li class="text-base text-invert">Тренажёрный зал</li>
 					<li class="text-base text-invert">Групповые занятия</li>
@@ -43,10 +43,10 @@
 				<div class="hero__title-wrapp">
 					<p class="hero__omsk title-section text-invert">Омск</p>
 					<h1 class="hero__title title-main text-invert">
-						Фитнес <br> центр
+						Фитнес <br>центр
 					</h1>
 				</div>
-				<a class="hero__button button text-btnM text-invert" href="#price">Купить абонемент</a>
+				<a class="hero__button button  text-invert" href="#price">Купить абонемент</a>
 			</div>
 
 			<picture>
@@ -105,7 +105,7 @@
 
 				<div class="about__video video">
 					<div class="video__wrapp ">
-						<iframe class="video__frame" id="myVideo" width="320" height="170" loading="lazy" tabindex="-1"
+						<iframe class="video__frame" id="my-video" width="320" height="170" loading="lazy" tabindex="-1"
 							title="YouTube video player" allowfullscreen referrerpolicy="strict-origin-when-cross-origin"
 							data-src="https://www.youtube.com/embed/9TZXsZItgdw?si=lhUb-X2bliaV0EZ0?&autoplay=1">
 						</iframe>
@@ -124,26 +124,23 @@
 
 			<div class="price__month">
 				<label>
-					<input class="tab-price__radio tab-price__radio--1 visually-hidden" type="radio" name="tab-price" value="1"
-						id="tab-price-1" checked>
+					<input class="tab-price__radio tab-price__radio--1 visually-hidden" type="radio" name="tab-price" value="1" checked>
 					<span class="tab-price__button tab-price__button--current text-month">1 месяц</span>
 				</label>
 
 				<label>
-					<input class="tab-price__radio tab-price__radio--2 visually-hidden" type="radio" name="tab-price" value="6"
-						id="tab-price-2">
+					<input class="tab-price__radio tab-price__radio--2 visually-hidden" type="radio" name="tab-price" value="6">
 					<span class="tab-price__button text-month">6 месяцев</span>
 				</label>
 
 				<label>
-					<input class="tab-price__radio tab-price__radio--3 visually-hidden" type="radio" name="tab-price" value="12"
-						id="tab-price-3">
+					<input class="tab-price__radio tab-price__radio--3 visually-hidden" type="radio" name="tab-price" value="12">
 					<span class="tab-price__button text-month">12 месяцев</span>
 				</label>
 			</div>
 
 			<ul class="price__cards-list">
-				<li class="price__card price__card--1 card" id="price-card1">
+				<li class="price__card price__card--1 card">
 					<h3 class="title-price">С тренером</h3>
 					<p class="text-basic">12 занятий</p>
 					<p class="card__prise text-price-number tab-price__show1" data-tip="5000">5000
@@ -160,10 +157,10 @@
 						</span>
 					</p>
 
-					<a class="card__btn card__btn--1 button button--dark text-btnM" href="#" id="card-btn1">Купить абонемент</a>
+					<a class="card__btn card__btn--1 button button--dark " href="#">Купить абонемент</a>
 				</li>
 
-				<li class="price__card price__card--2 card" id="price-card2">
+				<li class="price__card price__card--2 card">
 					<h3 class="title-price">Дневной</h3>
 					<p class="text-basic">с 8:00 до 17:00</p>
 					<p class="card__prise text-price-number tab-price__show1" data-tip="1700">1700
@@ -180,13 +177,13 @@
 						</span>
 					</p>
 
-					<a class=" card__btn card__btn--2 button button--dark  text-btnM" href="#" id="card-btn2">Купить абонемент</a>
+					<a class=" card__btn card__btn--2 button button--dark  " href="#">Купить абонемент</a>
 				</li>
 
-				<li class="price__card price__card--3 card" id="price-card3">
+				<li class="price__card price__card--3 card">
 					<h3 class="title-price">Полный день</h3>
 					<p class="text-basic">с 8:00 до 22:00</p>
-					<p class="card__prise text-price-number tab-price__show1" data-tip="2700" id="tab-price__show1">2700
+					<p class="card__prise text-price-number tab-price__show1" data-tip="2700">2700
 						<span class="card__ruble-symbol" role="img" aria-label="рублей">
 						</span>
 					</p>
@@ -195,12 +192,12 @@
 						<span class="card__ruble-symbol" role="img" aria-label="рублей">
 						</span>
 					</p>
-					<p class="card__prise text-price-number tab-price__show3" data-tip="32400" id="tab-price__show3">32400
+					<p class="card__prise text-price-number tab-price__show3" data-tip="32400">32400
 						<span class="card__ruble-symbol" role="img" aria-label="рублей">
 						</span>
 					</p>
 
-					<a class="card__btn card__btn--3 button  button--dark text-btnM" href="#" id="card-btn3">Купить абонемент</a>
+					<a class="card__btn card__btn--3 button  button--dark " href="#">Купить абонемент</a>
 				</li>
 			</ul>
 		</section>
@@ -234,7 +231,7 @@
 					</div>
 					<p class="games__text text-games text-invert">Ежегодные соревнования по&nbsp;CrossFit</p>
 
-					<a class="games__button button text-btnM text-invert" href="#">заполнить заявку</a>
+					<a class="games__button button  text-invert" href="#">заполнить заявку</a>
 				</div>
 
 				<picture>
@@ -289,7 +286,7 @@
 							<p class="juri-card__specialty">CrossFit</p>
 							<ul class="juri-card__list">
 								<li class="juri-card__skills">Certified Level 3 Trainer</li>
-								<li class="juri-card__skills">Победитель чемпионата России по CrossFit </li>
+								<li class="juri-card__skills">Победитель чемпионата России по CrossFit</li>
 								<li class="juri-card__skills">Опыт — 6 лет</li>
 							</ul>
 						</div>
@@ -311,7 +308,7 @@
 							<p class="juri-card__specialty">CrossFit</p>
 							<ul class="juri-card__list">
 								<li class="juri-card__skills">Certified Level 3 Trainer</li>
-								<li class="juri-card__skills">Победитель чемпионата России по CrossFit </li>
+								<li class="juri-card__skills">Победитель чемпионата России по CrossFit</li>
 								<li class="juri-card__skills">Опыт — 6 лет</li>
 							</ul>
 						</div>
@@ -333,7 +330,7 @@
 							<p class="juri-card__specialty">CrossFit</p>
 							<ul class="juri-card__list">
 								<li class="juri-card__skills">Certified Level 3 Trainer</li>
-								<li class="juri-card__skills">Победитель чемпионата России по CrossFit </li>
+								<li class="juri-card__skills">Победитель чемпионата России по CrossFit</li>
 								<li class="juri-card__skills">Опыт — 6 лет</li>
 							</ul>
 						</div>
@@ -355,7 +352,7 @@
 							<p class="juri-card__specialty">CrossFit</p>
 							<ul class="juri-card__list">
 								<li class="juri-card__skills">Certified Level 3 Trainer</li>
-								<li class="juri-card__skills">Победитель чемпионата России по CrossFit </li>
+								<li class="juri-card__skills">Победитель чемпионата России по CrossFit</li>
 								<li class="juri-card__skills">Опыт — 6 лет</li>
 							</ul>
 						</div>
@@ -377,7 +374,7 @@
 							<p class="juri-card__specialty">CrossFit</p>
 							<ul class="juri-card__list">
 								<li class="juri-card__skills">Certified Level 3 Trainer</li>
-								<li class="juri-card__skills">Победитель чемпионата России по CrossFit </li>
+								<li class="juri-card__skills">Победитель чемпионата России по CrossFit</li>
 								<li class="juri-card__skills">Опыт — 6 лет</li>
 							</ul>
 						</div>
@@ -399,7 +396,7 @@
 							<p class="juri-card__specialty">CrossFit</p>
 							<ul class="juri-card__list">
 								<li class="juri-card__skills">Certified Level 3 Trainer</li>
-								<li class="juri-card__skills">Победитель чемпионата России по CrossFit </li>
+								<li class="juri-card__skills">Победитель чемпионата России по CrossFit</li>
 								<li class="juri-card__skills">Опыт — 6 лет</li>
 							</ul>
 						</div>
@@ -421,7 +418,7 @@
 							<p class="juri-card__specialty">CrossFit</p>
 							<ul class="juri-card__list">
 								<li class="juri-card__skills">Certified Level 3 Trainer</li>
-								<li class="juri-card__skills">Победитель чемпионата России по CrossFit </li>
+								<li class="juri-card__skills">Победитель чемпионата России по CrossFit</li>
 								<li class="juri-card__skills">Опыт — 6 лет</li>
 							</ul>
 						</div>
@@ -443,7 +440,7 @@
 							<p class="juri-card__specialty">CrossFit</p>
 							<ul class="juri-card__list">
 								<li class="juri-card__skills">Certified Level 3 Trainer</li>
-								<li class="juri-card__skills">Победитель чемпионата России по CrossFit </li>
+								<li class="juri-card__skills">Победитель чемпионата России по CrossFit</li>
 								<li class="juri-card__skills">Опыт — 6 лет</li>
 							</ul>
 						</div>
@@ -451,14 +448,14 @@
 
 				</ul>
 			</div>
-		
+
 		</section>
 
 		<section class="features container" data-test="features">
 			<h2 class="features__title title-section container">Наши преимущества</h2>
 
 			<ul class="features__list">
-				<li class="features__item features__content-">
+				<li class="features__item">
 					<div class="features__content">
 						<h3>900
 							<span>кв/м</span>
@@ -471,7 +468,7 @@
 					</div>
 				</li>
 
-				<li class="features__item features__content-">
+				<li class="features__item">
 					<div class="features__content">
 						<h3>70
 							<span>машин</span>
@@ -485,7 +482,7 @@
 				</li>
 
 				<li class="features__item-container">
-					<div class="features__item-dark features__content-dark-">
+					<div class="features__item-dark">
 						<div class="features__content-dark">
 							<h4>100
 								<span>Тренажёров</span>
@@ -495,7 +492,7 @@
 					</div>
 				</li>
 
-				<li class="features__item features__item--bottom features__content-">
+				<li class="features__item features__item--bottom">
 					<div class="features__content">
 						<h3>350
 							<span>мест</span>
@@ -508,7 +505,7 @@
 					</div>
 				</li>
 
-				<li class="features__item features__item--bottom features__content-">
+				<li class="features__item features__item--bottom">
 					<div class="features__content">
 						<h3>5+
 							<span>лет</span>
@@ -526,9 +523,9 @@
 			<h2 class="offers__title title-section container">Акции</h2>
 
 			<div class="offers__wrapper">
-				<div class="offers__wrapp">
+				<div class="offers__wrapper-inner">
 					<div class="offers__bid">
-						<div class="offers__content-1">
+						<div class="offers__content">
 							<dl>
 								<dt>Год</dt>
 								<dd>4999</dd>
@@ -563,7 +560,7 @@
 
 				<ul class="offers__list">
 					<li class="offers__item offers__item--shadow">
-						<div class="offers__content-2">
+						<div class="offers__content-card">
 							<h3>Месяц бесплатно</h3>
 							<p>Приведи друга, получи абонемент в&nbsp;подарок</p>
 						</div>
@@ -572,7 +569,7 @@
 					</li>
 
 					<li class="offers__item">
-						<div class="offers__content-2">
+						<div class="offers__content-card">
 							<h3>Скидка 20%</h3>
 							<p>Корпоративный фитнес с командой</p>
 						</div>
@@ -586,31 +583,28 @@
 		<section class="faq container" data-test="faq">
 			<h2 class="faq__title title-section">Вопросы и ответы</h2>
 
-			<div class="faq__wrapp tab-faq">
+			<div class="faq__wrapper tab-faq">
 
 				<div class="faq__tabs">
 
 					<label>
-						<input class="tab-faq__radio tab-faq__radio--1 visually-hidden" type="radio" name="tab-faq" value="Центр"
-							id="tab-faq-1" checked >
+						<input class="tab-faq__radio tab-faq__radio--1 visually-hidden" type="radio" name="tab-faq" value="Центр" checked>
 						<span class="tab-faq__button text-btn-faq">Центр</span>
 					</label>
 
 					<label>
 						<input class="tab-faq__radio tab-faq__radio--2 visually-hidden" type="radio" name="tab-faq"
-							value="Абонемент" id="tab-faq-2">
+							value="Абонемент">
 						<span class="tab-faq__button text-btn-faq">Абонемент</span>
 					</label>
 
 					<label>
-						<input class="tab-faq__radio tab-faq__radio--3 visually-hidden" type="radio" name="tab-faq" value="Услуги"
-							id="tab-faq-3">
+						<input class="tab-faq__radio tab-faq__radio--3 visually-hidden" type="radio" name="tab-faq" value="Услуги">
 						<span class="tab-faq__button text-btn-faq">Услуги</span>
 					</label>
 
 					<label>
-						<input class="tab-faq__radio tab-faq__radio--4 visually-hidden" type="radio" name="tab-faq" value="Правила"
-							id="tab-faq-4">
+						<input class="tab-faq__radio tab-faq__radio--4 visually-hidden" type="radio" name="tab-faq" value="Правила">
 						<span class="tab-faq__button text-btn-faq">Правила</span>
 					</label>
 				</div>
@@ -737,7 +731,7 @@
 								<span class="faq__btn"></span>
 							</div>
 
-							<div class="faq__content-answer ">
+							<div class="faq__content-answer">
 								<p>
 									Текст-рыба :))
 								</p>
@@ -754,7 +748,7 @@
 								<span class="faq__btn"></span>
 							</div>
 
-							<div class="faq__content-answer ">
+							<div class="faq__content-answer">
 								<p>
 									Текст-рыба :))
 								</p>
@@ -773,7 +767,7 @@
 								<span class="faq__btn"></span>
 							</div>
 
-							<div class="faq__content-answer ">
+							<div class="faq__content-answer">
 								<p>
 									Текст-рыба :))
 								</p>
@@ -790,7 +784,7 @@
 								<span class="faq__btn"></span>
 							</div>
 
-							<div class="faq__content-answer ">
+							<div class="faq__content-answer">
 								<p>
 									Текст-рыба :))
 								</p>
@@ -807,7 +801,7 @@
 								<span class="faq__btn"></span>
 							</div>
 
-							<div class="faq__content-answer ">
+							<div class="faq__content-answer">
 								<p>
 									Текст-рыба :))
 								</p>
@@ -824,7 +818,7 @@
 								<span class="faq__btn"></span>
 							</div>
 
-							<div class="faq__content-answer ">
+							<div class="faq__content-answer">
 								<p>
 									Текст-рыба :))
 								</p>
@@ -843,7 +837,7 @@
 								<span class="faq__btn"></span>
 							</div>
 
-							<div class="faq__content-answer ">
+							<div class="faq__content-answer">
 								<p>
 									Для тренировок необходимо иметь предназначенную для этого закрытую спортивную обувь и одежду. Верхняя
 									и
@@ -867,7 +861,7 @@
 								<span class="faq__btn"></span>
 							</div>
 
-							<div class="faq__content-answer ">
+							<div class="faq__content-answer">
 								<p>
 									Текст-рыба :))
 								</p>
@@ -884,7 +878,7 @@
 								<span class="faq__btn"></span>
 							</div>
 
-							<div class="faq__content-answer ">
+							<div class="faq__content-answer">
 								<p>
 									Текст-рыба :))
 								</p>
@@ -901,7 +895,7 @@
 								<span class="faq__btn"></span>
 							</div>
 
-							<div class="faq__content-answer  ">
+							<div class="faq__content-answer">
 								<p>
 									Текст-рыба :))
 								</p>
@@ -920,7 +914,6 @@
 
 				<ul class="reviews__list  swiper-wrapper">
 					<li class="reviews__item reviews__content swiper-slide">
-						<!-- <img src="./img/avatar/Rectangle.jpg" alt="Анна Орлова" width="80" height="80"> -->
 
 						<picture>
 							<source type="image/webp" srcset="./img/avatar/avatar@1x.webp 1x,
@@ -1024,7 +1017,7 @@
 							<span class="request__err">Только не буквы!</span>
 						</label>
 					</div>
-					<button class="request__btn button text-btnM text-invert" type="submit">отправить</button>
+					<button class="request__btn button  text-invert" type="submit">отправить</button>
 				</form>
 			</section>
 
@@ -1063,15 +1056,15 @@
 			</li>
 
 			<li>
-				<a class="footer__link text-name text-invert" href="#">Абонементы </a>
+				<a class="footer__link text-name text-invert" href="#">Абонементы</a>
 			</li>
 
 			<li>
-				<a class="footer__link text-name text-invert" href="#">Акции </a>
+				<a class="footer__link text-name text-invert" href="#">Акции</a>
 			</li>
 
 			<li>
-				<a class="footer__link text-name text-invert" href="#">Тренеры </a>
+				<a class="footer__link text-name text-invert" href="#">Тренеры</a>
 			</li>
 
 			<li>
@@ -1081,23 +1074,21 @@
 
 		<ul class="footer__social-list">
 			<li>
-				<a class="footer__social-link footer__social-link--vk" href="https://vk.com/htmlacademy" target="_blank"><span
+				<a class="footer__social-link footer__social-link--vk" href="https://vk.com/htmlacademy"><span
 						class="visually-hidden">vk</span></a>
 			</li>
 
 			<li>
-				<a class="footer__social-link footer__social-link--ok" href="https://vk.com/htmlacademy" target="_blank"><span
+				<a class="footer__social-link footer__social-link--ok" href="https://vk.com/htmlacademy"><span
 						class="visually-hidden">ok</span></a>
 			</li>
 
 			<li>
-				<a class="footer__social-link footer__social-link--reddit" href="https://vk.com/htmlacademy"
-					target="_blank"><span class="visually-hidden">xz</span></a>
+				<a class="footer__social-link footer__social-link--reddit" href="https://vk.com/htmlacademy"><span class="visually-hidden">xz</span></a>
 			</li>
 		</ul>
 	</footer>
 	<script src="./js/vendor/swiper-bundle.js"></script>
-	<!-- <script src="./js/vendor/swiper.js"></script> -->
 
 	<script src="js/main.js" type="module"></script>
 </body>

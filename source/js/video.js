@@ -1,4 +1,4 @@
-const video = document.getElementById('myVideo');
+const video = document.getElementById('my-video');
 const play = document.querySelector('.video__play');
 
 const playStop = () => {

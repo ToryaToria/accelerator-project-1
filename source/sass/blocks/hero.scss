@@ -10,7 +10,7 @@
   }
 
   @include media-desktop {
-    padding-bottom: 120px; 
+    padding-bottom: 120px;
   }
 }
 
@@ -62,7 +62,7 @@
   }
 }
 
-.hero__contein {
+.hero__conteiner {
   margin-top: 48px;
   display: flex;
   align-items: flex-end;
@@ -80,7 +80,7 @@
   }
 }
 
-.hero__contein1 {
+.hero__conteiner-external {
   @include media-tablet {
     display: flex;
     align-items: center;

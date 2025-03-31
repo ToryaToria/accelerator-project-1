@@ -1,10 +1,3 @@
-// import './vendor/swiper-bundle.js';
-// import "./vendor/swiper.js";
-// import Swiper from "./vendor/swiper.js";
-// import Swiper from "swiper";
-// import Navigation from "swiper/modules";
-
-
 const dataSliderJuri = {
   elem: '.slider__container--juri',
   btnNext: '.swiper-button-next-juri',

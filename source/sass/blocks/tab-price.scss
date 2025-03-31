@@ -46,8 +46,8 @@
 
   &:not(:disabled):focus + .tab-price__button {
     color: $color-text-base;
-    outline: auto; 
-    
+    outline: auto;
+
     &::after {
       background-color: currentColor;
     }

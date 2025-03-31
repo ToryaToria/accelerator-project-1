@@ -15,17 +15,9 @@
   }
 }
 
-.text-faq {
-  @include font ($size: 16px, $line-height: 20px, $weight: 300);
-
-  @include media-tablet {
-    font-size: 18px;
-    line-height: 24px;
-  }
-}
-
 .text-games {
   @include font ($size: 16px, $line-height: 20px);
+
   letter-spacing: -0.01em;
 
   @include media-tablet {
@@ -37,28 +29,6 @@
   @include media-desktop {
     line-height: 150%;
     letter-spacing: 0;
-  }
-}
-
-.subtitle-offers {
-  @include font ($size: 16px, $line-height: 20px, $weight: 300);
-
-  @include media-tablet {
-    font-size: 18px;
-    line-height: 24px;
-  }
-}
-
-.text-offers {
-  @include font ($size: 14px, $line-height: 22px, $weight: 300);
-
-  @include media-tablet {
-    font-size: 16px;
-    line-height: 24px;
-  }
-
-  @include media-desktop {
-    line-height: 140%;
   }
 }
 
@@ -166,20 +136,6 @@
   }
 }
 
-.title-faq {
-  /* h5, текст для заголовков в аккордеоне */
-
-  @include font ($size: 20px, $line-height: 100%);
-
-  @include media-tablet {
-    font-size: 22px;
-  }
-
-  @include media-desktop {
-    font-size: 24px;
-  }
-}
-
 .title-contacts {
   @include font ($size: 20px, $line-height: 20px);
 
@@ -195,9 +151,7 @@
   color: $color-white;
 }
 
-.text-nav,
-.subtitle-features {
-
+.text-nav {
   @include font ($size: 22px, $line-height: 22px, $weight: 700);
 
   text-decoration: none;
@@ -218,15 +172,6 @@
 
   @include media-tablet {
     font-size: 26px;
-  }
-}
-
-.title-offers {
-  @include font ($size: 22px, $line-height: 22px, $weight: 700, $color: $color-bg-secondary);
-
-  @include media-tablet {
-    font-size: 26px;
-    line-height: 26px;
   }
 }
 
@@ -254,15 +199,6 @@
   @include media-desktop {
     font-size: 20px;
     line-height: 150%;
-  }
-}
-
-.text-features-number {
-  @include font ($size: 64px, $line-height: 64px, $weight: 700, $color: $color-price);
-
-  @include media-tablet {
-    font-size: 70px;
-    line-height: 70px;
   }
 }
 
