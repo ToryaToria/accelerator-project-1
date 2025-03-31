@@ -55,9 +55,3 @@ function sliders(data) {
 
 sliders(dataSliderJuri);
 sliders(dataSliderReviews);
-
-// export{
-//   sliders,
-//   dataSliderReviews,
-//   dataSliderJuri
-// };

@@ -79,23 +79,27 @@
 }
 
 .card__btn {
-  &:not(--isDisabled):hover {
+  &:not(.card__btn--disabled):hover {
     color: $color-white;
     background-image: linear-gradient(to left, #003eb7, #ed0233);
     border: 2px solid transparent;
   }
 
-  &:not(--isDisabled):focus {
+  &:not(.card__btn--disabled):focus {
     color: $color-white;
     background-image: linear-gradient(to left, rgba(0, 62, 183, 0.8), rgba(237, 2, 51, 0.8));
     border: 2px solid $color-black;
   }
 
 
-  &:not(--isDisabled):active {
+  &:not(.card__btn--disabled):active {
     color: rgba(255, 255, 255, 0.7);
     background-image: linear-gradient(to left, #003eb7, #ed0233);
     border: 2px solid transparent;
     opacity: 1;
+  }
+
+  &--disabled {
+    opacity: 0.5;
   }
 }

@@ -5,7 +5,6 @@
   flex-shrink: 0;
   flex-grow: 0;
 
-
   &:focus {
     outline: none;
   }
@@ -50,8 +49,6 @@
   position: absolute;
   top: 0;
   left: 0;
-
-
   background-color: $color-text-base-89;
   padding: 45px 40px 50px;
 }

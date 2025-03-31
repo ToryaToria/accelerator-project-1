@@ -1,8 +1,6 @@
 .text-base {
   @include font ($size: 14px, $line-height: 20px);
 
-  // background-color: burlywood;
-
   @include media-tablet {
     line-height: 22px;
   }
@@ -11,8 +9,6 @@
 .text-basic {
   @include font ($size: 14px, $line-height: 22px, $weight: 300);
 
-  // background-color: chocolate;
-
   @include media-tablet {
     font-size: 16px;
     line-height: 24px;
@@ -20,7 +16,6 @@
 }
 
 .text-faq {
-  // background-color: blueviolet;
   @include font ($size: 16px, $line-height: 20px, $weight: 300);
 
   @include media-tablet {
@@ -31,9 +26,7 @@
 
 .text-games {
   @include font ($size: 16px, $line-height: 20px);
-
   letter-spacing: -0.01em;
-
 
   @include media-tablet {
     font-size: 18px;
@@ -48,7 +41,6 @@
 }
 
 .subtitle-offers {
-  // background-color: red;
   @include font ($size: 16px, $line-height: 20px, $weight: 300);
 
   @include media-tablet {
@@ -58,7 +50,6 @@
 }
 
 .text-offers {
-  // background-col: blue;
   @include font ($size: 14px, $line-height: 22px, $weight: 300);
 
   @include media-tablet {
@@ -88,8 +79,6 @@
 .text-games-month {
   @include font ($size: 12px, $line-height: 100%);
 
-  // background-color: chartreuse;
-
   @include media-tablet {
     font-size: 14px;
     line-height: 22px;
@@ -108,30 +97,22 @@
 
   letter-spacing: 0.017em;
 
-  // letter-spacing: 0.02em;
-
   text-transform: uppercase;
 
   @include media-tablet {
     font-size: 72px;
     line-height: 85px;
     letter-spacing: 0.026em;
-
-    // letter-spacing: 0.03em;
   }
 
   @include media-desktop {
     font-size: 92px;
     line-height: 110px;
-
-    // letter-spacing: 0.045em;
     letter-spacing: 0.04em;
   }
 }
 
 .title-super {
-  /* h2 для супергейм */
-
   @include font ($family: $font-secondary, $size: 48px, $line-height: 54px, $weight: 600);
 
   text-transform: uppercase;
@@ -144,8 +125,6 @@
 }
 
 .title-section {
-  /* h3 */
-
   @include font ($family: $font-secondary, $size: 32px, $line-height: 32px, $weight: 600);
 
   @include media-tablet {
@@ -166,8 +145,6 @@
 }
 
 .subtitle {
-  // background-color: red;
-
   @include font ($size: 18px, $line-height: 20px);
 
   @include media-tablet {
@@ -220,7 +197,6 @@
 
 .text-nav,
 .subtitle-features {
-  /* телефон в меню */
 
   @include font ($size: 22px, $line-height: 22px, $weight: 700);
 
@@ -246,7 +222,6 @@
 }
 
 .title-offers {
-  // подзаголовок для акций
   @include font ($size: 22px, $line-height: 22px, $weight: 700, $color: $color-bg-secondary);
 
   @include media-tablet {
@@ -256,15 +231,12 @@
 }
 
 .text-detailed {
-  /* текст для ссылки */
   @include font ($size: 14px, $line-height: 14px, $weight: 700);
 
   text-transform: uppercase;
 }
 
 .text-btn-faq {
-  /* текст для табов в вопросах и ответах */
-
   @include font ($size: 16px, $line-height: 100%);
 
   @include media-tablet {
@@ -273,8 +245,6 @@
 }
 
 .text-month {
-  /* текст для месяцев */
-  // background-color: rebeccapurple;
   @include font ($size: 16px, $line-height: 100%);
 
   @include media-tablet {
@@ -288,7 +258,6 @@
 }
 
 .text-features-number {
-  // только для цифр в приемуществах
   @include font ($size: 64px, $line-height: 64px, $weight: 700, $color: $color-price);
 
   @include media-tablet {
@@ -318,10 +287,6 @@
     line-height: 142%;
   }
 }
-
-// .ruble-symbol {
-// 	color: $color-text-base;
-// }
 
 .text-name {
   @include font ($size: 14px, $line-height: 20px);
