@@ -2,10 +2,10 @@
 
 <a href="https://htmlacademy.ru/intensive/javascript"><img align="left" width="50" height="50" alt="HTML Academy" src="https://up.htmlacademy.ru/static/img/intensive/javascript/logo-for-github-2.png"></a>
 
-Проект выполнен в рамках финального этапа _Акселератор - проект-1_ на профессиональном онлайн‑курсе <br> «[Профессия «Фронтенд-разработчик»](https://htmlacademy.ru/profession/frontender/classic)» от [HTML Academy](https://htmlacademy.ru).
+Проект выполнен в рамках финального этапа _"Акселератор"_ на профессиональном онлайн‑курсе «[Профессия «Фронтенд-разработчик»](https://htmlacademy.ru/profession/frontender/classic)» от [HTML Academy](https://htmlacademy.ru).
 
 <details><summary><h4>Проект создан в 2025 году</h4></summary>
-<img src="./readme/protection.png" width="216" height="103" alt="результаты защиты проекта"> <br>
+<img src="./readme/protection.png" width="432" height="206" alt="результаты защиты проекта"> <br>
 </details>
 
 - Студент: [Виктория Калугина](https://up.htmlacademy.ru/javascript-individual/2/user/1788421).
