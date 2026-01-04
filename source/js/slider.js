@@ -1,3 +1,5 @@
+// import Swiper from './vendor/swiper.js';
+
 const dataSliderJuri = {
   elem: '.slider__container--juri',
   btnNext: '.swiper-button-next-juri',
@@ -22,6 +24,8 @@ function sliders(data) {
 
   const slider = new Swiper(data.elem, {
     loop: data.loop,
+    simulateTouch: true,
+    watchSlidesProgress: true,
     breakpoints: {
       768: {
         slidesPerView: data.slidesPerView768,

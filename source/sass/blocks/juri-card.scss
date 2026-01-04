@@ -9,7 +9,7 @@
     outline: none;
   }
 
-  &:focus .juri-card__info {
+  &:focus-visible .juri-card__info {
     opacity: 1;
   }
 
