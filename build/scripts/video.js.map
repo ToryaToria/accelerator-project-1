@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["source/scripts/video.js"],
+  "sourcesContent": ["const video = document.getElementById('my-video');\nconst play = document.querySelector('.video__play');\n\nconst playStop = () => {\n  video.src = video.dataset.src;\n  play.style.display = 'none';\n};\n\nplay.addEventListener('click', playStop);\n"],
+  "mappings": ";AAAA,IAAM,QAAQ,SAAS,eAAe,UAAU;AAChD,IAAM,OAAO,SAAS,cAAc,cAAc;AAElD,IAAM,WAAW,MAAM;AACrB,QAAM,MAAM,MAAM,QAAQ;AAC1B,OAAK,MAAM,UAAU;AACvB;AAEA,KAAK,iBAAiB,SAAS,QAAQ;",
+  "names": []
+}

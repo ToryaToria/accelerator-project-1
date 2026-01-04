@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["source/scripts/accordeon.js"],
+  "sourcesContent": ["const accordions = document.querySelectorAll('.faq__details');\n\naccordions.forEach((el) => {\n  el.addEventListener('click', (e) => {\n    e.preventDefault();\n    const self = e.currentTarget;\n\n    const content = self.querySelector('.faq__content-answer');\n\n    self.classList.toggle('js-open');\n    self.classList.remove('js-open-init');\n\n    // \u0435\u0441\u043B\u0438 \u043E\u0442\u043A\u0440\u044B\u0442 \u0430\u043A\u043A\u043E\u0440\u0434\u0435\u043E\u043D\n    if (self.classList.contains('js-open')) {\n      content.style.maxHeight = `${content.scrollHeight }px`;\n\n    } else {\n      content.style.maxHeight = null;\n\n    }\n  });\n});\n"],
+  "mappings": ";AAAA,IAAM,aAAa,SAAS,iBAAiB,eAAe;AAE5D,WAAW,QAAQ,CAAC,OAAO;AACzB,KAAG,iBAAiB,SAAS,CAAC,MAAM;AAClC,MAAE,eAAe;AACjB,UAAM,OAAO,EAAE;AAEf,UAAM,UAAU,KAAK,cAAc,sBAAsB;AAEzD,SAAK,UAAU,OAAO,SAAS;AAC/B,SAAK,UAAU,OAAO,cAAc;AAGpC,QAAI,KAAK,UAAU,SAAS,SAAS,GAAG;AACtC,cAAQ,MAAM,YAAY,GAAG,QAAQ,YAAa;AAAA,IAEpD,OAAO;AACL,cAAQ,MAAM,YAAY;AAAA,IAE5B;AAAA,EACF,CAAC;AACH,CAAC;",
+  "names": []
+}
