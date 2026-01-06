@@ -28,7 +28,7 @@
 .juri__list {
   position: relative;
   z-index: 10;
-
+// overflow: hidden;
   @include list-reset;
 
   width: 260px;

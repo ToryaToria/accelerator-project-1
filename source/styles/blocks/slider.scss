@@ -1,5 +1,6 @@
 .slider__container--juri {
   width: 260px;
+  background-color: aqua;
 
   @include media-tablet {
     width: 560px;
@@ -12,6 +13,7 @@
 
 .slider__container--reviews {
   width: 240px;
+
 
   @include media-tablet {
     width: 500px;

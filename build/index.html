@@ -19,7 +19,6 @@
 	<link rel="preload" href="./fonts/AlumniSans-ExtraBold.woff2" type="font/woff2" as="font">
 	<link rel="preload" href="./fonts/AlumniSans-SemiBold.woff2" type="font/woff2" as="font"> -->
 
-  <link rel="stylesheet" href="./vendor/swiper-bundle.css">
   <link rel="stylesheet" href="./styles/style.css">
 </head>
 
@@ -405,15 +404,15 @@
           </li>
 
         </ul>
+
+        <button class="slider__button slider__button--l swiper-button-prev-juri" type="button">
+          <span class="visually-hidden">назад</span>
+        </button>
+
+        <button class="slider__button swiper-button-next" type="button">
+          <span class="visually-hidden">вперед</span>
+        </button>
       </div>
-
-      <button class="slider__button slider__button--l swiper-button-prev swiper-button-prev-juri" type="button">
-        <span class="visually-hidden">назад</span>
-      </button>
-
-      <button class="slider__button swiper-button-next swiper-button-next-juri" type="button">
-        <span class="visually-hidden">вперед</span>
-      </button>
 
     </section>
 
@@ -937,15 +936,16 @@
             </div>
           </li>
         </ul>
+
+        <button class="slider__button slider__button--l slider__button--reviews swiper-button-prev swiper-button-prev-reviews" type="button">
+          <span class="visually-hidden">туда</span>
+        </button>
+
+        <button class="slider__button slider__button--reviews swiper-button-next- swiper-button-next-reviews" type="button">
+          <span class="visually-hidden">сюда</span>
+        </button>
       </div>
 
-      <button class="slider__button slider__button--l slider__button--reviews swiper-button-prev swiper-button-prev-reviews" type="button">
-        <span class="visually-hidden">туда</span>
-      </button>
-
-      <button class="slider__button slider__button--reviews swiper-button-next swiper-button-next-reviews" type="button">
-        <span class="visually-hidden">сюда</span>
-      </button>
     </section>
 
     <div class="page__section-wrapp" data-test="form">
@@ -1032,7 +1032,6 @@
       </li>
     </ul>
   </footer>
-  <script src="./vendor/swiper-bundle.js"></script>
 
   <script src="./scripts/main.js" type="module"></script>
 </body>
