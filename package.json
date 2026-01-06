@@ -52,6 +52,6 @@
     "w3c-html-validator": "1.7.0"
   },
   "dependencies": {
-    "swiper": "11.0.7"
+    "swiper": "^12.0.3"
   }
 }
