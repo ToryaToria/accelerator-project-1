@@ -64,6 +64,7 @@ export default {
   root: './source',
   build: {
     outDir: '../dist',
+    minify: false,
   },
   base: './',
   server: {
