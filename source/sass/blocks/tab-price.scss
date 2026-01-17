@@ -2,6 +2,7 @@
   padding-bottom: 7px;
   color: $color-text-base-50;
   position: relative;
+  cursor: pointer;
 
   &::after {
     content: "";
@@ -45,8 +46,12 @@
   }
 
   &:not(:disabled):focus + .tab-price__button {
+    outline: none;
+  }
+
+  &:not(:disabled):focus-visible + .tab-price__button {
     color: $color-text-base;
-    outline: auto;
+    outline: none;
 
     &::after {
       background-color: currentColor;

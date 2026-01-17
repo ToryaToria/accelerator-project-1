@@ -45,6 +45,11 @@
   }
 
   &:not(.hero__tel--disabled):focus {
+    outline: none;
+  }
+
+  &:not(.hero__tel--disabled):focus-visible {
+    // outline: none;
     color: $color-bg-secondary;
   }
 
@@ -109,16 +114,19 @@
   margin-top: 14px;
   width: min-content;
   text-align: right;
-
+  max-width: 156px;
 
   @include media-tablet {
     margin-top: 0;
     margin-bottom: 50px;
+    max-width: 186px;
   }
 
   @include media-desktop {
     width: 100%;
     margin-bottom: 40px;
+          max-width: 270px;
+
   }
 }
 

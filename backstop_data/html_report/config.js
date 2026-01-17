@@ -4,7 +4,7 @@ report({
     {
       "pair": {
         "reference": "../../bitmaps_reference/test-pp/hero_desktop.png",
-        "test": "../bitmaps_test/20260112-203511/hero_desktop.png",
+        "test": "../bitmaps_test/20260117-120006/hero_desktop.png",
         "selector": "[data-test=\"hero\"]",
         "fileName": "hero_desktop.png",
         "label": "hero",
@@ -20,9 +20,9 @@ report({
             "width": 0,
             "height": 0
           },
-          "rawMisMatchPercentage": 0.4415504353856824,
-          "misMatchPercentage": "0.44",
-          "analysisTime": 98
+          "rawMisMatchPercentage": 0.47709408954303767,
+          "misMatchPercentage": "0.48",
+          "analysisTime": 180
         }
       },
       "status": "pass"
@@ -30,7 +30,7 @@ report({
     {
       "pair": {
         "reference": "../../bitmaps_reference/test-pp/about_desktop.png",
-        "test": "../bitmaps_test/20260112-203511/about_desktop.png",
+        "test": "../bitmaps_test/20260117-120006/about_desktop.png",
         "selector": "[data-test=\"about\"]",
         "fileName": "about_desktop.png",
         "label": "about",
@@ -48,7 +48,7 @@ report({
           },
           "rawMisMatchPercentage": 0.16037990290513987,
           "misMatchPercentage": "0.16",
-          "analysisTime": 69
+          "analysisTime": 286
         }
       },
       "status": "pass"
@@ -56,7 +56,7 @@ report({
     {
       "pair": {
         "reference": "../../bitmaps_reference/test-pp/price_desktop.png",
-        "test": "../bitmaps_test/20260112-203511/price_desktop.png",
+        "test": "../bitmaps_test/20260117-120006/price_desktop.png",
         "selector": "[data-test=\"price\"]",
         "fileName": "price_desktop.png",
         "label": "price",
@@ -74,7 +74,7 @@ report({
           },
           "rawMisMatchPercentage": 0.8882875245486835,
           "misMatchPercentage": "0.89",
-          "analysisTime": 284
+          "analysisTime": 309
         }
       },
       "status": "pass"
@@ -82,7 +82,7 @@ report({
     {
       "pair": {
         "reference": "../../bitmaps_reference/test-pp/games_desktop.png",
-        "test": "../bitmaps_test/20260112-203511/games_desktop.png",
+        "test": "../bitmaps_test/20260117-120006/games_desktop.png",
         "selector": "[data-test=\"games\"]",
         "fileName": "games_desktop.png",
         "label": "games",
@@ -100,7 +100,7 @@ report({
           },
           "rawMisMatchPercentage": 0.49874503241999585,
           "misMatchPercentage": "0.50",
-          "analysisTime": 287
+          "analysisTime": 252
         }
       },
       "status": "pass"
@@ -108,7 +108,7 @@ report({
     {
       "pair": {
         "reference": "../../bitmaps_reference/test-pp/juri_desktop.png",
-        "test": "../bitmaps_test/20260112-203511/juri_desktop.png",
+        "test": "../bitmaps_test/20260117-120006/juri_desktop.png",
         "selector": "[data-test=\"juri\"]",
         "fileName": "juri_desktop.png",
         "label": "juri",
@@ -126,7 +126,7 @@ report({
           },
           "rawMisMatchPercentage": 0.2720839433870181,
           "misMatchPercentage": "0.27",
-          "analysisTime": 419
+          "analysisTime": 348
         }
       },
       "status": "pass"
@@ -134,7 +134,7 @@ report({
     {
       "pair": {
         "reference": "../../bitmaps_reference/test-pp/features_desktop.png",
-        "test": "../bitmaps_test/20260112-203511/features_desktop.png",
+        "test": "../bitmaps_test/20260117-120006/features_desktop.png",
         "selector": "[data-test=\"features\"]",
         "fileName": "features_desktop.png",
         "label": "features",
@@ -152,7 +152,7 @@ report({
           },
           "rawMisMatchPercentage": 0.26834281946612626,
           "misMatchPercentage": "0.27",
-          "analysisTime": 219
+          "analysisTime": 379
         }
       },
       "status": "pass"
@@ -160,7 +160,7 @@ report({
     {
       "pair": {
         "reference": "../../bitmaps_reference/test-pp/offers_desktop.png",
-        "test": "../bitmaps_test/20260112-203511/offers_desktop.png",
+        "test": "../bitmaps_test/20260117-120006/offers_desktop.png",
         "selector": "[data-test=\"offers\"]",
         "fileName": "offers_desktop.png",
         "label": "offers",
@@ -176,9 +176,9 @@ report({
             "width": 0,
             "height": 0
           },
-          "rawMisMatchPercentage": 0.48153778348821225,
+          "rawMisMatchPercentage": 0.4771491319807572,
           "misMatchPercentage": "0.48",
-          "analysisTime": 229
+          "analysisTime": 159
         }
       },
       "status": "pass"
@@ -186,7 +186,7 @@ report({
     {
       "pair": {
         "reference": "../../bitmaps_reference/test-pp/faq_desktop.png",
-        "test": "../bitmaps_test/20260112-203511/faq_desktop.png",
+        "test": "../bitmaps_test/20260117-120006/faq_desktop.png",
         "selector": "[data-test=\"faq\"]",
         "fileName": "faq_desktop.png",
         "label": "faq",
@@ -204,7 +204,7 @@ report({
           },
           "rawMisMatchPercentage": 0.8140398723862935,
           "misMatchPercentage": "0.81",
-          "analysisTime": 273
+          "analysisTime": 308
         }
       },
       "status": "pass"
@@ -212,7 +212,7 @@ report({
     {
       "pair": {
         "reference": "../../bitmaps_reference/test-pp/reviews_desktop.png",
-        "test": "../bitmaps_test/20260112-203511/reviews_desktop.png",
+        "test": "../bitmaps_test/20260117-120006/reviews_desktop.png",
         "selector": "[data-test=\"reviews\"]",
         "fileName": "reviews_desktop.png",
         "label": "reviews",
@@ -230,7 +230,7 @@ report({
           },
           "rawMisMatchPercentage": 0.1138628308320093,
           "misMatchPercentage": "0.11",
-          "analysisTime": 377
+          "analysisTime": 353
         }
       },
       "status": "pass"
@@ -238,7 +238,7 @@ report({
     {
       "pair": {
         "reference": "../../bitmaps_reference/test-pp/form_desktop.png",
-        "test": "../bitmaps_test/20260112-203511/form_desktop.png",
+        "test": "../bitmaps_test/20260117-120006/form_desktop.png",
         "selector": "[data-test=\"form\"]",
         "fileName": "form_desktop.png",
         "label": "form",
@@ -256,7 +256,7 @@ report({
           },
           "rawMisMatchPercentage": 0.877177783360912,
           "misMatchPercentage": "0.88",
-          "analysisTime": 191
+          "analysisTime": 251
         }
       },
       "status": "pass"
@@ -264,7 +264,7 @@ report({
     {
       "pair": {
         "reference": "../../bitmaps_reference/test-pp/footer_desktop.png",
-        "test": "../bitmaps_test/20260112-203511/footer_desktop.png",
+        "test": "../bitmaps_test/20260117-120006/footer_desktop.png",
         "selector": "[data-test=\"footer\"]",
         "fileName": "footer_desktop.png",
         "label": "footer",
@@ -282,7 +282,7 @@ report({
           },
           "rawMisMatchPercentage": 0.5987734467802979,
           "misMatchPercentage": "0.60",
-          "analysisTime": 74
+          "analysisTime": 165
         }
       },
       "status": "pass"
@@ -290,7 +290,7 @@ report({
     {
       "pair": {
         "reference": "../../bitmaps_reference/test-pp/hero_tablet.png",
-        "test": "../bitmaps_test/20260112-203511/hero_tablet.png",
+        "test": "../bitmaps_test/20260117-120006/hero_tablet.png",
         "selector": "[data-test=\"hero\"]",
         "fileName": "hero_tablet.png",
         "label": "hero",
@@ -308,7 +308,7 @@ report({
           },
           "rawMisMatchPercentage": 0.9570539343786296,
           "misMatchPercentage": "0.96",
-          "analysisTime": 319
+          "analysisTime": 131
         }
       },
       "status": "pass"
@@ -316,7 +316,7 @@ report({
     {
       "pair": {
         "reference": "../../bitmaps_reference/test-pp/about_tablet.png",
-        "test": "../bitmaps_test/20260112-203511/about_tablet.png",
+        "test": "../bitmaps_test/20260117-120006/about_tablet.png",
         "selector": "[data-test=\"about\"]",
         "fileName": "about_tablet.png",
         "label": "about",
@@ -334,7 +334,7 @@ report({
           },
           "rawMisMatchPercentage": 0.31797880603639594,
           "misMatchPercentage": "0.32",
-          "analysisTime": 232
+          "analysisTime": 344
         }
       },
       "status": "pass"
@@ -342,7 +342,7 @@ report({
     {
       "pair": {
         "reference": "../../bitmaps_reference/test-pp/price_tablet.png",
-        "test": "../bitmaps_test/20260112-203511/price_tablet.png",
+        "test": "../bitmaps_test/20260117-120006/price_tablet.png",
         "selector": "[data-test=\"price\"]",
         "fileName": "price_tablet.png",
         "label": "price",
@@ -360,7 +360,7 @@ report({
           },
           "rawMisMatchPercentage": 0.5351336705202312,
           "misMatchPercentage": "0.54",
-          "analysisTime": 59
+          "analysisTime": 172
         }
       },
       "status": "pass"
@@ -368,7 +368,7 @@ report({
     {
       "pair": {
         "reference": "../../bitmaps_reference/test-pp/games_tablet.png",
-        "test": "../bitmaps_test/20260112-203511/games_tablet.png",
+        "test": "../bitmaps_test/20260117-120006/games_tablet.png",
         "selector": "[data-test=\"games\"]",
         "fileName": "games_tablet.png",
         "label": "games",
@@ -386,7 +386,7 @@ report({
           },
           "rawMisMatchPercentage": 0.38005252849002846,
           "misMatchPercentage": "0.38",
-          "analysisTime": 190
+          "analysisTime": 221
         }
       },
       "status": "pass"
@@ -394,7 +394,7 @@ report({
     {
       "pair": {
         "reference": "../../bitmaps_reference/test-pp/juri_tablet.png",
-        "test": "../bitmaps_test/20260112-203511/juri_tablet.png",
+        "test": "../bitmaps_test/20260117-120006/juri_tablet.png",
         "selector": "[data-test=\"juri\"]",
         "fileName": "juri_tablet.png",
         "label": "juri",
@@ -412,7 +412,7 @@ report({
           },
           "rawMisMatchPercentage": 0.3983312074829932,
           "misMatchPercentage": "0.40",
-          "analysisTime": 136
+          "analysisTime": 213
         }
       },
       "status": "pass"
@@ -420,7 +420,7 @@ report({
     {
       "pair": {
         "reference": "../../bitmaps_reference/test-pp/features_tablet.png",
-        "test": "../bitmaps_test/20260112-203511/features_tablet.png",
+        "test": "../bitmaps_test/20260117-120006/features_tablet.png",
         "selector": "[data-test=\"features\"]",
         "fileName": "features_tablet.png",
         "label": "features",
@@ -438,7 +438,7 @@ report({
           },
           "rawMisMatchPercentage": 1.5718510049683831,
           "misMatchPercentage": "1.57",
-          "analysisTime": 304
+          "analysisTime": 135
         }
       },
       "status": "pass"
@@ -446,7 +446,7 @@ report({
     {
       "pair": {
         "reference": "../../bitmaps_reference/test-pp/offers_tablet.png",
-        "test": "../bitmaps_test/20260112-203511/offers_tablet.png",
+        "test": "../bitmaps_test/20260117-120006/offers_tablet.png",
         "selector": "[data-test=\"offers\"]",
         "fileName": "offers_tablet.png",
         "label": "offers",
@@ -462,9 +462,9 @@ report({
             "width": 0,
             "height": 0
           },
-          "rawMisMatchPercentage": 0.6516321806500378,
-          "misMatchPercentage": "0.65",
-          "analysisTime": 182
+          "rawMisMatchPercentage": 0.5686649659863946,
+          "misMatchPercentage": "0.57",
+          "analysisTime": 145
         }
       },
       "status": "pass"
@@ -472,7 +472,7 @@ report({
     {
       "pair": {
         "reference": "../../bitmaps_reference/test-pp/faq_tablet.png",
-        "test": "../bitmaps_test/20260112-203511/faq_tablet.png",
+        "test": "../bitmaps_test/20260117-120006/faq_tablet.png",
         "selector": "[data-test=\"faq\"]",
         "fileName": "faq_tablet.png",
         "label": "faq",
@@ -488,9 +488,9 @@ report({
             "width": 0,
             "height": 0
           },
-          "rawMisMatchPercentage": 1.5359663180386864,
-          "misMatchPercentage": "1.54",
-          "analysisTime": 283
+          "rawMisMatchPercentage": 1.559512764282501,
+          "misMatchPercentage": "1.56",
+          "analysisTime": 271
         }
       },
       "status": "pass"
@@ -498,7 +498,7 @@ report({
     {
       "pair": {
         "reference": "../../bitmaps_reference/test-pp/reviews_tablet.png",
-        "test": "../bitmaps_test/20260112-203511/reviews_tablet.png",
+        "test": "../bitmaps_test/20260117-120006/reviews_tablet.png",
         "selector": "[data-test=\"reviews\"]",
         "fileName": "reviews_tablet.png",
         "label": "reviews",
@@ -516,7 +516,7 @@ report({
           },
           "rawMisMatchPercentage": 1.0664957501847747,
           "misMatchPercentage": "1.07",
-          "analysisTime": 253
+          "analysisTime": 239
         }
       },
       "status": "pass"
@@ -524,7 +524,7 @@ report({
     {
       "pair": {
         "reference": "../../bitmaps_reference/test-pp/form_tablet.png",
-        "test": "../bitmaps_test/20260112-203511/form_tablet.png",
+        "test": "../bitmaps_test/20260117-120006/form_tablet.png",
         "selector": "[data-test=\"form\"]",
         "fileName": "form_tablet.png",
         "label": "form",
@@ -542,7 +542,7 @@ report({
           },
           "rawMisMatchPercentage": 0.6790413533834586,
           "misMatchPercentage": "0.68",
-          "analysisTime": 227
+          "analysisTime": 329
         }
       },
       "status": "pass"
@@ -550,7 +550,7 @@ report({
     {
       "pair": {
         "reference": "../../bitmaps_reference/test-pp/footer_tablet.png",
-        "test": "../bitmaps_test/20260112-203511/footer_tablet.png",
+        "test": "../bitmaps_test/20260117-120006/footer_tablet.png",
         "selector": "[data-test=\"footer\"]",
         "fileName": "footer_tablet.png",
         "label": "footer",
@@ -568,7 +568,7 @@ report({
           },
           "rawMisMatchPercentage": 1.507019927536232,
           "misMatchPercentage": "1.51",
-          "analysisTime": 111
+          "analysisTime": 133
         }
       },
       "status": "pass"
@@ -576,7 +576,7 @@ report({
     {
       "pair": {
         "reference": "../../bitmaps_reference/test-pp/hero_mobile.png",
-        "test": "../bitmaps_test/20260112-203511/hero_mobile.png",
+        "test": "../bitmaps_test/20260117-120006/hero_mobile.png",
         "selector": "[data-test=\"hero\"]",
         "fileName": "hero_mobile.png",
         "label": "hero",
@@ -592,9 +592,9 @@ report({
             "width": 0,
             "height": 0
           },
-          "rawMisMatchPercentage": 3.6491201456310676,
-          "misMatchPercentage": "3.65",
-          "analysisTime": 130
+          "rawMisMatchPercentage": 3.6111953883495147,
+          "misMatchPercentage": "3.61",
+          "analysisTime": 153
         }
       },
       "status": "pass"
@@ -602,7 +602,7 @@ report({
     {
       "pair": {
         "reference": "../../bitmaps_reference/test-pp/about_mobile.png",
-        "test": "../bitmaps_test/20260112-203511/about_mobile.png",
+        "test": "../bitmaps_test/20260117-120006/about_mobile.png",
         "selector": "[data-test=\"about\"]",
         "fileName": "about_mobile.png",
         "label": "about",
@@ -620,7 +620,7 @@ report({
           },
           "rawMisMatchPercentage": 0.6303879310344828,
           "misMatchPercentage": "0.63",
-          "analysisTime": 197
+          "analysisTime": 261
         }
       },
       "status": "pass"
@@ -628,7 +628,7 @@ report({
     {
       "pair": {
         "reference": "../../bitmaps_reference/test-pp/price_mobile.png",
-        "test": "../bitmaps_test/20260112-203511/price_mobile.png",
+        "test": "../bitmaps_test/20260117-120006/price_mobile.png",
         "selector": "[data-test=\"price\"]",
         "fileName": "price_mobile.png",
         "label": "price",
@@ -646,7 +646,7 @@ report({
           },
           "rawMisMatchPercentage": 0.53125,
           "misMatchPercentage": "0.53",
-          "analysisTime": 231
+          "analysisTime": 213
         }
       },
       "status": "pass"
@@ -654,7 +654,7 @@ report({
     {
       "pair": {
         "reference": "../../bitmaps_reference/test-pp/games_mobile.png",
-        "test": "../bitmaps_test/20260112-203511/games_mobile.png",
+        "test": "../bitmaps_test/20260117-120006/games_mobile.png",
         "selector": "[data-test=\"games\"]",
         "fileName": "games_mobile.png",
         "label": "games",
@@ -672,7 +672,7 @@ report({
           },
           "rawMisMatchPercentage": 0.6974431818181818,
           "misMatchPercentage": "0.70",
-          "analysisTime": 207
+          "analysisTime": 153
         }
       },
       "status": "pass"
@@ -680,7 +680,7 @@ report({
     {
       "pair": {
         "reference": "../../bitmaps_reference/test-pp/juri_mobile.png",
-        "test": "../bitmaps_test/20260112-203511/juri_mobile.png",
+        "test": "../bitmaps_test/20260117-120006/juri_mobile.png",
         "selector": "[data-test=\"juri\"]",
         "fileName": "juri_mobile.png",
         "label": "juri",
@@ -698,7 +698,7 @@ report({
           },
           "rawMisMatchPercentage": 0.39858217592592593,
           "misMatchPercentage": "0.40",
-          "analysisTime": 109
+          "analysisTime": 127
         }
       },
       "status": "pass"
@@ -706,7 +706,7 @@ report({
     {
       "pair": {
         "reference": "../../bitmaps_reference/test-pp/features_mobile.png",
-        "test": "../bitmaps_test/20260112-203511/features_mobile.png",
+        "test": "../bitmaps_test/20260117-120006/features_mobile.png",
         "selector": "[data-test=\"features\"]",
         "fileName": "features_mobile.png",
         "label": "features",
@@ -724,7 +724,7 @@ report({
           },
           "rawMisMatchPercentage": 1.2693839061190277,
           "misMatchPercentage": "1.27",
-          "analysisTime": 108
+          "analysisTime": 217
         }
       },
       "status": "pass"
@@ -732,7 +732,7 @@ report({
     {
       "pair": {
         "reference": "../../bitmaps_reference/test-pp/offers_mobile.png",
-        "test": "../bitmaps_test/20260112-203511/offers_mobile.png",
+        "test": "../bitmaps_test/20260117-120006/offers_mobile.png",
         "selector": "[data-test=\"offers\"]",
         "fileName": "offers_mobile.png",
         "label": "offers",
@@ -748,9 +748,9 @@ report({
             "width": 0,
             "height": 0
           },
-          "rawMisMatchPercentage": 0.941173383711167,
-          "misMatchPercentage": "0.94",
-          "analysisTime": 84
+          "rawMisMatchPercentage": 0.9309403862300588,
+          "misMatchPercentage": "0.93",
+          "analysisTime": 87
         }
       },
       "status": "pass"
@@ -758,7 +758,7 @@ report({
     {
       "pair": {
         "reference": "../../bitmaps_reference/test-pp/faq_mobile.png",
-        "test": "../bitmaps_test/20260112-203511/faq_mobile.png",
+        "test": "../bitmaps_test/20260117-120006/faq_mobile.png",
         "selector": "[data-test=\"faq\"]",
         "fileName": "faq_mobile.png",
         "label": "faq",
@@ -774,9 +774,9 @@ report({
             "width": 0,
             "height": 0
           },
-          "rawMisMatchPercentage": 0.7368963486454653,
-          "misMatchPercentage": "0.74",
-          "analysisTime": 130
+          "rawMisMatchPercentage": 0.6371466431095406,
+          "misMatchPercentage": "0.64",
+          "analysisTime": 171
         }
       },
       "status": "pass"
@@ -784,7 +784,7 @@ report({
     {
       "pair": {
         "reference": "../../bitmaps_reference/test-pp/reviews_mobile.png",
-        "test": "../bitmaps_test/20260112-203511/reviews_mobile.png",
+        "test": "../bitmaps_test/20260117-120006/reviews_mobile.png",
         "selector": "[data-test=\"reviews\"]",
         "fileName": "reviews_mobile.png",
         "label": "reviews",
@@ -802,7 +802,7 @@ report({
           },
           "rawMisMatchPercentage": 0.7428385416666666,
           "misMatchPercentage": "0.74",
-          "analysisTime": 90
+          "analysisTime": 102
         }
       },
       "status": "pass"
@@ -810,7 +810,7 @@ report({
     {
       "pair": {
         "reference": "../../bitmaps_reference/test-pp/form_mobile.png",
-        "test": "../bitmaps_test/20260112-203511/form_mobile.png",
+        "test": "../bitmaps_test/20260117-120006/form_mobile.png",
         "selector": "[data-test=\"form\"]",
         "fileName": "form_mobile.png",
         "label": "form",
@@ -828,7 +828,7 @@ report({
           },
           "rawMisMatchPercentage": 0.5115685096153846,
           "misMatchPercentage": "0.51",
-          "analysisTime": 172
+          "analysisTime": 146
         }
       },
       "status": "pass"
@@ -836,7 +836,7 @@ report({
     {
       "pair": {
         "reference": "../../bitmaps_reference/test-pp/footer_mobile.png",
-        "test": "../bitmaps_test/20260112-203511/footer_mobile.png",
+        "test": "../bitmaps_test/20260117-120006/footer_mobile.png",
         "selector": "[data-test=\"footer\"]",
         "fileName": "footer_mobile.png",
         "label": "footer",
@@ -854,7 +854,7 @@ report({
           },
           "rawMisMatchPercentage": 1.5127551020408163,
           "misMatchPercentage": "1.51",
-          "analysisTime": 100
+          "analysisTime": 84
         }
       },
       "status": "pass"

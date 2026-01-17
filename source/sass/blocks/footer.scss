@@ -8,16 +8,21 @@
   @include media-tablet {
     padding-top: 45px;
     padding-bottom: 48px;
-    display: flex;
-    align-items: flex-start;
-
-    gap: 26px;
-    justify-content: space-between;
   }
 
   @include media-desktop {
     padding-top: 40px;
     padding-bottom: 40px;
+  }
+}
+
+.page__container {
+  @include media-tablet {
+    display: flex;
+    align-items: flex-start;
+
+    gap: 26px;
+    justify-content: space-between;
   }
 }
 
@@ -68,6 +73,19 @@
 
 .footer__link {
   text-decoration: none;
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:focus {
+    outline: none;
+  }
+
+  &:focus-visible,
+  &:active {
+    opacity: 0.6;
+  }
 }
 
 .footer__social-list {
@@ -107,7 +125,6 @@
     mask-position: center;
   }
 
-
   &--vk::before {
     mask-image: url("../../__spritemap#sprite-vk-view");
   }
@@ -120,7 +137,6 @@
     mask-image: url("../../__spritemap#sprite-reddit-view");
   }
 
-
   &:not(.footer__social-link--disabled):hover {
     background-color: $color-divider;
 
@@ -130,6 +146,10 @@
   }
 
   &:not(.footer__social-link--disabled):focus {
+    outline: none;
+  }
+
+  &:not(.footer__social-link--disabled):focus-visible {
     background-color: $color-price;
 
     &::before {

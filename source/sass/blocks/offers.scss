@@ -173,7 +173,8 @@
 }
 
 .offers__link--color {
-  margin-top: 0;
+  // margin-top: 0;
+  margin-top: auto;
 
   &::after {
     background-color: $color-divider;
@@ -207,7 +208,7 @@
   }
 
   p {
-    @include font ($size: 14px, $line-height: 22px, $weight: 300);
+    @include font ($size: 14px, $line-height: 22px, $weight: 300, $color: $color-bg-secondary);
 
     @include media-tablet {
       font-size: 16px;

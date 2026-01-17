@@ -66,6 +66,8 @@
   width: 72px;
   height: 72px;
 
+  cursor: pointer;
+
   border: 2px solid rgba(237, 2, 51, 0.2);
   border-radius: 50%;
 
@@ -126,7 +128,11 @@
     }
   }
 
-  &:not(:disabled):focus {
+   &:not(:disabled):focus {
+outline: none;
+   }
+
+  &:not(:disabled):focus-visible {
     border: 2px solid $color-text-base;
 
     &::before {

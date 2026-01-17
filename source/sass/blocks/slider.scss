@@ -1,5 +1,5 @@
 .slider__container {
-position: relative;
+  position: relative;
 }
 
 .slider__container--juri {
@@ -86,8 +86,11 @@ position: relative;
   &:not(:disabled):hover {
     border: 1px solid $color-text-base;
   }
+    &:not(:disabled):focus {
+    outline: none;
+    }
 
-  &:not(:disabled):focus {
+  &:not(:disabled):focus-visible {
     border: 1px solid $color-text-base;
     background-color: $color-bg-slider-btn;
   }
@@ -109,18 +112,6 @@ position: relative;
   }
 }
 
-// .slider__wrapper-button {
-//   width: 100%;
-//   position: absolute;
-//   display: flex;
-//   align-items: center;
-//   justify-content: space-between;
-//   background-color: aqua;
-//   top: 0;
-//   left: 0;
-// }
-
-
 .slider__button .swiper-navigation-icon {
   display: none;
 }
@@ -128,7 +119,6 @@ position: relative;
 .slider__button.swiper-button-prev,
 .slider__button.swiper-button-next {
   display: none;
-  // background-color: red;
 
   @include media-tablet {
     display: flex;
