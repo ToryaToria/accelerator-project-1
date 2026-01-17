@@ -2216,8 +2216,8 @@ sup {
   width: 14px;
   height: 14px;
   background-color: #1c3374;
-  -webkit-mask-image: url("../../assets/spritemap.55eac5ba.svg#sprite-plus-view");
-          mask-image: url("../../assets/spritemap.55eac5ba.svg#sprite-plus-view");
+  -webkit-mask-image: url("../assets/spritemap.55eac5ba.svg#sprite-plus-view");
+          mask-image: url("../assets/spritemap.55eac5ba.svg#sprite-plus-view");
   -webkit-mask-repeat: no-repeat;
           mask-repeat: no-repeat;
   -webkit-mask-size: auto;
@@ -2296,8 +2296,8 @@ sup {
 }
 .faq__details.js-open .faq__btn::after {
   background-color: #ffffff;
-  -webkit-mask-image: url("../../assets/spritemap.55eac5ba.svg#sprite-minus-view");
-          mask-image: url("../../assets/spritemap.55eac5ba.svg#sprite-minus-view");
+  -webkit-mask-image: url("../assets/spritemap.55eac5ba.svg#sprite-minus-view");
+          mask-image: url("../assets/spritemap.55eac5ba.svg#sprite-minus-view");
 }
 .faq__summary:hover .faq__btn {
   cursor: pointer;
@@ -2873,16 +2873,16 @@ sup {
           mask-position: center;
 }
 .footer__social-link--vk::before {
-  -webkit-mask-image: url("../../assets/spritemap.55eac5ba.svg#sprite-vk-view");
-          mask-image: url("../../assets/spritemap.55eac5ba.svg#sprite-vk-view");
+  -webkit-mask-image: url("../assets/spritemap.55eac5ba.svg#sprite-vk-view");
+          mask-image: url("../assets/spritemap.55eac5ba.svg#sprite-vk-view");
 }
 .footer__social-link--ok::before {
-  -webkit-mask-image: url("../../assets/spritemap.55eac5ba.svg#sprite-ok-view");
-          mask-image: url("../../assets/spritemap.55eac5ba.svg#sprite-ok-view");
+  -webkit-mask-image: url("../assets/spritemap.55eac5ba.svg#sprite-ok-view");
+          mask-image: url("../assets/spritemap.55eac5ba.svg#sprite-ok-view");
 }
 .footer__social-link--reddit::before {
-  -webkit-mask-image: url("../../assets/spritemap.55eac5ba.svg#sprite-reddit-view");
-          mask-image: url("../../assets/spritemap.55eac5ba.svg#sprite-reddit-view");
+  -webkit-mask-image: url("../assets/spritemap.55eac5ba.svg#sprite-reddit-view");
+          mask-image: url("../assets/spritemap.55eac5ba.svg#sprite-reddit-view");
 }
 .footer__social-link:not(.footer__social-link--disabled):hover {
   background-color: #74819c;
@@ -2980,8 +2980,8 @@ sup {
           mask-repeat: no-repeat;
   -webkit-mask-size: contain;
           mask-size: contain;
-  -webkit-mask-image: url("../../assets/spritemap.55eac5ba.svg#sprite-arrow-view");
-          mask-image: url("../../assets/spritemap.55eac5ba.svg#sprite-arrow-view");
+  -webkit-mask-image: url("../assets/spritemap.55eac5ba.svg#sprite-arrow-view");
+          mask-image: url("../assets/spritemap.55eac5ba.svg#sprite-arrow-view");
 }
 @media (min-width: 1366px) {
   .slider__button {
@@ -3099,7 +3099,7 @@ sup {
   display: inline-block;
   width: 24px;
   height: 33px;
-  background-image: url("../../assets/spritemap.55eac5ba.svg#sprite-rublik-view");
+  background-image: url("../assets/spritemap.55eac5ba.svg#sprite-rublik-view");
   background-repeat: no-repeat;
   background-size: 24px 33px;
 }
@@ -3213,8 +3213,8 @@ sup {
   width: 12px;
   height: 12px;
   background-color: #ffffff;
-  -webkit-mask-image: url("../../assets/spritemap.55eac5ba.svg#sprite-play-view");
-          mask-image: url("../../assets/spritemap.55eac5ba.svg#sprite-play-view");
+  -webkit-mask-image: url("../assets/spritemap.55eac5ba.svg#sprite-play-view");
+          mask-image: url("../assets/spritemap.55eac5ba.svg#sprite-play-view");
   -webkit-mask-repeat: no-repeat;
           mask-repeat: no-repeat;
   -webkit-mask-position: center;
