@@ -6,9 +6,9 @@
 
 - [готовая сборка](https://github.com/htmlacademy/accelerator-project-1)
 
-- [Обязательные требования по подготовке к защите проекта](https://htmlacademy.notion.site/597479a5d05d4068bd6cec2355fee9a7)
+ [Обязательные требования по подготовке к защите проекта](https://htmlacademy.notion.site/ed59b1e3e63c40f994772db37500d0f9#ea35a566b0034abf8ccb1887b6fddfeb)
 
-- [Критерии качества](https://htmlacademy.notion.site/ef52c937c3c54e15bdd88020f9e679ea)
+- [Критерии качества](https://htmlacademy.notion.site/4814c0ba58c240c4ad87ed2bacef2ff4)
 
 # Техническое задание
 
