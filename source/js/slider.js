@@ -1,3 +1,9 @@
+import { Swiper } from "swiper/bundle";
+import 'swiper/css/bundle';
+import { Navigation } from "swiper/modules";
+// import 'swiper/css/navigation';
+
+
 const dataSliderJuri = {
   elem: '.slider__container--juri',
   btnNext: '.swiper-button-next-juri',
@@ -21,9 +27,14 @@ const dataSliderReviews = {
 function sliders(data) {
 
   const slider = new Swiper(data.elem, {
+    modules: Navigation,
     loop: data.loop,
+    simulateTouch: true,
+    watchSlidesProgress: true,
+   
+
     breakpoints: {
-      768: {
+           768: {
         slidesPerView: data.slidesPerView768,
         spaceBetween: data.spaceBetween,
         navigation: {

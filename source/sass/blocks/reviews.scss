@@ -55,6 +55,12 @@
   }
 }
 
+.reviews__item.swiper-slide {
+    @include media-tablet {
+    display: flex;
+    }
+}
+
 .reviews__content {
   img {
     box-sizing: border-box;

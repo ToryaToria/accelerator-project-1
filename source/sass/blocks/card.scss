@@ -1,7 +1,7 @@
 .card {
   box-sizing: border-box;
   border: 7px solid transparent;
-
+width: 290px;
   padding: 43px 35px;
   background-color: $color-white;
   display: flex;
@@ -10,6 +10,7 @@
   align-items: center;
 
   @include media-tablet {
+    width: 380px;
     padding: 58px;
     gap: 22px;
   }
@@ -67,7 +68,7 @@
   display: inline-block;
   width: 24px;
   height: 33px;
-  background-image: url("../../__spritemap#sprite-rublik-view");
+  background-image: url("../__spritemap#sprite-rublik-view");
   background-repeat: no-repeat;
   background-size: 24px 33px;
 
@@ -85,7 +86,7 @@
     border: 2px solid transparent;
   }
 
-  &:not(.card__btn--disabled):focus {
+  &:not(.card__btn--disabled):focus-visible {
     color: $color-white;
     background-image: linear-gradient(to left, rgba(0, 62, 183, 0.8), rgba(237, 2, 51, 0.8));
     border: 2px solid $color-black;

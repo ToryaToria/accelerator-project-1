@@ -69,9 +69,9 @@
     border-bottom: 1px solid $color-white;
   }
 
-  &:focus {
-    border: 1px solid $color-white;
-    outline: none;
+  &:focus-visible {
+    // border: 1px solid $color-white;
+    outline: 1px solid $color-white;
   }
 
   &:disabled {

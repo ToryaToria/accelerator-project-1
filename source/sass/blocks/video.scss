@@ -22,11 +22,12 @@
 
   background-color: #003eb7;
 
-  background-image:
-    image-set(url("../../img/video-img/video_mob@1x.webp") 1x type("image/webp"),
+  background-image: image-set(
+    url("../img/video-img/video_mob@1x.webp") 1x type("image/webp"),
     url("../..img/video-img/video_mob@1x.jpg") 1x,
-    url("../../img/video-img/video_mob@2x.webp") 2x type("image/webp"),
-    url("../../img/video-img/video_mob@2x.jpg") 2x);
+    url("../img/video-img/video_mob@2x.webp") 2x type("image/webp"),
+    url("../img/video-img/video_mob@2x.jpg") 2x
+  );
 
   background-position: center;
   background-size: cover;
@@ -34,22 +35,24 @@
   @include media-tablet {
     width: 270px;
 
-    background-image:
-      image-set(url("../../img/video-img/video_tabl@1x.webp") 1x type("image/webp"),
-      url("../..img/video-img/video_tabl@1x.jpg") 1x,
-      url("../../img/video-img/video_tabl@2x.webp") 2x type("image/webp"),
-      url("../../img/video-img/video_tabl@2x.jpg") 2x);
+    background-image: image-set(
+      url("../img/video-img/video_tabl@1x.webp") 1x type("image/webp"),
+      url("..img/video-img/video_tabl@1x.jpg") 1x,
+      url("../img/video-img/video_tabl@2x.webp") 2x type("image/webp"),
+      url("../img/video-img/video_tabl@2x.jpg") 2x
+    );
   }
 
   @include media-desktop {
     width: 360px;
     height: 230px;
 
-    background-image:
-      image-set(url("../../img/video-img/video_desct@1x.webp") 1x type("image/webp"),
-      url("../..img/video-img/video_desct@1x.jpg") 1x,
-      url("../../img/video-img/video_desct@2x.webp") 2x type("image/webp"),
-      url("../../img/video-img/video_desct@2x.jpg") 2x);
+    background-image: image-set(
+      url("../img/video-img/video_desct@1x.webp") 1x type("image/webp"),
+      url("..img/video-img/video_desct@1x.jpg") 1x,
+      url("../img/video-img/video_desct@2x.webp") 2x type("image/webp"),
+      url("../img/video-img/video_desct@2x.jpg") 2x
+    );
   }
 }
 
@@ -65,6 +68,8 @@
   background-color: transparent;
   width: 72px;
   height: 72px;
+
+  cursor: pointer;
 
   border: 2px solid rgba(237, 2, 51, 0.2);
   border-radius: 50%;
@@ -97,7 +102,7 @@
     height: 12px;
     background-color: $color-white;
 
-    mask-image: url("../../__spritemap#sprite-play-view");
+    mask-image: url("../__spritemap#sprite-play-view");
     mask-repeat: no-repeat;
     mask-position: center;
     mask-size: auto;
@@ -127,6 +132,10 @@
   }
 
   &:not(:disabled):focus {
+    outline: none;
+  }
+
+  &:not(:disabled):focus-visible {
     border: 2px solid $color-text-base;
 
     &::before {
